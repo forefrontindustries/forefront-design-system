@@ -1,0 +1,15 @@
+{
+  "name": "forefront-design-system",
+  "compatibility_date": "2026-06-01",
+  "account_id": "35309211a30bff8d263cad687ebba3d5",
+  "assets": {
+    "directory": "../packages/web/dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    {
+      "pattern": "design-system.jeremymaendel.com",
+      "custom_domain": true
+    }
+  ]
+}

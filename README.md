@@ -3,6 +3,8 @@
 A three-tier token pipeline, two themes generated from a single enforced contract, and twelve
 accessible React components built without a primitives library.
 
+**Live documentation: [design-system.jeremymaendel.com](https://design-system.jeremymaendel.com)**
+
 This repository is a work sample. It is written to be read, so the reasoning is in here alongside the
 code, and every claim it makes about itself is produced by a script rather than typed into a
 paragraph.
