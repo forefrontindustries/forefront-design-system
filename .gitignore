@@ -75,3 +75,4 @@ packages/mobile/scripts/*
 
 # platform internals, not part of the work sample
 .runable/
+task.md
