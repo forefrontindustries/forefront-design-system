@@ -60,9 +60,14 @@ const decisions = [
 			"Intercepting Tab only defends against the one route that fires a key event. When the focused element is removed from the DOM the browser resets focus to the body, no key was pressed, and from there the next Tab starts at the top of the page outside the dialog. The trap now treats focus loss as a state to recover from: a focusout with no relatedTarget rechecks on the next frame and pulls focus back only if it genuinely ended up nowhere. The bug that forced this was a StrictMode remount detaching the portal host, but any dialog whose focused control unmounts on a state change hits it in production.",
 	},
 	{
-		title: "The brand fonts are self-hosted, because the production site proved the alternative",
+		title: "A font stack that ends in sans-serif is not a sans-serif font stack",
 		detail:
-			"Clash Display and Satoshi ship as eight woff2 files with the two first-paint weights preloaded. The production Forefront site loaded them from a CDN, those requests started returning 404, the loader was removed, and the font-family declarations stayed behind. The result was a site that named two brand faces and rendered the system font to every visitor, silently, with nothing failing loudly enough to notice. That is the exact failure a design system exists to make impossible, so the dependency is gone and the library still never injects a font-face rule of its own.",
+			"This system first shipped no webfont and relied on the platform UI stack, which is the standard recommendation and renders correctly on a Mac. It rendered every heading in a serif on the machine it was reviewed on. A canvas glyph-width probe found why: with no SF and no Segoe installed the named families fall through as expected, and then the generic sans-serif keyword itself resolves to a serif face, because the keyword is a request to the host font config rather than a guarantee. Only Arial and Helvetica measured as genuinely sans. Outfit and Satoshi are now self-hosted and preloaded, every family primitive names Arial and Helvetica before the generic keyword, and the @font-face rules live in the docs app rather than in the library so the library cannot fight a host application's loading strategy or break under a strict CSP that does not whitelist its font origin.",
+	},
+	{
+		title: "The library never touches the rem origin, and it had to learn that twice",
+		detail:
+			"A theme set font-size on the element carrying data-fds-theme, that attribute is applied to the html element, and the theme's own body size was a rem value. Every rem token in the system silently rescaled to 87.5% the moment a theme was applied, including spacing, control heights and focus ring offsets, and nothing looked broken enough to notice. The root now pins font-size: 100% and the body inherits the theme's text size, so a theme can never redefine the unit its own tokens are expressed in. Adjusting the rem origin is a host application decision: the docs site sets 112.5% because its preview frame scales down, and that belongs to the host, not to the tokens.",
 	},
 	{
 		title: "Generated artifacts are committed",

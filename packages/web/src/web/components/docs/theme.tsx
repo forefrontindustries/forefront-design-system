@@ -93,7 +93,10 @@ export function ThemeControls() {
 
 	return (
 		<div className="control-row">
-			<div className="segmented" role="group" aria-label="Theme">
+			<span className="control-row__label" id="theme-switch-label">
+				Theme
+			</span>
+			<div className="segmented" role="group" aria-labelledby="theme-switch-label">
 				{themes.map((item) => (
 					<button
 						key={item.name}
@@ -107,7 +110,10 @@ export function ThemeControls() {
 					</button>
 				))}
 			</div>
-			<div className="segmented" role="group" aria-label="Density">
+			<span className="control-row__label" id="density-switch-label">
+				Density
+			</span>
+			<div className="segmented" role="group" aria-labelledby="density-switch-label">
 				<button
 					type="button"
 					className="segmented__option"

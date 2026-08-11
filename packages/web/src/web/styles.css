@@ -15,10 +15,80 @@
 @import "tailwindcss";
 @import "@forefront/ui/styles.css";
 
+/* ---------- Fonts: self-hosted, deliberately not left to the platform ----------
+ *
+ * This site previously shipped no webfont at all and pointed
+ * font.family.sans at the platform UI stack
+ * (-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif).
+ * That was wrong, and it shipped SERIF headings.
+ *
+ * Measured in Chrome on a machine with none of those faces installed: every
+ * named entry falls through, and the terminal generic `sans-serif` keyword
+ * itself resolves to a serif face. A stack that ends on the bare keyword is
+ * therefore not a guarantee of anything. Only Arial and Helvetica measured as
+ * true sans, which is why they sit ahead of the keyword in every stack now.
+ *
+ * Fonts are Outfit (display) and Satoshi (body), the same faces as
+ * jeremymaendel.com, so the system matches the site it is published from.
+ * Self-hosted woff2, no CDN in the critical path, and declared here in the docs
+ * app rather than in @forefront/ui: the component library still ships zero
+ * @font-face rules, so it cannot fight a host app's font loading or break under
+ * a strict CSP. Consumers point the two family primitives at their own faces.
+ */
+@font-face {
+	font-family: "Outfit";
+	src: url("/fonts/outfit-var.woff2") format("woff2");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Satoshi";
+	src: url("/fonts/satoshi-400.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Satoshi";
+	src: url("/fonts/satoshi-500.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Satoshi";
+	src: url("/fonts/satoshi-700.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Satoshi";
+	src: url("/fonts/satoshi-900.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 /* Tailwind is used for docs layout utilities only. Every colour, radius and
    spacing value below comes from the token layer. */
 
+/* Documentation reading scale.
+ *
+ * Every token in the system is authored in rem, so a host app can scale the
+ * entire system proportionally by moving the rem origin, and nothing inside the
+ * library needs to know. The docs are that host, and documentation is read, not
+ * operated: 18px is the reading size the reference docs this is measured against
+ * (Material 3, Polaris, Carbon) settle on for body copy.
+ *
+ * This is a HOST decision, deliberately made here in the docs app. The library
+ * itself never touches the rem origin. It used to, by accident, via
+ * `[data-fds-theme] { font-size: ... }` landing on <html>, which silently
+ * rescaled every rem token in the system to 87.5%. See the note in
+ * packages/ui/src/styles/index.css. */
 html {
+	font-size: 112.5%;
 	scroll-behavior: smooth;
 }
 
@@ -33,7 +103,7 @@ body {
 	background-color: var(--fds-color-surface-canvas);
 	color: var(--fds-color-text-primary);
 	font-family: var(--fds-font-body);
-	font-size: var(--fds-font-size-40);
+	font-size: var(--fds-font-size-50);
 	line-height: var(--fds-font-line-height-normal);
 	-webkit-font-smoothing: antialiased;
 }
@@ -47,7 +117,7 @@ body {
 
 .docs {
 	display: grid;
-	grid-template-columns: 264px minmax(0, 1fr);
+	grid-template-columns: 344px minmax(0, 1fr);
 	min-height: 100vh;
 }
 
@@ -85,9 +155,24 @@ body {
 	background-color: var(--fds-color-surface-canvas);
 }
 
+.topbar__note {
+	margin: 0;
+	max-width: 46ch;
+	font-size: var(--fds-font-size-40);
+	line-height: var(--fds-font-line-height-snug);
+	color: var(--fds-color-text-subtle);
+	text-wrap: pretty;
+}
+
+@media (max-width: 75rem) {
+	.topbar__note {
+		display: none;
+	}
+}
+
 .docs__content {
 	width: 100%;
-	max-width: 1120px;
+	max-width: 1200px;
 	padding: var(--fds-space-11) var(--fds-space-10) var(--fds-space-15);
 	margin: 0;
 }
@@ -97,7 +182,7 @@ body {
 	padding: var(--fds-space-9) var(--fds-space-10);
 	border-block-start: var(--fds-border-width-thin) solid var(--fds-color-border-subtle);
 	color: var(--fds-color-text-subtle);
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--fds-space-6);
@@ -136,20 +221,37 @@ body {
 	color: inherit;
 }
 
-.brand__mark {
-	font-family: var(--fds-font-display);
-	font-size: var(--fds-font-size-70);
-	font-weight: var(--fds-font-weight-semibold);
-	letter-spacing: var(--fds-font-tracking-tight);
-	line-height: var(--fds-font-line-height-tight);
+.brand__lockup {
+	display: flex;
+	align-items: center;
+	gap: var(--fds-space-4);
+}
+
+.brand__glyph {
+	display: block;
+	height: 3.5rem;
+	width: auto;
+}
+
+/* Sized to fill the sidebar's content column (312px shell minus 2x space-7).
+   Height drives width through the source aspect ratio so the lockup can never
+   distort, and the mask keeps the wordmark on the theme's text token. */
+.brand__wordmark {
+	display: block;
+	height: 2rem;
+	width: calc(2rem * (830 / 146));
+	background-color: var(--fds-color-text-primary);
+	-webkit-mask: url("/brand/forefront-wordmark.png") no-repeat center / contain;
+	mask: url("/brand/forefront-wordmark.png") no-repeat center / contain;
 }
 
 .brand__meta {
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-10);
-	letter-spacing: var(--fds-font-tracking-wider);
+	font-size: var(--fds-font-size-30);
+	letter-spacing: var(--fds-font-tracking-wide);
 	text-transform: uppercase;
 	color: var(--fds-color-text-subtle);
+	white-space: nowrap;
 }
 
 /* ---------------------------------------------------------------- nav */
@@ -160,7 +262,7 @@ body {
 
 .nav-group__label {
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-10);
+	font-size: var(--fds-font-size-30);
 	letter-spacing: var(--fds-font-tracking-wider);
 	text-transform: uppercase;
 	color: var(--fds-color-text-subtle);
@@ -180,11 +282,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	gap: var(--fds-space-4);
-	padding: var(--fds-space-3) var(--fds-space-4);
+	padding: var(--fds-space-4) var(--fds-space-5);
 	border-radius: var(--fds-radius-control);
 	color: var(--fds-color-text-secondary);
 	text-decoration: none;
-	font-size: var(--fds-font-size-40);
+	font-size: var(--fds-font-size-50);
 	line-height: var(--fds-font-line-height-snug);
 	transition: color var(--fds-duration-fast) var(--fds-easing-standard);
 }
@@ -209,7 +311,7 @@ body {
 
 .eyebrow {
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-20);
+	font-size: var(--fds-font-size-40);
 	letter-spacing: var(--fds-font-tracking-wider);
 	text-transform: uppercase;
 	color: var(--fds-color-text-accent);
@@ -218,8 +320,8 @@ body {
 .page-title {
 	font-family: var(--fds-font-display);
 	font-size: clamp(2.125rem, 4.4vw, 3.25rem);
-	font-weight: var(--fds-font-weight-semibold);
-	letter-spacing: var(--fds-font-tracking-tighter);
+	font-weight: var(--fds-font-weight-black);
+	letter-spacing: var(--fds-font-tracking-display);
 	line-height: var(--fds-font-line-height-tight);
 	margin: var(--fds-space-5) 0 0;
 }
@@ -234,7 +336,7 @@ body {
 
 .prose {
 	max-width: 68ch;
-	font-size: var(--fds-font-size-40);
+	font-size: var(--fds-font-size-60);
 	line-height: var(--fds-font-line-height-relaxed);
 	color: var(--fds-color-text-secondary);
 }
@@ -294,7 +396,7 @@ body {
 
 .section__number {
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-20);
+	font-size: var(--fds-font-size-30);
 	color: var(--fds-color-text-subtle);
 	letter-spacing: var(--fds-font-tracking-wide);
 	padding-block-start: 0.35rem;
@@ -302,22 +404,23 @@ body {
 
 .section__title {
 	font-family: var(--fds-font-display);
-	font-size: var(--fds-font-size-90);
-	font-weight: var(--fds-font-weight-semibold);
-	letter-spacing: var(--fds-font-tracking-tight);
+	font-size: var(--fds-font-size-100);
+	font-weight: var(--fds-font-weight-bold);
+	letter-spacing: var(--fds-font-tracking-tighter);
 	line-height: var(--fds-font-line-height-snug);
 	margin: 0;
 }
 
 .section__subtitle {
-	margin: var(--fds-space-3) 0 0;
+	margin: var(--fds-space-4) 0 0;
 	max-width: 68ch;
+	font-size: var(--fds-font-size-60);
 	color: var(--fds-color-text-secondary);
 	line-height: var(--fds-font-line-height-relaxed);
 }
 
 .subhead {
-	font-size: var(--fds-font-size-50);
+	font-size: var(--fds-font-size-70);
 	font-weight: var(--fds-font-weight-semibold);
 	color: var(--fds-color-text-primary);
 	margin: var(--fds-space-8) 0 var(--fds-space-5);
@@ -369,13 +472,13 @@ body {
 	border-block-start: var(--fds-border-width-thin) solid var(--fds-color-border-subtle);
 	background-color: var(--fds-color-surface-sunken);
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-20);
+	font-size: var(--fds-font-size-30);
 	color: var(--fds-color-text-subtle);
 }
 
 .demo__caption {
 	margin: var(--fds-space-4) 0 0;
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	color: var(--fds-color-text-subtle);
 	max-width: 68ch;
 	line-height: var(--fds-font-line-height-relaxed);
@@ -388,7 +491,7 @@ body {
 	background-color: var(--fds-color-surface-sunken);
 	border-block-start: var(--fds-border-width-thin) solid var(--fds-color-border-subtle);
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	line-height: var(--fds-font-line-height-relaxed);
 	color: var(--fds-color-text-secondary);
 	tab-size: 2;
@@ -410,7 +513,7 @@ body {
 table.data {
 	width: 100%;
 	border-collapse: collapse;
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 }
 
 table.data caption {
@@ -424,7 +527,7 @@ table.data caption {
 table.data th {
 	text-align: start;
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-10);
+	font-size: var(--fds-font-size-30);
 	letter-spacing: var(--fds-font-tracking-wider);
 	text-transform: uppercase;
 	color: var(--fds-color-text-subtle);
@@ -449,7 +552,7 @@ table.data tr:last-child td {
 
 .mono {
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	color: var(--fds-color-text-primary);
 	white-space: nowrap;
 }
@@ -475,7 +578,7 @@ table.data tr:last-child td {
 	border: var(--fds-border-width-thin) solid var(--fds-color-border-subtle);
 	background-color: var(--fds-color-surface-neutral-subtle);
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-10);
+	font-size: var(--fds-font-size-30);
 	letter-spacing: var(--fds-font-tracking-wide);
 	text-transform: uppercase;
 	color: var(--fds-color-text-secondary);
@@ -523,6 +626,18 @@ table.data tr:last-child td {
 	gap: var(--fds-space-4);
 }
 
+/* Visible label for a segmented switch. The groups used to rely on an
+   aria-label alone, which left sighted users guessing what "Dark / Light"
+   next to "Comfortable / Compact" was actually controlling. */
+.control-row__label {
+	font-family: var(--fds-font-mono);
+	font-size: var(--fds-font-size-30);
+	letter-spacing: var(--fds-font-tracking-wide);
+	text-transform: uppercase;
+	color: var(--fds-color-text-subtle);
+	white-space: nowrap;
+}
+
 .segmented {
 	display: inline-flex;
 	padding: var(--fds-space-1);
@@ -539,7 +654,7 @@ table.data tr:last-child td {
 	padding: var(--fds-space-2) var(--fds-space-5);
 	border-radius: var(--fds-radius-xs);
 	font-family: var(--fds-font-body);
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	color: var(--fds-color-text-secondary);
 	cursor: pointer;
 	white-space: nowrap;
@@ -589,7 +704,7 @@ table.data tr:last-child td {
 	display: flex;
 	flex-direction: column;
 	gap: var(--fds-space-4);
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	line-height: var(--fds-font-line-height-relaxed);
 	color: var(--fds-color-text-secondary);
 }
@@ -639,7 +754,7 @@ table.data tr:last-child td {
 
 .note__index {
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-20);
+	font-size: var(--fds-font-size-30);
 	color: var(--fds-color-text-accent);
 	padding-block-start: 0.2rem;
 }
@@ -654,7 +769,7 @@ table.data tr:last-child td {
 .note__detail {
 	margin: 0;
 	max-width: 72ch;
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-50);
 	line-height: var(--fds-font-line-height-relaxed);
 	color: var(--fds-color-text-secondary);
 }
@@ -675,8 +790,8 @@ table.data tr:last-child td {
 .stat__value {
 	font-family: var(--fds-font-display);
 	font-size: var(--fds-font-size-100);
-	font-weight: var(--fds-font-weight-semibold);
-	letter-spacing: var(--fds-font-tracking-tighter);
+	font-weight: var(--fds-font-weight-black);
+	letter-spacing: var(--fds-font-tracking-display);
 	line-height: 1;
 	color: var(--fds-color-text-primary);
 }
@@ -684,7 +799,7 @@ table.data tr:last-child td {
 .stat__label {
 	margin-block-start: var(--fds-space-4);
 	font-family: var(--fds-font-mono);
-	font-size: var(--fds-font-size-10);
+	font-size: var(--fds-font-size-30);
 	letter-spacing: var(--fds-font-tracking-wide);
 	text-transform: uppercase;
 	color: var(--fds-color-text-subtle);
@@ -699,7 +814,7 @@ table.data tr:last-child td {
 	border-radius: var(--fds-radius-control);
 	background-color: var(--fds-color-surface-accent-bold);
 	color: var(--fds-color-text-on-accent);
-	font-size: var(--fds-font-size-30);
+	font-size: var(--fds-font-size-40);
 	transform: translateY(-200%);
 	transition: transform var(--fds-duration-fast) var(--fds-easing-standard);
 }

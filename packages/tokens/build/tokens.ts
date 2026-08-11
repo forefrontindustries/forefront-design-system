@@ -390,18 +390,18 @@ export const primitives = [
     "description": null
   },
   {
-    "path": "font.family.clash",
-    "cssVar": "--fds-font-family-clash",
+    "path": "font.family.display",
+    "cssVar": "--fds-font-family-display",
     "type": "fontFamily",
-    "value": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif",
-    "description": null
+    "value": "'Outfit', Arial, Helvetica, sans-serif",
+    "description": "Display face, self-hosted variable woff2. Same face as jeremymaendel.com so the system matches the site it is published from."
   },
   {
-    "path": "font.family.satoshi",
-    "cssVar": "--fds-font-family-satoshi",
+    "path": "font.family.sans",
+    "cssVar": "--fds-font-family-sans",
     "type": "fontFamily",
-    "value": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif",
-    "description": null
+    "value": "'Satoshi', Arial, Helvetica, sans-serif",
+    "description": "UI and body face, self-hosted woff2. Fallbacks are named faces (Arial, Helvetica) BEFORE the generic sans-serif keyword on purpose: on Linux and misconfigured fontconfig systems the generic sans-serif keyword can resolve to a SERIF face, which is exactly how this system once shipped serif headings. Never terminate a stack on the bare keyword alone."
   },
   {
     "path": "font.family.mono",
@@ -530,6 +530,13 @@ export const primitives = [
     "description": null
   },
   {
+    "path": "font.weight.black",
+    "cssVar": "--fds-font-weight-black",
+    "type": "fontWeight",
+    "value": "900",
+    "description": "Display only. The brand hero voice is weight 900 at negative tracking, which is what carries the display character now that a separate display family is gone."
+  },
+  {
     "path": "font.line-height.tight",
     "cssVar": "--fds-font-line-height-tight",
     "type": "number",
@@ -556,6 +563,13 @@ export const primitives = [
     "type": "number",
     "value": "1.65",
     "description": null
+  },
+  {
+    "path": "font.tracking.display",
+    "cssVar": "--fds-font-tracking-display",
+    "type": "dimension",
+    "value": "-0.04em",
+    "description": "Hero and display scale. Matches the production site's h1 tracking exactly."
   },
   {
     "path": "font.tracking.tighter",
@@ -1741,11 +1755,11 @@ export const themes = [
         "path": "font.display",
         "cssVar": "--fds-font-display",
         "type": "fontFamily",
-        "alias": "font.family.clash",
-        "resolved": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif",
+        "alias": "font.family.display",
+        "resolved": "'Outfit', Arial, Helvetica, sans-serif",
         "chain": [
           "font.display",
-          "font.family.clash"
+          "font.family.display"
         ],
         "description": "Editorial headings. Theme-owned."
       },
@@ -1753,11 +1767,11 @@ export const themes = [
         "path": "font.body",
         "cssVar": "--fds-font-body",
         "type": "fontFamily",
-        "alias": "font.family.satoshi",
-        "resolved": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif",
+        "alias": "font.family.sans",
+        "resolved": "'Satoshi', Arial, Helvetica, sans-serif",
         "chain": [
           "font.body",
-          "font.family.satoshi"
+          "font.family.sans"
         ],
         "description": "All UI and body text."
       },
@@ -2542,11 +2556,11 @@ export const themes = [
         "path": "font.display",
         "cssVar": "--fds-font-display",
         "type": "fontFamily",
-        "alias": "font.family.clash",
-        "resolved": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif",
+        "alias": "font.family.display",
+        "resolved": "'Outfit', Arial, Helvetica, sans-serif",
         "chain": [
           "font.display",
-          "font.family.clash"
+          "font.family.display"
         ],
         "description": "Editorial headings. Theme-owned."
       },
@@ -2554,11 +2568,11 @@ export const themes = [
         "path": "font.body",
         "cssVar": "--fds-font-body",
         "type": "fontFamily",
-        "alias": "font.family.satoshi",
-        "resolved": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif",
+        "alias": "font.family.sans",
+        "resolved": "'Satoshi', Arial, Helvetica, sans-serif",
         "chain": [
           "font.body",
-          "font.family.satoshi"
+          "font.family.sans"
         ],
         "description": "All UI and body text."
       },
@@ -3808,8 +3822,8 @@ export type PrimitiveTokenPath =
 	| "color.alpha.dark-08"
 	| "color.alpha.scrim-dark"
 	| "color.alpha.scrim-cool"
-	| "font.family.clash"
-	| "font.family.satoshi"
+	| "font.family.display"
+	| "font.family.sans"
 	| "font.family.mono"
 	| "font.size.10"
 	| "font.size.20"
@@ -3828,10 +3842,12 @@ export type PrimitiveTokenPath =
 	| "font.weight.medium"
 	| "font.weight.semibold"
 	| "font.weight.bold"
+	| "font.weight.black"
 	| "font.line-height.tight"
 	| "font.line-height.snug"
 	| "font.line-height.normal"
 	| "font.line-height.relaxed"
+	| "font.tracking.display"
 	| "font.tracking.tighter"
 	| "font.tracking.tight"
 	| "font.tracking.normal"

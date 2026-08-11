@@ -2,7 +2,7 @@ import { useState } from "react";
 import { primitives, themes } from "@forefront/tokens";
 import { PageHeader, Section } from "../../components/docs/shell";
 
-/** Colour foundations: the ramps, the semantic mapping, and the same token across all four themes. */
+/** Colour foundations: the ramps, the semantic mapping, and the same token across both themes. */
 export default function ColorPage() {
 	const [themeName, setThemeName] = useState(themes[0]!.name);
 	const theme = themes.find((item) => item.name === themeName) ?? themes[0]!;
@@ -133,7 +133,7 @@ export default function ColorPage() {
 												<p
 													style={{
 														margin: "var(--fds-space-4) 0 0",
-														fontSize: "var(--fds-font-size-30)",
+														fontSize: "var(--fds-font-size-40)",
 														color: "var(--fds-color-text-subtle)",
 														lineHeight: "var(--fds-font-line-height-relaxed)",
 													}}

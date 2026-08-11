@@ -1,18 +1,18 @@
 {
   "$comment": "GENERATED FILE. The docs site reads this so foundation pages cannot go stale relative to the token source. No timestamp is recorded, deliberately: generated artifacts are committed and a timestamp would create a diff on every build.",
   "counts": {
-    "primitives": 132,
+    "primitives": 134,
     "semanticContract": 66,
     "componentTokens": 67,
     "themes": 2,
     "densities": 2,
-    "totalCustomProperties": 331
+    "totalCustomProperties": 333
   },
   "primitivesByType": {
     "color": 49,
     "fontFamily": 3,
-    "dimension": 46,
-    "fontWeight": 4,
+    "dimension": 47,
+    "fontWeight": 5,
     "number": 12,
     "shadow": 7,
     "duration": 5,

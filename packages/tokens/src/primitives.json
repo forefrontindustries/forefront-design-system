@@ -76,13 +76,13 @@
   "font": {
     "family": {
       "$type": "fontFamily",
-      "clash": { "$value": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif" },
-      "satoshi": { "$value": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif" },
+      "display": { "$value": "'Outfit', Arial, Helvetica, sans-serif", "$description": "Display face, self-hosted variable woff2. Same face as jeremymaendel.com so the system matches the site it is published from." },
+      "sans": { "$value": "'Satoshi', Arial, Helvetica, sans-serif", "$description": "UI and body face, self-hosted woff2. Fallbacks are named faces (Arial, Helvetica) BEFORE the generic sans-serif keyword on purpose: on Linux and misconfigured fontconfig systems the generic sans-serif keyword can resolve to a SERIF face, which is exactly how this system once shipped serif headings. Never terminate a stack on the bare keyword alone." },
       "mono": { "$value": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" }
     },
     "size": {
       "$type": "dimension",
-      "$description": "Modular type ramp. Components only consume 40, 50 and 60. Everything above is display scale, set in Clash Display.",
+      "$description": "Modular type ramp. Components only consume 40, 50 and 60. Everything above is display scale.",
       "10": { "$value": "0.6875rem" },
       "20": { "$value": "0.75rem" },
       "30": { "$value": "0.8125rem" },
@@ -102,7 +102,8 @@
       "regular": { "$value": "400" },
       "medium": { "$value": "500" },
       "semibold": { "$value": "600" },
-      "bold": { "$value": "700" }
+      "bold": { "$value": "700" },
+      "black": { "$value": "900", "$description": "Display only. The brand hero voice is weight 900 at negative tracking, which is what carries the display character now that a separate display family is gone." }
     },
     "line-height": {
       "$type": "number",
@@ -113,6 +114,7 @@
     },
     "tracking": {
       "$type": "dimension",
+      "display": { "$value": "-0.04em", "$description": "Hero and display scale. Matches the production site's h1 tracking exactly." },
       "tighter": { "$value": "-0.03em" },
       "tight": { "$value": "-0.015em" },
       "normal": { "$value": "0em" },

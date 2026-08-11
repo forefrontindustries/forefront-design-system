@@ -165,7 +165,7 @@ export default function SpacePage() {
 							<p
 								style={{
 									margin: "var(--fds-space-4) 0 0",
-									fontSize: "var(--fds-font-size-30)",
+									fontSize: "var(--fds-font-size-40)",
 									color: "var(--fds-color-text-subtle)",
 									lineHeight: "var(--fds-font-line-height-relaxed)",
 								}}

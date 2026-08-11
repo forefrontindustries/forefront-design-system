@@ -81,8 +81,8 @@
     "pill": { "$value": "{radius.full}" }
   },
   "font": {
-    "display": { "$value": "{font.family.clash}" },
-    "body": { "$value": "{font.family.satoshi}" },
+    "display": { "$value": "{font.family.display}" },
+    "body": { "$value": "{font.family.sans}" },
     "mono": { "$value": "{font.family.mono}" }
   }
 }

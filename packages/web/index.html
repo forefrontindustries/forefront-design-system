@@ -4,27 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<title>Forefront Design System</title>
 		<meta
 			name="description"
-			content="A production design system: DTCG token pipeline, four themes from one contract, and twelve hand-built accessible React components with generated API documentation."
+			content="A production design system: DTCG token pipeline, two themes from one contract, and twelve hand-built accessible React components with generated API documentation."
 		/>
 		<meta property="og:title" content="Forefront Design System" />
 		<meta
 			property="og:description"
-			content="Token pipeline, four themes from one contract, twelve hand-built accessible React components. No third-party primitives."
+			content="Token pipeline, two themes from one contract, twelve hand-built accessible React components. No third-party primitives."
 		/>
 		<meta property="og:image" content="/og-image.png" />
 
-		<!-- Fonts are loaded at the document level, not by the component library. A
-		     library that injects @font-face rules takes a decision that belongs to the
-		     application and breaks under a strict CSP.
-
-		     Clash Display and Satoshi are self-hosted from /fonts rather than pulled
-		     from the Fontshare CDN: the production site lost both faces to CDN 404s
-		     and silently fell back to system sans. See public/fonts/fonts.css. -->
-		<link rel="stylesheet" href="/fonts/fonts.css" />
-		<link rel="preload" href="/fonts/clash-display-600.woff2" as="font" type="font/woff2" crossorigin />
+		<!-- Self-hosted sans, preloaded. The two faces used above the fold are
+		     fetched in parallel with the CSS so headings never paint in a fallback.
+		     This site previously shipped no webfont and let the platform stack
+		     resolve the type, which rendered SERIF headings on any machine without
+		     SF or Segoe installed. See the note at the top of styles.css. -->
+		<link rel="preload" href="/fonts/outfit-var.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="preload" href="/fonts/satoshi-400.woff2" as="font" type="font/woff2" crossorigin />
 	</head>
 	<body>

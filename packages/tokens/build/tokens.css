@@ -70,8 +70,8 @@
 		--fds-color-alpha-scrim-dark: rgba(4, 5, 10, 0.72);
 		--fds-color-alpha-scrim-cool: rgba(7, 9, 15, 0.48);
 		/* font.family */
-		--fds-font-family-clash: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
-		--fds-font-family-satoshi: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+		--fds-font-family-display: 'Outfit', Arial, Helvetica, sans-serif;
+		--fds-font-family-sans: 'Satoshi', Arial, Helvetica, sans-serif;
 		--fds-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 		/* font.size */
 		--fds-font-size-10: 0.6875rem;
@@ -92,12 +92,14 @@
 		--fds-font-weight-medium: 500;
 		--fds-font-weight-semibold: 600;
 		--fds-font-weight-bold: 700;
+		--fds-font-weight-black: 900;
 		/* font.line-height */
 		--fds-font-line-height-tight: 1.1;
 		--fds-font-line-height-snug: 1.25;
 		--fds-font-line-height-normal: 1.5;
 		--fds-font-line-height-relaxed: 1.65;
 		/* font.tracking */
+		--fds-font-tracking-display: -0.04em;
 		--fds-font-tracking-tighter: -0.03em;
 		--fds-font-tracking-tight: -0.015em;
 		--fds-font-tracking-normal: 0em;
@@ -282,8 +284,8 @@
 		--fds-radius-surface: var(--fds-radius-lg);
 		--fds-radius-overlay: var(--fds-radius-xl);
 		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-clash);
-		--fds-font-body: var(--fds-font-family-satoshi);
+		--fds-font-display: var(--fds-font-family-display);
+		--fds-font-body: var(--fds-font-family-sans);
 		--fds-font-mono: var(--fds-font-family-mono);
 	}
 
@@ -353,8 +355,8 @@
 		--fds-radius-surface: var(--fds-radius-lg);
 		--fds-radius-overlay: var(--fds-radius-xl);
 		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-clash);
-		--fds-font-body: var(--fds-font-family-satoshi);
+		--fds-font-display: var(--fds-font-family-display);
+		--fds-font-body: var(--fds-font-family-sans);
 		--fds-font-mono: var(--fds-font-family-mono);
 	}
 

@@ -550,25 +550,25 @@
           }
         },
         {
-          "name": "font/family/clash",
+          "name": "font/family/display",
           "type": "STRING",
           "scopes": [
             "ALL_SCOPES"
           ],
-          "description": "",
+          "description": "Display face, self-hosted variable woff2. Same face as jeremymaendel.com so the system matches the site it is published from.",
           "valuesByMode": {
-            "Value": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            "Value": "'Outfit', Arial, Helvetica, sans-serif"
           }
         },
         {
-          "name": "font/family/satoshi",
+          "name": "font/family/sans",
           "type": "STRING",
           "scopes": [
             "ALL_SCOPES"
           ],
-          "description": "",
+          "description": "UI and body face, self-hosted woff2. Fallbacks are named faces (Arial, Helvetica) BEFORE the generic sans-serif keyword on purpose: on Linux and misconfigured fontconfig systems the generic sans-serif keyword can resolve to a SERIF face, which is exactly how this system once shipped serif headings. Never terminate a stack on the bare keyword alone.",
           "valuesByMode": {
-            "Value": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif"
+            "Value": "'Satoshi', Arial, Helvetica, sans-serif"
           }
         },
         {
@@ -770,6 +770,17 @@
           }
         },
         {
+          "name": "font/weight/black",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Display only. The brand hero voice is weight 900 at negative tracking, which is what carries the display character now that a separate display family is gone.",
+          "valuesByMode": {
+            "Value": 900
+          }
+        },
+        {
           "name": "font/line-height/tight",
           "type": "FLOAT",
           "scopes": [
@@ -811,6 +822,17 @@
           "description": "",
           "valuesByMode": {
             "Value": 1.65
+          }
+        },
+        {
+          "name": "font/tracking/display",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Hero and display scale. Matches the production site's h1 tracking exactly.",
+          "valuesByMode": {
+            "Value": "-0.04em"
           }
         },
         {
@@ -2743,12 +2765,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/clash"
+              "name": "font/family/display"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/clash"
+              "name": "font/family/display"
             }
           }
         },
@@ -2763,12 +2785,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/satoshi"
+              "name": "font/family/sans"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/satoshi"
+              "name": "font/family/sans"
             }
           }
         },

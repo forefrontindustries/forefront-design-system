@@ -104,7 +104,7 @@ export default function ContributingPage() {
 								<td>Safe to adopt broadly.</td>
 								<td>Deprecation release first, then removal.</td>
 								<td>
-									Two unrelated consumers in production, all four themes checked, both densities checked,
+									Two unrelated consumers in production, both themes checked, both densities checked,
 									do and do-not guidance written.
 								</td>
 							</tr>
@@ -192,7 +192,7 @@ export default function ContributingPage() {
 						<ul>
 							<li>No hex literals or tier 1 colour references in CSS. The lint enforces it.</li>
 							<li>No new tier 3 token unless density or system-wide sizing needs it.</li>
-							<li>Checked in all four themes and both densities.</li>
+							<li>Checked in both themes and both densities.</li>
 							<li>Disabled state uses the token pair, never opacity.</li>
 							<li>Every prop has a JSDoc line and a documented default.</li>
 							<li>Meta file has anatomy, keyboard, accessibility and guidance.</li>

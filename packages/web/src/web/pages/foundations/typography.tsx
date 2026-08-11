@@ -14,7 +14,7 @@ export default function TypographyPage() {
 			<PageHeader
 				eyebrow="Foundations"
 				title="Typography"
-				lede="Three roles, not three fonts: display, body and mono. Clash Display and Satoshi are the Forefront brand faces, self-hosted rather than pulled from a CDN, for a reason documented below."
+				lede="Three roles, two self-hosted faces. Outfit carries the display voice, Satoshi carries everything a component renders, and both are the faces jeremymaendel.com already ships. The @font-face rules live in this docs app, not in the library."
 			/>
 
 			<Section
@@ -26,20 +26,25 @@ export default function TypographyPage() {
 					{[
 						{
 							token: "font.display",
-							sample: "Systems, not screens",
-							note: "Clash Display, 400 to 700. Headings, display scale and marketing surfaces. No component uses it, because a component that changes typeface with the theme is a component that reflows.",
-							style: { fontFamily: "var(--fds-font-display)", fontSize: "var(--fds-font-size-100)" },
+							sample: "Custom systems to help scale your business.",
+							note: "Outfit variable, weight 900 at -0.04em tracking. Headings, display scale and marketing surfaces. No component uses it, because a component that changes typeface with the theme is a component that reflows.",
+							style: {
+								fontFamily: "var(--fds-font-display)",
+								fontSize: "var(--fds-font-size-110)",
+								fontWeight: "var(--fds-font-weight-black)",
+								letterSpacing: "var(--fds-font-tracking-display)",
+							},
 						},
 						{
 							token: "font.body",
-							sample: "Satoshi carries every component and every paragraph.",
-							note: "Satoshi, 400 to 700. The Forefront body face, self-hosted as woff2. Every component text style resolves here, so the body face is the one typographic decision a theme is not allowed to change.",
+							sample: "One face carries every component and every paragraph.",
+							note: "Satoshi, weights 400 to 900, normal tracking. Every component text style resolves here, so the body face is the one typographic decision a theme is not allowed to change.",
 							style: { fontFamily: "var(--fds-font-body)", fontSize: "var(--fds-font-size-60)" },
 						},
 						{
 							token: "font.mono",
 							sample: "--fds-color-surface-accent-bold: #5793ca;",
-							note: "System mono stack, no webfont. Every token value, prop name and code sample. Token values in a proportional face are a documentation bug: 0 and O have to be distinguishable when someone is copying a hex by eye. This role ships zero bytes on purpose, since the brand owns no mono face and inventing one would be a decision the brand never made.",
+							note: "System mono stack, the one role with no webfont. Every token value, prop name and code sample. Token values in a proportional face are a documentation bug: 0 and O have to be distinguishable when someone is copying a hex by eye. This role ships zero bytes on purpose, since the brand owns no mono face and inventing one would be a decision the brand never made.",
 							style: { fontFamily: "var(--fds-font-mono)", fontSize: "var(--fds-font-size-50)" },
 						},
 					].map((role) => (
@@ -54,7 +59,7 @@ export default function TypographyPage() {
 								style={{
 									margin: "var(--fds-space-6) 0 0",
 									maxWidth: "68ch",
-									fontSize: "var(--fds-font-size-30)",
+									fontSize: "var(--fds-font-size-50)",
 									color: "var(--fds-color-text-subtle)",
 									lineHeight: "var(--fds-font-line-height-relaxed)",
 								}}
@@ -184,7 +189,10 @@ export default function TypographyPage() {
 			</Section>
 
 			<Section number="04" title="Rules that are actually enforced">
-				<Code standalone>{`Display face is theme-owned          font.display, never referenced by a component
+				<Code standalone>{`Every family stack ends in           Arial, Helvetica, sans-serif, in that order, never bare sans-serif
+Display voice                        weight.black + tracking.display, on font.display only
+Display face is theme-owned          font.display, never referenced by a component
+@font-face lives in the host app     the library ships zero font rules and cannot fight a host loader
 Body copy measure                    68ch maximum. Long-form docs use line-height relaxed
 Component text                       sizes 30 to 60 only
 Density never shrinks text below     13px (font.size.30)
@@ -195,6 +203,42 @@ Numerals in tables                   font.mono, so columns align without a monos
 					and stops there. Shrinking type to fit more rows trades an accessibility floor for information
 					density, and that trade should be a product decision with a name on it, not a side effect of a
 					density attribute.
+				</p>
+			</Section>
+
+			<Section
+				number="05"
+				title="The fallback that shipped a serif"
+				subtitle="A measured failure, kept on the record because the fix is counterintuitive."
+			>
+				<p className="prose">
+					An earlier version of this system deliberately shipped no webfont and leaned on the platform UI
+					stack: <span className="mono">-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+					sans-serif</span>. That stack renders correctly on a Mac and on Windows and is the standard advice.
+					It rendered every heading and paragraph in a serif on the machine that mattered, which was the one
+					the work was being reviewed on.
+				</p>
+				<p className="prose">
+					The cause was measured with a canvas glyph-width probe rather than guessed at. On a Linux box with
+					no SF and no Segoe, the first three families fall through as expected, and then the terminal
+					generic keyword itself resolves to a serif face. The <span className="mono">sans-serif</span>{" "}
+					keyword is a request to the font config, not a guarantee, and a font config is free to answer it
+					with anything. Only <span className="mono">Arial</span> and{" "}
+					<span className="mono">Helvetica</span> measured as genuinely sans on the same machine.
+				</p>
+				<Code standalone>{`font.family.display   'Outfit', Arial, Helvetica, sans-serif
+font.family.sans      'Satoshi', Arial, Helvetica, sans-serif
+
+Rule: a family stack never terminates on the bare sans-serif keyword.
+      Two named grotesques go in front of it first.`}</Code>
+				<p className="prose">
+					Two things changed as a result. Outfit and Satoshi are now self-hosted and preloaded, so the
+					rendered face is a decision instead of a negotiation with the host operating system. And every
+					family primitive names Arial and Helvetica before the generic keyword, so the worst case is a
+					grotesque rather than a coin flip. The <span className="mono">@font-face</span> rules deliberately
+					live in this docs app and not in <span className="mono">@forefront/ui</span>: a library that
+					injects font loading competes with the host application&apos;s own loading strategy and breaks
+					under a strict content security policy that does not whitelist its font origin.
 				</p>
 			</Section>
 		</>

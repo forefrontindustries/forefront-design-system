@@ -10,13 +10,15 @@
  * its own stylesheet, so a consumer who imports one Button does not download
  * the CSS for the listbox they never used.
  *
- * Fonts are not fetched by this file. A library that injects @font-face rules
- * takes a decision that belongs to the application, and it makes the library
- * impossible to use offline or behind a strict CSP. The families the tokens
- * reference are Clash Display (display) and Satoshi (body), each with a system
- * fallback, plus a system mono stack that needs no webfont. The docs site
- * self-hosts the two webfonts as woff2 and declares them at the document
- * level, which is the pattern a consuming application should copy.
+ * Fonts are not fetched by this file, and none need to be. Every font token
+ * resolves to a platform stack: the UI face (SF Pro, Segoe, Roboto) and a system
+ * mono. The display role is the same family at weight 900 with -0.04em tracking,
+ * which is how the brand's hero type actually renders in production.
+ *
+ * That means this library ships zero font bytes, has no CDN in its critical
+ * path, cannot flash unstyled text, and works offline and under a strict CSP
+ * with no font-src. A library that injects @font-face rules takes a decision
+ * that belongs to the application; this one has no reason to.
  */
 
 @import "@forefront/tokens/css";
@@ -32,6 +34,22 @@
 		color: var(--fds-color-text-primary);
 		-webkit-font-smoothing: antialiased;
 		text-rendering: optimizeLegibility;
+	}
+
+	/* When the themed element IS the document root, it is also the origin every
+	   rem in this system resolves against. Setting a font-size there does not
+	   just size text: it rescales every spacing, radius, control height and type
+	   token at once, because all of them are authored in rem against a 16px
+	   base. Applying the theme to <html> silently shrank the entire system to
+	   87.5%, and then any descendant re-declaring the same token compounded it
+	   again. The rem origin is therefore left alone, and the default text size
+	   is handed to <body> instead, where it cascades without redefining rem. */
+	:root[data-fds-theme] {
+		font-size: 100%;
+	}
+
+	:root[data-fds-theme] > body {
+		font-size: var(--fds-font-size-40);
 	}
 
 	[data-fds-theme] *,

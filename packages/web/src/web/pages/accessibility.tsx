@@ -89,7 +89,7 @@ function ContrastSwatch({
 		height: "1.9rem",
 		borderRadius: "var(--fds-radius-sm)",
 		background,
-		fontSize: "var(--fds-font-size-30)",
+		fontSize: "var(--fds-font-size-40)",
 	} as const;
 
 	if (kind === "text") {

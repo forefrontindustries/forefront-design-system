@@ -154,7 +154,7 @@ export function BadgeExamples() {
 
 			<Demo
 				title="Tones, bold"
-				caption="Every filled tone is paired with an on-* text token rather than plain white, and those pairs are the ones audited on the accessibility page for all four themes."
+				caption="Every filled tone is paired with an on-* text token rather than plain white, and those pairs are the ones audited on the accessibility page for both themes."
 				code={`<Badge tone="neutral" variant="bold">Draft</Badge>
 <Badge tone="success" variant="bold">Paid</Badge>
 <Badge tone="danger" variant="bold">Failed</Badge>`}

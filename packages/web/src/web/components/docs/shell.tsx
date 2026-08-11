@@ -60,8 +60,15 @@ export function Shell({ children }: { children: ReactNode }) {
 				Skip to content
 			</a>
 			<nav className="docs__sidebar" aria-label="Documentation">
-				<Link href="/" className="brand">
-					<span className="brand__mark">Forefront</span>
+				<Link href="/" className="brand" aria-label="Forefront Design System, home">
+					<span className="brand__lockup">
+						<img className="brand__glyph" src="/brand/forefront-mark.png" alt="" />
+						{/* The wordmark is a mask, not an image, so it inherits the theme's primary
+						    text token. A flat PNG would be light gray in both themes and fail
+						    contrast on the light canvas. The gradient glyph stays a real image
+						    because it is fixed brand artwork. */}
+						<span className="brand__wordmark" role="img" aria-label="Forefront" />
+					</span>
 					<span className="brand__meta">
 						Design System v1.0 &middot; {manifest.counts.totalCustomProperties} tokens
 					</span>
@@ -95,7 +102,10 @@ export function Shell({ children }: { children: ReactNode }) {
 
 			<div className="docs__main">
 				<header className="docs__topbar">
-					<span className="brand__meta">Theme and density are live. Every component reacts.</span>
+					<p className="topbar__note">
+						No component hardcodes a color or a dimension. These switches restyle the whole page
+						from tokens, portalled overlays included.
+					</p>
 					<ThemeControls />
 				</header>
 

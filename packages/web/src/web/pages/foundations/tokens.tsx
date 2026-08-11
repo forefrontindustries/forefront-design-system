@@ -47,7 +47,7 @@ export default function TokensPage() {
 				<p className="prose">
 					<span className="inline-code">semantic.json</span> is a contract: names, types and descriptions,
 					nothing else. Each theme file supplies every value. That inversion is what makes the coverage check
-					possible, and coverage is the only reason four themes stay in step. A semantic layer with default
+					possible, and coverage is the only reason both themes stay in step. A semantic layer with default
 					values looks friendlier and quietly lets a theme skip a token, which surfaces months later as one
 					unstyled hover state in the theme nobody tests.
 				</p>

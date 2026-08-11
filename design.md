@@ -30,19 +30,39 @@ Radius is theme-owned at tier 2, so geometry can move without touching a compone
 
 No serif faces anywhere in this system. The brand does not use one.
 
-- **Display:** Clash Display, weights 400 to 700. Headings, the display scale and marketing surfaces. No component consumes it, because a component whose typeface changes with the theme is a component that reflows.
-- **Body / UI:** Satoshi, weights 400 to 700. Every component text style and all docs body copy.
+- **Display:** Outfit (variable), used at weight 900 with `-0.04em` tracking. Headings, the display scale and marketing surfaces. No component consumes it, because a component whose typeface changes with the theme is a component that reflows.
+- **Body / UI:** Satoshi, weights 400 / 500 / 700 / 900. Every component text style and all docs body copy.
 - **Mono:** system stack (`ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`). Token values, prop names, code samples. This role ships zero font bytes on purpose: the brand owns no mono face, and inventing one would be a decision the brand never made.
 - Type scale is a token ramp `font.size.10` through `font.size.130` (11px to 64px). Components only consume `40` / `50` / `60`.
 - Line height tokens: `tight 1.1`, `snug 1.25`, `normal 1.5`, `relaxed 1.65`. Long-form docs copy uses `relaxed` at a 68ch measure.
 
-### Fonts are self-hosted, and that is a decision with a reason
+### Fonts are self-hosted, and a measured failure is the reason
 
-Clash Display and Satoshi are self-hosted as eight woff2 files in `packages/web/public/fonts/`, declared in one `fonts.css`, with the two first-paint weights preloaded.
+Outfit and Satoshi ship as five woff2 files in `packages/web/public/fonts/`, declared in the docs app's `styles.css`, with `outfit-var.woff2` and `satoshi-400.woff2` preloaded for first paint. They are the same faces `jeremymaendel.com` uses, so the system matches the site it is published from.
 
-The production Forefront site loaded both from the Fontshare CDN. Those `<link>` tags started returning 404, the loader was eventually removed, and the `font-family` declarations stayed behind. The result was a site that referenced two brand faces and rendered `-apple-system` to every visitor, silently, with nothing failing loudly enough to notice. That is the failure mode a design system is supposed to make impossible. Self-hosting removes the third-party dependency, survives a strict CSP, and is the pattern a consuming application should copy.
+An earlier version of this system shipped no webfont at all and relied on the platform UI stack: `-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`. That is the standard advice and it is correct on a Mac. It rendered every heading and paragraph in a **serif** on the machine the work was reviewed on. The cause was measured with a canvas glyph-width probe rather than guessed at: with no SF and no Segoe installed the named families fall through as expected, and then the terminal generic keyword *itself* resolves to a serif face. `sans-serif` is a request to the host font config, not a guarantee. Only `Arial` and `Helvetica` measured as genuinely sans on the same machine.
 
-The library itself never injects `@font-face`. A component library that fetches fonts takes a decision that belongs to the application.
+So both family primitives end the same way, and this is a hard rule:
+
+```
+font.family.display   'Outfit', Arial, Helvetica, sans-serif
+font.family.sans      'Satoshi', Arial, Helvetica, sans-serif
+```
+
+A family stack never terminates on the bare `sans-serif` keyword. Two named grotesques go in front of it first.
+
+The library itself never injects `@font-face`. A component library that fetches fonts takes a decision that belongs to the application: it competes with the host's own loading strategy and breaks under a strict CSP that does not whitelist its font origin. The rules live at the document level in the docs site, which is the pattern a consumer should copy.
+
+### The rem origin belongs to the host application, never to the library
+
+`[data-fds-theme]` once set `font-size` to a token, and the theme provider puts that attribute on `<html>`. That silently rescaled **every rem token in the system** to 87.5%, spacing and control heights and focus-ring offsets included, and nothing looked broken enough to notice. The fix pins the root and moves the theme's text size to the body:
+
+```css
+:root[data-fds-theme] { font-size: 100%; }
+:root[data-fds-theme] > body { font-size: var(--fds-font-size-40); }
+```
+
+A theme can never redefine the unit its own tokens are expressed in. Choosing the rem origin is a host decision: the docs site sets `html { font-size: 112.5% }` because its preview frame scales down, and that lives in the docs app, not in the tokens.
 
 ## Color
 
@@ -82,7 +102,7 @@ Splitting them means the gate can hold controls to 3:1 without forcing every sep
 ## Docs site layout
 
 - Enterprise DS documentation conventions: fixed dense left nav (240px), sticky top bar with theme and density switchers, content column capped at 1120px with a right-hand "on this page" rail on component pages.
-- Editorial touches that keep it from feeling generated: oversized Clash Display page titles, numbered section markers (`01`, `02`), hairline rules between sections, generous vertical rhythm.
+- Editorial touches that keep it from feeling generated: oversized Outfit page titles, numbered section markers (`01`, `02`), hairline rules between sections, generous vertical rhythm.
 - Component pages follow a fixed order: live demo, playground, anatomy, variants, API table, accessibility notes, do/don't. Consistency across pages is itself a design-system argument.
 - API tables are generated from the TypeScript types via the compiler API. A hand-written prop table is wrong the day after it is written.
 - Background is flat `surface.canvas`. No gradient meshes, no noise, no glows. The components are the subject and the chrome must not compete with them.

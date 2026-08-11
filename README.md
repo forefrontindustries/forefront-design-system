@@ -11,7 +11,7 @@ paragraph.
 
 | | |
 | --- | --- |
-| Tokens | 132 primitives, 66 semantic contract entries per theme, 67 component tokens, 2 densities, compiled to 331 CSS custom properties |
+| Tokens | 134 primitives, 66 semantic contract entries per theme, 67 component tokens, 2 densities, compiled to 333 CSS custom properties |
 | Themes | `forefront-dark` (default), `forefront-light`, both built from the real Forefront Industries brand values |
 | Components | 12 public, all hand-authored, 20 typed interfaces, 88 documented props |
 | Contrast contract | 47 declared requirements plus 4 named exemptions, 94 checks per build, 0 tolerated failures |
@@ -202,18 +202,25 @@ literals by usage frequency, which is why `blue.500` is `#5793CA` (747 occurrenc
 `#7BA8D1` (125), the ink ramp is `#0A0C14` / `#07090F` / `#0A0A12` / `#0D1019` rather than a neutral
 grey, and the single secondary accent is `#FF8A3D` (14), carrying the warning role.
 
-The type stack is Clash Display for the display role and Satoshi for body and all component text.
-There are no serif faces anywhere in the system, because the brand does not use one. The mono role
-resolves to a system stack and ships zero font bytes, because the brand owns no mono face and
-inventing one would be a decision the brand never made.
+The type stack is Outfit for the display role and Satoshi for body and all component text, the same
+two faces `jeremymaendel.com` ships, so the system matches the site it is published from. There are no
+serif faces anywhere in it. The mono role resolves to a system stack and ships zero font bytes, because
+the brand owns no mono face and inventing one would be a decision the brand never made.
 
-**The fonts are self-hosted, and the production site is the reason.** Both faces were loaded from a
-third-party CDN. Those requests started returning 404, the loader was eventually removed, and the
-`font-family` declarations were left in place. The outcome was a site that named two brand faces in
-its stylesheet and rendered `-apple-system` to every visitor, silently, with nothing failing loudly
-enough for anyone to notice. A design system exists to make that failure impossible, so both faces
-ship here as eight `woff2` files with the two first-paint weights preloaded, which also means the
-system works offline and under a strict CSP.
+**A font stack that ends in `sans-serif` is not a sans-serif font stack.** An earlier version of this
+system deliberately shipped no webfont and leaned on the platform UI stack,
+`-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`. That is the standard recommendation and it
+renders correctly on a Mac. It rendered every heading and every paragraph in a serif on the machine the
+work was being reviewed on. A canvas glyph-width probe found the cause instead of guessing at it: with
+no SF and no Segoe installed the named families fall through as expected, and then the terminal generic
+keyword itself resolves to a serif face, because `sans-serif` is a request to the host font config, not
+a guarantee. Only `Arial` and `Helvetica` measured as genuinely sans on the same machine.
+
+Two rules came out of that. Outfit and Satoshi are self-hosted as five `woff2` files with the two
+first-paint weights preloaded, so the rendered face is a decision rather than a negotiation with the
+host operating system, and the system works offline and under a strict CSP. And no family primitive ever
+terminates on the bare generic keyword: every stack names `Arial, Helvetica` before it, so the worst
+case is a grotesque instead of a coin flip.
 
 The library still never injects an `@font-face` rule. A component library that fetches fonts is taking
 a decision that belongs to the application, so the declarations live at the document level in the docs
