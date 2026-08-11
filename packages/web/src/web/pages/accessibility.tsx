@@ -478,7 +478,7 @@ error [contrast:forefront-dark] color.text.on-accent on
 6  Fire a Toast, then tab towards its action. The timer pauses on focus.
 7  Turn on Reduce Motion in the OS. Nothing moves, nothing disappears, and the
    spinner becomes a static ring.
-8  Switch to Signal Light. Re-run steps 2 to 6. Same behaviour, different values.
+8  Switch to Forefront Light. Re-run steps 2 to 6. Same behaviour, different values.
 9  Break it on purpose: point a theme's border.control at a primitive two steps
    lighter and run bun run tokens:build. It should refuse.
 

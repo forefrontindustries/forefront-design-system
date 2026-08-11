@@ -82,7 +82,7 @@ Expect to be asked which tier the value belongs in:
 
 - A literal value, and only a literal value, goes in **tier 1**.
 - A name whose value depends on the theme goes in **tier 2**, in `semantic.json`, with a description
-  and no value. Then all four themes supply it. All four, or the build fails.
+  and no value. Then every theme supplies it. Every one of them, or the build fails.
 - Shared geometry that does not vary by theme goes in **tier 3**.
 - A density override may only restate a tier 3 token. If your change needs density to alter a colour,
   the change is wrong.
@@ -153,7 +153,7 @@ comment, because a checklist whose items are negotiable is a document that gets 
 - [ ] No hex literals or tier 1 colour references in the CSS. The lint enforces it, so this line is
       about the cases the lint cannot see, like a colour smuggled in through an inline style.
 - [ ] No new tier 3 token unless density or system-wide sizing genuinely needs it.
-- [ ] Checked in all four themes and both densities, not just the default.
+- [ ] Checked in both themes and both densities, not just the default.
 - [ ] Disabled state uses `surface.disabled` with `text.disabled`, never opacity.
 - [ ] Every prop has a JSDoc line and a documented default.
 - [ ] The meta file has anatomy, keyboard, accessibility notes and guidance.

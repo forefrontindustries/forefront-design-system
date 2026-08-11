@@ -99,10 +99,51 @@ function trap(node: HTMLElement): () => void {
 	{
 		const previouslyFocused = document.activeElement as HTMLElement | null;
 
-		const initial =
-			node.querySelector<HTMLElement>("[data-fds-autofocus]") ?? getFocusable(node)[0] ?? node;
-		if (initial === node && !node.hasAttribute("tabindex")) node.setAttribute("tabindex", "-1");
-		initial.focus({ preventScroll: true });
+		function focusFirst() {
+			const target =
+				node.querySelector<HTMLElement>("[data-fds-autofocus]") ?? getFocusable(node)[0] ?? node;
+			if (target === node && !node.hasAttribute("tabindex")) node.setAttribute("tabindex", "-1");
+			target.focus({ preventScroll: true });
+		}
+
+		focusFirst();
+
+		/**
+		 * Containment guard.
+		 *
+		 * Trapping Tab is not the same thing as keeping focus inside, because Tab
+		 * is not the only way focus leaves. When the focused element is removed
+		 * from the DOM, the browser resets focus to the body, and no key was
+		 * pressed for the keydown handler to intercept. From there the next Tab
+		 * starts at the top of the *page*, outside the dialog, and the trap looks
+		 * fine while doing nothing.
+		 *
+		 * That is not a hypothetical. It shipped here: React StrictMode remounts a
+		 * freshly mounted component, so the Portal host was appended, detached and
+		 * re-appended, and the detach step dropped focus to the body. The trap
+		 * belongs to Modal, which was already mounted, so its effect never re-ran
+		 * to fix it. Any dialog whose focused control unmounts on a state change
+		 * hits the identical bug in production with no StrictMode involved.
+		 *
+		 * So focus loss is treated as a state to recover from rather than an event
+		 * that cannot happen. `focusout` with a null relatedTarget means focus left
+		 * the document or fell to the body: recheck on the next frame, because a
+		 * legitimate move to another element inside the node resolves by then, and
+		 * only pull focus back if it genuinely ended up nowhere.
+		 */
+		let recover: number | null = null;
+
+		function onFocusOut(event: FocusEvent) {
+			if (event.relatedTarget !== null) return;
+			if (recover !== null) cancelAnimationFrame(recover);
+			recover = requestAnimationFrame(() => {
+				recover = null;
+				if (!node.isConnected) return;
+				const active = document.activeElement;
+				const lost = !active || active === document.body || !node.contains(active);
+				if (lost) focusFirst();
+			});
+		}
 
 		function onKeyDown(event: KeyboardEvent) {
 			if (event.key !== "Tab") return;
@@ -137,8 +178,11 @@ function trap(node: HTMLElement): () => void {
 		}
 
 		document.addEventListener("keydown", onKeyDown, true);
+		document.addEventListener("focusout", onFocusOut, true);
 		return () => {
 			document.removeEventListener("keydown", onKeyDown, true);
+			document.removeEventListener("focusout", onFocusOut, true);
+			if (recover !== null) cancelAnimationFrame(recover);
 			if (previouslyFocused?.isConnected) previouslyFocused.focus({ preventScroll: true });
 		};
 	}

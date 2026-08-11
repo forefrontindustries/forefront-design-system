@@ -50,35 +50,35 @@ export const primitives = [
     "path": "color.ink.650",
     "cssVar": "--fds-color-ink-650",
     "type": "color",
-    "value": "#2b3140",
+    "value": "#2a2a35",
     "description": null
   },
   {
     "path": "color.ink.700",
     "cssVar": "--fds-color-ink-700",
     "type": "color",
-    "value": "#212634",
+    "value": "#202a38",
     "description": null
   },
   {
     "path": "color.ink.750",
     "cssVar": "--fds-color-ink-750",
     "type": "color",
-    "value": "#191d2a",
+    "value": "#0f0f1a",
     "description": null
   },
   {
     "path": "color.ink.800",
     "cssVar": "--fds-color-ink-800",
     "type": "color",
-    "value": "#131722",
+    "value": "#0d1019",
     "description": null
   },
   {
     "path": "color.ink.850",
     "cssVar": "--fds-color-ink-850",
     "type": "color",
-    "value": "#0e1119",
+    "value": "#0a0c14",
     "description": null
   },
   {
@@ -99,7 +99,7 @@ export const primitives = [
     "path": "color.ink.1000",
     "cssVar": "--fds-color-ink-1000",
     "type": "color",
-    "value": "#04050a",
+    "value": "#000000",
     "description": null
   },
   {
@@ -134,35 +134,35 @@ export const primitives = [
     "path": "color.slate.200",
     "cssVar": "--fds-color-slate-200",
     "type": "color",
-    "value": "#c8cfda",
+    "value": "#c8ccd4",
     "description": null
   },
   {
     "path": "color.slate.300",
     "cssVar": "--fds-color-slate-300",
     "type": "color",
-    "value": "#a4adbd",
+    "value": "#a4aab4",
     "description": null
   },
   {
     "path": "color.slate.400",
     "cssVar": "--fds-color-slate-400",
     "type": "color",
-    "value": "#7b8698",
+    "value": "#8b93a1",
     "description": null
   },
   {
     "path": "color.slate.450",
     "cssVar": "--fds-color-slate-450",
     "type": "color",
-    "value": "#6b7688",
+    "value": "#7d8696",
     "description": null
   },
   {
     "path": "color.slate.500",
     "cssVar": "--fds-color-slate-500",
     "type": "color",
-    "value": "#566072",
+    "value": "#5b6678",
     "description": null
   },
   {
@@ -170,104 +170,6 @@ export const primitives = [
     "cssVar": "--fds-color-slate-600",
     "type": "color",
     "value": "#3d4453",
-    "description": null
-  },
-  {
-    "path": "color.sand.25",
-    "cssVar": "--fds-color-sand-25",
-    "type": "color",
-    "value": "#fbf8f3",
-    "description": null
-  },
-  {
-    "path": "color.sand.50",
-    "cssVar": "--fds-color-sand-50",
-    "type": "color",
-    "value": "#f6f1e9",
-    "description": null
-  },
-  {
-    "path": "color.sand.100",
-    "cssVar": "--fds-color-sand-100",
-    "type": "color",
-    "value": "#ece4d9",
-    "description": null
-  },
-  {
-    "path": "color.sand.200",
-    "cssVar": "--fds-color-sand-200",
-    "type": "color",
-    "value": "#d8cdbe",
-    "description": null
-  },
-  {
-    "path": "color.sand.300",
-    "cssVar": "--fds-color-sand-300",
-    "type": "color",
-    "value": "#b5a898",
-    "description": null
-  },
-  {
-    "path": "color.sand.400",
-    "cssVar": "--fds-color-sand-400",
-    "type": "color",
-    "value": "#8f8275",
-    "description": null
-  },
-  {
-    "path": "color.sand.450",
-    "cssVar": "--fds-color-sand-450",
-    "type": "color",
-    "value": "#7d7166",
-    "description": null
-  },
-  {
-    "path": "color.sand.500",
-    "cssVar": "--fds-color-sand-500",
-    "type": "color",
-    "value": "#6b5f54",
-    "description": null
-  },
-  {
-    "path": "color.sand.600",
-    "cssVar": "--fds-color-sand-600",
-    "type": "color",
-    "value": "#4a4038",
-    "description": null
-  },
-  {
-    "path": "color.sand.700",
-    "cssVar": "--fds-color-sand-700",
-    "type": "color",
-    "value": "#332b24",
-    "description": null
-  },
-  {
-    "path": "color.sand.800",
-    "cssVar": "--fds-color-sand-800",
-    "type": "color",
-    "value": "#241f1a",
-    "description": null
-  },
-  {
-    "path": "color.sand.900",
-    "cssVar": "--fds-color-sand-900",
-    "type": "color",
-    "value": "#1a1613",
-    "description": null
-  },
-  {
-    "path": "color.sand.950",
-    "cssVar": "--fds-color-sand-950",
-    "type": "color",
-    "value": "#13100e",
-    "description": null
-  },
-  {
-    "path": "color.sand.1000",
-    "cssVar": "--fds-color-sand-1000",
-    "type": "color",
-    "value": "#0b0908",
     "description": null
   },
   {
@@ -288,7 +190,7 @@ export const primitives = [
     "path": "color.blue.400",
     "cssVar": "--fds-color-blue-400",
     "type": "color",
-    "value": "#7cabd7",
+    "value": "#7ba8d1",
     "description": null
   },
   {
@@ -327,73 +229,45 @@ export const primitives = [
     "description": null
   },
   {
-    "path": "color.amber.100",
-    "cssVar": "--fds-color-amber-100",
+    "path": "color.orange.100",
+    "cssVar": "--fds-color-orange-100",
     "type": "color",
-    "value": "#fdf1de",
+    "value": "#ffeadb",
     "description": null
   },
   {
-    "path": "color.amber.200",
-    "cssVar": "--fds-color-amber-200",
+    "path": "color.orange.400",
+    "cssVar": "--fds-color-orange-400",
     "type": "color",
-    "value": "#fadfb4",
+    "value": "#ff9a55",
     "description": null
   },
   {
-    "path": "color.amber.300",
-    "cssVar": "--fds-color-amber-300",
+    "path": "color.orange.500",
+    "cssVar": "--fds-color-orange-500",
     "type": "color",
-    "value": "#f5c97e",
+    "value": "#ff8a3d",
     "description": null
   },
   {
-    "path": "color.amber.400",
-    "cssVar": "--fds-color-amber-400",
+    "path": "color.orange.600",
+    "cssVar": "--fds-color-orange-600",
     "type": "color",
-    "value": "#edb04a",
+    "value": "#c25f18",
     "description": null
   },
   {
-    "path": "color.amber.500",
-    "cssVar": "--fds-color-amber-500",
+    "path": "color.orange.700",
+    "cssVar": "--fds-color-orange-700",
     "type": "color",
-    "value": "#e0941a",
+    "value": "#914712",
     "description": null
   },
   {
-    "path": "color.amber.600",
-    "cssVar": "--fds-color-amber-600",
+    "path": "color.orange.950",
+    "cssVar": "--fds-color-orange-950",
     "type": "color",
-    "value": "#b87610",
-    "description": null
-  },
-  {
-    "path": "color.amber.700",
-    "cssVar": "--fds-color-amber-700",
-    "type": "color",
-    "value": "#8a580c",
-    "description": null
-  },
-  {
-    "path": "color.amber.800",
-    "cssVar": "--fds-color-amber-800",
-    "type": "color",
-    "value": "#5c3b08",
-    "description": null
-  },
-  {
-    "path": "color.amber.900",
-    "cssVar": "--fds-color-amber-900",
-    "type": "color",
-    "value": "#3a2606",
-    "description": null
-  },
-  {
-    "path": "color.amber.950",
-    "cssVar": "--fds-color-amber-950",
-    "type": "color",
-    "value": "#241703",
+    "value": "#2a1305",
     "description": null
   },
   {
@@ -516,38 +390,24 @@ export const primitives = [
     "description": null
   },
   {
-    "path": "color.alpha.scrim-light",
-    "cssVar": "--fds-color-alpha-scrim-light",
-    "type": "color",
-    "value": "rgba(29, 26, 22, 0.44)",
+    "path": "font.family.clash",
+    "cssVar": "--fds-font-family-clash",
+    "type": "fontFamily",
+    "value": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif",
     "description": null
   },
   {
-    "path": "font.family.fraunces",
-    "cssVar": "--fds-font-family-fraunces",
+    "path": "font.family.satoshi",
+    "cssVar": "--fds-font-family-satoshi",
     "type": "fontFamily",
-    "value": "Fraunces, Georgia, serif",
+    "value": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif",
     "description": null
   },
   {
-    "path": "font.family.instrument",
-    "cssVar": "--fds-font-family-instrument",
+    "path": "font.family.mono",
+    "cssVar": "--fds-font-family-mono",
     "type": "fontFamily",
-    "value": "'Instrument Serif', Georgia, serif",
-    "description": null
-  },
-  {
-    "path": "font.family.public-sans",
-    "cssVar": "--fds-font-family-public-sans",
-    "type": "fontFamily",
-    "value": "'Public Sans', system-ui, -apple-system, sans-serif",
-    "description": null
-  },
-  {
-    "path": "font.family.jetbrains",
-    "cssVar": "--fds-font-family-jetbrains",
-    "type": "fontFamily",
-    "value": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
+    "value": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
     "description": null
   },
   {
@@ -1138,7 +998,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-sunken",
         "type": "color",
         "alias": "color.ink.1000",
-        "resolved": "#04050a",
+        "resolved": "#000000",
         "chain": [
           "color.surface.sunken",
           "color.ink.1000"
@@ -1150,7 +1010,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-raised",
         "type": "color",
         "alias": "color.ink.850",
-        "resolved": "#0e1119",
+        "resolved": "#0a0c14",
         "chain": [
           "color.surface.raised",
           "color.ink.850"
@@ -1162,7 +1022,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-overlay",
         "type": "color",
         "alias": "color.ink.800",
-        "resolved": "#131722",
+        "resolved": "#0d1019",
         "chain": [
           "color.surface.overlay",
           "color.ink.800"
@@ -1186,7 +1046,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-control",
         "type": "color",
         "alias": "color.ink.850",
-        "resolved": "#0e1119",
+        "resolved": "#0a0c14",
         "chain": [
           "color.surface.control",
           "color.ink.850"
@@ -1198,7 +1058,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-control-hover",
         "type": "color",
         "alias": "color.ink.800",
-        "resolved": "#131722",
+        "resolved": "#0d1019",
         "chain": [
           "color.surface.control-hover",
           "color.ink.800"
@@ -1210,7 +1070,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-disabled",
         "type": "color",
         "alias": "color.ink.800",
-        "resolved": "#131722",
+        "resolved": "#0d1019",
         "chain": [
           "color.surface.disabled",
           "color.ink.800"
@@ -1258,7 +1118,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-accent-bold-hover",
         "type": "color",
         "alias": "color.blue.400",
-        "resolved": "#7cabd7",
+        "resolved": "#7ba8d1",
         "chain": [
           "color.surface.accent-bold-hover",
           "color.blue.400"
@@ -1282,7 +1142,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-neutral-subtle",
         "type": "color",
         "alias": "color.ink.800",
-        "resolved": "#131722",
+        "resolved": "#0d1019",
         "chain": [
           "color.surface.neutral-subtle",
           "color.ink.800"
@@ -1294,7 +1154,7 @@ export const themes = [
         "cssVar": "--fds-color-surface-neutral-subtle-hover",
         "type": "color",
         "alias": "color.ink.750",
-        "resolved": "#191d2a",
+        "resolved": "#0f0f1a",
         "chain": [
           "color.surface.neutral-subtle-hover",
           "color.ink.750"
@@ -1341,11 +1201,11 @@ export const themes = [
         "path": "color.surface.warning-subtle",
         "cssVar": "--fds-color-surface-warning-subtle",
         "type": "color",
-        "alias": "color.amber.950",
-        "resolved": "#241703",
+        "alias": "color.orange.950",
+        "resolved": "#2a1305",
         "chain": [
           "color.surface.warning-subtle",
-          "color.amber.950"
+          "color.orange.950"
         ],
         "description": "Warning wash."
       },
@@ -1353,11 +1213,11 @@ export const themes = [
         "path": "color.surface.warning-bold",
         "cssVar": "--fds-color-surface-warning-bold",
         "type": "color",
-        "alias": "color.amber.500",
-        "resolved": "#e0941a",
+        "alias": "color.orange.500",
+        "resolved": "#ff8a3d",
         "chain": [
           "color.surface.warning-bold",
-          "color.amber.500"
+          "color.orange.500"
         ],
         "description": "Warning fill."
       },
@@ -1438,7 +1298,7 @@ export const themes = [
         "cssVar": "--fds-color-text-secondary",
         "type": "color",
         "alias": "color.slate.300",
-        "resolved": "#a4adbd",
+        "resolved": "#a4aab4",
         "chain": [
           "color.text.secondary",
           "color.slate.300"
@@ -1450,7 +1310,7 @@ export const themes = [
         "cssVar": "--fds-color-text-subtle",
         "type": "color",
         "alias": "color.slate.400",
-        "resolved": "#7b8698",
+        "resolved": "#8b93a1",
         "chain": [
           "color.text.subtle",
           "color.slate.400"
@@ -1462,7 +1322,7 @@ export const themes = [
         "cssVar": "--fds-color-text-placeholder",
         "type": "color",
         "alias": "color.slate.400",
-        "resolved": "#7b8698",
+        "resolved": "#8b93a1",
         "chain": [
           "color.text.placeholder",
           "color.slate.400"
@@ -1474,7 +1334,7 @@ export const themes = [
         "cssVar": "--fds-color-text-disabled",
         "type": "color",
         "alias": "color.slate.450",
-        "resolved": "#6b7688",
+        "resolved": "#7d8696",
         "chain": [
           "color.text.disabled",
           "color.slate.450"
@@ -1486,7 +1346,7 @@ export const themes = [
         "cssVar": "--fds-color-text-accent",
         "type": "color",
         "alias": "color.blue.400",
-        "resolved": "#7cabd7",
+        "resolved": "#7ba8d1",
         "chain": [
           "color.text.accent",
           "color.blue.400"
@@ -1545,11 +1405,11 @@ export const themes = [
         "path": "color.text.warning",
         "cssVar": "--fds-color-text-warning",
         "type": "color",
-        "alias": "color.amber.400",
-        "resolved": "#edb04a",
+        "alias": "color.orange.400",
+        "resolved": "#ff9a55",
         "chain": [
           "color.text.warning",
-          "color.amber.400"
+          "color.orange.400"
         ],
         "description": "Warning text."
       },
@@ -1570,7 +1430,7 @@ export const themes = [
         "cssVar": "--fds-color-text-info",
         "type": "color",
         "alias": "color.blue.400",
-        "resolved": "#7cabd7",
+        "resolved": "#7ba8d1",
         "chain": [
           "color.text.info",
           "color.blue.400"
@@ -1582,7 +1442,7 @@ export const themes = [
         "cssVar": "--fds-color-text-link",
         "type": "color",
         "alias": "color.blue.400",
-        "resolved": "#7cabd7",
+        "resolved": "#7ba8d1",
         "chain": [
           "color.text.link",
           "color.blue.400"
@@ -1618,7 +1478,7 @@ export const themes = [
         "cssVar": "--fds-color-border-default",
         "type": "color",
         "alias": "color.ink.700",
-        "resolved": "#212634",
+        "resolved": "#202a38",
         "chain": [
           "color.border.default",
           "color.ink.700"
@@ -1630,7 +1490,7 @@ export const themes = [
         "cssVar": "--fds-color-border-strong",
         "type": "color",
         "alias": "color.ink.650",
-        "resolved": "#2b3140",
+        "resolved": "#2a2a35",
         "chain": [
           "color.border.strong",
           "color.ink.650"
@@ -1642,7 +1502,7 @@ export const themes = [
         "cssVar": "--fds-color-border-control",
         "type": "color",
         "alias": "color.slate.450",
-        "resolved": "#6b7688",
+        "resolved": "#7d8696",
         "chain": [
           "color.border.control",
           "color.slate.450"
@@ -1654,7 +1514,7 @@ export const themes = [
         "cssVar": "--fds-color-border-control-hover",
         "type": "color",
         "alias": "color.slate.400",
-        "resolved": "#7b8698",
+        "resolved": "#8b93a1",
         "chain": [
           "color.border.control-hover",
           "color.slate.400"
@@ -1678,7 +1538,7 @@ export const themes = [
         "cssVar": "--fds-color-border-focus",
         "type": "color",
         "alias": "color.blue.400",
-        "resolved": "#7cabd7",
+        "resolved": "#7ba8d1",
         "chain": [
           "color.border.focus",
           "color.blue.400"
@@ -1701,11 +1561,11 @@ export const themes = [
         "path": "color.border.warning",
         "cssVar": "--fds-color-border-warning",
         "type": "color",
-        "alias": "color.amber.500",
-        "resolved": "#e0941a",
+        "alias": "color.orange.500",
+        "resolved": "#ff8a3d",
         "chain": [
           "color.border.warning",
-          "color.amber.500"
+          "color.orange.500"
         ],
         "description": "Warning border."
       },
@@ -1726,7 +1586,7 @@ export const themes = [
         "cssVar": "--fds-color-border-disabled",
         "type": "color",
         "alias": "color.ink.650",
-        "resolved": "#2b3140",
+        "resolved": "#2a2a35",
         "chain": [
           "color.border.disabled",
           "color.ink.650"
@@ -1738,7 +1598,7 @@ export const themes = [
         "cssVar": "--fds-color-icon-primary",
         "type": "color",
         "alias": "color.slate.300",
-        "resolved": "#a4adbd",
+        "resolved": "#a4aab4",
         "chain": [
           "color.icon.primary",
           "color.slate.300"
@@ -1750,7 +1610,7 @@ export const themes = [
         "cssVar": "--fds-color-icon-subtle",
         "type": "color",
         "alias": "color.slate.400",
-        "resolved": "#7b8698",
+        "resolved": "#8b93a1",
         "chain": [
           "color.icon.subtle",
           "color.slate.400"
@@ -1762,7 +1622,7 @@ export const themes = [
         "cssVar": "--fds-color-icon-accent",
         "type": "color",
         "alias": "color.blue.400",
-        "resolved": "#7cabd7",
+        "resolved": "#7ba8d1",
         "chain": [
           "color.icon.accent",
           "color.blue.400"
@@ -1839,7 +1699,7 @@ export const themes = [
           "radius.control",
           "radius.sm"
         ],
-        "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder."
+        "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so a future theme can change control geometry without touching a component."
       },
       {
         "path": "radius.surface",
@@ -1881,11 +1741,11 @@ export const themes = [
         "path": "font.display",
         "cssVar": "--fds-font-display",
         "type": "fontFamily",
-        "alias": "font.family.fraunces",
-        "resolved": "Fraunces, Georgia, serif",
+        "alias": "font.family.clash",
+        "resolved": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif",
         "chain": [
           "font.display",
-          "font.family.fraunces"
+          "font.family.clash"
         ],
         "description": "Editorial headings. Theme-owned."
       },
@@ -1893,11 +1753,11 @@ export const themes = [
         "path": "font.body",
         "cssVar": "--fds-font-body",
         "type": "fontFamily",
-        "alias": "font.family.public-sans",
-        "resolved": "'Public Sans', system-ui, -apple-system, sans-serif",
+        "alias": "font.family.satoshi",
+        "resolved": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif",
         "chain": [
           "font.body",
-          "font.family.public-sans"
+          "font.family.satoshi"
         ],
         "description": "All UI and body text."
       },
@@ -1905,11 +1765,11 @@ export const themes = [
         "path": "font.mono",
         "cssVar": "--fds-font-mono",
         "type": "fontFamily",
-        "alias": "font.family.jetbrains",
-        "resolved": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
+        "alias": "font.family.mono",
+        "resolved": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
         "chain": [
           "font.mono",
-          "font.family.jetbrains"
+          "font.family.mono"
         ],
         "description": "Token values, code, and numeric tables."
       }
@@ -2142,11 +2002,11 @@ export const themes = [
         "path": "color.surface.warning-subtle",
         "cssVar": "--fds-color-surface-warning-subtle",
         "type": "color",
-        "alias": "color.amber.100",
-        "resolved": "#fdf1de",
+        "alias": "color.orange.100",
+        "resolved": "#ffeadb",
         "chain": [
           "color.surface.warning-subtle",
-          "color.amber.100"
+          "color.orange.100"
         ],
         "description": "Warning wash."
       },
@@ -2154,11 +2014,11 @@ export const themes = [
         "path": "color.surface.warning-bold",
         "cssVar": "--fds-color-surface-warning-bold",
         "type": "color",
-        "alias": "color.amber.600",
-        "resolved": "#b87610",
+        "alias": "color.orange.600",
+        "resolved": "#c25f18",
         "chain": [
           "color.surface.warning-bold",
-          "color.amber.600"
+          "color.orange.600"
         ],
         "description": "Warning fill."
       },
@@ -2251,7 +2111,7 @@ export const themes = [
         "cssVar": "--fds-color-text-subtle",
         "type": "color",
         "alias": "color.slate.500",
-        "resolved": "#566072",
+        "resolved": "#5b6678",
         "chain": [
           "color.text.subtle",
           "color.slate.500"
@@ -2263,7 +2123,7 @@ export const themes = [
         "cssVar": "--fds-color-text-placeholder",
         "type": "color",
         "alias": "color.slate.500",
-        "resolved": "#566072",
+        "resolved": "#5b6678",
         "chain": [
           "color.text.placeholder",
           "color.slate.500"
@@ -2275,7 +2135,7 @@ export const themes = [
         "cssVar": "--fds-color-text-disabled",
         "type": "color",
         "alias": "color.slate.450",
-        "resolved": "#6b7688",
+        "resolved": "#7d8696",
         "chain": [
           "color.text.disabled",
           "color.slate.450"
@@ -2346,11 +2206,11 @@ export const themes = [
         "path": "color.text.warning",
         "cssVar": "--fds-color-text-warning",
         "type": "color",
-        "alias": "color.amber.700",
-        "resolved": "#8a580c",
+        "alias": "color.orange.700",
+        "resolved": "#914712",
         "chain": [
           "color.text.warning",
-          "color.amber.700"
+          "color.orange.700"
         ],
         "description": "Warning text."
       },
@@ -2419,7 +2279,7 @@ export const themes = [
         "cssVar": "--fds-color-border-default",
         "type": "color",
         "alias": "color.slate.200",
-        "resolved": "#c8cfda",
+        "resolved": "#c8ccd4",
         "chain": [
           "color.border.default",
           "color.slate.200"
@@ -2431,7 +2291,7 @@ export const themes = [
         "cssVar": "--fds-color-border-strong",
         "type": "color",
         "alias": "color.slate.300",
-        "resolved": "#a4adbd",
+        "resolved": "#a4aab4",
         "chain": [
           "color.border.strong",
           "color.slate.300"
@@ -2442,11 +2302,11 @@ export const themes = [
         "path": "color.border.control",
         "cssVar": "--fds-color-border-control",
         "type": "color",
-        "alias": "color.slate.400",
-        "resolved": "#7b8698",
+        "alias": "color.slate.450",
+        "resolved": "#7d8696",
         "chain": [
           "color.border.control",
-          "color.slate.400"
+          "color.slate.450"
         ],
         "description": "Resting boundary of an interactive control: input, select, checkbox, radio, switch track, secondary button. Must clear 3:1 against surface.control, surface.canvas and surface.raised in every theme. Enforced by the build, see contrast.json."
       },
@@ -2454,11 +2314,11 @@ export const themes = [
         "path": "color.border.control-hover",
         "cssVar": "--fds-color-border-control-hover",
         "type": "color",
-        "alias": "color.slate.450",
-        "resolved": "#6b7688",
+        "alias": "color.slate.500",
+        "resolved": "#5b6678",
         "chain": [
           "color.border.control-hover",
-          "color.slate.450"
+          "color.slate.500"
         ],
         "description": "Boundary of a hovered interactive control. Must clear 3:1 against surface.control-hover and must never be quieter than border.control."
       },
@@ -2502,11 +2362,11 @@ export const themes = [
         "path": "color.border.warning",
         "cssVar": "--fds-color-border-warning",
         "type": "color",
-        "alias": "color.amber.600",
-        "resolved": "#b87610",
+        "alias": "color.orange.600",
+        "resolved": "#c25f18",
         "chain": [
           "color.border.warning",
-          "color.amber.600"
+          "color.orange.600"
         ],
         "description": "Warning border."
       },
@@ -2527,7 +2387,7 @@ export const themes = [
         "cssVar": "--fds-color-border-disabled",
         "type": "color",
         "alias": "color.slate.200",
-        "resolved": "#c8cfda",
+        "resolved": "#c8ccd4",
         "chain": [
           "color.border.disabled",
           "color.slate.200"
@@ -2551,7 +2411,7 @@ export const themes = [
         "cssVar": "--fds-color-icon-subtle",
         "type": "color",
         "alias": "color.slate.500",
-        "resolved": "#566072",
+        "resolved": "#5b6678",
         "chain": [
           "color.icon.subtle",
           "color.slate.500"
@@ -2640,7 +2500,7 @@ export const themes = [
           "radius.control",
           "radius.sm"
         ],
-        "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder."
+        "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so a future theme can change control geometry without touching a component."
       },
       {
         "path": "radius.surface",
@@ -2682,11 +2542,11 @@ export const themes = [
         "path": "font.display",
         "cssVar": "--fds-font-display",
         "type": "fontFamily",
-        "alias": "font.family.fraunces",
-        "resolved": "Fraunces, Georgia, serif",
+        "alias": "font.family.clash",
+        "resolved": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif",
         "chain": [
           "font.display",
-          "font.family.fraunces"
+          "font.family.clash"
         ],
         "description": "Editorial headings. Theme-owned."
       },
@@ -2694,11 +2554,11 @@ export const themes = [
         "path": "font.body",
         "cssVar": "--fds-font-body",
         "type": "fontFamily",
-        "alias": "font.family.public-sans",
-        "resolved": "'Public Sans', system-ui, -apple-system, sans-serif",
+        "alias": "font.family.satoshi",
+        "resolved": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif",
         "chain": [
           "font.body",
-          "font.family.public-sans"
+          "font.family.satoshi"
         ],
         "description": "All UI and body text."
       },
@@ -2706,1613 +2566,11 @@ export const themes = [
         "path": "font.mono",
         "cssVar": "--fds-font-mono",
         "type": "fontFamily",
-        "alias": "font.family.jetbrains",
-        "resolved": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
+        "alias": "font.family.mono",
+        "resolved": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
         "chain": [
           "font.mono",
-          "font.family.jetbrains"
-        ],
-        "description": "Token values, code, and numeric tables."
-      }
-    ]
-  },
-  {
-    "name": "signal-dark",
-    "label": "Signal Dark",
-    "appearance": "dark",
-    "description": "A structurally different theme, not a hue swap. Neutrals move from cool ink to warm sand, the accent becomes amber, radii step up by roughly 2.5x, and the display face changes to Instrument Serif. Every component absorbs this without a single component-level override, which is the argument for the three-tier token architecture.",
-    "isDefault": false,
-    "tokens": [
-      {
-        "path": "color.surface.canvas",
-        "cssVar": "--fds-color-surface-canvas",
-        "type": "color",
-        "alias": "color.sand.950",
-        "resolved": "#13100e",
-        "chain": [
-          "color.surface.canvas",
-          "color.sand.950"
-        ],
-        "description": "App background. The furthest-back surface."
-      },
-      {
-        "path": "color.surface.sunken",
-        "cssVar": "--fds-color-surface-sunken",
-        "type": "color",
-        "alias": "color.sand.1000",
-        "resolved": "#0b0908",
-        "chain": [
-          "color.surface.sunken",
-          "color.sand.1000"
-        ],
-        "description": "Recessed area on the canvas, e.g. a code block or well."
-      },
-      {
-        "path": "color.surface.raised",
-        "cssVar": "--fds-color-surface-raised",
-        "type": "color",
-        "alias": "color.sand.900",
-        "resolved": "#1a1613",
-        "chain": [
-          "color.surface.raised",
-          "color.sand.900"
-        ],
-        "description": "Card and panel background sitting above the canvas."
-      },
-      {
-        "path": "color.surface.overlay",
-        "cssVar": "--fds-color-surface-overlay",
-        "type": "color",
-        "alias": "color.sand.800",
-        "resolved": "#241f1a",
-        "chain": [
-          "color.surface.overlay",
-          "color.sand.800"
-        ],
-        "description": "Floating surface: modal, popover, tooltip, toast, select menu."
-      },
-      {
-        "path": "color.surface.scrim",
-        "cssVar": "--fds-color-surface-scrim",
-        "type": "color",
-        "alias": "color.alpha.scrim-light",
-        "resolved": "rgba(29, 26, 22, 0.44)",
-        "chain": [
-          "color.surface.scrim",
-          "color.alpha.scrim-light"
-        ],
-        "description": "Full-viewport wash behind a modal. Must be translucent."
-      },
-      {
-        "path": "color.surface.control",
-        "cssVar": "--fds-color-surface-control",
-        "type": "color",
-        "alias": "color.sand.900",
-        "resolved": "#1a1613",
-        "chain": [
-          "color.surface.control",
-          "color.sand.900"
-        ],
-        "description": "Default background for inputs and unfilled controls."
-      },
-      {
-        "path": "color.surface.control-hover",
-        "cssVar": "--fds-color-surface-control-hover",
-        "type": "color",
-        "alias": "color.sand.800",
-        "resolved": "#241f1a",
-        "chain": [
-          "color.surface.control-hover",
-          "color.sand.800"
-        ],
-        "description": "Input or control background on hover."
-      },
-      {
-        "path": "color.surface.disabled",
-        "cssVar": "--fds-color-surface-disabled",
-        "type": "color",
-        "alias": "color.sand.800",
-        "resolved": "#241f1a",
-        "chain": [
-          "color.surface.disabled",
-          "color.sand.800"
-        ],
-        "description": "Background for any disabled control. Never communicate disabled with opacity alone."
-      },
-      {
-        "path": "color.surface.selected",
-        "cssVar": "--fds-color-surface-selected",
-        "type": "color",
-        "alias": "color.amber.950",
-        "resolved": "#241703",
-        "chain": [
-          "color.surface.selected",
-          "color.amber.950"
-        ],
-        "description": "Background for a selected row, option, or tab."
-      },
-      {
-        "path": "color.surface.accent-subtle",
-        "cssVar": "--fds-color-surface-accent-subtle",
-        "type": "color",
-        "alias": "color.amber.950",
-        "resolved": "#241703",
-        "chain": [
-          "color.surface.accent-subtle",
-          "color.amber.950"
-        ],
-        "description": "Low-emphasis accent wash. Safe behind accent text."
-      },
-      {
-        "path": "color.surface.accent-bold",
-        "cssVar": "--fds-color-surface-accent-bold",
-        "type": "color",
-        "alias": "color.amber.500",
-        "resolved": "#e0941a",
-        "chain": [
-          "color.surface.accent-bold",
-          "color.amber.500"
-        ],
-        "description": "High-emphasis accent fill for primary actions."
-      },
-      {
-        "path": "color.surface.accent-bold-hover",
-        "cssVar": "--fds-color-surface-accent-bold-hover",
-        "type": "color",
-        "alias": "color.amber.400",
-        "resolved": "#edb04a",
-        "chain": [
-          "color.surface.accent-bold-hover",
-          "color.amber.400"
-        ],
-        "description": "Primary action hover."
-      },
-      {
-        "path": "color.surface.accent-bold-active",
-        "cssVar": "--fds-color-surface-accent-bold-active",
-        "type": "color",
-        "alias": "color.amber.300",
-        "resolved": "#f5c97e",
-        "chain": [
-          "color.surface.accent-bold-active",
-          "color.amber.300"
-        ],
-        "description": "Primary action pressed."
-      },
-      {
-        "path": "color.surface.neutral-subtle",
-        "cssVar": "--fds-color-surface-neutral-subtle",
-        "type": "color",
-        "alias": "color.sand.800",
-        "resolved": "#241f1a",
-        "chain": [
-          "color.surface.neutral-subtle",
-          "color.sand.800"
-        ],
-        "description": "Low-emphasis neutral fill, e.g. secondary button rest."
-      },
-      {
-        "path": "color.surface.neutral-subtle-hover",
-        "cssVar": "--fds-color-surface-neutral-subtle-hover",
-        "type": "color",
-        "alias": "color.sand.700",
-        "resolved": "#332b24",
-        "chain": [
-          "color.surface.neutral-subtle-hover",
-          "color.sand.700"
-        ],
-        "description": "Secondary button hover."
-      },
-      {
-        "path": "color.surface.neutral-bold",
-        "cssVar": "--fds-color-surface-neutral-bold",
-        "type": "color",
-        "alias": "color.sand.100",
-        "resolved": "#ece4d9",
-        "chain": [
-          "color.surface.neutral-bold",
-          "color.sand.100"
-        ],
-        "description": "High-emphasis neutral fill."
-      },
-      {
-        "path": "color.surface.success-subtle",
-        "cssVar": "--fds-color-surface-success-subtle",
-        "type": "color",
-        "alias": "color.green.950",
-        "resolved": "#052618",
-        "chain": [
-          "color.surface.success-subtle",
-          "color.green.950"
-        ],
-        "description": "Success wash for badges and inline status."
-      },
-      {
-        "path": "color.surface.success-bold",
-        "cssVar": "--fds-color-surface-success-bold",
-        "type": "color",
-        "alias": "color.green.500",
-        "resolved": "#2eb872",
-        "chain": [
-          "color.surface.success-bold",
-          "color.green.500"
-        ],
-        "description": "Success fill."
-      },
-      {
-        "path": "color.surface.warning-subtle",
-        "cssVar": "--fds-color-surface-warning-subtle",
-        "type": "color",
-        "alias": "color.amber.900",
-        "resolved": "#3a2606",
-        "chain": [
-          "color.surface.warning-subtle",
-          "color.amber.900"
-        ],
-        "description": "Warning wash."
-      },
-      {
-        "path": "color.surface.warning-bold",
-        "cssVar": "--fds-color-surface-warning-bold",
-        "type": "color",
-        "alias": "color.amber.500",
-        "resolved": "#e0941a",
-        "chain": [
-          "color.surface.warning-bold",
-          "color.amber.500"
-        ],
-        "description": "Warning fill."
-      },
-      {
-        "path": "color.surface.danger-subtle",
-        "cssVar": "--fds-color-surface-danger-subtle",
-        "type": "color",
-        "alias": "color.red.950",
-        "resolved": "#2e0a0c",
-        "chain": [
-          "color.surface.danger-subtle",
-          "color.red.950"
-        ],
-        "description": "Danger wash."
-      },
-      {
-        "path": "color.surface.danger-bold",
-        "cssVar": "--fds-color-surface-danger-bold",
-        "type": "color",
-        "alias": "color.red.400",
-        "resolved": "#ef7b7f",
-        "chain": [
-          "color.surface.danger-bold",
-          "color.red.400"
-        ],
-        "description": "Destructive action fill."
-      },
-      {
-        "path": "color.surface.danger-bold-hover",
-        "cssVar": "--fds-color-surface-danger-bold-hover",
-        "type": "color",
-        "alias": "color.red.300",
-        "resolved": "#f6a5a8",
-        "chain": [
-          "color.surface.danger-bold-hover",
-          "color.red.300"
-        ],
-        "description": "Destructive action hover."
-      },
-      {
-        "path": "color.surface.info-subtle",
-        "cssVar": "--fds-color-surface-info-subtle",
-        "type": "color",
-        "alias": "color.blue.950",
-        "resolved": "#091825",
-        "chain": [
-          "color.surface.info-subtle",
-          "color.blue.950"
-        ],
-        "description": "Informational wash."
-      },
-      {
-        "path": "color.surface.info-bold",
-        "cssVar": "--fds-color-surface-info-bold",
-        "type": "color",
-        "alias": "color.blue.500",
-        "resolved": "#5793ca",
-        "chain": [
-          "color.surface.info-bold",
-          "color.blue.500"
-        ],
-        "description": "Informational fill."
-      },
-      {
-        "path": "color.text.primary",
-        "cssVar": "--fds-color-text-primary",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.text.primary",
-          "color.sand.25"
-        ],
-        "description": "Default body and heading text. Must clear 4.5:1 on surface.canvas and surface.raised."
-      },
-      {
-        "path": "color.text.secondary",
-        "cssVar": "--fds-color-text-secondary",
-        "type": "color",
-        "alias": "color.sand.300",
-        "resolved": "#b5a898",
-        "chain": [
-          "color.text.secondary",
-          "color.sand.300"
-        ],
-        "description": "Supporting text. Must clear 4.5:1 on canvas."
-      },
-      {
-        "path": "color.text.subtle",
-        "cssVar": "--fds-color-text-subtle",
-        "type": "color",
-        "alias": "color.sand.400",
-        "resolved": "#8f8275",
-        "chain": [
-          "color.text.subtle",
-          "color.sand.400"
-        ],
-        "description": "De-emphasized metadata and helper text. Must clear 4.5:1 on canvas."
-      },
-      {
-        "path": "color.text.placeholder",
-        "cssVar": "--fds-color-text-placeholder",
-        "type": "color",
-        "alias": "color.sand.400",
-        "resolved": "#8f8275",
-        "chain": [
-          "color.text.placeholder",
-          "color.sand.400"
-        ],
-        "description": "Input placeholder. Must clear 4.5:1 on surface.control, since placeholders carry meaning."
-      },
-      {
-        "path": "color.text.disabled",
-        "cssVar": "--fds-color-text-disabled",
-        "type": "color",
-        "alias": "color.sand.450",
-        "resolved": "#7d7166",
-        "chain": [
-          "color.text.disabled",
-          "color.sand.450"
-        ],
-        "description": "Disabled control label. Exempt from AA by WCAG 1.4.3, but kept at 3:1 as a house rule."
-      },
-      {
-        "path": "color.text.accent",
-        "cssVar": "--fds-color-text-accent",
-        "type": "color",
-        "alias": "color.amber.400",
-        "resolved": "#edb04a",
-        "chain": [
-          "color.text.accent",
-          "color.amber.400"
-        ],
-        "description": "Accent-colored text on a neutral surface."
-      },
-      {
-        "path": "color.text.on-accent",
-        "cssVar": "--fds-color-text-on-accent",
-        "type": "color",
-        "alias": "color.sand.1000",
-        "resolved": "#0b0908",
-        "chain": [
-          "color.text.on-accent",
-          "color.sand.1000"
-        ],
-        "description": "Text placed on surface.accent-bold."
-      },
-      {
-        "path": "color.text.on-neutral-bold",
-        "cssVar": "--fds-color-text-on-neutral-bold",
-        "type": "color",
-        "alias": "color.sand.950",
-        "resolved": "#13100e",
-        "chain": [
-          "color.text.on-neutral-bold",
-          "color.sand.950"
-        ],
-        "description": "Text placed on surface.neutral-bold."
-      },
-      {
-        "path": "color.text.on-danger",
-        "cssVar": "--fds-color-text-on-danger",
-        "type": "color",
-        "alias": "color.red.950",
-        "resolved": "#2e0a0c",
-        "chain": [
-          "color.text.on-danger",
-          "color.red.950"
-        ],
-        "description": "Text placed on surface.danger-bold."
-      },
-      {
-        "path": "color.text.success",
-        "cssVar": "--fds-color-text-success",
-        "type": "color",
-        "alias": "color.green.400",
-        "resolved": "#5fd39a",
-        "chain": [
-          "color.text.success",
-          "color.green.400"
-        ],
-        "description": "Success text on a neutral or success-subtle surface."
-      },
-      {
-        "path": "color.text.warning",
-        "cssVar": "--fds-color-text-warning",
-        "type": "color",
-        "alias": "color.amber.300",
-        "resolved": "#f5c97e",
-        "chain": [
-          "color.text.warning",
-          "color.amber.300"
-        ],
-        "description": "Warning text."
-      },
-      {
-        "path": "color.text.danger",
-        "cssVar": "--fds-color-text-danger",
-        "type": "color",
-        "alias": "color.red.400",
-        "resolved": "#ef7b7f",
-        "chain": [
-          "color.text.danger",
-          "color.red.400"
-        ],
-        "description": "Error and validation text."
-      },
-      {
-        "path": "color.text.info",
-        "cssVar": "--fds-color-text-info",
-        "type": "color",
-        "alias": "color.blue.400",
-        "resolved": "#7cabd7",
-        "chain": [
-          "color.text.info",
-          "color.blue.400"
-        ],
-        "description": "Informational text."
-      },
-      {
-        "path": "color.text.link",
-        "cssVar": "--fds-color-text-link",
-        "type": "color",
-        "alias": "color.amber.300",
-        "resolved": "#f5c97e",
-        "chain": [
-          "color.text.link",
-          "color.amber.300"
-        ],
-        "description": "Inline link rest state."
-      },
-      {
-        "path": "color.text.link-hover",
-        "cssVar": "--fds-color-text-link-hover",
-        "type": "color",
-        "alias": "color.amber.200",
-        "resolved": "#fadfb4",
-        "chain": [
-          "color.text.link-hover",
-          "color.amber.200"
-        ],
-        "description": "Inline link hover state."
-      },
-      {
-        "path": "color.border.subtle",
-        "cssVar": "--fds-color-border-subtle",
-        "type": "color",
-        "alias": "color.alpha.light-08",
-        "resolved": "rgba(255, 255, 255, 0.08)",
-        "chain": [
-          "color.border.subtle",
-          "color.alpha.light-08"
-        ],
-        "description": "Hairline that defines structure without drawing attention. The system's default divider."
-      },
-      {
-        "path": "color.border.default",
-        "cssVar": "--fds-color-border-default",
-        "type": "color",
-        "alias": "color.sand.700",
-        "resolved": "#332b24",
-        "chain": [
-          "color.border.default",
-          "color.sand.700"
-        ],
-        "description": "Structural border on a non-interactive container. Decorative by contract: never use it as the boundary of a control, that is what border.control exists for."
-      },
-      {
-        "path": "color.border.strong",
-        "cssVar": "--fds-color-border-strong",
-        "type": "color",
-        "alias": "color.sand.600",
-        "resolved": "#4a4038",
-        "chain": [
-          "color.border.strong",
-          "color.sand.600"
-        ],
-        "description": "Emphasized decorative border, e.g. a hovered card edge."
-      },
-      {
-        "path": "color.border.control",
-        "cssVar": "--fds-color-border-control",
-        "type": "color",
-        "alias": "color.sand.450",
-        "resolved": "#7d7166",
-        "chain": [
-          "color.border.control",
-          "color.sand.450"
-        ],
-        "description": "Resting boundary of an interactive control: input, select, checkbox, radio, switch track, secondary button. Must clear 3:1 against surface.control, surface.canvas and surface.raised in every theme. Enforced by the build, see contrast.json."
-      },
-      {
-        "path": "color.border.control-hover",
-        "cssVar": "--fds-color-border-control-hover",
-        "type": "color",
-        "alias": "color.sand.400",
-        "resolved": "#8f8275",
-        "chain": [
-          "color.border.control-hover",
-          "color.sand.400"
-        ],
-        "description": "Boundary of a hovered interactive control. Must clear 3:1 against surface.control-hover and must never be quieter than border.control."
-      },
-      {
-        "path": "color.border.accent",
-        "cssVar": "--fds-color-border-accent",
-        "type": "color",
-        "alias": "color.amber.500",
-        "resolved": "#e0941a",
-        "chain": [
-          "color.border.accent",
-          "color.amber.500"
-        ],
-        "description": "Accent border for selected or active elements."
-      },
-      {
-        "path": "color.border.focus",
-        "cssVar": "--fds-color-border-focus",
-        "type": "color",
-        "alias": "color.amber.400",
-        "resolved": "#edb04a",
-        "chain": [
-          "color.border.focus",
-          "color.amber.400"
-        ],
-        "description": "Focus ring color. Must clear 3:1 against every adjacent surface. Never overridden per-component."
-      },
-      {
-        "path": "color.border.success",
-        "cssVar": "--fds-color-border-success",
-        "type": "color",
-        "alias": "color.green.500",
-        "resolved": "#2eb872",
-        "chain": [
-          "color.border.success",
-          "color.green.500"
-        ],
-        "description": "Success border."
-      },
-      {
-        "path": "color.border.warning",
-        "cssVar": "--fds-color-border-warning",
-        "type": "color",
-        "alias": "color.amber.500",
-        "resolved": "#e0941a",
-        "chain": [
-          "color.border.warning",
-          "color.amber.500"
-        ],
-        "description": "Warning border."
-      },
-      {
-        "path": "color.border.danger",
-        "cssVar": "--fds-color-border-danger",
-        "type": "color",
-        "alias": "color.red.500",
-        "resolved": "#e4494f",
-        "chain": [
-          "color.border.danger",
-          "color.red.500"
-        ],
-        "description": "Invalid control border."
-      },
-      {
-        "path": "color.border.disabled",
-        "cssVar": "--fds-color-border-disabled",
-        "type": "color",
-        "alias": "color.sand.600",
-        "resolved": "#4a4038",
-        "chain": [
-          "color.border.disabled",
-          "color.sand.600"
-        ],
-        "description": "Disabled control border."
-      },
-      {
-        "path": "color.icon.primary",
-        "cssVar": "--fds-color-icon-primary",
-        "type": "color",
-        "alias": "color.sand.300",
-        "resolved": "#b5a898",
-        "chain": [
-          "color.icon.primary",
-          "color.sand.300"
-        ],
-        "description": "Default icon color."
-      },
-      {
-        "path": "color.icon.subtle",
-        "cssVar": "--fds-color-icon-subtle",
-        "type": "color",
-        "alias": "color.sand.400",
-        "resolved": "#8f8275",
-        "chain": [
-          "color.icon.subtle",
-          "color.sand.400"
-        ],
-        "description": "De-emphasized icon."
-      },
-      {
-        "path": "color.icon.accent",
-        "cssVar": "--fds-color-icon-accent",
-        "type": "color",
-        "alias": "color.amber.400",
-        "resolved": "#edb04a",
-        "chain": [
-          "color.icon.accent",
-          "color.amber.400"
-        ],
-        "description": "Accent icon."
-      },
-      {
-        "path": "color.icon.on-accent",
-        "cssVar": "--fds-color-icon-on-accent",
-        "type": "color",
-        "alias": "color.sand.1000",
-        "resolved": "#0b0908",
-        "chain": [
-          "color.icon.on-accent",
-          "color.sand.1000"
-        ],
-        "description": "Icon on an accent-bold fill."
-      },
-      {
-        "path": "elevation.raised",
-        "cssVar": "--fds-elevation-raised",
-        "type": "shadow",
-        "alias": "shadow.dark-sm",
-        "resolved": "0 1px 2px rgba(0, 0, 0, 0.4)",
-        "chain": [
-          "elevation.raised",
-          "shadow.dark-sm"
-        ],
-        "description": "Card resting above the canvas. Most cards should use a border instead."
-      },
-      {
-        "path": "elevation.overlay",
-        "cssVar": "--fds-elevation-overlay",
-        "type": "shadow",
-        "alias": "shadow.dark-md",
-        "resolved": "0 4px 12px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.5)",
-        "chain": [
-          "elevation.overlay",
-          "shadow.dark-md"
-        ],
-        "description": "Popover, tooltip, select menu, toast."
-      },
-      {
-        "path": "elevation.modal",
-        "cssVar": "--fds-elevation-modal",
-        "type": "shadow",
-        "alias": "shadow.dark-lg",
-        "resolved": "0 16px 40px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.5)",
-        "chain": [
-          "elevation.modal",
-          "shadow.dark-lg"
-        ],
-        "description": "Dialog. The highest elevation in the system."
-      },
-      {
-        "path": "elevation.none",
-        "cssVar": "--fds-elevation-none",
-        "type": "shadow",
-        "alias": "shadow.none",
-        "resolved": "none",
-        "chain": [
-          "elevation.none",
-          "shadow.none"
-        ],
-        "description": "Explicit no-shadow, so components can opt out without hardcoding `none`."
-      },
-      {
-        "path": "radius.control",
-        "cssVar": "--fds-radius-control",
-        "type": "dimension",
-        "alias": "radius.lg",
-        "resolved": "0.625rem",
-        "chain": [
-          "radius.control",
-          "radius.lg"
-        ],
-        "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder."
-      },
-      {
-        "path": "radius.surface",
-        "cssVar": "--fds-radius-surface",
-        "type": "dimension",
-        "alias": "radius.xl",
-        "resolved": "0.875rem",
-        "chain": [
-          "radius.surface",
-          "radius.xl"
-        ],
-        "description": "Cards and panels."
-      },
-      {
-        "path": "radius.overlay",
-        "cssVar": "--fds-radius-overlay",
-        "type": "dimension",
-        "alias": "radius.2xl",
-        "resolved": "1.25rem",
-        "chain": [
-          "radius.overlay",
-          "radius.2xl"
-        ],
-        "description": "Modals, popovers, toasts."
-      },
-      {
-        "path": "radius.pill",
-        "cssVar": "--fds-radius-pill",
-        "type": "dimension",
-        "alias": "radius.full",
-        "resolved": "62.4375rem",
-        "chain": [
-          "radius.pill",
-          "radius.full"
-        ],
-        "description": "Fully rounded, for pill badges and switches."
-      },
-      {
-        "path": "font.display",
-        "cssVar": "--fds-font-display",
-        "type": "fontFamily",
-        "alias": "font.family.instrument",
-        "resolved": "'Instrument Serif', Georgia, serif",
-        "chain": [
-          "font.display",
-          "font.family.instrument"
-        ],
-        "description": "Editorial headings. Theme-owned."
-      },
-      {
-        "path": "font.body",
-        "cssVar": "--fds-font-body",
-        "type": "fontFamily",
-        "alias": "font.family.public-sans",
-        "resolved": "'Public Sans', system-ui, -apple-system, sans-serif",
-        "chain": [
-          "font.body",
-          "font.family.public-sans"
-        ],
-        "description": "All UI and body text."
-      },
-      {
-        "path": "font.mono",
-        "cssVar": "--fds-font-mono",
-        "type": "fontFamily",
-        "alias": "font.family.jetbrains",
-        "resolved": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
-        "chain": [
-          "font.mono",
-          "font.family.jetbrains"
-        ],
-        "description": "Token values, code, and numeric tables."
-      }
-    ]
-  },
-  {
-    "name": "signal-light",
-    "label": "Signal Light",
-    "appearance": "light",
-    "description": "Warm paper light theme. Accent drops to amber.700 because amber.500 cannot carry white text at 4.5:1, a concrete example of why accent-bold is theme-owned rather than a fixed brand hex.",
-    "isDefault": false,
-    "tokens": [
-      {
-        "path": "color.surface.canvas",
-        "cssVar": "--fds-color-surface-canvas",
-        "type": "color",
-        "alias": "color.sand.50",
-        "resolved": "#f6f1e9",
-        "chain": [
-          "color.surface.canvas",
-          "color.sand.50"
-        ],
-        "description": "App background. The furthest-back surface."
-      },
-      {
-        "path": "color.surface.sunken",
-        "cssVar": "--fds-color-surface-sunken",
-        "type": "color",
-        "alias": "color.sand.100",
-        "resolved": "#ece4d9",
-        "chain": [
-          "color.surface.sunken",
-          "color.sand.100"
-        ],
-        "description": "Recessed area on the canvas, e.g. a code block or well."
-      },
-      {
-        "path": "color.surface.raised",
-        "cssVar": "--fds-color-surface-raised",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.surface.raised",
-          "color.sand.25"
-        ],
-        "description": "Card and panel background sitting above the canvas."
-      },
-      {
-        "path": "color.surface.overlay",
-        "cssVar": "--fds-color-surface-overlay",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.surface.overlay",
-          "color.sand.25"
-        ],
-        "description": "Floating surface: modal, popover, tooltip, toast, select menu."
-      },
-      {
-        "path": "color.surface.scrim",
-        "cssVar": "--fds-color-surface-scrim",
-        "type": "color",
-        "alias": "color.alpha.scrim-light",
-        "resolved": "rgba(29, 26, 22, 0.44)",
-        "chain": [
-          "color.surface.scrim",
-          "color.alpha.scrim-light"
-        ],
-        "description": "Full-viewport wash behind a modal. Must be translucent."
-      },
-      {
-        "path": "color.surface.control",
-        "cssVar": "--fds-color-surface-control",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.surface.control",
-          "color.sand.25"
-        ],
-        "description": "Default background for inputs and unfilled controls."
-      },
-      {
-        "path": "color.surface.control-hover",
-        "cssVar": "--fds-color-surface-control-hover",
-        "type": "color",
-        "alias": "color.sand.50",
-        "resolved": "#f6f1e9",
-        "chain": [
-          "color.surface.control-hover",
-          "color.sand.50"
-        ],
-        "description": "Input or control background on hover."
-      },
-      {
-        "path": "color.surface.disabled",
-        "cssVar": "--fds-color-surface-disabled",
-        "type": "color",
-        "alias": "color.sand.100",
-        "resolved": "#ece4d9",
-        "chain": [
-          "color.surface.disabled",
-          "color.sand.100"
-        ],
-        "description": "Background for any disabled control. Never communicate disabled with opacity alone."
-      },
-      {
-        "path": "color.surface.selected",
-        "cssVar": "--fds-color-surface-selected",
-        "type": "color",
-        "alias": "color.amber.100",
-        "resolved": "#fdf1de",
-        "chain": [
-          "color.surface.selected",
-          "color.amber.100"
-        ],
-        "description": "Background for a selected row, option, or tab."
-      },
-      {
-        "path": "color.surface.accent-subtle",
-        "cssVar": "--fds-color-surface-accent-subtle",
-        "type": "color",
-        "alias": "color.amber.100",
-        "resolved": "#fdf1de",
-        "chain": [
-          "color.surface.accent-subtle",
-          "color.amber.100"
-        ],
-        "description": "Low-emphasis accent wash. Safe behind accent text."
-      },
-      {
-        "path": "color.surface.accent-bold",
-        "cssVar": "--fds-color-surface-accent-bold",
-        "type": "color",
-        "alias": "color.amber.700",
-        "resolved": "#8a580c",
-        "chain": [
-          "color.surface.accent-bold",
-          "color.amber.700"
-        ],
-        "description": "High-emphasis accent fill for primary actions."
-      },
-      {
-        "path": "color.surface.accent-bold-hover",
-        "cssVar": "--fds-color-surface-accent-bold-hover",
-        "type": "color",
-        "alias": "color.amber.800",
-        "resolved": "#5c3b08",
-        "chain": [
-          "color.surface.accent-bold-hover",
-          "color.amber.800"
-        ],
-        "description": "Primary action hover."
-      },
-      {
-        "path": "color.surface.accent-bold-active",
-        "cssVar": "--fds-color-surface-accent-bold-active",
-        "type": "color",
-        "alias": "color.amber.900",
-        "resolved": "#3a2606",
-        "chain": [
-          "color.surface.accent-bold-active",
-          "color.amber.900"
-        ],
-        "description": "Primary action pressed."
-      },
-      {
-        "path": "color.surface.neutral-subtle",
-        "cssVar": "--fds-color-surface-neutral-subtle",
-        "type": "color",
-        "alias": "color.sand.100",
-        "resolved": "#ece4d9",
-        "chain": [
-          "color.surface.neutral-subtle",
-          "color.sand.100"
-        ],
-        "description": "Low-emphasis neutral fill, e.g. secondary button rest."
-      },
-      {
-        "path": "color.surface.neutral-subtle-hover",
-        "cssVar": "--fds-color-surface-neutral-subtle-hover",
-        "type": "color",
-        "alias": "color.sand.200",
-        "resolved": "#d8cdbe",
-        "chain": [
-          "color.surface.neutral-subtle-hover",
-          "color.sand.200"
-        ],
-        "description": "Secondary button hover."
-      },
-      {
-        "path": "color.surface.neutral-bold",
-        "cssVar": "--fds-color-surface-neutral-bold",
-        "type": "color",
-        "alias": "color.sand.900",
-        "resolved": "#1a1613",
-        "chain": [
-          "color.surface.neutral-bold",
-          "color.sand.900"
-        ],
-        "description": "High-emphasis neutral fill."
-      },
-      {
-        "path": "color.surface.success-subtle",
-        "cssVar": "--fds-color-surface-success-subtle",
-        "type": "color",
-        "alias": "color.green.100",
-        "resolved": "#e3f7ec",
-        "chain": [
-          "color.surface.success-subtle",
-          "color.green.100"
-        ],
-        "description": "Success wash for badges and inline status."
-      },
-      {
-        "path": "color.surface.success-bold",
-        "cssVar": "--fds-color-surface-success-bold",
-        "type": "color",
-        "alias": "color.green.600",
-        "resolved": "#1a8754",
-        "chain": [
-          "color.surface.success-bold",
-          "color.green.600"
-        ],
-        "description": "Success fill."
-      },
-      {
-        "path": "color.surface.warning-subtle",
-        "cssVar": "--fds-color-surface-warning-subtle",
-        "type": "color",
-        "alias": "color.amber.100",
-        "resolved": "#fdf1de",
-        "chain": [
-          "color.surface.warning-subtle",
-          "color.amber.100"
-        ],
-        "description": "Warning wash."
-      },
-      {
-        "path": "color.surface.warning-bold",
-        "cssVar": "--fds-color-surface-warning-bold",
-        "type": "color",
-        "alias": "color.amber.600",
-        "resolved": "#b87610",
-        "chain": [
-          "color.surface.warning-bold",
-          "color.amber.600"
-        ],
-        "description": "Warning fill."
-      },
-      {
-        "path": "color.surface.danger-subtle",
-        "cssVar": "--fds-color-surface-danger-subtle",
-        "type": "color",
-        "alias": "color.red.100",
-        "resolved": "#fdeaeb",
-        "chain": [
-          "color.surface.danger-subtle",
-          "color.red.100"
-        ],
-        "description": "Danger wash."
-      },
-      {
-        "path": "color.surface.danger-bold",
-        "cssVar": "--fds-color-surface-danger-bold",
-        "type": "color",
-        "alias": "color.red.600",
-        "resolved": "#c92a32",
-        "chain": [
-          "color.surface.danger-bold",
-          "color.red.600"
-        ],
-        "description": "Destructive action fill."
-      },
-      {
-        "path": "color.surface.danger-bold-hover",
-        "cssVar": "--fds-color-surface-danger-bold-hover",
-        "type": "color",
-        "alias": "color.red.700",
-        "resolved": "#a41d24",
-        "chain": [
-          "color.surface.danger-bold-hover",
-          "color.red.700"
-        ],
-        "description": "Destructive action hover."
-      },
-      {
-        "path": "color.surface.info-subtle",
-        "cssVar": "--fds-color-surface-info-subtle",
-        "type": "color",
-        "alias": "color.blue.100",
-        "resolved": "#e6eff8",
-        "chain": [
-          "color.surface.info-subtle",
-          "color.blue.100"
-        ],
-        "description": "Informational wash."
-      },
-      {
-        "path": "color.surface.info-bold",
-        "cssVar": "--fds-color-surface-info-bold",
-        "type": "color",
-        "alias": "color.blue.600",
-        "resolved": "#2f6da4",
-        "chain": [
-          "color.surface.info-bold",
-          "color.blue.600"
-        ],
-        "description": "Informational fill."
-      },
-      {
-        "path": "color.text.primary",
-        "cssVar": "--fds-color-text-primary",
-        "type": "color",
-        "alias": "color.sand.1000",
-        "resolved": "#0b0908",
-        "chain": [
-          "color.text.primary",
-          "color.sand.1000"
-        ],
-        "description": "Default body and heading text. Must clear 4.5:1 on surface.canvas and surface.raised."
-      },
-      {
-        "path": "color.text.secondary",
-        "cssVar": "--fds-color-text-secondary",
-        "type": "color",
-        "alias": "color.sand.600",
-        "resolved": "#4a4038",
-        "chain": [
-          "color.text.secondary",
-          "color.sand.600"
-        ],
-        "description": "Supporting text. Must clear 4.5:1 on canvas."
-      },
-      {
-        "path": "color.text.subtle",
-        "cssVar": "--fds-color-text-subtle",
-        "type": "color",
-        "alias": "color.sand.500",
-        "resolved": "#6b5f54",
-        "chain": [
-          "color.text.subtle",
-          "color.sand.500"
-        ],
-        "description": "De-emphasized metadata and helper text. Must clear 4.5:1 on canvas."
-      },
-      {
-        "path": "color.text.placeholder",
-        "cssVar": "--fds-color-text-placeholder",
-        "type": "color",
-        "alias": "color.sand.500",
-        "resolved": "#6b5f54",
-        "chain": [
-          "color.text.placeholder",
-          "color.sand.500"
-        ],
-        "description": "Input placeholder. Must clear 4.5:1 on surface.control, since placeholders carry meaning."
-      },
-      {
-        "path": "color.text.disabled",
-        "cssVar": "--fds-color-text-disabled",
-        "type": "color",
-        "alias": "color.sand.450",
-        "resolved": "#7d7166",
-        "chain": [
-          "color.text.disabled",
-          "color.sand.450"
-        ],
-        "description": "Disabled control label. Exempt from AA by WCAG 1.4.3, but kept at 3:1 as a house rule."
-      },
-      {
-        "path": "color.text.accent",
-        "cssVar": "--fds-color-text-accent",
-        "type": "color",
-        "alias": "color.amber.800",
-        "resolved": "#5c3b08",
-        "chain": [
-          "color.text.accent",
-          "color.amber.800"
-        ],
-        "description": "Accent-colored text on a neutral surface."
-      },
-      {
-        "path": "color.text.on-accent",
-        "cssVar": "--fds-color-text-on-accent",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.text.on-accent",
-          "color.sand.25"
-        ],
-        "description": "Text placed on surface.accent-bold."
-      },
-      {
-        "path": "color.text.on-neutral-bold",
-        "cssVar": "--fds-color-text-on-neutral-bold",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.text.on-neutral-bold",
-          "color.sand.25"
-        ],
-        "description": "Text placed on surface.neutral-bold."
-      },
-      {
-        "path": "color.text.on-danger",
-        "cssVar": "--fds-color-text-on-danger",
-        "type": "color",
-        "alias": "color.slate.0",
-        "resolved": "#ffffff",
-        "chain": [
-          "color.text.on-danger",
-          "color.slate.0"
-        ],
-        "description": "Text placed on surface.danger-bold."
-      },
-      {
-        "path": "color.text.success",
-        "cssVar": "--fds-color-text-success",
-        "type": "color",
-        "alias": "color.green.700",
-        "resolved": "#146c43",
-        "chain": [
-          "color.text.success",
-          "color.green.700"
-        ],
-        "description": "Success text on a neutral or success-subtle surface."
-      },
-      {
-        "path": "color.text.warning",
-        "cssVar": "--fds-color-text-warning",
-        "type": "color",
-        "alias": "color.amber.800",
-        "resolved": "#5c3b08",
-        "chain": [
-          "color.text.warning",
-          "color.amber.800"
-        ],
-        "description": "Warning text."
-      },
-      {
-        "path": "color.text.danger",
-        "cssVar": "--fds-color-text-danger",
-        "type": "color",
-        "alias": "color.red.700",
-        "resolved": "#a41d24",
-        "chain": [
-          "color.text.danger",
-          "color.red.700"
-        ],
-        "description": "Error and validation text."
-      },
-      {
-        "path": "color.text.info",
-        "cssVar": "--fds-color-text-info",
-        "type": "color",
-        "alias": "color.blue.700",
-        "resolved": "#1e4c7a",
-        "chain": [
-          "color.text.info",
-          "color.blue.700"
-        ],
-        "description": "Informational text."
-      },
-      {
-        "path": "color.text.link",
-        "cssVar": "--fds-color-text-link",
-        "type": "color",
-        "alias": "color.amber.800",
-        "resolved": "#5c3b08",
-        "chain": [
-          "color.text.link",
-          "color.amber.800"
-        ],
-        "description": "Inline link rest state."
-      },
-      {
-        "path": "color.text.link-hover",
-        "cssVar": "--fds-color-text-link-hover",
-        "type": "color",
-        "alias": "color.amber.900",
-        "resolved": "#3a2606",
-        "chain": [
-          "color.text.link-hover",
-          "color.amber.900"
-        ],
-        "description": "Inline link hover state."
-      },
-      {
-        "path": "color.border.subtle",
-        "cssVar": "--fds-color-border-subtle",
-        "type": "color",
-        "alias": "color.alpha.dark-08",
-        "resolved": "rgba(7, 9, 15, 0.08)",
-        "chain": [
-          "color.border.subtle",
-          "color.alpha.dark-08"
-        ],
-        "description": "Hairline that defines structure without drawing attention. The system's default divider."
-      },
-      {
-        "path": "color.border.default",
-        "cssVar": "--fds-color-border-default",
-        "type": "color",
-        "alias": "color.sand.200",
-        "resolved": "#d8cdbe",
-        "chain": [
-          "color.border.default",
-          "color.sand.200"
-        ],
-        "description": "Structural border on a non-interactive container. Decorative by contract: never use it as the boundary of a control, that is what border.control exists for."
-      },
-      {
-        "path": "color.border.strong",
-        "cssVar": "--fds-color-border-strong",
-        "type": "color",
-        "alias": "color.sand.300",
-        "resolved": "#b5a898",
-        "chain": [
-          "color.border.strong",
-          "color.sand.300"
-        ],
-        "description": "Emphasized decorative border, e.g. a hovered card edge."
-      },
-      {
-        "path": "color.border.control",
-        "cssVar": "--fds-color-border-control",
-        "type": "color",
-        "alias": "color.sand.400",
-        "resolved": "#8f8275",
-        "chain": [
-          "color.border.control",
-          "color.sand.400"
-        ],
-        "description": "Resting boundary of an interactive control: input, select, checkbox, radio, switch track, secondary button. Must clear 3:1 against surface.control, surface.canvas and surface.raised in every theme. Enforced by the build, see contrast.json."
-      },
-      {
-        "path": "color.border.control-hover",
-        "cssVar": "--fds-color-border-control-hover",
-        "type": "color",
-        "alias": "color.sand.450",
-        "resolved": "#7d7166",
-        "chain": [
-          "color.border.control-hover",
-          "color.sand.450"
-        ],
-        "description": "Boundary of a hovered interactive control. Must clear 3:1 against surface.control-hover and must never be quieter than border.control."
-      },
-      {
-        "path": "color.border.accent",
-        "cssVar": "--fds-color-border-accent",
-        "type": "color",
-        "alias": "color.amber.700",
-        "resolved": "#8a580c",
-        "chain": [
-          "color.border.accent",
-          "color.amber.700"
-        ],
-        "description": "Accent border for selected or active elements."
-      },
-      {
-        "path": "color.border.focus",
-        "cssVar": "--fds-color-border-focus",
-        "type": "color",
-        "alias": "color.amber.700",
-        "resolved": "#8a580c",
-        "chain": [
-          "color.border.focus",
-          "color.amber.700"
-        ],
-        "description": "Focus ring color. Must clear 3:1 against every adjacent surface. Never overridden per-component."
-      },
-      {
-        "path": "color.border.success",
-        "cssVar": "--fds-color-border-success",
-        "type": "color",
-        "alias": "color.green.600",
-        "resolved": "#1a8754",
-        "chain": [
-          "color.border.success",
-          "color.green.600"
-        ],
-        "description": "Success border."
-      },
-      {
-        "path": "color.border.warning",
-        "cssVar": "--fds-color-border-warning",
-        "type": "color",
-        "alias": "color.amber.600",
-        "resolved": "#b87610",
-        "chain": [
-          "color.border.warning",
-          "color.amber.600"
-        ],
-        "description": "Warning border."
-      },
-      {
-        "path": "color.border.danger",
-        "cssVar": "--fds-color-border-danger",
-        "type": "color",
-        "alias": "color.red.600",
-        "resolved": "#c92a32",
-        "chain": [
-          "color.border.danger",
-          "color.red.600"
-        ],
-        "description": "Invalid control border."
-      },
-      {
-        "path": "color.border.disabled",
-        "cssVar": "--fds-color-border-disabled",
-        "type": "color",
-        "alias": "color.sand.200",
-        "resolved": "#d8cdbe",
-        "chain": [
-          "color.border.disabled",
-          "color.sand.200"
-        ],
-        "description": "Disabled control border."
-      },
-      {
-        "path": "color.icon.primary",
-        "cssVar": "--fds-color-icon-primary",
-        "type": "color",
-        "alias": "color.sand.600",
-        "resolved": "#4a4038",
-        "chain": [
-          "color.icon.primary",
-          "color.sand.600"
-        ],
-        "description": "Default icon color."
-      },
-      {
-        "path": "color.icon.subtle",
-        "cssVar": "--fds-color-icon-subtle",
-        "type": "color",
-        "alias": "color.sand.500",
-        "resolved": "#6b5f54",
-        "chain": [
-          "color.icon.subtle",
-          "color.sand.500"
-        ],
-        "description": "De-emphasized icon."
-      },
-      {
-        "path": "color.icon.accent",
-        "cssVar": "--fds-color-icon-accent",
-        "type": "color",
-        "alias": "color.amber.800",
-        "resolved": "#5c3b08",
-        "chain": [
-          "color.icon.accent",
-          "color.amber.800"
-        ],
-        "description": "Accent icon."
-      },
-      {
-        "path": "color.icon.on-accent",
-        "cssVar": "--fds-color-icon-on-accent",
-        "type": "color",
-        "alias": "color.sand.25",
-        "resolved": "#fbf8f3",
-        "chain": [
-          "color.icon.on-accent",
-          "color.sand.25"
-        ],
-        "description": "Icon on an accent-bold fill."
-      },
-      {
-        "path": "elevation.raised",
-        "cssVar": "--fds-elevation-raised",
-        "type": "shadow",
-        "alias": "shadow.light-sm",
-        "resolved": "0 1px 2px rgba(7, 9, 15, 0.08)",
-        "chain": [
-          "elevation.raised",
-          "shadow.light-sm"
-        ],
-        "description": "Card resting above the canvas. Most cards should use a border instead."
-      },
-      {
-        "path": "elevation.overlay",
-        "cssVar": "--fds-elevation-overlay",
-        "type": "shadow",
-        "alias": "shadow.light-md",
-        "resolved": "0 4px 12px rgba(7, 9, 15, 0.1), 0 1px 2px rgba(7, 9, 15, 0.06)",
-        "chain": [
-          "elevation.overlay",
-          "shadow.light-md"
-        ],
-        "description": "Popover, tooltip, select menu, toast."
-      },
-      {
-        "path": "elevation.modal",
-        "cssVar": "--fds-elevation-modal",
-        "type": "shadow",
-        "alias": "shadow.light-lg",
-        "resolved": "0 16px 40px rgba(7, 9, 15, 0.14), 0 2px 6px rgba(7, 9, 15, 0.08)",
-        "chain": [
-          "elevation.modal",
-          "shadow.light-lg"
-        ],
-        "description": "Dialog. The highest elevation in the system."
-      },
-      {
-        "path": "elevation.none",
-        "cssVar": "--fds-elevation-none",
-        "type": "shadow",
-        "alias": "shadow.none",
-        "resolved": "none",
-        "chain": [
-          "elevation.none",
-          "shadow.none"
-        ],
-        "description": "Explicit no-shadow, so components can opt out without hardcoding `none`."
-      },
-      {
-        "path": "radius.control",
-        "cssVar": "--fds-radius-control",
-        "type": "dimension",
-        "alias": "radius.lg",
-        "resolved": "0.625rem",
-        "chain": [
-          "radius.control",
-          "radius.lg"
-        ],
-        "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder."
-      },
-      {
-        "path": "radius.surface",
-        "cssVar": "--fds-radius-surface",
-        "type": "dimension",
-        "alias": "radius.xl",
-        "resolved": "0.875rem",
-        "chain": [
-          "radius.surface",
-          "radius.xl"
-        ],
-        "description": "Cards and panels."
-      },
-      {
-        "path": "radius.overlay",
-        "cssVar": "--fds-radius-overlay",
-        "type": "dimension",
-        "alias": "radius.2xl",
-        "resolved": "1.25rem",
-        "chain": [
-          "radius.overlay",
-          "radius.2xl"
-        ],
-        "description": "Modals, popovers, toasts."
-      },
-      {
-        "path": "radius.pill",
-        "cssVar": "--fds-radius-pill",
-        "type": "dimension",
-        "alias": "radius.full",
-        "resolved": "62.4375rem",
-        "chain": [
-          "radius.pill",
-          "radius.full"
-        ],
-        "description": "Fully rounded, for pill badges and switches."
-      },
-      {
-        "path": "font.display",
-        "cssVar": "--fds-font-display",
-        "type": "fontFamily",
-        "alias": "font.family.instrument",
-        "resolved": "'Instrument Serif', Georgia, serif",
-        "chain": [
-          "font.display",
-          "font.family.instrument"
-        ],
-        "description": "Editorial headings. Theme-owned."
-      },
-      {
-        "path": "font.body",
-        "cssVar": "--fds-font-body",
-        "type": "fontFamily",
-        "alias": "font.family.public-sans",
-        "resolved": "'Public Sans', system-ui, -apple-system, sans-serif",
-        "chain": [
-          "font.body",
-          "font.family.public-sans"
-        ],
-        "description": "All UI and body text."
-      },
-      {
-        "path": "font.mono",
-        "cssVar": "--fds-font-mono",
-        "type": "fontFamily",
-        "alias": "font.family.jetbrains",
-        "resolved": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
-        "chain": [
-          "font.mono",
-          "font.family.jetbrains"
+          "font.family.mono"
         ],
         "description": "Token values, code, and numeric tables."
       }
@@ -4471,7 +2729,7 @@ export const componentTokens = [
     "cssVar": "--fds-focus-ring-color",
     "type": "color",
     "alias": "color.border.focus",
-    "resolved": "#7cabd7",
+    "resolved": "#7ba8d1",
     "themeDependent": true,
     "description": null
   },
@@ -5425,7 +3683,7 @@ export const densities = [
   }
 ];
 
-export type ThemeName = "forefront-dark" | "forefront-light" | "signal-dark" | "signal-light";
+export type ThemeName = "forefront-dark" | "forefront-light";
 export type DensityName = "comfortable" | "compact";
 
 /**
@@ -5519,20 +3777,6 @@ export type PrimitiveTokenPath =
 	| "color.slate.450"
 	| "color.slate.500"
 	| "color.slate.600"
-	| "color.sand.25"
-	| "color.sand.50"
-	| "color.sand.100"
-	| "color.sand.200"
-	| "color.sand.300"
-	| "color.sand.400"
-	| "color.sand.450"
-	| "color.sand.500"
-	| "color.sand.600"
-	| "color.sand.700"
-	| "color.sand.800"
-	| "color.sand.900"
-	| "color.sand.950"
-	| "color.sand.1000"
 	| "color.blue.100"
 	| "color.blue.300"
 	| "color.blue.400"
@@ -5541,16 +3785,12 @@ export type PrimitiveTokenPath =
 	| "color.blue.700"
 	| "color.blue.800"
 	| "color.blue.950"
-	| "color.amber.100"
-	| "color.amber.200"
-	| "color.amber.300"
-	| "color.amber.400"
-	| "color.amber.500"
-	| "color.amber.600"
-	| "color.amber.700"
-	| "color.amber.800"
-	| "color.amber.900"
-	| "color.amber.950"
+	| "color.orange.100"
+	| "color.orange.400"
+	| "color.orange.500"
+	| "color.orange.600"
+	| "color.orange.700"
+	| "color.orange.950"
 	| "color.green.100"
 	| "color.green.400"
 	| "color.green.500"
@@ -5568,11 +3808,9 @@ export type PrimitiveTokenPath =
 	| "color.alpha.dark-08"
 	| "color.alpha.scrim-dark"
 	| "color.alpha.scrim-cool"
-	| "color.alpha.scrim-light"
-	| "font.family.fraunces"
-	| "font.family.instrument"
-	| "font.family.public-sans"
-	| "font.family.jetbrains"
+	| "font.family.clash"
+	| "font.family.satoshi"
+	| "font.family.mono"
 	| "font.size.10"
 	| "font.size.20"
 	| "font.size.30"
@@ -5656,9 +3894,7 @@ export type PrimitiveTokenPath =
 
 export const themeNames = [
   "forefront-dark",
-  "forefront-light",
-  "signal-dark",
-  "signal-light"
+  "forefront-light"
 ] as ThemeName[];
 export const densityNames = [
   "comfortable",

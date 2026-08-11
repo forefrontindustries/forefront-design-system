@@ -32,12 +32,12 @@ const decisions = [
 	{
 		title: "Contrast is a build gate, and an unmeasured colour token is a build error",
 		detail:
-			"A contrast contract in the token package declares every pair a component actually renders, with the threshold it must clear and the rule that threshold comes from. The build measures all of them in all four themes and exits non-zero on a violation. The stricter half of the rule is that any text, border or icon token the contract never measures also fails the build, so a colour cannot enter the system without someone stating where it is drawn. Turning it on rejected six tokens and failed three real pairings that had been shipping.",
+			"A contrast contract in the token package declares every pair a component actually renders, with the threshold it must clear and the rule that threshold comes from. The build measures all of them in every theme and exits non-zero on a violation. The stricter half of the rule is that any text, border or icon token the contract never measures also fails the build, so a colour cannot enter the system without someone stating where it is drawn. Turning it on rejected six tokens and failed three real pairings that had been shipping.",
 	},
 	{
 		title: "A decorative border and a control boundary are different tokens",
 		detail:
-			"border.default and border.strong were doing double duty on card edges and on inputs, checkboxes and secondary buttons. That put an interactive boundary at 1.25:1 in the dark themes, a genuine 1.4.11 failure, while any fix strong enough to pass would have made every card edge shout. Splitting contrast-guaranteed border.control and border.control-hover out of them let the decorative tokens stay quiet and the audited ones stay honest. One token cannot carry two accessibility obligations.",
+			"border.default and border.strong were doing double duty on card edges and on inputs, checkboxes and secondary buttons. That put an interactive boundary below 3:1, a genuine 1.4.11 failure, while any fix strong enough to pass would have made every card edge shout. Splitting contrast-guaranteed border.control and border.control-hover out of them let the decorative tokens stay quiet and the audited ones stay honest. One token cannot carry two accessibility obligations.",
 	},
 	{
 		title: "Reduced motion is enforced at the token layer",
@@ -47,12 +47,22 @@ const decisions = [
 	{
 		title: "Keyboard behaviour is audited by a script, not by a reviewer",
 		detail:
-			"55 assertions drive Chrome against the docs site and read back document.activeElement after real key presses, because asserting that aria-modal is present proves nothing about whether Tab can escape the dialog. Writing it found two bugs that had survived review: a focus trap that never engaged because a portal mounted one commit late, and a toast live region that did not exist until the first toast fired. Both looked correct in every screenshot.",
+			"55 assertions drive Chrome against the docs site and read back document.activeElement after real key presses, because asserting that aria-modal is present proves nothing about whether Tab can escape the dialog. Writing it found three bugs that had survived review: a focus trap that never engaged because a portal mounted one commit late, a toast live region that did not exist until the first toast fired, and a dialog that took focus and then silently lost it to the body when its portal host was detached and reattached. All three looked correct in every screenshot, and the third one still rendered a dialog that read as focused while the next Tab landed on the page behind it.",
 	},
 	{
 		title: "Prop tables are generated from the types",
 		detail:
 			"A script walks the declarations with the TypeScript compiler API and emits the API JSON this site renders. Hand-written prop tables are wrong within two releases, and the playground controls are derived from the same output, so a new variant needs no documentation change at all.",
+	},
+	{
+		title: "Keeping focus inside a dialog is a different problem from trapping Tab",
+		detail:
+			"Intercepting Tab only defends against the one route that fires a key event. When the focused element is removed from the DOM the browser resets focus to the body, no key was pressed, and from there the next Tab starts at the top of the page outside the dialog. The trap now treats focus loss as a state to recover from: a focusout with no relatedTarget rechecks on the next frame and pulls focus back only if it genuinely ended up nowhere. The bug that forced this was a StrictMode remount detaching the portal host, but any dialog whose focused control unmounts on a state change hits it in production.",
+	},
+	{
+		title: "The brand fonts are self-hosted, because the production site proved the alternative",
+		detail:
+			"Clash Display and Satoshi ship as eight woff2 files with the two first-paint weights preloaded. The production Forefront site loaded them from a CDN, those requests started returning 404, the loader was removed, and the font-family declarations stayed behind. The result was a site that named two brand faces and rendered the system font to every visitor, silently, with nothing failing loudly enough to notice. That is the exact failure a design system exists to make impossible, so the dependency is gone and the library still never injects a font-face rule of its own.",
 	},
 	{
 		title: "Generated artifacts are committed",
@@ -67,7 +77,7 @@ export default function IndexPage() {
 			<PageHeader
 				eyebrow="Forefront Design System"
 				title="A design system with its arguments written down"
-				lede="Three token tiers, four themes from one contract, and twelve accessible React components built without a primitives library. This site documents the decisions as carefully as the API, because the decisions are what a team actually has to live with."
+				lede="Three token tiers, two themes from one value-less contract, and twelve accessible React components built without a primitives library. This site documents the decisions as carefully as the API, because the decisions are what a team actually has to live with."
 			/>
 
 			<div className="stat-row" style={{ marginBlockStart: "var(--fds-space-10)" }}>
@@ -150,10 +160,8 @@ export default function IndexPage() {
   primitives.json          tier 1, the only literals in the system
   semantic.json            tier 2 contract: names and descriptions, no values
   themes/
-    forefront-dark.json    default theme, supplies all 65 contract values
-    forefront-light.json
-    signal-dark.json       different accent, neutrals, radii AND display font
-    signal-light.json
+    forefront-dark.json    default theme, supplies all 66 contract values
+    forefront-light.json   same contract, inverted surfaces and re-picked borders
   component.json           tier 3 geometry
   density/compact.json     overrides a deliberately small slice of tier 3
 

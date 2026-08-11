@@ -18,13 +18,14 @@
 
 		<!-- Fonts are loaded at the document level, not by the component library. A
 		     library that injects @font-face rules takes a decision that belongs to the
-		     application and breaks under a strict CSP. -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-			rel="stylesheet"
-		/>
+		     application and breaks under a strict CSP.
+
+		     Clash Display and Satoshi are self-hosted from /fonts rather than pulled
+		     from the Fontshare CDN: the production site lost both faces to CDN 404s
+		     and silently fell back to system sans. See public/fonts/fonts.css. -->
+		<link rel="stylesheet" href="/fonts/fonts.css" />
+		<link rel="preload" href="/fonts/clash-display-600.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/satoshi-400.woff2" as="font" type="font/woff2" crossorigin />
 	</head>
 	<body>
 		<div id="root"></div>

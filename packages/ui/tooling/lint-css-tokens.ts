@@ -12,7 +12,8 @@
  * 1. No colour literals. Hex, rgb(), hsl(), or a named CSS colour in a colour
  *    property. Tier 1 is the only place literals are allowed to exist.
  * 2. No tier 1 colour references. A component reading --fds-color-blue-500
- *    directly is invisible to theming: the Signal themes have no blue at all.
+ *    directly is invisible to theming: the light theme resolves that role to a
+ *    different step of the ramp, and a future theme may not use blue at all.
  * 3. Every custom property a component reads must exist in the generated
  *    stylesheet. This catches typos, which otherwise fail silently as an
  *    unstyled property with no console warning anywhere.
@@ -29,9 +30,8 @@ const tokensCssPath = resolve(repoRoot, "packages/tokens/build/tokens.css");
 const TIER1_COLOR_PREFIXES = [
 	"--fds-color-ink-",
 	"--fds-color-slate-",
-	"--fds-color-sand-",
 	"--fds-color-blue-",
-	"--fds-color-amber-",
+	"--fds-color-orange-",
 	"--fds-color-green-",
 	"--fds-color-red-",
 	"--fds-color-alpha-",

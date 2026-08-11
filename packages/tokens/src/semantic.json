@@ -76,7 +76,7 @@
   },
   "radius": {
     "$type": "dimension",
-    "control": { "$description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder." },
+    "control": { "$description": "Buttons, inputs, checkboxes, badges. Theme-owned, so a future theme can change control geometry without touching a component." },
     "surface": { "$description": "Cards and panels." },
     "overlay": { "$description": "Modals, popovers, toasts." },
     "pill": { "$description": "Fully rounded, for pill badges and switches." }

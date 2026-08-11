@@ -23,8 +23,8 @@
       "neutral-bold": { "$value": "{color.ink.900}" },
       "success-subtle": { "$value": "{color.green.100}" },
       "success-bold": { "$value": "{color.green.600}" },
-      "warning-subtle": { "$value": "{color.amber.100}" },
-      "warning-bold": { "$value": "{color.amber.600}" },
+      "warning-subtle": { "$value": "{color.orange.100}" },
+      "warning-bold": { "$value": "{color.orange.600}" },
       "danger-subtle": { "$value": "{color.red.100}" },
       "danger-bold": { "$value": "{color.red.600}" },
       "danger-bold-hover": { "$value": "{color.red.700}" },
@@ -42,7 +42,7 @@
       "on-neutral-bold": { "$value": "{color.slate.0}" },
       "on-danger": { "$value": "{color.slate.0}" },
       "success": { "$value": "{color.green.700}" },
-      "warning": { "$value": "{color.amber.700}" },
+      "warning": { "$value": "{color.orange.700}" },
       "danger": { "$value": "{color.red.700}" },
       "info": { "$value": "{color.blue.700}" },
       "link": { "$value": "{color.blue.700}" },
@@ -52,12 +52,12 @@
       "subtle": { "$value": "{color.alpha.dark-08}" },
       "default": { "$value": "{color.slate.200}" },
       "strong": { "$value": "{color.slate.300}" },
-      "control": { "$value": "{color.slate.400}" },
-      "control-hover": { "$value": "{color.slate.450}" },
+      "control": { "$value": "{color.slate.450}" },
+      "control-hover": { "$value": "{color.slate.500}" },
       "accent": { "$value": "{color.blue.600}" },
       "focus": { "$value": "{color.blue.600}" },
       "success": { "$value": "{color.green.600}" },
-      "warning": { "$value": "{color.amber.600}" },
+      "warning": { "$value": "{color.orange.600}" },
       "danger": { "$value": "{color.red.600}" },
       "disabled": { "$value": "{color.slate.200}" }
     },
@@ -81,8 +81,8 @@
     "pill": { "$value": "{radius.full}" }
   },
   "font": {
-    "display": { "$value": "{font.family.fraunces}" },
-    "body": { "$value": "{font.family.public-sans}" },
-    "mono": { "$value": "{font.family.jetbrains}" }
+    "display": { "$value": "{font.family.clash}" },
+    "body": { "$value": "{font.family.satoshi}" },
+    "mono": { "$value": "{font.family.mono}" }
   }
 }

@@ -72,7 +72,7 @@ export default function SpacePage() {
 			<Section
 				number="02"
 				title="Radius is theme-owned"
-				subtitle="Three semantic names, mapped differently per theme. This is the second reason Signal is a real theme change and not a hue swap."
+				subtitle="Three semantic names, mapped differently per theme. A component asks for control padding, not for 10px."
 			>
 				<div className="control-row" style={{ marginBlockEnd: "var(--fds-space-7)" }}>
 					<div className="segmented" role="group" aria-label="Theme">

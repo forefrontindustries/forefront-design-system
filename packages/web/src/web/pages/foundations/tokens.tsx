@@ -63,8 +63,8 @@ export default function TokensPage() {
 // themes/forefront-dark.json — one theme's answer.
 "surface": { "raised": { "$value": "{color.ink.850}" } }
 
-// themes/signal-light.json — a different answer, same name.
-"surface": { "raised": { "$value": "{color.sand.25}" } }`}</Code>
+// themes/forefront-light.json — a different answer, same name.
+"surface": { "raised": { "$value": "{color.slate.0}" } }`}</Code>
 			</Section>
 
 			<Section
@@ -226,16 +226,14 @@ fds.overrides    yours. Empty in this repo, and always wins.`}</Code>
   "collections": [
     {
       "name": "Semantic",
-      "modes": ["Forefront Dark", "Forefront Light", "Signal Dark", "Signal Light"],
+      "modes": ["Forefront Dark", "Forefront Light"],
       "variables": [
         {
           "name": "color/surface/accent-bold",
           "type": "COLOR",
           "valuesByMode": {
             "Forefront Dark":  { "type": "VARIABLE_ALIAS", "id": "color/blue/500" },
-            "Forefront Light": { "type": "VARIABLE_ALIAS", "id": "color/blue/600" },
-            "Signal Dark":     { "type": "VARIABLE_ALIAS", "id": "color/amber/500" },
-            "Signal Light":    { "type": "VARIABLE_ALIAS", "id": "color/amber/700" }
+            "Forefront Light": { "type": "VARIABLE_ALIAS", "id": "color/blue/600" }
           }
         }
       ]

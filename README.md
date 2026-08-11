@@ -1,6 +1,6 @@
 # Forefront Design System
 
-A three-tier token pipeline, four themes generated from a single enforced contract, and twelve
+A three-tier token pipeline, two themes generated from a single enforced contract, and twelve
 accessible React components built without a primitives library.
 
 This repository is a work sample. It is written to be read, so the reasoning is in here alongside the
@@ -9,10 +9,10 @@ paragraph.
 
 | | |
 | --- | --- |
-| Tokens | 152 primitives, 66 semantic contract entries per theme, 67 component tokens, 2 densities, compiled to 483 CSS custom properties |
-| Themes | `forefront-dark` (default), `forefront-light`, `signal-dark`, `signal-light` |
+| Tokens | 132 primitives, 66 semantic contract entries per theme, 67 component tokens, 2 densities, compiled to 331 CSS custom properties |
+| Themes | `forefront-dark` (default), `forefront-light`, both built from the real Forefront Industries brand values |
 | Components | 12 public, all hand-authored, 20 typed interfaces, 88 documented props |
-| Contrast contract | 47 declared requirements plus 4 named exemptions, 188 checks per build, 0 tolerated failures |
+| Contrast contract | 47 declared requirements plus 4 named exemptions, 94 checks per build, 0 tolerated failures |
 | Build gates | 8 validation rules, all of them errors except one deliberate warning |
 | Keyboard audit | 55 assertions driven in a real browser, 0 tolerated failures |
 | Dependencies in the component library | React, and a class-name helper that is 18 lines of this repository |
@@ -36,7 +36,7 @@ This one is built to fail loudly instead:
    aliasing a primitive, or forms a circular alias fails the build.
 3. **Contrast is a build gate.** Every pair a component actually renders is declared with the
    threshold it must clear and the WCAG rule that threshold comes from. The build measures all of
-   them in all four themes and exits non-zero on a violation. Any text, border or icon token the
+   them in every theme and exits non-zero on a violation. Any text, border or icon token the
    contract never measures is *also* a build error, so a colour cannot enter the system without
    someone stating where it is drawn.
 
@@ -180,13 +180,42 @@ kept and the tokens were moved, because the alternative is a threshold written t
 code already did.
 
 **One token could not name a surface it is drawn on.** `color.text.inverse` had a description, a value
-in all four themes, and no renderer anywhere in the library. It was deleted. A contract token that
+in every theme, and no renderer anywhere in the library. It was deleted. A contract token that
 cannot answer "on what background" is not a contract token, it is a colour someone liked.
 
-Current state: **188 checks, 0 failures**, tightest enforced pair 1.24:1 against a 1.2:1 floor
-(`signal-light` disabled border) and 4.81:1 against 4.5:1 for text (`signal-dark` subtle text on a
-card). The `/accessibility` page recomputes all of it in the browser from the same resolved values,
-using a second independent implementation of the WCAG formula. The two agreeing is the check.
+Current state: **94 checks, 0 failures**. The tightest enforced pair is the disabled control boundary
+at 1.34:1 in `forefront-dark` and 1.46:1 in `forefront-light` against that 1.2:1 floor. The tightest
+3:1 boundary is `border.control` on the canvas at 3.51:1, which is the pair the gate caught below
+threshold and forced a token change to fix. The `/accessibility` page recomputes all of it in the
+browser from the same resolved values, using a second independent implementation of the WCAG
+formula, and its numbers match the build's per theme. The two agreeing is the check.
+
+---
+
+## Brand values, and the typography failure that shaped them
+
+Every colour and both typefaces in this system come from the production Forefront Industries site and
+the `runable-forefront-v1.0` source. Nothing is invented. The palette was extracted by ranking hex
+literals by usage frequency, which is why `blue.500` is `#5793CA` (747 occurrences), the hover step is
+`#7BA8D1` (125), the ink ramp is `#0A0C14` / `#07090F` / `#0A0A12` / `#0D1019` rather than a neutral
+grey, and the single secondary accent is `#FF8A3D` (14), carrying the warning role.
+
+The type stack is Clash Display for the display role and Satoshi for body and all component text.
+There are no serif faces anywhere in the system, because the brand does not use one. The mono role
+resolves to a system stack and ships zero font bytes, because the brand owns no mono face and
+inventing one would be a decision the brand never made.
+
+**The fonts are self-hosted, and the production site is the reason.** Both faces were loaded from a
+third-party CDN. Those requests started returning 404, the loader was eventually removed, and the
+`font-family` declarations were left in place. The outcome was a site that named two brand faces in
+its stylesheet and rendered `-apple-system` to every visitor, silently, with nothing failing loudly
+enough for anyone to notice. A design system exists to make that failure impossible, so both faces
+ship here as eight `woff2` files with the two first-paint weights preloaded, which also means the
+system works offline and under a strict CSP.
+
+The library still never injects an `@font-face` rule. A component library that fetches fonts is taking
+a decision that belongs to the application, so the declarations live at the document level in the docs
+site, which is the pattern a consumer should copy.
 
 ---
 
@@ -265,7 +294,7 @@ behaviour rather than markup. `aria-modal="true"` is trivial to assert and prove
 can escape an open dialog is the actual question, so the audit presses the keys and reads back
 `document.activeElement`.
 
-It found two bugs that were invisible to review and to every screenshot.
+It found three bugs that were invisible to review and to every screenshot.
 
 **The focus trap was not running at all.** `Portal` returned `null` until its own mount effect had
 run, which put the dialog panel one commit later than the parent component's effects. Modal's
@@ -284,9 +313,24 @@ region at all beforehand. `role="alert"` is reliably announced on insertion; `ro
 The viewport is now a persistent polite live region owned by `ToastProvider`, and only assertive toasts
 declare their own semantics, so a polite toast is announced by a region that already existed.
 
-Neither of those is a subtle grey area. Both are the difference between a component that works and one
-that only photographs well, and neither would have been caught by a contrast matrix, a type checker or
-a code review.
+**The dialog took focus and then quietly lost it.** With the trap engaged and Tab correctly wrapped,
+the audit still found `document.activeElement` on `document.body` with the dialog open. Trapping Tab
+only defends the one route that fires a key event, and focus has another: when the focused element is
+removed from the DOM the browser resets focus to the body, with no keystroke for the handler to
+intercept. From there the next Tab starts at the top of the page, outside the dialog. The trigger here
+was React StrictMode remounting the freshly mounted `Portal`, so the host was appended, detached and
+re-appended, and the detach dropped focus. The trap belongs to `Modal`, which was already mounted, so
+its effect never re-ran to repair it. Detaching on unmount is correct and `Portal` still does it, so
+the fix went into the trap: a `focusout` with a null `relatedTarget` rechecks on the next frame and
+pulls focus back only if it genuinely ended up nowhere. That guard is worth having regardless of
+StrictMode, because any dialog whose focused control unmounts on a state change hits the same bug in
+production.
+
+None of those is a subtle grey area. All three are the difference between a component that works and
+one that only photographs well, and none would have been caught by a contrast matrix, a type checker
+or a code review. The third is the one that makes the argument best: two of the three assertions
+around it passed, `aria-modal` was correct, the focus ring was drawn on the right element for a
+moment, and the bug was still there.
 
 ---
 

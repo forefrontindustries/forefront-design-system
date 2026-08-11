@@ -14,60 +14,41 @@
 @layer fds.primitives {
 	:root {
 		/* color.ink */
-		--fds-color-ink-650: #2b3140;
-		--fds-color-ink-700: #212634;
-		--fds-color-ink-750: #191d2a;
-		--fds-color-ink-800: #131722;
-		--fds-color-ink-850: #0e1119;
+		--fds-color-ink-650: #2a2a35;
+		--fds-color-ink-700: #202a38;
+		--fds-color-ink-750: #0f0f1a;
+		--fds-color-ink-800: #0d1019;
+		--fds-color-ink-850: #0a0c14;
 		--fds-color-ink-900: #0a0a12;
 		--fds-color-ink-950: #07090f;
-		--fds-color-ink-1000: #04050a;
+		--fds-color-ink-1000: #000000;
 		/* color.slate */
 		--fds-color-slate-0: #ffffff;
 		--fds-color-slate-25: #f8fafc;
 		--fds-color-slate-50: #f1f4f8;
 		--fds-color-slate-100: #e2e7ee;
-		--fds-color-slate-200: #c8cfda;
-		--fds-color-slate-300: #a4adbd;
-		--fds-color-slate-400: #7b8698;
-		--fds-color-slate-450: #6b7688;
-		--fds-color-slate-500: #566072;
+		--fds-color-slate-200: #c8ccd4;
+		--fds-color-slate-300: #a4aab4;
+		--fds-color-slate-400: #8b93a1;
+		--fds-color-slate-450: #7d8696;
+		--fds-color-slate-500: #5b6678;
 		--fds-color-slate-600: #3d4453;
-		/* color.sand */
-		--fds-color-sand-25: #fbf8f3;
-		--fds-color-sand-50: #f6f1e9;
-		--fds-color-sand-100: #ece4d9;
-		--fds-color-sand-200: #d8cdbe;
-		--fds-color-sand-300: #b5a898;
-		--fds-color-sand-400: #8f8275;
-		--fds-color-sand-450: #7d7166;
-		--fds-color-sand-500: #6b5f54;
-		--fds-color-sand-600: #4a4038;
-		--fds-color-sand-700: #332b24;
-		--fds-color-sand-800: #241f1a;
-		--fds-color-sand-900: #1a1613;
-		--fds-color-sand-950: #13100e;
-		--fds-color-sand-1000: #0b0908;
 		/* color.blue */
 		--fds-color-blue-100: #e6eff8;
 		--fds-color-blue-300: #a3c5e4;
-		--fds-color-blue-400: #7cabd7;
+		--fds-color-blue-400: #7ba8d1;
 		--fds-color-blue-500: #5793ca;
 		--fds-color-blue-600: #2f6da4;
 		--fds-color-blue-700: #1e4c7a;
 		--fds-color-blue-800: #16385a;
 		--fds-color-blue-950: #091825;
-		/* color.amber */
-		--fds-color-amber-100: #fdf1de;
-		--fds-color-amber-200: #fadfb4;
-		--fds-color-amber-300: #f5c97e;
-		--fds-color-amber-400: #edb04a;
-		--fds-color-amber-500: #e0941a;
-		--fds-color-amber-600: #b87610;
-		--fds-color-amber-700: #8a580c;
-		--fds-color-amber-800: #5c3b08;
-		--fds-color-amber-900: #3a2606;
-		--fds-color-amber-950: #241703;
+		/* color.orange */
+		--fds-color-orange-100: #ffeadb;
+		--fds-color-orange-400: #ff9a55;
+		--fds-color-orange-500: #ff8a3d;
+		--fds-color-orange-600: #c25f18;
+		--fds-color-orange-700: #914712;
+		--fds-color-orange-950: #2a1305;
 		/* color.green */
 		--fds-color-green-100: #e3f7ec;
 		--fds-color-green-400: #5fd39a;
@@ -88,12 +69,10 @@
 		--fds-color-alpha-dark-08: rgba(7, 9, 15, 0.08);
 		--fds-color-alpha-scrim-dark: rgba(4, 5, 10, 0.72);
 		--fds-color-alpha-scrim-cool: rgba(7, 9, 15, 0.48);
-		--fds-color-alpha-scrim-light: rgba(29, 26, 22, 0.44);
 		/* font.family */
-		--fds-font-family-fraunces: Fraunces, Georgia, serif;
-		--fds-font-family-instrument: 'Instrument Serif', Georgia, serif;
-		--fds-font-family-public-sans: 'Public Sans', system-ui, -apple-system, sans-serif;
-		--fds-font-family-jetbrains: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+		--fds-font-family-clash: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
+		--fds-font-family-satoshi: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+		--fds-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 		/* font.size */
 		--fds-font-size-10: 0.6875rem;
 		--fds-font-size-20: 0.75rem;
@@ -258,8 +237,8 @@
 		--fds-color-surface-neutral-bold: var(--fds-color-slate-100);
 		--fds-color-surface-success-subtle: var(--fds-color-green-950);
 		--fds-color-surface-success-bold: var(--fds-color-green-500);
-		--fds-color-surface-warning-subtle: var(--fds-color-amber-950);
-		--fds-color-surface-warning-bold: var(--fds-color-amber-500);
+		--fds-color-surface-warning-subtle: var(--fds-color-orange-950);
+		--fds-color-surface-warning-bold: var(--fds-color-orange-500);
 		--fds-color-surface-danger-subtle: var(--fds-color-red-950);
 		--fds-color-surface-danger-bold: var(--fds-color-red-400);
 		--fds-color-surface-danger-bold-hover: var(--fds-color-red-300);
@@ -275,7 +254,7 @@
 		--fds-color-text-on-neutral-bold: var(--fds-color-ink-950);
 		--fds-color-text-on-danger: var(--fds-color-red-950);
 		--fds-color-text-success: var(--fds-color-green-400);
-		--fds-color-text-warning: var(--fds-color-amber-400);
+		--fds-color-text-warning: var(--fds-color-orange-400);
 		--fds-color-text-danger: var(--fds-color-red-400);
 		--fds-color-text-info: var(--fds-color-blue-400);
 		--fds-color-text-link: var(--fds-color-blue-400);
@@ -288,7 +267,7 @@
 		--fds-color-border-accent: var(--fds-color-blue-500);
 		--fds-color-border-focus: var(--fds-color-blue-400);
 		--fds-color-border-success: var(--fds-color-green-500);
-		--fds-color-border-warning: var(--fds-color-amber-500);
+		--fds-color-border-warning: var(--fds-color-orange-500);
 		--fds-color-border-danger: var(--fds-color-red-500);
 		--fds-color-border-disabled: var(--fds-color-ink-650);
 		--fds-color-icon-primary: var(--fds-color-slate-300);
@@ -303,9 +282,9 @@
 		--fds-radius-surface: var(--fds-radius-lg);
 		--fds-radius-overlay: var(--fds-radius-xl);
 		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-fraunces);
-		--fds-font-body: var(--fds-font-family-public-sans);
-		--fds-font-mono: var(--fds-font-family-jetbrains);
+		--fds-font-display: var(--fds-font-family-clash);
+		--fds-font-body: var(--fds-font-family-satoshi);
+		--fds-font-mono: var(--fds-font-family-mono);
 	}
 
 	/* Forefront Light */
@@ -329,8 +308,8 @@
 		--fds-color-surface-neutral-bold: var(--fds-color-ink-900);
 		--fds-color-surface-success-subtle: var(--fds-color-green-100);
 		--fds-color-surface-success-bold: var(--fds-color-green-600);
-		--fds-color-surface-warning-subtle: var(--fds-color-amber-100);
-		--fds-color-surface-warning-bold: var(--fds-color-amber-600);
+		--fds-color-surface-warning-subtle: var(--fds-color-orange-100);
+		--fds-color-surface-warning-bold: var(--fds-color-orange-600);
 		--fds-color-surface-danger-subtle: var(--fds-color-red-100);
 		--fds-color-surface-danger-bold: var(--fds-color-red-600);
 		--fds-color-surface-danger-bold-hover: var(--fds-color-red-700);
@@ -346,7 +325,7 @@
 		--fds-color-text-on-neutral-bold: var(--fds-color-slate-0);
 		--fds-color-text-on-danger: var(--fds-color-slate-0);
 		--fds-color-text-success: var(--fds-color-green-700);
-		--fds-color-text-warning: var(--fds-color-amber-700);
+		--fds-color-text-warning: var(--fds-color-orange-700);
 		--fds-color-text-danger: var(--fds-color-red-700);
 		--fds-color-text-info: var(--fds-color-blue-700);
 		--fds-color-text-link: var(--fds-color-blue-700);
@@ -354,12 +333,12 @@
 		--fds-color-border-subtle: var(--fds-color-alpha-dark-08);
 		--fds-color-border-default: var(--fds-color-slate-200);
 		--fds-color-border-strong: var(--fds-color-slate-300);
-		--fds-color-border-control: var(--fds-color-slate-400);
-		--fds-color-border-control-hover: var(--fds-color-slate-450);
+		--fds-color-border-control: var(--fds-color-slate-450);
+		--fds-color-border-control-hover: var(--fds-color-slate-500);
 		--fds-color-border-accent: var(--fds-color-blue-600);
 		--fds-color-border-focus: var(--fds-color-blue-600);
 		--fds-color-border-success: var(--fds-color-green-600);
-		--fds-color-border-warning: var(--fds-color-amber-600);
+		--fds-color-border-warning: var(--fds-color-orange-600);
 		--fds-color-border-danger: var(--fds-color-red-600);
 		--fds-color-border-disabled: var(--fds-color-slate-200);
 		--fds-color-icon-primary: var(--fds-color-slate-600);
@@ -374,151 +353,9 @@
 		--fds-radius-surface: var(--fds-radius-lg);
 		--fds-radius-overlay: var(--fds-radius-xl);
 		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-fraunces);
-		--fds-font-body: var(--fds-font-family-public-sans);
-		--fds-font-mono: var(--fds-font-family-jetbrains);
-	}
-
-	/* Signal Dark */
-	[data-fds-theme="signal-dark"] {
-		color-scheme: dark;
-		--fds-color-surface-canvas: var(--fds-color-sand-950);
-		--fds-color-surface-sunken: var(--fds-color-sand-1000);
-		--fds-color-surface-raised: var(--fds-color-sand-900);
-		--fds-color-surface-overlay: var(--fds-color-sand-800);
-		--fds-color-surface-scrim: var(--fds-color-alpha-scrim-light);
-		--fds-color-surface-control: var(--fds-color-sand-900);
-		--fds-color-surface-control-hover: var(--fds-color-sand-800);
-		--fds-color-surface-disabled: var(--fds-color-sand-800);
-		--fds-color-surface-selected: var(--fds-color-amber-950);
-		--fds-color-surface-accent-subtle: var(--fds-color-amber-950);
-		--fds-color-surface-accent-bold: var(--fds-color-amber-500);
-		--fds-color-surface-accent-bold-hover: var(--fds-color-amber-400);
-		--fds-color-surface-accent-bold-active: var(--fds-color-amber-300);
-		--fds-color-surface-neutral-subtle: var(--fds-color-sand-800);
-		--fds-color-surface-neutral-subtle-hover: var(--fds-color-sand-700);
-		--fds-color-surface-neutral-bold: var(--fds-color-sand-100);
-		--fds-color-surface-success-subtle: var(--fds-color-green-950);
-		--fds-color-surface-success-bold: var(--fds-color-green-500);
-		--fds-color-surface-warning-subtle: var(--fds-color-amber-900);
-		--fds-color-surface-warning-bold: var(--fds-color-amber-500);
-		--fds-color-surface-danger-subtle: var(--fds-color-red-950);
-		--fds-color-surface-danger-bold: var(--fds-color-red-400);
-		--fds-color-surface-danger-bold-hover: var(--fds-color-red-300);
-		--fds-color-surface-info-subtle: var(--fds-color-blue-950);
-		--fds-color-surface-info-bold: var(--fds-color-blue-500);
-		--fds-color-text-primary: var(--fds-color-sand-25);
-		--fds-color-text-secondary: var(--fds-color-sand-300);
-		--fds-color-text-subtle: var(--fds-color-sand-400);
-		--fds-color-text-placeholder: var(--fds-color-sand-400);
-		--fds-color-text-disabled: var(--fds-color-sand-450);
-		--fds-color-text-accent: var(--fds-color-amber-400);
-		--fds-color-text-on-accent: var(--fds-color-sand-1000);
-		--fds-color-text-on-neutral-bold: var(--fds-color-sand-950);
-		--fds-color-text-on-danger: var(--fds-color-red-950);
-		--fds-color-text-success: var(--fds-color-green-400);
-		--fds-color-text-warning: var(--fds-color-amber-300);
-		--fds-color-text-danger: var(--fds-color-red-400);
-		--fds-color-text-info: var(--fds-color-blue-400);
-		--fds-color-text-link: var(--fds-color-amber-300);
-		--fds-color-text-link-hover: var(--fds-color-amber-200);
-		--fds-color-border-subtle: var(--fds-color-alpha-light-08);
-		--fds-color-border-default: var(--fds-color-sand-700);
-		--fds-color-border-strong: var(--fds-color-sand-600);
-		--fds-color-border-control: var(--fds-color-sand-450);
-		--fds-color-border-control-hover: var(--fds-color-sand-400);
-		--fds-color-border-accent: var(--fds-color-amber-500);
-		--fds-color-border-focus: var(--fds-color-amber-400);
-		--fds-color-border-success: var(--fds-color-green-500);
-		--fds-color-border-warning: var(--fds-color-amber-500);
-		--fds-color-border-danger: var(--fds-color-red-500);
-		--fds-color-border-disabled: var(--fds-color-sand-600);
-		--fds-color-icon-primary: var(--fds-color-sand-300);
-		--fds-color-icon-subtle: var(--fds-color-sand-400);
-		--fds-color-icon-accent: var(--fds-color-amber-400);
-		--fds-color-icon-on-accent: var(--fds-color-sand-1000);
-		--fds-elevation-raised: var(--fds-shadow-dark-sm);
-		--fds-elevation-overlay: var(--fds-shadow-dark-md);
-		--fds-elevation-modal: var(--fds-shadow-dark-lg);
-		--fds-elevation-none: var(--fds-shadow-none);
-		--fds-radius-control: var(--fds-radius-lg);
-		--fds-radius-surface: var(--fds-radius-xl);
-		--fds-radius-overlay: var(--fds-radius-2xl);
-		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-instrument);
-		--fds-font-body: var(--fds-font-family-public-sans);
-		--fds-font-mono: var(--fds-font-family-jetbrains);
-	}
-
-	/* Signal Light */
-	[data-fds-theme="signal-light"] {
-		color-scheme: light;
-		--fds-color-surface-canvas: var(--fds-color-sand-50);
-		--fds-color-surface-sunken: var(--fds-color-sand-100);
-		--fds-color-surface-raised: var(--fds-color-sand-25);
-		--fds-color-surface-overlay: var(--fds-color-sand-25);
-		--fds-color-surface-scrim: var(--fds-color-alpha-scrim-light);
-		--fds-color-surface-control: var(--fds-color-sand-25);
-		--fds-color-surface-control-hover: var(--fds-color-sand-50);
-		--fds-color-surface-disabled: var(--fds-color-sand-100);
-		--fds-color-surface-selected: var(--fds-color-amber-100);
-		--fds-color-surface-accent-subtle: var(--fds-color-amber-100);
-		--fds-color-surface-accent-bold: var(--fds-color-amber-700);
-		--fds-color-surface-accent-bold-hover: var(--fds-color-amber-800);
-		--fds-color-surface-accent-bold-active: var(--fds-color-amber-900);
-		--fds-color-surface-neutral-subtle: var(--fds-color-sand-100);
-		--fds-color-surface-neutral-subtle-hover: var(--fds-color-sand-200);
-		--fds-color-surface-neutral-bold: var(--fds-color-sand-900);
-		--fds-color-surface-success-subtle: var(--fds-color-green-100);
-		--fds-color-surface-success-bold: var(--fds-color-green-600);
-		--fds-color-surface-warning-subtle: var(--fds-color-amber-100);
-		--fds-color-surface-warning-bold: var(--fds-color-amber-600);
-		--fds-color-surface-danger-subtle: var(--fds-color-red-100);
-		--fds-color-surface-danger-bold: var(--fds-color-red-600);
-		--fds-color-surface-danger-bold-hover: var(--fds-color-red-700);
-		--fds-color-surface-info-subtle: var(--fds-color-blue-100);
-		--fds-color-surface-info-bold: var(--fds-color-blue-600);
-		--fds-color-text-primary: var(--fds-color-sand-1000);
-		--fds-color-text-secondary: var(--fds-color-sand-600);
-		--fds-color-text-subtle: var(--fds-color-sand-500);
-		--fds-color-text-placeholder: var(--fds-color-sand-500);
-		--fds-color-text-disabled: var(--fds-color-sand-450);
-		--fds-color-text-accent: var(--fds-color-amber-800);
-		--fds-color-text-on-accent: var(--fds-color-sand-25);
-		--fds-color-text-on-neutral-bold: var(--fds-color-sand-25);
-		--fds-color-text-on-danger: var(--fds-color-slate-0);
-		--fds-color-text-success: var(--fds-color-green-700);
-		--fds-color-text-warning: var(--fds-color-amber-800);
-		--fds-color-text-danger: var(--fds-color-red-700);
-		--fds-color-text-info: var(--fds-color-blue-700);
-		--fds-color-text-link: var(--fds-color-amber-800);
-		--fds-color-text-link-hover: var(--fds-color-amber-900);
-		--fds-color-border-subtle: var(--fds-color-alpha-dark-08);
-		--fds-color-border-default: var(--fds-color-sand-200);
-		--fds-color-border-strong: var(--fds-color-sand-300);
-		--fds-color-border-control: var(--fds-color-sand-400);
-		--fds-color-border-control-hover: var(--fds-color-sand-450);
-		--fds-color-border-accent: var(--fds-color-amber-700);
-		--fds-color-border-focus: var(--fds-color-amber-700);
-		--fds-color-border-success: var(--fds-color-green-600);
-		--fds-color-border-warning: var(--fds-color-amber-600);
-		--fds-color-border-danger: var(--fds-color-red-600);
-		--fds-color-border-disabled: var(--fds-color-sand-200);
-		--fds-color-icon-primary: var(--fds-color-sand-600);
-		--fds-color-icon-subtle: var(--fds-color-sand-500);
-		--fds-color-icon-accent: var(--fds-color-amber-800);
-		--fds-color-icon-on-accent: var(--fds-color-sand-25);
-		--fds-elevation-raised: var(--fds-shadow-light-sm);
-		--fds-elevation-overlay: var(--fds-shadow-light-md);
-		--fds-elevation-modal: var(--fds-shadow-light-lg);
-		--fds-elevation-none: var(--fds-shadow-none);
-		--fds-radius-control: var(--fds-radius-lg);
-		--fds-radius-surface: var(--fds-radius-xl);
-		--fds-radius-overlay: var(--fds-radius-2xl);
-		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-instrument);
-		--fds-font-body: var(--fds-font-family-public-sans);
-		--fds-font-mono: var(--fds-font-family-jetbrains);
+		--fds-font-display: var(--fds-font-family-clash);
+		--fds-font-body: var(--fds-font-family-satoshi);
+		--fds-font-mono: var(--fds-font-family-mono);
 	}
 
 }

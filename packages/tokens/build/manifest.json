@@ -1,16 +1,16 @@
 {
   "$comment": "GENERATED FILE. The docs site reads this so foundation pages cannot go stale relative to the token source. No timestamp is recorded, deliberately: generated artifacts are committed and a timestamp would create a diff on every build.",
   "counts": {
-    "primitives": 152,
+    "primitives": 132,
     "semanticContract": 66,
     "componentTokens": 67,
-    "themes": 4,
+    "themes": 2,
     "densities": 2,
-    "totalCustomProperties": 483
+    "totalCustomProperties": 331
   },
   "primitivesByType": {
-    "color": 68,
-    "fontFamily": 4,
+    "color": 49,
+    "fontFamily": 3,
     "dimension": 46,
     "fontWeight": 4,
     "number": 12,
@@ -29,20 +29,6 @@
     {
       "name": "forefront-light",
       "label": "Forefront Light",
-      "appearance": "light",
-      "isDefault": false,
-      "coverage": "66/66"
-    },
-    {
-      "name": "signal-dark",
-      "label": "Signal Dark",
-      "appearance": "dark",
-      "isDefault": false,
-      "coverage": "66/66"
-    },
-    {
-      "name": "signal-light",
-      "label": "Signal Light",
       "appearance": "light",
       "isDefault": false,
       "coverage": "66/66"
@@ -69,7 +55,7 @@
     "$comment": "Computed by the build, not by the page that displays it. A failure here exits non-zero, so these rows are the reason the build passed rather than a report about it.",
     "requirements": 47,
     "exemptions": 4,
-    "checksRun": 188,
+    "checksRun": 94,
     "failures": 0,
     "worstByTheme": [
       {
@@ -77,36 +63,18 @@
         "checks": 47,
         "failures": 0,
         "tightestPair": "color.border.disabled on color.surface.disabled",
-        "tightestRatio": 1.38,
+        "tightestRatio": 1.34,
         "tightestRequirement": 1.2,
-        "headroom": 0.18
+        "headroom": 0.14
       },
       {
         "theme": "forefront-light",
         "checks": 47,
         "failures": 0,
         "tightestPair": "color.border.disabled on color.surface.disabled",
-        "tightestRatio": 1.42,
+        "tightestRatio": 1.46,
         "tightestRequirement": 1.2,
-        "headroom": 0.22
-      },
-      {
-        "theme": "signal-dark",
-        "checks": 47,
-        "failures": 0,
-        "tightestPair": "color.text.subtle on color.surface.raised",
-        "tightestRatio": 4.81,
-        "tightestRequirement": 4.5,
-        "headroom": 0.31
-      },
-      {
-        "theme": "signal-light",
-        "checks": 47,
-        "failures": 0,
-        "tightestPair": "color.border.disabled on color.surface.disabled",
-        "tightestRatio": 1.24,
-        "tightestRequirement": 1.2,
-        "headroom": 0.04
+        "headroom": 0.26
       }
     ]
   },

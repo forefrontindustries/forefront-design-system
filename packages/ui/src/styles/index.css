@@ -11,11 +11,12 @@
  * the CSS for the listbox they never used.
  *
  * Fonts are not fetched by this file. A library that injects @font-face rules
- * for four families takes a decision that belongs to the application, and it
- * makes the library impossible to use offline or behind a strict CSP. The
- * families the tokens reference are Fraunces, Instrument Serif, Public Sans and
- * JetBrains Mono, each with a system fallback, and the docs site loads them at
- * the document level.
+ * takes a decision that belongs to the application, and it makes the library
+ * impossible to use offline or behind a strict CSP. The families the tokens
+ * reference are Clash Display (display) and Satoshi (body), each with a system
+ * fallback, plus a system mono stack that needs no webfont. The docs site
+ * self-hosts the two webfonts as woff2 and declares them at the document
+ * level, which is the pattern a consuming application should copy.
  */
 
 @import "@forefront/tokens/css";

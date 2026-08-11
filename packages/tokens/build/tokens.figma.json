@@ -18,7 +18,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#2b3140"
+            "Value": "#2a2a35"
           }
         },
         {
@@ -29,7 +29,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#212634"
+            "Value": "#202a38"
           }
         },
         {
@@ -40,7 +40,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#191d2a"
+            "Value": "#0f0f1a"
           }
         },
         {
@@ -51,7 +51,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#131722"
+            "Value": "#0d1019"
           }
         },
         {
@@ -62,7 +62,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#0e1119"
+            "Value": "#0a0c14"
           }
         },
         {
@@ -95,7 +95,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#04050a"
+            "Value": "#000000"
           }
         },
         {
@@ -150,7 +150,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#c8cfda"
+            "Value": "#c8ccd4"
           }
         },
         {
@@ -161,7 +161,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#a4adbd"
+            "Value": "#a4aab4"
           }
         },
         {
@@ -172,7 +172,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#7b8698"
+            "Value": "#8b93a1"
           }
         },
         {
@@ -183,7 +183,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#6b7688"
+            "Value": "#7d8696"
           }
         },
         {
@@ -194,7 +194,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#566072"
+            "Value": "#5b6678"
           }
         },
         {
@@ -206,160 +206,6 @@
           "description": "",
           "valuesByMode": {
             "Value": "#3d4453"
-          }
-        },
-        {
-          "name": "color/sand/25",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#fbf8f3"
-          }
-        },
-        {
-          "name": "color/sand/50",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#f6f1e9"
-          }
-        },
-        {
-          "name": "color/sand/100",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#ece4d9"
-          }
-        },
-        {
-          "name": "color/sand/200",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#d8cdbe"
-          }
-        },
-        {
-          "name": "color/sand/300",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#b5a898"
-          }
-        },
-        {
-          "name": "color/sand/400",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#8f8275"
-          }
-        },
-        {
-          "name": "color/sand/450",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#7d7166"
-          }
-        },
-        {
-          "name": "color/sand/500",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#6b5f54"
-          }
-        },
-        {
-          "name": "color/sand/600",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#4a4038"
-          }
-        },
-        {
-          "name": "color/sand/700",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#332b24"
-          }
-        },
-        {
-          "name": "color/sand/800",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#241f1a"
-          }
-        },
-        {
-          "name": "color/sand/900",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#1a1613"
-          }
-        },
-        {
-          "name": "color/sand/950",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#13100e"
-          }
-        },
-        {
-          "name": "color/sand/1000",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#0b0908"
           }
         },
         {
@@ -392,7 +238,7 @@
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#7cabd7"
+            "Value": "#7ba8d1"
           }
         },
         {
@@ -451,113 +297,69 @@
           }
         },
         {
-          "name": "color/amber/100",
+          "name": "color/orange/100",
           "type": "COLOR",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#fdf1de"
+            "Value": "#ffeadb"
           }
         },
         {
-          "name": "color/amber/200",
+          "name": "color/orange/400",
           "type": "COLOR",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#fadfb4"
+            "Value": "#ff9a55"
           }
         },
         {
-          "name": "color/amber/300",
+          "name": "color/orange/500",
           "type": "COLOR",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#f5c97e"
+            "Value": "#ff8a3d"
           }
         },
         {
-          "name": "color/amber/400",
+          "name": "color/orange/600",
           "type": "COLOR",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#edb04a"
+            "Value": "#c25f18"
           }
         },
         {
-          "name": "color/amber/500",
+          "name": "color/orange/700",
           "type": "COLOR",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#e0941a"
+            "Value": "#914712"
           }
         },
         {
-          "name": "color/amber/600",
+          "name": "color/orange/950",
           "type": "COLOR",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "#b87610"
-          }
-        },
-        {
-          "name": "color/amber/700",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#8a580c"
-          }
-        },
-        {
-          "name": "color/amber/800",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#5c3b08"
-          }
-        },
-        {
-          "name": "color/amber/900",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#3a2606"
-          }
-        },
-        {
-          "name": "color/amber/950",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "#241703"
+            "Value": "#2a1305"
           }
         },
         {
@@ -748,58 +550,36 @@
           }
         },
         {
-          "name": "color/alpha/scrim-light",
-          "type": "COLOR",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "rgba(29, 26, 22, 0.44)"
-          }
-        },
-        {
-          "name": "font/family/fraunces",
+          "name": "font/family/clash",
           "type": "STRING",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "Fraunces, Georgia, serif"
+            "Value": "'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif"
           }
         },
         {
-          "name": "font/family/instrument",
+          "name": "font/family/satoshi",
           "type": "STRING",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "'Instrument Serif', Georgia, serif"
+            "Value": "'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif"
           }
         },
         {
-          "name": "font/family/public-sans",
+          "name": "font/family/mono",
           "type": "STRING",
           "scopes": [
             "ALL_SCOPES"
           ],
           "description": "",
           "valuesByMode": {
-            "Value": "'Public Sans', system-ui, -apple-system, sans-serif"
-          }
-        },
-        {
-          "name": "font/family/jetbrains",
-          "type": "STRING",
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "description": "",
-          "valuesByMode": {
-            "Value": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace"
+            "Value": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
           }
         },
         {
@@ -1689,9 +1469,7 @@
       "description": "Tier 2. One mode per theme. Every variable aliases a Primitives variable, matching the code contract in packages/tokens/src/semantic.json.",
       "modes": [
         "Forefront Dark",
-        "Forefront Light",
-        "Signal Dark",
-        "Signal Light"
+        "Forefront Light"
       ],
       "variables": [
         {
@@ -1711,16 +1489,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/25"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/950"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/50"
             }
           }
         },
@@ -1741,16 +1509,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/50"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/1000"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/100"
             }
           }
         },
@@ -1771,16 +1529,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/900"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
             }
           }
         },
@@ -1801,16 +1549,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/800"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
             }
           }
         },
@@ -1831,16 +1569,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/alpha/scrim-cool"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/alpha/scrim-light"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/alpha/scrim-light"
             }
           }
         },
@@ -1861,16 +1589,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/900"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
             }
           }
         },
@@ -1891,16 +1609,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/25"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/800"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/50"
             }
           }
         },
@@ -1921,16 +1629,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/50"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/800"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/100"
             }
           }
         },
@@ -1951,16 +1649,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/950"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/100"
             }
           }
         },
@@ -1981,16 +1669,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/950"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/100"
             }
           }
         },
@@ -2011,16 +1689,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/500"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/700"
             }
           }
         },
@@ -2041,16 +1709,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/800"
             }
           }
         },
@@ -2071,16 +1729,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/800"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/300"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/900"
             }
           }
         },
@@ -2101,16 +1749,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/50"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/800"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/100"
             }
           }
         },
@@ -2131,16 +1769,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/700"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/200"
             }
           }
         },
@@ -2161,16 +1789,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/ink/900"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/100"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/900"
             }
           }
         },
@@ -2188,16 +1806,6 @@
               "name": "color/green/950"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/950"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/green/100"
@@ -2221,16 +1829,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/green/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/500"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/600"
             }
           }
         },
@@ -2245,22 +1843,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/950"
+              "name": "color/orange/950"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/900"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/100"
+              "name": "color/orange/100"
             }
           }
         },
@@ -2275,22 +1863,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/500"
+              "name": "color/orange/500"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/500"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/600"
+              "name": "color/orange/600"
             }
           }
         },
@@ -2308,16 +1886,6 @@
               "name": "color/red/950"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/950"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/red/100"
@@ -2341,16 +1909,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/red/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/600"
             }
           }
         },
@@ -2368,16 +1926,6 @@
               "name": "color/red/300"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/300"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/red/700"
@@ -2401,16 +1949,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/100"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/blue/950"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/blue/100"
             }
           }
         },
@@ -2428,16 +1966,6 @@
               "name": "color/blue/500"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/blue/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/blue/500"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/600"
@@ -2461,16 +1989,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/ink/950"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/1000"
             }
           }
         },
@@ -2491,16 +2009,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/300"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/600"
             }
           }
         },
@@ -2521,16 +2029,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/500"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/500"
             }
           }
         },
@@ -2551,16 +2049,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/500"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/500"
             }
           }
         },
@@ -2581,16 +2069,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/450"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/450"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/450"
             }
           }
         },
@@ -2611,16 +2089,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/800"
             }
           }
         },
@@ -2641,16 +2109,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/1000"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
             }
           }
         },
@@ -2671,16 +2129,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/950"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
             }
           }
         },
@@ -2698,16 +2146,6 @@
               "name": "color/red/950"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/950"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
@@ -2731,16 +2169,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/green/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/700"
             }
           }
         },
@@ -2755,22 +2183,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/400"
+              "name": "color/orange/400"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/300"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/800"
+              "name": "color/orange/700"
             }
           }
         },
@@ -2788,16 +2206,6 @@
               "name": "color/red/400"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/400"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/red/700"
@@ -2821,16 +2229,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/blue/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/blue/700"
             }
           }
         },
@@ -2851,16 +2249,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/300"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/800"
             }
           }
         },
@@ -2881,16 +2269,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/800"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/200"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/900"
             }
           }
         },
@@ -2908,16 +2286,6 @@
               "name": "color/alpha/light-08"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/alpha/dark-08"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/alpha/light-08"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/alpha/dark-08"
@@ -2941,16 +2309,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/200"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/700"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/200"
             }
           }
         },
@@ -2971,16 +2329,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/300"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/600"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/300"
             }
           }
         },
@@ -3000,17 +2348,7 @@
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/slate/400"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/450"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/400"
+              "name": "color/slate/450"
             }
           }
         },
@@ -3030,17 +2368,7 @@
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/slate/450"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/450"
+              "name": "color/slate/500"
             }
           }
         },
@@ -3061,16 +2389,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/500"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/700"
             }
           }
         },
@@ -3091,16 +2409,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/700"
             }
           }
         },
@@ -3121,16 +2429,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/green/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/500"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/green/600"
             }
           }
         },
@@ -3145,22 +2443,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/500"
+              "name": "color/orange/500"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "color/amber/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/500"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/600"
+              "name": "color/orange/600"
             }
           }
         },
@@ -3178,16 +2466,6 @@
               "name": "color/red/500"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/red/500"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/red/600"
@@ -3211,16 +2489,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/200"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/600"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/200"
             }
           }
         },
@@ -3241,16 +2509,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/600"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/300"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/600"
             }
           }
         },
@@ -3271,16 +2529,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/500"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/500"
             }
           }
         },
@@ -3301,16 +2549,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/blue/700"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/400"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/amber/800"
             }
           }
         },
@@ -3331,16 +2569,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "color/slate/0"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/1000"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "color/sand/25"
             }
           }
         },
@@ -3358,16 +2586,6 @@
               "name": "shadow/dark-sm"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/light-sm"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/dark-sm"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "shadow/light-sm"
@@ -3391,16 +2609,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "shadow/light-md"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/dark-md"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/light-md"
             }
           }
         },
@@ -3418,16 +2626,6 @@
               "name": "shadow/dark-lg"
             },
             "Forefront Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/light-lg"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/dark-lg"
-            },
-            "Signal Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "shadow/light-lg"
@@ -3451,16 +2649,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "shadow/none"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/none"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "shadow/none"
             }
           }
         },
@@ -3470,7 +2658,7 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder.",
+          "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so a future theme can change control geometry without touching a component.",
           "valuesByMode": {
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
@@ -3481,16 +2669,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "radius/sm"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/lg"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/lg"
             }
           }
         },
@@ -3511,16 +2689,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "radius/lg"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/xl"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/xl"
             }
           }
         },
@@ -3541,16 +2709,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "radius/xl"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/2xl"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/2xl"
             }
           }
         },
@@ -3571,16 +2729,6 @@
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
               "name": "radius/full"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/full"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "radius/full"
             }
           }
         },
@@ -3595,22 +2743,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/fraunces"
+              "name": "font/family/clash"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/fraunces"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "font/family/instrument"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "font/family/instrument"
+              "name": "font/family/clash"
             }
           }
         },
@@ -3625,22 +2763,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/public-sans"
+              "name": "font/family/satoshi"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/public-sans"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "font/family/public-sans"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "font/family/public-sans"
+              "name": "font/family/satoshi"
             }
           }
         },
@@ -3655,22 +2783,12 @@
             "Forefront Dark": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/jetbrains"
+              "name": "font/family/mono"
             },
             "Forefront Light": {
               "type": "VARIABLE_ALIAS",
               "collection": "Primitives",
-              "name": "font/family/jetbrains"
-            },
-            "Signal Dark": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "font/family/jetbrains"
-            },
-            "Signal Light": {
-              "type": "VARIABLE_ALIAS",
-              "collection": "Primitives",
-              "name": "font/family/jetbrains"
+              "name": "font/family/mono"
             }
           }
         }

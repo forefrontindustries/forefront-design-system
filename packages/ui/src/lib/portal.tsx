@@ -24,6 +24,15 @@ import { createPortal } from "react-dom";
  *
  * `typeof document` is still guarded so a server render produces nothing rather
  * than throwing, which is the reason the flag existed in the first place.
+ *
+ * What this ordering does NOT solve is the cleanup side. Portal is freshly
+ * mounted every time an overlay opens, so StrictMode runs its effect, its
+ * cleanup, then its effect again. The cleanup detaches the host, which drops
+ * focus to the body, and the overlay's focus trap belongs to a component that
+ * was already mounted, so its effect does not re-run to repair it. Detaching on
+ * unmount is correct and this component keeps doing it. The recovery lives in
+ * the trap, in lib/focus.ts, because focus loss has production causes that have
+ * nothing to do with portals.
  */
 export function Portal({ children }: { children: ReactNode }) {
 	const [host] = useState<HTMLElement | null>(() =>

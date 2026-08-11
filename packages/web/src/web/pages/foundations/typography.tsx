@@ -14,7 +14,7 @@ export default function TypographyPage() {
 			<PageHeader
 				eyebrow="Foundations"
 				title="Typography"
-				lede="Three roles, not three fonts: display, body and mono. The display face is theme-owned, which is why switching to Signal changes the headings on this page as well as the colours."
+				lede="Three roles, not three fonts: display, body and mono. Clash Display and Satoshi are the Forefront brand faces, self-hosted rather than pulled from a CDN, for a reason documented below."
 			/>
 
 			<Section
@@ -27,19 +27,19 @@ export default function TypographyPage() {
 						{
 							token: "font.display",
 							sample: "Systems, not screens",
-							note: "Fraunces in the Forefront themes, Instrument Serif in Signal. Docs headings and marketing surfaces. No component uses it, because a component that changes typeface with the theme is a component that reflows.",
+							note: "Clash Display, 400 to 700. Headings, display scale and marketing surfaces. No component uses it, because a component that changes typeface with the theme is a component that reflows.",
 							style: { fontFamily: "var(--fds-font-display)", fontSize: "var(--fds-font-size-100)" },
 						},
 						{
 							token: "font.body",
-							sample: "Public Sans carries every component and every paragraph.",
-							note: "Chosen over Inter deliberately. Inter is the default choice, and defaulting is the opposite of the job.",
+							sample: "Satoshi carries every component and every paragraph.",
+							note: "Satoshi, 400 to 700. The Forefront body face, self-hosted as woff2. Every component text style resolves here, so the body face is the one typographic decision a theme is not allowed to change.",
 							style: { fontFamily: "var(--fds-font-body)", fontSize: "var(--fds-font-size-60)" },
 						},
 						{
 							token: "font.mono",
 							sample: "--fds-color-surface-accent-bold: #5793ca;",
-							note: "JetBrains Mono. Every token value, prop name and code sample. Token values in a proportional face are a documentation bug: 0 and O have to be distinguishable when someone is copying a hex by eye.",
+							note: "System mono stack, no webfont. Every token value, prop name and code sample. Token values in a proportional face are a documentation bug: 0 and O have to be distinguishable when someone is copying a hex by eye. This role ships zero bytes on purpose, since the brand owns no mono face and inventing one would be a decision the brand never made.",
 							style: { fontFamily: "var(--fds-font-mono)", fontSize: "var(--fds-font-size-50)" },
 						},
 					].map((role) => (

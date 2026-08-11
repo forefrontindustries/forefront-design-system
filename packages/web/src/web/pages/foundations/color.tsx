@@ -152,7 +152,7 @@ export default function ColorPage() {
 			<Section
 				number="03"
 				title="One name, four answers"
-				subtitle="The argument for the contract, in one table. Signal is not a hue swap: it changes accent hue, neutral temperature, radius scale and display typeface."
+				subtitle="The argument for the contract, in one table. Both themes answer every name, and the build refuses a theme that skips one."
 			>
 				<div className="table-wrap">
 					<table className="data">
