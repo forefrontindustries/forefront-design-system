@@ -1,0 +1,50 @@
+/**
+ * @forefront/ui stylesheet entry.
+ *
+ * Import this once, as early as possible:
+ *
+ *   import "@forefront/ui/styles.css";
+ *
+ * It pulls in the generated token custom properties and a deliberately small
+ * reset. Component styles are NOT imported here: each component module imports
+ * its own stylesheet, so a consumer who imports one Button does not download
+ * the CSS for the listbox they never used.
+ *
+ * Fonts are not fetched by this file. A library that injects @font-face rules
+ * for four families takes a decision that belongs to the application, and it
+ * makes the library impossible to use offline or behind a strict CSP. The
+ * families the tokens reference are Fraunces, Instrument Serif, Public Sans and
+ * JetBrains Mono, each with a system fallback, and the docs site loads them at
+ * the document level.
+ */
+
+@import "@forefront/tokens/css";
+
+@layer fds.reset {
+	/* Scoped to the themed subtree rather than applied to html/body. The system
+	   has to be adoptable inside an existing application, which means it is not
+	   allowed to restyle anything above its own root. */
+	[data-fds-theme] {
+		font-family: var(--fds-font-body);
+		font-size: var(--fds-font-size-40);
+		line-height: var(--fds-font-line-height-normal);
+		color: var(--fds-color-text-primary);
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	[data-fds-theme] *,
+	[data-fds-theme] *::before,
+	[data-fds-theme] *::after {
+		box-sizing: border-box;
+	}
+
+	/* The library never removes an outline without replacing it. Focus styling
+	   is opt-in through :focus-visible on each component, so a consumer who
+	   forgets to style a custom control still gets the browser default rather
+	   than nothing. */
+	[data-fds-theme] :focus-visible {
+		outline: var(--fds-focus-ring-width) solid var(--fds-focus-ring-color);
+		outline-offset: var(--fds-focus-ring-offset);
+	}
+}

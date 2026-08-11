@@ -1,0 +1,42 @@
+{
+  "$name": "compact",
+  "$label": "Compact",
+  "$description": "Compact density for data-dense surfaces. It overrides a deliberately small slice of tier 3: control heights, insets, and container padding. It never changes font sizes below 13px and never changes focus ring geometry, because shrinking either one trades accessibility for information density.",
+  "control": {
+    "height": {
+      "sm": { "$value": "1.5rem" },
+      "md": { "$value": "1.875rem" },
+      "lg": { "$value": "2.375rem" }
+    },
+    "padding-x": {
+      "sm": { "$value": "{space.3}" },
+      "md": { "$value": "{space.4}" },
+      "lg": { "$value": "{space.5}" }
+    }
+  },
+  "badge": {
+    "height": { "$value": "1.25rem" },
+    "padding-x": { "$value": "{space.2}" }
+  },
+  "card": {
+    "padding": { "$value": "{space.6}" },
+    "gap": { "$value": "{space.4}" }
+  },
+  "modal": {
+    "padding": { "$value": "{space.7}" },
+    "gap": { "$value": "{space.5}" }
+  },
+  "tabs": {
+    "trigger-height": { "$value": "2.125rem" },
+    "trigger-padding-x": { "$value": "{space.4}" }
+  },
+  "toast": {
+    "padding": { "$value": "{space.4}" }
+  },
+  "select": {
+    "option-height": { "$value": "1.875rem" }
+  },
+  "field": {
+    "gap": { "$value": "{space.2}" }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$name": "forefront-light",
+  "$label": "Forefront Light",
+  "$appearance": "light",
+  "$description": "Light counterpart to forefront-dark. Accent steps down the blue ramp so contrast on white stays above 4.5:1, which is why accent-bold is blue.600 here and blue.500 in the dark theme.",
+  "color": {
+    "surface": {
+      "canvas": { "$value": "{color.slate.25}" },
+      "sunken": { "$value": "{color.slate.50}" },
+      "raised": { "$value": "{color.slate.0}" },
+      "overlay": { "$value": "{color.slate.0}" },
+      "scrim": { "$value": "{color.alpha.scrim-cool}" },
+      "control": { "$value": "{color.slate.0}" },
+      "control-hover": { "$value": "{color.slate.25}" },
+      "disabled": { "$value": "{color.slate.50}" },
+      "selected": { "$value": "{color.blue.100}" },
+      "accent-subtle": { "$value": "{color.blue.100}" },
+      "accent-bold": { "$value": "{color.blue.600}" },
+      "accent-bold-hover": { "$value": "{color.blue.700}" },
+      "accent-bold-active": { "$value": "{color.blue.800}" },
+      "neutral-subtle": { "$value": "{color.slate.50}" },
+      "neutral-subtle-hover": { "$value": "{color.slate.100}" },
+      "neutral-bold": { "$value": "{color.ink.900}" },
+      "success-subtle": { "$value": "{color.green.100}" },
+      "success-bold": { "$value": "{color.green.600}" },
+      "warning-subtle": { "$value": "{color.amber.100}" },
+      "warning-bold": { "$value": "{color.amber.600}" },
+      "danger-subtle": { "$value": "{color.red.100}" },
+      "danger-bold": { "$value": "{color.red.600}" },
+      "danger-bold-hover": { "$value": "{color.red.700}" },
+      "info-subtle": { "$value": "{color.blue.100}" },
+      "info-bold": { "$value": "{color.blue.600}" }
+    },
+    "text": {
+      "primary": { "$value": "{color.ink.950}" },
+      "secondary": { "$value": "{color.slate.600}" },
+      "subtle": { "$value": "{color.slate.500}" },
+      "placeholder": { "$value": "{color.slate.500}" },
+      "disabled": { "$value": "{color.slate.450}" },
+      "accent": { "$value": "{color.blue.700}" },
+      "on-accent": { "$value": "{color.slate.0}" },
+      "on-neutral-bold": { "$value": "{color.slate.0}" },
+      "on-danger": { "$value": "{color.slate.0}" },
+      "success": { "$value": "{color.green.700}" },
+      "warning": { "$value": "{color.amber.700}" },
+      "danger": { "$value": "{color.red.700}" },
+      "info": { "$value": "{color.blue.700}" },
+      "link": { "$value": "{color.blue.700}" },
+      "link-hover": { "$value": "{color.blue.800}" }
+    },
+    "border": {
+      "subtle": { "$value": "{color.alpha.dark-08}" },
+      "default": { "$value": "{color.slate.200}" },
+      "strong": { "$value": "{color.slate.300}" },
+      "control": { "$value": "{color.slate.400}" },
+      "control-hover": { "$value": "{color.slate.450}" },
+      "accent": { "$value": "{color.blue.600}" },
+      "focus": { "$value": "{color.blue.600}" },
+      "success": { "$value": "{color.green.600}" },
+      "warning": { "$value": "{color.amber.600}" },
+      "danger": { "$value": "{color.red.600}" },
+      "disabled": { "$value": "{color.slate.200}" }
+    },
+    "icon": {
+      "primary": { "$value": "{color.slate.600}" },
+      "subtle": { "$value": "{color.slate.500}" },
+      "accent": { "$value": "{color.blue.700}" },
+      "on-accent": { "$value": "{color.slate.0}" }
+    }
+  },
+  "elevation": {
+    "raised": { "$value": "{shadow.light-sm}" },
+    "overlay": { "$value": "{shadow.light-md}" },
+    "modal": { "$value": "{shadow.light-lg}" },
+    "none": { "$value": "{shadow.none}" }
+  },
+  "radius": {
+    "control": { "$value": "{radius.sm}" },
+    "surface": { "$value": "{radius.lg}" },
+    "overlay": { "$value": "{radius.xl}" },
+    "pill": { "$value": "{radius.full}" }
+  },
+  "font": {
+    "display": { "$value": "{font.family.fraunces}" },
+    "body": { "$value": "{font.family.public-sans}" },
+    "mono": { "$value": "{font.family.jetbrains}" }
+  }
+}

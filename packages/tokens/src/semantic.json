@@ -1,0 +1,90 @@
+{
+  "$description": "Tier 2: the semantic contract. This file declares WHICH semantic tokens exist, what type they are, and what they mean. It deliberately holds no values. Every theme in src/themes must supply a value for every entry here, or `bun run tokens:build` fails. That failure is the whole point: it makes theme drift impossible instead of merely discouraged.",
+  "$contract": true,
+  "color": {
+    "$type": "color",
+    "surface": {
+      "canvas": { "$description": "App background. The furthest-back surface." },
+      "sunken": { "$description": "Recessed area on the canvas, e.g. a code block or well." },
+      "raised": { "$description": "Card and panel background sitting above the canvas." },
+      "overlay": { "$description": "Floating surface: modal, popover, tooltip, toast, select menu." },
+      "scrim": { "$description": "Full-viewport wash behind a modal. Must be translucent." },
+      "control": { "$description": "Default background for inputs and unfilled controls." },
+      "control-hover": { "$description": "Input or control background on hover." },
+      "disabled": { "$description": "Background for any disabled control. Never communicate disabled with opacity alone." },
+      "selected": { "$description": "Background for a selected row, option, or tab." },
+      "accent-subtle": { "$description": "Low-emphasis accent wash. Safe behind accent text." },
+      "accent-bold": { "$description": "High-emphasis accent fill for primary actions." },
+      "accent-bold-hover": { "$description": "Primary action hover." },
+      "accent-bold-active": { "$description": "Primary action pressed." },
+      "neutral-subtle": { "$description": "Low-emphasis neutral fill, e.g. secondary button rest." },
+      "neutral-subtle-hover": { "$description": "Secondary button hover." },
+      "neutral-bold": { "$description": "High-emphasis neutral fill." },
+      "success-subtle": { "$description": "Success wash for badges and inline status." },
+      "success-bold": { "$description": "Success fill." },
+      "warning-subtle": { "$description": "Warning wash." },
+      "warning-bold": { "$description": "Warning fill." },
+      "danger-subtle": { "$description": "Danger wash." },
+      "danger-bold": { "$description": "Destructive action fill." },
+      "danger-bold-hover": { "$description": "Destructive action hover." },
+      "info-subtle": { "$description": "Informational wash." },
+      "info-bold": { "$description": "Informational fill." }
+    },
+    "text": {
+      "primary": { "$description": "Default body and heading text. Must clear 4.5:1 on surface.canvas and surface.raised." },
+      "secondary": { "$description": "Supporting text. Must clear 4.5:1 on canvas." },
+      "subtle": { "$description": "De-emphasized metadata and helper text. Must clear 4.5:1 on canvas." },
+      "placeholder": { "$description": "Input placeholder. Must clear 4.5:1 on surface.control, since placeholders carry meaning." },
+      "disabled": { "$description": "Disabled control label. Exempt from AA by WCAG 1.4.3, but kept at 3:1 as a house rule." },
+      "accent": { "$description": "Accent-colored text on a neutral surface." },
+      "on-accent": { "$description": "Text placed on surface.accent-bold." },
+      "on-neutral-bold": { "$description": "Text placed on surface.neutral-bold." },
+      "on-danger": { "$description": "Text placed on surface.danger-bold." },
+      "success": { "$description": "Success text on a neutral or success-subtle surface." },
+      "warning": { "$description": "Warning text." },
+      "danger": { "$description": "Error and validation text." },
+      "info": { "$description": "Informational text." },
+      "link": { "$description": "Inline link rest state." },
+      "link-hover": { "$description": "Inline link hover state." }
+    },
+    "border": {
+      "subtle": { "$description": "Hairline that defines structure without drawing attention. The system's default divider." },
+      "default": { "$description": "Structural border on a non-interactive container. Decorative by contract: never use it as the boundary of a control, that is what border.control exists for." },
+      "strong": { "$description": "Emphasized decorative border, e.g. a hovered card edge." },
+      "control": { "$description": "Resting boundary of an interactive control: input, select, checkbox, radio, switch track, secondary button. Must clear 3:1 against surface.control, surface.canvas and surface.raised in every theme. Enforced by the build, see contrast.json." },
+      "control-hover": { "$description": "Boundary of a hovered interactive control. Must clear 3:1 against surface.control-hover and must never be quieter than border.control." },
+      "accent": { "$description": "Accent border for selected or active elements." },
+      "focus": { "$description": "Focus ring color. Must clear 3:1 against every adjacent surface. Never overridden per-component." },
+      "success": { "$description": "Success border." },
+      "warning": { "$description": "Warning border." },
+      "danger": { "$description": "Invalid control border." },
+      "disabled": { "$description": "Disabled control border." }
+    },
+    "icon": {
+      "primary": { "$description": "Default icon color." },
+      "subtle": { "$description": "De-emphasized icon." },
+      "accent": { "$description": "Accent icon." },
+      "on-accent": { "$description": "Icon on an accent-bold fill." }
+    }
+  },
+  "elevation": {
+    "$type": "shadow",
+    "raised": { "$description": "Card resting above the canvas. Most cards should use a border instead." },
+    "overlay": { "$description": "Popover, tooltip, select menu, toast." },
+    "modal": { "$description": "Dialog. The highest elevation in the system." },
+    "none": { "$description": "Explicit no-shadow, so components can opt out without hardcoding `none`." }
+  },
+  "radius": {
+    "$type": "dimension",
+    "control": { "$description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder." },
+    "surface": { "$description": "Cards and panels." },
+    "overlay": { "$description": "Modals, popovers, toasts." },
+    "pill": { "$description": "Fully rounded, for pill badges and switches." }
+  },
+  "font": {
+    "$type": "fontFamily",
+    "display": { "$description": "Editorial headings. Theme-owned." },
+    "body": { "$description": "All UI and body text." },
+    "mono": { "$description": "Token values, code, and numeric tables." }
+  }
+}

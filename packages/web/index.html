@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/favicon.ico" />
+		<title>Forefront Design System</title>
+		<meta
+			name="description"
+			content="A production design system: DTCG token pipeline, four themes from one contract, and twelve hand-built accessible React components with generated API documentation."
+		/>
+		<meta property="og:title" content="Forefront Design System" />
+		<meta
+			property="og:description"
+			content="Token pipeline, four themes from one contract, twelve hand-built accessible React components. No third-party primitives."
+		/>
+		<meta property="og:image" content="/og-image.png" />
+
+		<!-- Fonts are loaded at the document level, not by the component library. A
+		     library that injects @font-face rules takes a decision that belongs to the
+		     application and breaks under a strict CSP. -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/web/main.tsx"></script>
+	</body>
+</html>

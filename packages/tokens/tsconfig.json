@@ -1,0 +1,10 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"types": ["bun"],
+		"resolveJsonModule": true,
+		"noUnusedLocals": false
+	},
+	"include": ["tooling/**/*.ts", "build/**/*.ts"]
+}

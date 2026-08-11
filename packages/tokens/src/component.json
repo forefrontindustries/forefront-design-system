@@ -1,0 +1,115 @@
+{
+  "$description": "Tier 3: component tokens. These are the only tokens a component stylesheet may reference alongside tier 2. They exist so a component can be resized or respaced system-wide without editing CSS, and so density can be applied at the token layer rather than with per-component modifier classes. Tier 3 never references tier 1 color, only geometry primitives and tier 2 semantics.",
+  "control": {
+    "$description": "Shared geometry for every interactive control. Button, Input and Select all inherit these, which is what keeps a button and an input the same height when placed side by side.",
+    "height": {
+      "$type": "dimension",
+      "sm": { "$value": "1.75rem" },
+      "md": { "$value": "2.25rem" },
+      "lg": { "$value": "2.75rem" }
+    },
+    "padding-x": {
+      "$type": "dimension",
+      "sm": { "$value": "{space.4}" },
+      "md": { "$value": "{space.5}" },
+      "lg": { "$value": "{space.6}" }
+    },
+    "gap": {
+      "$type": "dimension",
+      "sm": { "$value": "{space.2}" },
+      "md": { "$value": "{space.3}" },
+      "lg": { "$value": "{space.4}" }
+    },
+    "font-size": {
+      "$type": "dimension",
+      "sm": { "$value": "{font.size.30}" },
+      "md": { "$value": "{font.size.40}" },
+      "lg": { "$value": "{font.size.50}" }
+    },
+    "border-width": { "$type": "dimension", "$value": "{border-width.thin}" },
+    "radius": { "$type": "dimension", "$value": "{radius.control}" }
+  },
+  "focus": {
+    "$description": "Focus ring geometry is centralized and intentionally not overridable per component. A ring that changes size between components reads as a bug to keyboard users.",
+    "ring-width": { "$type": "dimension", "$value": "{border-width.medium}" },
+    "ring-offset": { "$type": "dimension", "$value": "{border-width.medium}" },
+    "ring-color": { "$type": "color", "$value": "{color.border.focus}" }
+  },
+  "button": {
+    "font-weight": { "$type": "fontWeight", "$value": "{font.weight.medium}" },
+    "icon-size": { "$type": "dimension", "$value": "1em" }
+  },
+  "input": {
+    "min-width": { "$type": "dimension", "$value": "10rem" },
+    "invalid-border-width": { "$type": "dimension", "$value": "{border-width.thin}" }
+  },
+  "checkbox": {
+    "size": { "$type": "dimension", "$value": "1.125rem" },
+    "radius": { "$type": "dimension", "$value": "{radius.xs}" }
+  },
+  "radio": {
+    "size": { "$type": "dimension", "$value": "1.125rem" },
+    "dot-size": { "$type": "dimension", "$value": "0.4375rem" }
+  },
+  "switch": {
+    "width": { "$type": "dimension", "$value": "2.25rem" },
+    "height": { "$type": "dimension", "$value": "1.25rem" },
+    "thumb-size": { "$type": "dimension", "$value": "0.875rem" },
+    "thumb-inset": { "$type": "dimension", "$value": "0.1875rem" }
+  },
+  "badge": {
+    "height": { "$type": "dimension", "$value": "1.375rem" },
+    "padding-x": { "$type": "dimension", "$value": "{space.3}" },
+    "font-size": { "$type": "dimension", "$value": "{font.size.20}" },
+    "font-weight": { "$type": "fontWeight", "$value": "{font.weight.semibold}" },
+    "dot-size": { "$type": "dimension", "$value": "0.375rem" }
+  },
+  "card": {
+    "padding": { "$type": "dimension", "$value": "{space.8}" },
+    "gap": { "$type": "dimension", "$value": "{space.5}" },
+    "radius": { "$type": "dimension", "$value": "{radius.surface}" }
+  },
+  "modal": {
+    "padding": { "$type": "dimension", "$value": "{space.8}" },
+    "gap": { "$type": "dimension", "$value": "{space.6}" },
+    "radius": { "$type": "dimension", "$value": "{radius.overlay}" },
+    "width-sm": { "$type": "dimension", "$value": "24rem" },
+    "width-md": { "$type": "dimension", "$value": "34rem" },
+    "width-lg": { "$type": "dimension", "$value": "48rem" },
+    "offset": { "$type": "dimension", "$value": "{space.9}" }
+  },
+  "tooltip": {
+    "padding-x": { "$type": "dimension", "$value": "{space.4}" },
+    "padding-y": { "$type": "dimension", "$value": "{space.3}" },
+    "max-width": { "$type": "dimension", "$value": "16rem" },
+    "font-size": { "$type": "dimension", "$value": "{font.size.30}" },
+    "offset": { "$type": "dimension", "$value": "{space.4}" },
+    "radius": { "$type": "dimension", "$value": "{radius.md}" }
+  },
+  "tabs": {
+    "indicator-thickness": { "$type": "dimension", "$value": "{border-width.medium}" },
+    "trigger-padding-x": { "$type": "dimension", "$value": "{space.5}" },
+    "trigger-height": { "$type": "dimension", "$value": "2.5rem" },
+    "gap": { "$type": "dimension", "$value": "{space.2}" }
+  },
+  "toast": {
+    "width": { "$type": "dimension", "$value": "22rem" },
+    "padding": { "$type": "dimension", "$value": "{space.5}" },
+    "gap": { "$type": "dimension", "$value": "{space.4}" },
+    "viewport-offset": { "$type": "dimension", "$value": "{space.7}" },
+    "radius": { "$type": "dimension", "$value": "{radius.overlay}" }
+  },
+  "select": {
+    "menu-max-height": { "$type": "dimension", "$value": "18rem" },
+    "option-height": { "$type": "dimension", "$value": "2.125rem" },
+    "menu-padding": { "$type": "dimension", "$value": "{space.2}" },
+    "menu-offset": { "$type": "dimension", "$value": "{space.2}" }
+  },
+  "field": {
+    "$description": "Shared form field scaffolding: label, description and error message spacing. Owned centrally so Input, Select, Checkbox, Radio and Switch cannot drift apart.",
+    "gap": { "$type": "dimension", "$value": "{space.3}" },
+    "label-font-size": { "$type": "dimension", "$value": "{font.size.30}" },
+    "label-font-weight": { "$type": "fontWeight", "$value": "{font.weight.medium}" },
+    "message-font-size": { "$type": "dimension", "$value": "{font.size.30}" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@forefront/tokens",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tier 1/2/3 design tokens for the Forefront Design System. DTCG JSON source, compiled to CSS custom properties, typed TS, and a Figma Variables payload.",
+  "exports": {
+    ".": "./build/index.ts",
+    "./css": "./build/tokens.css",
+    "./manifest": "./build/manifest.json",
+    "./figma": "./build/tokens.figma.json"
+  },
+  "scripts": {
+    "build": "bun tooling/build-tokens.ts",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "id": "website",
+    "name": "Forefront Design System",
+    "description": "Documentation site for the Forefront Design System: three token tiers, four themes from one enforced contract, and twelve hand-built accessible React components.",
+    "url": "https://forefrontindustries.io",
+    "hostname": "design.forefrontindustries.io",
+    "port": 8080
+}

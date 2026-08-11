@@ -1,0 +1,196 @@
+@layer fds.components {
+	.fds-toast-viewport {
+		position: fixed;
+		z-index: var(--fds-z-index-toast);
+		display: flex;
+		flex-direction: column;
+		gap: var(--fds-space-4);
+		margin: 0;
+		padding: var(--fds-toast-viewport-offset);
+		list-style: none;
+		width: min(100%, calc(var(--fds-toast-width) + var(--fds-toast-viewport-offset) * 2));
+		/* The viewport spans a corner of the screen but must not block clicks on
+		   the interface behind it. Pointer events are re-enabled on each toast. */
+		pointer-events: none;
+	}
+
+	.fds-toast-viewport--bottom-end {
+		inset-block-end: 0;
+		inset-inline-end: 0;
+		align-items: flex-end;
+	}
+
+	.fds-toast-viewport--top-end {
+		inset-block-start: 0;
+		inset-inline-end: 0;
+		align-items: flex-end;
+		flex-direction: column-reverse;
+	}
+
+	.fds-toast-viewport--bottom-center {
+		inset-block-end: 0;
+		inset-inline: 0;
+		margin-inline: auto;
+		align-items: center;
+	}
+
+	.fds-toast-viewport--top-center {
+		inset-block-start: 0;
+		inset-inline: 0;
+		margin-inline: auto;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	.fds-toast {
+		position: relative;
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: start;
+		gap: var(--fds-toast-gap);
+		width: var(--fds-toast-width);
+		max-width: 100%;
+		padding: var(--fds-toast-padding);
+		background-color: var(--fds-color-surface-overlay);
+		border: var(--fds-border-width-thin) solid var(--fds-color-border-default);
+		border-radius: var(--fds-toast-radius);
+		box-shadow: var(--fds-elevation-overlay);
+		color: var(--fds-color-text-primary);
+		pointer-events: auto;
+		overflow: hidden;
+		opacity: 0;
+		transform: translateY(0.5rem);
+		transition:
+			opacity var(--fds-duration-moderate) var(--fds-easing-entrance),
+			transform var(--fds-duration-moderate) var(--fds-easing-entrance);
+	}
+
+	.fds-toast.is-open {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	/* Tone is carried by a marker rail rather than by tinting the whole surface.
+	   A fully red panel with white text on a dark overlay fails contrast in two of
+	   the four themes, and the rail keeps one background to audit instead of
+	   four. */
+	.fds-toast__marker {
+		width: var(--fds-border-width-thick);
+		align-self: stretch;
+		border-radius: var(--fds-radius-pill);
+		background-color: var(--fds-color-border-strong);
+	}
+
+	.fds-toast--success .fds-toast__marker {
+		background-color: var(--fds-color-border-success);
+	}
+	.fds-toast--warning .fds-toast__marker {
+		background-color: var(--fds-color-border-warning);
+	}
+	.fds-toast--danger .fds-toast__marker {
+		background-color: var(--fds-color-border-danger);
+	}
+
+	.fds-toast__content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--fds-space-3);
+		min-inline-size: 0;
+	}
+
+	.fds-toast__title {
+		margin: 0;
+		font-size: var(--fds-font-size-40);
+		font-weight: var(--fds-font-weight-semibold);
+		line-height: var(--fds-font-line-height-snug);
+	}
+
+	.fds-toast__description {
+		margin: 0;
+		font-size: var(--fds-font-size-30);
+		line-height: var(--fds-font-line-height-relaxed);
+		color: var(--fds-color-text-secondary);
+	}
+
+	.fds-toast__action {
+		align-self: flex-start;
+		margin-block-start: var(--fds-space-2);
+		padding: 0;
+		border: 0;
+		background: none;
+		font-family: var(--fds-font-body);
+		font-size: var(--fds-font-size-30);
+		font-weight: var(--fds-font-weight-semibold);
+		color: var(--fds-color-text-link);
+		text-decoration: underline;
+		text-underline-offset: 0.2em;
+		cursor: pointer;
+	}
+
+	.fds-toast__action:hover {
+		color: var(--fds-color-text-link-hover);
+	}
+
+	.fds-toast__action:focus-visible,
+	.fds-toast__close:focus-visible {
+		outline: var(--fds-focus-ring-width) solid var(--fds-focus-ring-color);
+		outline-offset: var(--fds-focus-ring-offset);
+	}
+
+	.fds-toast__close {
+		flex: none;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.25rem;
+		height: 1.25rem;
+		padding: 0;
+		border: 0;
+		border-radius: var(--fds-control-radius);
+		background: transparent;
+		color: var(--fds-color-icon-subtle);
+		cursor: pointer;
+	}
+
+	.fds-toast__close:hover {
+		color: var(--fds-color-icon-primary);
+	}
+
+	.fds-toast__close > svg {
+		width: 0.875rem;
+		height: 0.875rem;
+		display: block;
+	}
+
+	/* Progress rail. Rendered only when auto-dismiss is on and reduced motion is
+	   off: a shrinking bar is exactly the kind of continuous animation the media
+	   query exists to remove, and the toast is still dismissible without it. */
+	.fds-toast__timer {
+		position: absolute;
+		inset-block-end: 0;
+		inset-inline-start: 0;
+		height: var(--fds-border-width-medium);
+		width: 100%;
+		background-color: var(--fds-color-border-accent);
+		transform-origin: left center;
+		animation-name: fds-toast-timer;
+		animation-timing-function: var(--fds-easing-linear);
+		animation-fill-mode: forwards;
+	}
+
+	/* Hover and focus pause the visual rail in the same breath as the JavaScript
+	   timer, so the two never disagree about how much time is left. */
+	.fds-toast:hover .fds-toast__timer,
+	.fds-toast:focus-within .fds-toast__timer {
+		animation-play-state: paused;
+	}
+
+	@keyframes fds-toast-timer {
+		from {
+			transform: scaleX(1);
+		}
+		to {
+			transform: scaleX(0);
+		}
+	}
+}

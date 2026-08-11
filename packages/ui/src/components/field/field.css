@@ -1,0 +1,58 @@
+@layer fds.components {
+	.fds-field {
+		display: flex;
+		flex-direction: column;
+		gap: var(--fds-field-gap);
+		min-inline-size: 0;
+	}
+
+	.fds-field__label {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--fds-space-2);
+		font-size: var(--fds-field-label-font-size);
+		font-weight: var(--fds-field-label-font-weight);
+		color: var(--fds-color-text-primary);
+		line-height: var(--fds-font-line-height-snug);
+	}
+
+	.fds-field__required {
+		color: var(--fds-color-text-danger);
+	}
+
+	.fds-field__description,
+	.fds-field__error {
+		margin: 0;
+		font-size: var(--fds-field-message-font-size);
+		line-height: var(--fds-font-line-height-snug);
+	}
+
+	.fds-field__description {
+		color: var(--fds-color-text-subtle);
+	}
+
+	.fds-field__error {
+		color: var(--fds-color-text-danger);
+	}
+
+	/* Inline layouts (Checkbox, Radio, Switch) put the control beside its label,
+	   so the frame flips to a row and the messages indent to align under the
+	   label rather than under the control. */
+	.fds-field--inline {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		column-gap: var(--fds-space-4);
+		row-gap: var(--fds-space-2);
+		align-items: start;
+	}
+
+	.fds-field--inline > .fds-field__label {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.fds-field--inline > .fds-field__description,
+	.fds-field--inline > .fds-field__error {
+		grid-column: 2;
+	}
+}

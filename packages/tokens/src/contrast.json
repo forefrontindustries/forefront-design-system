@@ -1,0 +1,364 @@
+{
+	"$comment": "The contrast contract. Every pair a component actually renders is declared here once, with the threshold it has to clear and the rule that threshold comes from. The token build computes each pair in every theme and fails on a violation, so a theme cannot be merged with an inaccessible pairing. The docs site renders this same file, which is why the accessibility page cannot claim a number the build has not verified.",
+	"$rationale": [
+		"Declaring pairs as intent is the only way to audit a themed system. A raw grid of every colour against every colour produces hundreds of ratios for pairings no component ever draws, which buries the handful that matter.",
+		"Exempt pairs are listed rather than omitted. A pair that is absent from an audit is indistinguishable from a pair nobody thought about, so decorative pairings are named along with the reason they carry no threshold."
+	],
+	"requirements": [
+		{
+			"foreground": "color.text.primary",
+			"background": "color.surface.canvas",
+			"min": 4.5,
+			"usage": "Body copy on the page background",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.primary",
+			"background": "color.surface.raised",
+			"min": 4.5,
+			"usage": "Body copy in a card",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.primary",
+			"background": "color.surface.overlay",
+			"min": 4.5,
+			"usage": "Body copy in a modal, toast or menu",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.primary",
+			"background": "color.surface.control",
+			"min": 4.5,
+			"usage": "Value typed into an input",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.secondary",
+			"background": "color.surface.canvas",
+			"min": 4.5,
+			"usage": "Supporting copy",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.secondary",
+			"background": "color.surface.raised",
+			"min": 4.5,
+			"usage": "Card body copy",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.subtle",
+			"background": "color.surface.canvas",
+			"min": 4.5,
+			"usage": "Metadata and table captions",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.subtle",
+			"background": "color.surface.raised",
+			"min": 4.5,
+			"usage": "Field descriptions",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.placeholder",
+			"background": "color.surface.control",
+			"min": 4.5,
+			"usage": "Input placeholder",
+			"rule": "SC 1.4.3, applied in full. Placeholder text is text, and the common practice of holding it to 3:1 treats a hint as decoration."
+		},
+		{
+			"foreground": "color.text.accent",
+			"background": "color.surface.canvas",
+			"min": 4.5,
+			"usage": "Accent text and links",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.link",
+			"background": "color.surface.raised",
+			"min": 4.5,
+			"usage": "Links inside a card",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.on-accent",
+			"background": "color.surface.accent-bold",
+			"min": 4.5,
+			"usage": "Primary button label",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.on-accent",
+			"background": "color.surface.accent-bold-hover",
+			"min": 4.5,
+			"usage": "Primary button label, hovered",
+			"rule": "SC 1.4.3. Hover states are audited too, because a label that dips below the threshold on hover is unreadable exactly while it is being used."
+		},
+		{
+			"foreground": "color.text.on-accent",
+			"background": "color.surface.accent-bold-active",
+			"min": 4.5,
+			"usage": "Primary button label, pressed",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.on-danger",
+			"background": "color.surface.danger-bold",
+			"min": 4.5,
+			"usage": "Danger button label",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.on-danger",
+			"background": "color.surface.danger-bold-hover",
+			"min": 4.5,
+			"usage": "Danger button label, hovered",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.on-neutral-bold",
+			"background": "color.surface.neutral-bold",
+			"min": 4.5,
+			"usage": "Tooltip text and bold badge",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.success",
+			"background": "color.surface.success-subtle",
+			"min": 4.5,
+			"usage": "Success badge, subtle tone",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.warning",
+			"background": "color.surface.warning-subtle",
+			"min": 4.5,
+			"usage": "Warning badge, subtle tone",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.danger",
+			"background": "color.surface.danger-subtle",
+			"min": 4.5,
+			"usage": "Danger badge, subtle tone",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.danger",
+			"background": "color.surface.raised",
+			"min": 4.5,
+			"usage": "Field error message",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.info",
+			"background": "color.surface.info-subtle",
+			"min": 4.5,
+			"usage": "Info badge, subtle tone",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.border.focus",
+			"background": "color.surface.canvas",
+			"min": 3,
+			"usage": "Focus ring on the page background",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.focus",
+			"background": "color.surface.raised",
+			"min": 3,
+			"usage": "Focus ring inside a card",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.focus",
+			"background": "color.surface.overlay",
+			"min": 3,
+			"usage": "Focus ring inside a modal",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.control",
+			"background": "color.surface.control",
+			"min": 3,
+			"usage": "Resting boundary of an input, select or checkbox, measured against its own fill",
+			"rule": "SC 1.4.11. For an empty text field or an unchecked checkbox the border is the only thing identifying the control, so it is held to the component threshold and not treated as decoration."
+		},
+		{
+			"foreground": "color.border.control",
+			"background": "color.surface.canvas",
+			"min": 3,
+			"usage": "Control boundary against the page behind it",
+			"rule": "SC 1.4.11. Both sides of a boundary are measured, because a border that only clears the threshold against its inner fill disappears against the page."
+		},
+		{
+			"foreground": "color.border.control",
+			"background": "color.surface.raised",
+			"min": 3,
+			"usage": "Control boundary inside a card",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.control-hover",
+			"background": "color.surface.control-hover",
+			"min": 3,
+			"usage": "Hovered control boundary",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.accent",
+			"background": "color.surface.control",
+			"min": 3,
+			"usage": "Boundary of a checked checkbox or radio",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.danger",
+			"background": "color.surface.control",
+			"min": 3,
+			"usage": "Boundary of an invalid field",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.surface.accent-bold",
+			"background": "color.surface.canvas",
+			"min": 3,
+			"usage": "Filled primary button against the page",
+			"rule": "SC 1.4.11. A solid button carries no border, so its fill is the boundary."
+		},
+		{
+			"foreground": "color.icon.primary",
+			"background": "color.surface.canvas",
+			"min": 3,
+			"usage": "Interface icon on the page background",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.icon.on-accent",
+			"background": "color.surface.accent-bold",
+			"min": 3,
+			"usage": "Icon inside a primary button",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.text.link-hover",
+			"background": "color.surface.canvas",
+			"min": 4.5,
+			"usage": "Inline link, hovered",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.text.link-hover",
+			"background": "color.surface.overlay",
+			"min": 4.5,
+			"usage": "Toast action link, hovered",
+			"rule": "SC 1.4.3 Contrast (Minimum)"
+		},
+		{
+			"foreground": "color.surface.danger-bold",
+			"background": "color.surface.canvas",
+			"min": 3,
+			"usage": "Filled destructive button against the page",
+			"rule": "SC 1.4.11. Measured on the resting fill, which is what identifies the control. Hover and pressed fills are audited for label legibility instead, since the boundary has already been established by the time a pointer is on it."
+		},
+		{
+			"foreground": "color.border.success",
+			"background": "color.surface.success-subtle",
+			"min": 3,
+			"usage": "Success badge boundary",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.success",
+			"background": "color.surface.overlay",
+			"min": 3,
+			"usage": "Success status bar on a toast",
+			"rule": "SC 1.4.11. The bar is the only non-text carrier of the toast's status, so it is measured rather than treated as trim."
+		},
+		{
+			"foreground": "color.border.warning",
+			"background": "color.surface.warning-subtle",
+			"min": 3,
+			"usage": "Warning badge boundary",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.border.warning",
+			"background": "color.surface.overlay",
+			"min": 3,
+			"usage": "Warning status bar on a toast",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.icon.subtle",
+			"background": "color.surface.control",
+			"min": 3,
+			"usage": "Select chevron and input affix icon",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.icon.subtle",
+			"background": "color.surface.overlay",
+			"min": 3,
+			"usage": "Modal and toast dismiss icon",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.icon.accent",
+			"background": "color.surface.canvas",
+			"min": 3,
+			"usage": "Accent icon on the page background",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.icon.accent",
+			"background": "color.surface.raised",
+			"min": 3,
+			"usage": "Accent icon inside a card",
+			"rule": "SC 1.4.11 Non-text Contrast"
+		},
+		{
+			"foreground": "color.text.disabled",
+			"background": "color.surface.disabled",
+			"min": 3,
+			"usage": "Disabled control label",
+			"rule": "Self-imposed floor. WCAG exempts inactive controls entirely, which is how disabled states end up at 1.8:1 and unreadable. The system holds 3:1 so a disabled field can still be read before someone asks why it is disabled."
+		},
+		{
+			"foreground": "color.border.disabled",
+			"background": "color.surface.disabled",
+			"min": 1.2,
+			"usage": "Disabled control boundary",
+			"rule": "Self-imposed floor. Deliberately low: a disabled control should recede. The floor only guarantees the shape stays perceivable rather than dissolving into the background."
+		}
+	],
+	"exempt": [
+		{
+			"foreground": "color.border.subtle",
+			"background": "color.surface.canvas",
+			"usage": "Default divider and hairline rule",
+			"reason": "Purely decorative separator. Nothing is identified by it and no information is lost if it is invisible, which is the SC 1.4.11 exemption. It stays quiet on purpose, and the audited border.control token exists so that quietness never leaks onto an interactive boundary."
+		},
+		{
+			"foreground": "color.border.subtle",
+			"background": "color.surface.raised",
+			"usage": "Card and modal edge",
+			"reason": "Decorative. The card is identified by its fill and its content, not by its edge."
+		},
+		{
+			"foreground": "color.border.default",
+			"background": "color.surface.raised",
+			"usage": "Structural border on non-interactive containers",
+			"reason": "Decorative container edge. This token used to sit on inputs and checkboxes as well, which is what put an interactive boundary at 1.25:1 in the dark themes. Splitting border.control out of it is what let this one stay decorative."
+		},
+		{
+			"foreground": "color.border.strong",
+			"background": "color.surface.raised",
+			"usage": "Hovered card edge",
+			"reason": "Decorative emphasis on a container whose fill and content already identify it."
+		}
+	]
+}

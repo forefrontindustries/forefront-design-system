@@ -1,0 +1,102 @@
+@layer fds.components {
+	/* Declared here because Badge is the first component that needs it. It is a
+	   utility the whole library shares: an accessible name that has no visual
+	   presence still has to be reachable, so clip rather than display: none. */
+	.fds-visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.fds-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--fds-space-3);
+		height: var(--fds-badge-height);
+		padding-inline: var(--fds-badge-padding-x);
+		border: var(--fds-border-width-thin) solid transparent;
+		border-radius: var(--fds-radius-pill);
+		font-family: var(--fds-font-body);
+		font-size: var(--fds-badge-font-size);
+		font-weight: var(--fds-badge-font-weight);
+		letter-spacing: var(--fds-font-tracking-wide);
+		line-height: 1;
+		white-space: nowrap;
+		vertical-align: middle;
+	}
+
+	.fds-badge__dot {
+		width: var(--fds-badge-dot-size);
+		height: var(--fds-badge-dot-size);
+		border-radius: var(--fds-radius-pill);
+		background-color: currentColor;
+		flex: none;
+	}
+
+	/* Subtle: tinted surface, coloured text, hairline border of the same family.
+	   The border is what keeps a subtle badge legible on the raised surface in
+	   the light themes, where the tint alone is nearly invisible. */
+	.fds-badge--subtle.fds-badge--neutral {
+		background-color: var(--fds-color-surface-neutral-subtle);
+		border-color: var(--fds-color-border-subtle);
+		color: var(--fds-color-text-secondary);
+	}
+	.fds-badge--subtle.fds-badge--accent {
+		background-color: var(--fds-color-surface-accent-subtle);
+		border-color: var(--fds-color-border-accent);
+		color: var(--fds-color-text-accent);
+	}
+	.fds-badge--subtle.fds-badge--success {
+		background-color: var(--fds-color-surface-success-subtle);
+		border-color: var(--fds-color-border-success);
+		color: var(--fds-color-text-success);
+	}
+	.fds-badge--subtle.fds-badge--warning {
+		background-color: var(--fds-color-surface-warning-subtle);
+		border-color: var(--fds-color-border-warning);
+		color: var(--fds-color-text-warning);
+	}
+	.fds-badge--subtle.fds-badge--danger {
+		background-color: var(--fds-color-surface-danger-subtle);
+		border-color: var(--fds-color-border-danger);
+		color: var(--fds-color-text-danger);
+	}
+	.fds-badge--subtle.fds-badge--info {
+		background-color: var(--fds-color-surface-info-subtle);
+		border-color: var(--fds-color-border-accent);
+		color: var(--fds-color-text-info);
+	}
+
+	/* Bold: filled surface with an on-* text token. Every pair here is one of the
+	   contrast-checked combinations listed on the accessibility page. */
+	.fds-badge--bold.fds-badge--neutral {
+		background-color: var(--fds-color-surface-neutral-bold);
+		color: var(--fds-color-text-on-neutral-bold);
+	}
+	.fds-badge--bold.fds-badge--accent {
+		background-color: var(--fds-color-surface-accent-bold);
+		color: var(--fds-color-text-on-accent);
+	}
+	.fds-badge--bold.fds-badge--success {
+		background-color: var(--fds-color-surface-success-bold);
+		color: var(--fds-color-text-on-accent);
+	}
+	.fds-badge--bold.fds-badge--warning {
+		background-color: var(--fds-color-surface-warning-bold);
+		color: var(--fds-color-text-on-accent);
+	}
+	.fds-badge--bold.fds-badge--danger {
+		background-color: var(--fds-color-surface-danger-bold);
+		color: var(--fds-color-text-on-danger);
+	}
+	.fds-badge--bold.fds-badge--info {
+		background-color: var(--fds-color-surface-info-bold);
+		color: var(--fds-color-text-on-accent);
+	}
+}

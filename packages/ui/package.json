@@ -1,0 +1,34 @@
+{
+  "name": "@forefront/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hand-built accessible React component library for the Forefront Design System. No third-party primitives: every focus trap, roving tabindex and listbox in here is authored, not configured.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles/index.css",
+    "./meta": "./src/meta.ts"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "bun tooling/extract-props.ts",
+    "lint:tokens": "bun tooling/lint-css-tokens.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@forefront/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.17",
+    "@types/react-dom": "19.1.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "typescript": "5.9.3"
+  }
+}

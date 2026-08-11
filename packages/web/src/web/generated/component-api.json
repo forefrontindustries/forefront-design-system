@@ -1,0 +1,1299 @@
+{
+	"$comment": "GENERATED FILE. Produced by packages/ui/tooling/extract-props.ts from the TypeScript declarations. Do not edit by hand: the next build overwrites it. No timestamp is recorded so rebuilding does not create a diff.",
+	"counts": {
+		"files": 13,
+		"interfaces": 20,
+		"props": 88
+	},
+	"files": {
+		"src/components/badge/badge.tsx": {
+			"source": "packages/ui/src/components/badge/badge.tsx",
+			"interfaces": [
+				{
+					"name": "BadgeProps",
+					"description": "",
+					"extends": [
+						"HTMLAttributes<HTMLSpanElement>"
+					],
+					"props": [
+						{
+							"name": "tone",
+							"type": "BadgeTone",
+							"resolvedType": "\"neutral\" | \"accent\" | \"success\" | \"warning\" | \"danger\" | \"info\"",
+							"required": false,
+							"description": "Semantic meaning. Tone maps to a token pair, so a success badge is the same green as success text everywhere in the product.",
+							"defaultValue": "\"neutral\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"neutral",
+									"accent",
+									"success",
+									"warning",
+									"danger",
+									"info"
+								]
+							}
+						},
+						{
+							"name": "variant",
+							"type": "BadgeVariant",
+							"resolvedType": "\"subtle\" | \"bold\"",
+							"required": false,
+							"description": "Subtle for dense lists, bold when the badge is the thing you want read first.",
+							"defaultValue": "\"subtle\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"subtle",
+									"bold"
+								]
+							}
+						},
+						{
+							"name": "dot",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Renders a status dot before the label. Use it when the badge represents a live state rather than a category.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "srLabel",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Text announced in place of the visible label, for cases where the label is an abbreviation. Rendered as visually hidden text.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/button/button.tsx": {
+			"source": "packages/ui/src/components/button/button.tsx",
+			"interfaces": [
+				{
+					"name": "ButtonProps",
+					"description": "",
+					"extends": [
+						"Omit<ButtonHTMLAttributes<HTMLButtonElement>, \"color\">"
+					],
+					"props": [
+						{
+							"name": "variant",
+							"type": "ButtonVariant",
+							"resolvedType": "\"danger\" | \"subtle\" | \"primary\" | \"secondary\" | \"ghost\"",
+							"required": false,
+							"description": "Visual weight. One primary button per view: the variant is a statement about hierarchy, not a color picker.",
+							"defaultValue": "\"primary\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"primary",
+									"secondary",
+									"subtle",
+									"ghost",
+									"danger"
+								]
+							}
+						},
+						{
+							"name": "size",
+							"type": "ButtonSize",
+							"resolvedType": "\"sm\" | \"md\" | \"lg\"",
+							"required": false,
+							"description": "Control height, shared with Input and Select through the `control.*` tokens so a button and a field line up on the same row.",
+							"defaultValue": "\"md\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"sm",
+									"md",
+									"lg"
+								]
+							}
+						},
+						{
+							"name": "loading",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Shows a progress indicator and blocks activation while keeping the button focusable. Prefer this over swapping the label to \"Loading...\", which loses the accessible name.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "iconStart",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Icon before the label. Decorative: it is hidden from assistive tech.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "iconEnd",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Icon after the label. Decorative: it is hidden from assistive tech.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "fullWidth",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Stretches to the width of the container. Use inside narrow columns and mobile sheets, not in toolbars.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Button label. Required, including for icon-only buttons.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/card/card.tsx": {
+			"source": "packages/ui/src/components/card/card.tsx",
+			"interfaces": [
+				{
+					"name": "CardProps",
+					"description": "",
+					"extends": [
+						"HTMLAttributes<HTMLDivElement>"
+					],
+					"props": [
+						{
+							"name": "variant",
+							"type": "CardVariant",
+							"resolvedType": "\"raised\" | \"outlined\" | \"sunken\"",
+							"required": false,
+							"description": "Surface treatment. Raised sits above the canvas with elevation, outlined uses a border and no shadow, sunken recedes for read-only detail.",
+							"defaultValue": "\"outlined\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"raised",
+									"outlined",
+									"sunken"
+								]
+							}
+						},
+						{
+							"name": "interactive",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Adds hover and focus-within affordances for cards that contain a primary link. It does not make the card itself clickable: see the accessibility notes for why.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "flush",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Removes the internal padding so the card can hold a full-bleed image or a table that draws its own insets.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				},
+				{
+					"name": "CardSectionProps",
+					"description": "",
+					"extends": [
+						"HTMLAttributes<HTMLDivElement>"
+					],
+					"props": [
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				},
+				{
+					"name": "CardTitleProps",
+					"description": "",
+					"extends": [
+						"HTMLAttributes<HTMLHeadingElement>"
+					],
+					"props": [
+						{
+							"name": "level",
+							"type": "2 | 3 | 4 | 5 | 6",
+							"resolvedType": null,
+							"required": false,
+							"description": "Heading level. Set it to match the surrounding document outline rather than accepting the default, because a page of h3 cards under an h1 skips a level for screen reader navigation.",
+							"defaultValue": "3",
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/checkbox/checkbox.tsx": {
+			"source": "packages/ui/src/components/checkbox/checkbox.tsx",
+			"interfaces": [
+				{
+					"name": "CheckboxProps",
+					"description": "",
+					"extends": [
+						"FieldMessages",
+						"Omit<InputHTMLAttributes<HTMLInputElement>, \"type\" | \"size\" | \"className\">"
+					],
+					"props": [
+						{
+							"name": "indeterminate",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Renders the mixed state. Maps to the native `indeterminate` DOM property, which is what puts the element in `:indeterminate` and makes assistive technology announce \"mixed\".",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/field/field.tsx": {
+			"source": "packages/ui/src/components/field/field.tsx",
+			"interfaces": [
+				{
+					"name": "FieldFrameProps",
+					"description": "",
+					"extends": [
+						"FieldMessages"
+					],
+					"props": [
+						{
+							"name": "field",
+							"type": "UseFieldResult",
+							"resolvedType": null,
+							"required": true,
+							"description": "The result of useField(), which owns the generated ids and the invalid flag.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "labelAs",
+							"type": "\"label\" | \"span\"",
+							"resolvedType": null,
+							"required": false,
+							"description": "Renders the label as a sibling caption instead of a <label for>. Used by Radio groups, which label a fieldset.",
+							"defaultValue": null,
+							"control": {
+								"kind": "enum",
+								"options": [
+									"label",
+									"span"
+								]
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/input/input.tsx": {
+			"source": "packages/ui/src/components/input/input.tsx",
+			"interfaces": [
+				{
+					"name": "InputProps",
+					"description": "",
+					"extends": [
+						"FieldMessages",
+						"Omit<InputHTMLAttributes<HTMLInputElement>, \"size\" | \"className\">"
+					],
+					"props": [
+						{
+							"name": "size",
+							"type": "InputSize",
+							"resolvedType": "\"sm\" | \"md\" | \"lg\"",
+							"required": false,
+							"description": "Control height, shared with Button and Select.",
+							"defaultValue": "\"md\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"sm",
+									"md",
+									"lg"
+								]
+							}
+						},
+						{
+							"name": "iconStart",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Decorative icon rendered inside the leading edge of the field.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "iconEnd",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Decorative icon or unit rendered inside the trailing edge of the field.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "fullWidth",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Fills the width of its container. Fields are full width by default because a form column is the normal case.",
+							"defaultValue": "true",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "inputClassName",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Class applied to the input element itself.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/modal/modal.tsx": {
+			"source": "packages/ui/src/components/modal/modal.tsx",
+			"interfaces": [
+				{
+					"name": "ModalProps",
+					"description": "",
+					"extends": [],
+					"props": [
+						{
+							"name": "open",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": true,
+							"description": "Whether the dialog is open. The component is fully controlled.",
+							"defaultValue": null,
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "onClose",
+							"type": "() => void",
+							"resolvedType": null,
+							"required": true,
+							"description": "Called for every dismissal route: the close button, Escape, and the backdrop. One handler means a consumer cannot accidentally support two of the three.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "title",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "Dialog title. Becomes the accessible name through aria-labelledby.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "description",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Optional supporting line, wired to aria-describedby.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "size",
+							"type": "ModalSize",
+							"resolvedType": "\"sm\" | \"md\" | \"lg\"",
+							"required": false,
+							"description": "Width step. Anything wider than lg is a page, not a dialog.",
+							"defaultValue": "\"md\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"sm",
+									"md",
+									"lg"
+								]
+							}
+						},
+						{
+							"name": "footer",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Footer actions. The primary action goes last, on the trailing edge.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "dismissOnBackdrop",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Set to false for dialogs holding unsaved work, so a stray click cannot discard it.",
+							"defaultValue": "true",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "hideCloseButton",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Hides the close button. Only for flows that must be resolved through the footer actions, and Escape still works.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Dialog content.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/radio/radio.tsx": {
+			"source": "packages/ui/src/components/radio/radio.tsx",
+			"interfaces": [
+				{
+					"name": "RadioGroupProps",
+					"description": "",
+					"extends": [
+						"FieldMessages"
+					],
+					"props": [
+						{
+							"name": "value",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Selected value. Provide with onChange for a controlled group.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "defaultValue",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Initial selected value for an uncontrolled group.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "onChange",
+							"type": "(value: string) => void",
+							"resolvedType": null,
+							"required": false,
+							"description": "Fired with the newly selected value.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "name",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Shared input name. Generated when omitted, which is what makes arrow key navigation work without any JavaScript.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "disabled",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Disables every radio in the group.",
+							"defaultValue": null,
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "orientation",
+							"type": "\"vertical\" | \"horizontal\"",
+							"resolvedType": null,
+							"required": false,
+							"description": "Row layout. Only use it for two or three short options.",
+							"defaultValue": "\"vertical\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"vertical",
+									"horizontal"
+								]
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				},
+				{
+					"name": "RadioProps",
+					"description": "",
+					"extends": [
+						"Omit<InputHTMLAttributes<HTMLInputElement>, \"type\" | \"size\" | \"className\" | \"value\">"
+					],
+					"props": [
+						{
+							"name": "value",
+							"type": "string",
+							"resolvedType": null,
+							"required": true,
+							"description": "The value submitted when this option is selected. Required.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "label",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "Option label.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "description",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Secondary line under the label, for explaining the consequence of the choice.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/select/select.tsx": {
+			"source": "packages/ui/src/components/select/select.tsx",
+			"interfaces": [
+				{
+					"name": "SelectProps",
+					"description": "",
+					"extends": [
+						"FieldMessages"
+					],
+					"props": [
+						{
+							"name": "options",
+							"type": "SelectOption[]",
+							"resolvedType": null,
+							"required": true,
+							"description": "Options in display order.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "value",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Selected value, for a controlled Select.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "defaultValue",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Initial value, for an uncontrolled Select.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "onChange",
+							"type": "(value: string) => void",
+							"resolvedType": null,
+							"required": false,
+							"description": "Fired with the newly selected value.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "placeholder",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Text shown when nothing is selected.",
+							"defaultValue": "\"Select an option\"",
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "size",
+							"type": "SelectSize",
+							"resolvedType": "\"sm\" | \"md\" | \"lg\"",
+							"required": false,
+							"description": "Control height, shared with Button and Input.",
+							"defaultValue": "\"md\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"sm",
+									"md",
+									"lg"
+								]
+							}
+						},
+						{
+							"name": "disabled",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Disables the control.",
+							"defaultValue": null,
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "name",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Renders a hidden input so the value posts with a plain HTML form submission. Without a name, the value only exists in React state.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "fullWidth",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Fills the container width.",
+							"defaultValue": "true",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "iconStart",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Rendered inside the trigger before the value.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "id",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Id for the trigger. Generated when omitted, and used to derive the label, description and error ids.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/switch/switch.tsx": {
+			"source": "packages/ui/src/components/switch/switch.tsx",
+			"interfaces": [
+				{
+					"name": "SwitchProps",
+					"description": "",
+					"extends": [
+						"Omit<InputHTMLAttributes<HTMLInputElement>, \"type\" | \"size\" | \"className\">"
+					],
+					"props": [
+						{
+							"name": "label",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Label text. Describe the thing being switched, not the current state.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "description",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Secondary line explaining what changes when it is on.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "labelPosition",
+							"type": "\"start\" | \"end\"",
+							"resolvedType": null,
+							"required": false,
+							"description": "Places the control after the label, right aligned, for settings rows.",
+							"defaultValue": "\"start\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"start",
+									"end"
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/tabs/tabs.tsx": {
+			"source": "packages/ui/src/components/tabs/tabs.tsx",
+			"interfaces": [
+				{
+					"name": "TabsProps",
+					"description": "",
+					"extends": [
+						"Omit<HTMLAttributes<HTMLDivElement>, \"onChange\">"
+					],
+					"props": [
+						{
+							"name": "value",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Selected tab value. Provide with onChange for a controlled Tabs.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "defaultValue",
+							"type": "string",
+							"resolvedType": null,
+							"required": false,
+							"description": "Initially selected value for an uncontrolled Tabs.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "onChange",
+							"type": "(value: string) => void",
+							"resolvedType": null,
+							"required": false,
+							"description": "Fired with the newly selected value.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						},
+						{
+							"name": "orientation",
+							"type": "TabsOrientation",
+							"resolvedType": "\"vertical\" | \"horizontal\"",
+							"required": false,
+							"description": "Layout direction. Vertical also changes which arrow keys navigate, because the keyboard model has to match what the user sees.",
+							"defaultValue": "\"horizontal\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"horizontal",
+									"vertical"
+								]
+							}
+						},
+						{
+							"name": "activation",
+							"type": "TabsActivation",
+							"resolvedType": "\"automatic\" | \"manual\"",
+							"required": false,
+							"description": "Automatic selects on arrow key. Manual moves focus only and waits for Enter or Space. Use manual when a panel is expensive to render, so arrowing past three tabs does not fire three requests.",
+							"defaultValue": "\"automatic\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"automatic",
+									"manual"
+								]
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				},
+				{
+					"name": "TabListProps",
+					"description": "",
+					"extends": [
+						"HTMLAttributes<HTMLDivElement>"
+					],
+					"props": [
+						{
+							"name": "\"aria-label\"",
+							"type": "string",
+							"resolvedType": null,
+							"required": true,
+							"description": "Names the tab list for assistive technology. Required: a tablist with no name is announced as an unlabelled group of tabs.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				},
+				{
+					"name": "TabProps",
+					"description": "",
+					"extends": [
+						"Omit<ButtonHTMLAttributes<HTMLButtonElement>, \"value\">"
+					],
+					"props": [
+						{
+							"name": "value",
+							"type": "string",
+							"resolvedType": null,
+							"required": true,
+							"description": "Identifies the tab and its panel. Must match the TabPanel value.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "badge",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Optional count or status rendered after the label.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				},
+				{
+					"name": "TabPanelProps",
+					"description": "",
+					"extends": [
+						"HTMLAttributes<HTMLDivElement>"
+					],
+					"props": [
+						{
+							"name": "value",
+							"type": "string",
+							"resolvedType": null,
+							"required": true,
+							"description": "Must match the Tab value it belongs to.",
+							"defaultValue": null,
+							"control": {
+								"kind": "text"
+							}
+						},
+						{
+							"name": "keepMounted",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Keeps the panel mounted while hidden, preserving scroll position and form state at the cost of rendering everything up front.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/toast/toast.tsx": {
+			"source": "packages/ui/src/components/toast/toast.tsx",
+			"interfaces": [
+				{
+					"name": "ToastOptions",
+					"description": "",
+					"extends": [],
+					"props": [
+						{
+							"name": "title",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "Short summary. One line.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "description",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": false,
+							"description": "Optional second line with detail or a next step.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "tone",
+							"type": "ToastTone",
+							"resolvedType": "\"neutral\" | \"success\" | \"warning\" | \"danger\"",
+							"required": false,
+							"description": "Semantic tone. Danger and warning are announced assertively, the rest politely.",
+							"defaultValue": "\"neutral\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"neutral",
+									"success",
+									"warning",
+									"danger"
+								]
+							}
+						},
+						{
+							"name": "duration",
+							"type": "number",
+							"resolvedType": null,
+							"required": false,
+							"description": "Auto-dismiss delay in milliseconds. Pass 0 to require a manual dismiss, which is the right choice for anything the user has to act on.",
+							"defaultValue": "5000",
+							"control": {
+								"kind": "number"
+							}
+						},
+						{
+							"name": "action",
+							"type": "{ label: string; onClick: () => void }",
+							"resolvedType": "{ label: string; onClick: () => void; }",
+							"required": false,
+							"description": "A single action. Keep it to one: a toast is not a dialog.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						}
+					]
+				},
+				{
+					"name": "ToastProviderProps",
+					"description": "",
+					"extends": [],
+					"props": [
+						{
+							"name": "placement",
+							"type": "ToastPlacement",
+							"resolvedType": "\"top-end\" | \"top-center\" | \"bottom-end\" | \"bottom-center\"",
+							"required": false,
+							"description": "Where the stack sits. Bottom placements keep it away from the top-of-page controls a user is usually reading.",
+							"defaultValue": "\"bottom-end\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"top-end",
+									"top-center",
+									"bottom-end",
+									"bottom-center"
+								]
+							}
+						},
+						{
+							"name": "max",
+							"type": "number",
+							"resolvedType": null,
+							"required": false,
+							"description": "Maximum visible toasts. Older ones are dropped when the limit is reached, because a stack of nine notifications is a log file, not feedback.",
+							"defaultValue": "3",
+							"control": {
+								"kind": "number"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						}
+					]
+				}
+			]
+		},
+		"src/components/tooltip/tooltip.tsx": {
+			"source": "packages/ui/src/components/tooltip/tooltip.tsx",
+			"interfaces": [
+				{
+					"name": "TooltipProps",
+					"description": "",
+					"extends": [],
+					"props": [
+						{
+							"name": "content",
+							"type": "ReactNode",
+							"resolvedType": null,
+							"required": true,
+							"description": "Tooltip text. Plain text only: a tooltip is unreachable by pointer, so anything interactive inside it cannot be used.",
+							"defaultValue": null,
+							"control": {
+								"kind": "node"
+							}
+						},
+						{
+							"name": "placement",
+							"type": "TooltipPlacement",
+							"resolvedType": "\"top\" | \"bottom\" | \"left\" | \"right\"",
+							"required": false,
+							"description": "Preferred side. The tooltip flips to the opposite side when there is not enough room in the viewport.",
+							"defaultValue": "\"top\"",
+							"control": {
+								"kind": "enum",
+								"options": [
+									"top",
+									"bottom",
+									"left",
+									"right"
+								]
+							}
+						},
+						{
+							"name": "delay",
+							"type": "number",
+							"resolvedType": null,
+							"required": false,
+							"description": "Delay in milliseconds before showing on hover. Keyboard focus always shows immediately, because a keyboard user has already committed to the element.",
+							"defaultValue": "200",
+							"control": {
+								"kind": "number"
+							}
+						},
+						{
+							"name": "disabled",
+							"type": "boolean",
+							"resolvedType": null,
+							"required": false,
+							"description": "Disables the tooltip without changing the tree, for cases where the hint is only relevant in some states.",
+							"defaultValue": "false",
+							"control": {
+								"kind": "boolean"
+							}
+						},
+						{
+							"name": "children",
+							"type": "ReactElement<HTMLAttributes<HTMLElement>>",
+							"resolvedType": "ReactElement<HTMLAttributes<HTMLElement>, string | JSXElementConstructor<any>>",
+							"required": true,
+							"description": "The trigger. Must be a single element that can receive focus, because hover-only hints do not exist for keyboard or screen reader users.",
+							"defaultValue": null,
+							"control": {
+								"kind": "unsupported"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

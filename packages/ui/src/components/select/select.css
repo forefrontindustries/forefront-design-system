@@ -1,0 +1,198 @@
+@layer fds.components {
+	.fds-select {
+		position: relative;
+		width: 100%;
+		min-width: var(--fds-input-min-width);
+	}
+
+	.fds-select__trigger {
+		display: flex;
+		align-items: center;
+		gap: var(--fds-control-gap-md);
+		width: 100%;
+		height: var(--fds-control-height-md);
+		padding-inline: var(--fds-control-padding-x-md);
+		background-color: var(--fds-color-surface-control);
+		border: var(--fds-control-border-width) solid var(--fds-color-border-control);
+		border-radius: var(--fds-control-radius);
+		font-family: var(--fds-font-body);
+		font-size: var(--fds-control-font-size-md);
+		color: var(--fds-color-text-primary);
+		text-align: start;
+		cursor: pointer;
+		transition:
+			border-color var(--fds-duration-fast) var(--fds-easing-standard),
+			background-color var(--fds-duration-fast) var(--fds-easing-standard);
+	}
+
+	.fds-select__trigger--sm {
+		height: var(--fds-control-height-sm);
+		padding-inline: var(--fds-control-padding-x-sm);
+		font-size: var(--fds-control-font-size-sm);
+	}
+
+	.fds-select__trigger--lg {
+		height: var(--fds-control-height-lg);
+		padding-inline: var(--fds-control-padding-x-lg);
+		font-size: var(--fds-control-font-size-lg);
+	}
+
+	.fds-select__trigger:hover:not(:disabled) {
+		border-color: var(--fds-color-border-control-hover);
+	}
+
+	.fds-select__trigger:focus-visible {
+		outline: var(--fds-focus-ring-width) solid var(--fds-focus-ring-color);
+		outline-offset: var(--fds-focus-ring-offset);
+	}
+
+	/* Focus never leaves the trigger while the menu is open, so the trigger keeps
+	   an explicit open treatment. Without it the control looks unfocused while the
+	   user is arrowing through options. */
+	.fds-select__trigger.is-open {
+		border-color: var(--fds-color-border-accent);
+	}
+
+	.fds-select__trigger.is-invalid {
+		border-color: var(--fds-color-border-danger);
+		border-width: var(--fds-input-invalid-border-width);
+	}
+
+	.fds-select__trigger:disabled {
+		background-color: var(--fds-color-surface-disabled);
+		border-color: var(--fds-color-border-disabled);
+		color: var(--fds-color-text-disabled);
+		cursor: not-allowed;
+	}
+
+	.fds-select__value {
+		flex: 1 1 auto;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.fds-select__value.is-placeholder {
+		color: var(--fds-color-text-placeholder);
+	}
+
+	.fds-select__adornment {
+		display: inline-flex;
+		flex: none;
+		color: var(--fds-color-icon-subtle);
+	}
+
+	.fds-select__adornment > svg {
+		width: 1em;
+		height: 1em;
+		display: block;
+	}
+
+	.fds-select__chevron {
+		width: 1rem;
+		height: 1rem;
+		flex: none;
+		color: var(--fds-color-icon-subtle);
+		transition: transform var(--fds-duration-fast) var(--fds-easing-standard);
+	}
+
+	.fds-select__trigger.is-open .fds-select__chevron {
+		transform: rotate(180deg);
+	}
+
+	.fds-select__menu {
+		position: absolute;
+		inset-inline: 0;
+		top: calc(100% + var(--fds-select-menu-offset));
+		z-index: var(--fds-z-index-popover);
+		margin: 0;
+		padding: var(--fds-select-menu-padding);
+		list-style: none;
+		max-height: var(--fds-select-menu-max-height);
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		background-color: var(--fds-color-surface-overlay);
+		border: var(--fds-border-width-thin) solid var(--fds-color-border-default);
+		border-radius: var(--fds-radius-surface);
+		box-shadow: var(--fds-elevation-overlay);
+	}
+
+	.fds-select.is-above .fds-select__menu {
+		top: auto;
+		bottom: calc(100% + var(--fds-select-menu-offset));
+	}
+
+	.fds-select__menu[hidden] {
+		display: none;
+	}
+
+	.fds-select__option {
+		display: flex;
+		align-items: center;
+		gap: var(--fds-space-4);
+		min-height: var(--fds-select-option-height);
+		padding: var(--fds-space-2) var(--fds-space-4);
+		border-radius: var(--fds-radius-sm);
+		font-size: var(--fds-font-size-40);
+		color: var(--fds-color-text-primary);
+		cursor: pointer;
+	}
+
+	/* Hover and keyboard both resolve to one active state, so a pointer user and
+	   a keyboard user are never looking at two different highlighted rows. */
+	.fds-select__option.is-active {
+		background-color: var(--fds-color-surface-control-hover);
+	}
+
+	.fds-select__option.is-selected {
+		color: var(--fds-color-text-accent);
+	}
+
+	.fds-select__option.is-disabled {
+		color: var(--fds-color-text-disabled);
+		cursor: not-allowed;
+	}
+
+	.fds-select__option-check {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 0.875rem;
+		height: 0.875rem;
+		flex: none;
+		opacity: 0;
+	}
+
+	.fds-select__option.is-selected .fds-select__option-check {
+		opacity: 1;
+	}
+
+	.fds-select__option-check > svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.fds-select__option-text {
+		display: flex;
+		flex-direction: column;
+		gap: var(--fds-space-1);
+		min-width: 0;
+	}
+
+	.fds-select__option-label {
+		line-height: var(--fds-font-line-height-snug);
+	}
+
+	.fds-select__option-description {
+		font-size: var(--fds-font-size-30);
+		color: var(--fds-color-text-subtle);
+		line-height: var(--fds-font-line-height-snug);
+	}
+
+	.fds-select__empty {
+		padding: var(--fds-space-5) var(--fds-space-4);
+		font-size: var(--fds-font-size-30);
+		color: var(--fds-color-text-subtle);
+	}
+}

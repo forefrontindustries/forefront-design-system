@@ -1,0 +1,4854 @@
+{
+  "$schema": "https://forefrontindustries.io/schemas/figma-variables-1.json",
+  "$comment": "GENERATED FILE. Import target for the Figma Variables sync plugin. Code is the source of truth: this file is written by `bun run tokens:build` and is overwritten on every run.",
+  "version": "1.0.0",
+  "collections": [
+    {
+      "name": "Primitives",
+      "description": "Tier 1. Read-only in Figma: these are generated from code and overwritten on every sync, so edits here are lost. File a token change as a PR against packages/tokens/src/primitives.json.",
+      "modes": [
+        "Value"
+      ],
+      "variables": [
+        {
+          "name": "color/ink/650",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#2b3140"
+          }
+        },
+        {
+          "name": "color/ink/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#212634"
+          }
+        },
+        {
+          "name": "color/ink/750",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#191d2a"
+          }
+        },
+        {
+          "name": "color/ink/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#131722"
+          }
+        },
+        {
+          "name": "color/ink/850",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#0e1119"
+          }
+        },
+        {
+          "name": "color/ink/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#0a0a12"
+          }
+        },
+        {
+          "name": "color/ink/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#07090f"
+          }
+        },
+        {
+          "name": "color/ink/1000",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#04050a"
+          }
+        },
+        {
+          "name": "color/slate/0",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#ffffff"
+          }
+        },
+        {
+          "name": "color/slate/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#f8fafc"
+          }
+        },
+        {
+          "name": "color/slate/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#f1f4f8"
+          }
+        },
+        {
+          "name": "color/slate/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#e2e7ee"
+          }
+        },
+        {
+          "name": "color/slate/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#c8cfda"
+          }
+        },
+        {
+          "name": "color/slate/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#a4adbd"
+          }
+        },
+        {
+          "name": "color/slate/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#7b8698"
+          }
+        },
+        {
+          "name": "color/slate/450",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#6b7688"
+          }
+        },
+        {
+          "name": "color/slate/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#566072"
+          }
+        },
+        {
+          "name": "color/slate/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#3d4453"
+          }
+        },
+        {
+          "name": "color/sand/25",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#fbf8f3"
+          }
+        },
+        {
+          "name": "color/sand/50",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#f6f1e9"
+          }
+        },
+        {
+          "name": "color/sand/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#ece4d9"
+          }
+        },
+        {
+          "name": "color/sand/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#d8cdbe"
+          }
+        },
+        {
+          "name": "color/sand/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#b5a898"
+          }
+        },
+        {
+          "name": "color/sand/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#8f8275"
+          }
+        },
+        {
+          "name": "color/sand/450",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#7d7166"
+          }
+        },
+        {
+          "name": "color/sand/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#6b5f54"
+          }
+        },
+        {
+          "name": "color/sand/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#4a4038"
+          }
+        },
+        {
+          "name": "color/sand/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#332b24"
+          }
+        },
+        {
+          "name": "color/sand/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#241f1a"
+          }
+        },
+        {
+          "name": "color/sand/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#1a1613"
+          }
+        },
+        {
+          "name": "color/sand/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#13100e"
+          }
+        },
+        {
+          "name": "color/sand/1000",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#0b0908"
+          }
+        },
+        {
+          "name": "color/blue/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#e6eff8"
+          }
+        },
+        {
+          "name": "color/blue/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#a3c5e4"
+          }
+        },
+        {
+          "name": "color/blue/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#7cabd7"
+          }
+        },
+        {
+          "name": "color/blue/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#5793ca"
+          }
+        },
+        {
+          "name": "color/blue/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#2f6da4"
+          }
+        },
+        {
+          "name": "color/blue/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#1e4c7a"
+          }
+        },
+        {
+          "name": "color/blue/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#16385a"
+          }
+        },
+        {
+          "name": "color/blue/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#091825"
+          }
+        },
+        {
+          "name": "color/amber/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#fdf1de"
+          }
+        },
+        {
+          "name": "color/amber/200",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#fadfb4"
+          }
+        },
+        {
+          "name": "color/amber/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#f5c97e"
+          }
+        },
+        {
+          "name": "color/amber/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#edb04a"
+          }
+        },
+        {
+          "name": "color/amber/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#e0941a"
+          }
+        },
+        {
+          "name": "color/amber/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#b87610"
+          }
+        },
+        {
+          "name": "color/amber/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#8a580c"
+          }
+        },
+        {
+          "name": "color/amber/800",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#5c3b08"
+          }
+        },
+        {
+          "name": "color/amber/900",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#3a2606"
+          }
+        },
+        {
+          "name": "color/amber/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#241703"
+          }
+        },
+        {
+          "name": "color/green/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#e3f7ec"
+          }
+        },
+        {
+          "name": "color/green/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#5fd39a"
+          }
+        },
+        {
+          "name": "color/green/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#2eb872"
+          }
+        },
+        {
+          "name": "color/green/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#1a8754"
+          }
+        },
+        {
+          "name": "color/green/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#146c43"
+          }
+        },
+        {
+          "name": "color/green/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#052618"
+          }
+        },
+        {
+          "name": "color/red/100",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#fdeaeb"
+          }
+        },
+        {
+          "name": "color/red/300",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#f6a5a8"
+          }
+        },
+        {
+          "name": "color/red/400",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#ef7b7f"
+          }
+        },
+        {
+          "name": "color/red/500",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#e4494f"
+          }
+        },
+        {
+          "name": "color/red/600",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#c92a32"
+          }
+        },
+        {
+          "name": "color/red/700",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#a41d24"
+          }
+        },
+        {
+          "name": "color/red/950",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "#2e0a0c"
+          }
+        },
+        {
+          "name": "color/alpha/light-08",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "rgba(255, 255, 255, 0.08)"
+          }
+        },
+        {
+          "name": "color/alpha/dark-08",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "rgba(7, 9, 15, 0.08)"
+          }
+        },
+        {
+          "name": "color/alpha/scrim-dark",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "rgba(4, 5, 10, 0.72)"
+          }
+        },
+        {
+          "name": "color/alpha/scrim-cool",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "rgba(7, 9, 15, 0.48)"
+          }
+        },
+        {
+          "name": "color/alpha/scrim-light",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "rgba(29, 26, 22, 0.44)"
+          }
+        },
+        {
+          "name": "font/family/fraunces",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "Fraunces, Georgia, serif"
+          }
+        },
+        {
+          "name": "font/family/instrument",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "'Instrument Serif', Georgia, serif"
+          }
+        },
+        {
+          "name": "font/family/public-sans",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "'Public Sans', system-ui, -apple-system, sans-serif"
+          }
+        },
+        {
+          "name": "font/family/jetbrains",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace"
+          }
+        },
+        {
+          "name": "font/size/10",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 11
+          }
+        },
+        {
+          "name": "font/size/20",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 12
+          }
+        },
+        {
+          "name": "font/size/30",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 13
+          }
+        },
+        {
+          "name": "font/size/40",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 14
+          }
+        },
+        {
+          "name": "font/size/50",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 16
+          }
+        },
+        {
+          "name": "font/size/60",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 18
+          }
+        },
+        {
+          "name": "font/size/70",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 21
+          }
+        },
+        {
+          "name": "font/size/80",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 24
+          }
+        },
+        {
+          "name": "font/size/90",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 28
+          }
+        },
+        {
+          "name": "font/size/100",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 34
+          }
+        },
+        {
+          "name": "font/size/110",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 42
+          }
+        },
+        {
+          "name": "font/size/120",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 52
+          }
+        },
+        {
+          "name": "font/size/130",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 64
+          }
+        },
+        {
+          "name": "font/weight/regular",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 400
+          }
+        },
+        {
+          "name": "font/weight/medium",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 500
+          }
+        },
+        {
+          "name": "font/weight/semibold",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 600
+          }
+        },
+        {
+          "name": "font/weight/bold",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 700
+          }
+        },
+        {
+          "name": "font/line-height/tight",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1.1
+          }
+        },
+        {
+          "name": "font/line-height/snug",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1.25
+          }
+        },
+        {
+          "name": "font/line-height/normal",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1.5
+          }
+        },
+        {
+          "name": "font/line-height/relaxed",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1.65
+          }
+        },
+        {
+          "name": "font/tracking/tighter",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "-0.03em"
+          }
+        },
+        {
+          "name": "font/tracking/tight",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "-0.015em"
+          }
+        },
+        {
+          "name": "font/tracking/normal",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0em"
+          }
+        },
+        {
+          "name": "font/tracking/wide",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0.04em"
+          }
+        },
+        {
+          "name": "font/tracking/wider",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0.12em"
+          }
+        },
+        {
+          "name": "space/0",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 0
+          }
+        },
+        {
+          "name": "space/1",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 2
+          }
+        },
+        {
+          "name": "space/2",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 4
+          }
+        },
+        {
+          "name": "space/3",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 6
+          }
+        },
+        {
+          "name": "space/4",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 8
+          }
+        },
+        {
+          "name": "space/5",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 12
+          }
+        },
+        {
+          "name": "space/6",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 16
+          }
+        },
+        {
+          "name": "space/7",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 20
+          }
+        },
+        {
+          "name": "space/8",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 24
+          }
+        },
+        {
+          "name": "space/9",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 32
+          }
+        },
+        {
+          "name": "space/10",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 40
+          }
+        },
+        {
+          "name": "space/11",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 48
+          }
+        },
+        {
+          "name": "space/12",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 64
+          }
+        },
+        {
+          "name": "space/13",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 80
+          }
+        },
+        {
+          "name": "space/14",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 96
+          }
+        },
+        {
+          "name": "space/15",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 128
+          }
+        },
+        {
+          "name": "radius/none",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 0
+          }
+        },
+        {
+          "name": "radius/xs",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 2
+          }
+        },
+        {
+          "name": "radius/sm",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 4
+          }
+        },
+        {
+          "name": "radius/md",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 6
+          }
+        },
+        {
+          "name": "radius/lg",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 10
+          }
+        },
+        {
+          "name": "radius/xl",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 14
+          }
+        },
+        {
+          "name": "radius/2xl",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 20
+          }
+        },
+        {
+          "name": "radius/full",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 999
+          }
+        },
+        {
+          "name": "border-width/none",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 0
+          }
+        },
+        {
+          "name": "border-width/thin",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1
+          }
+        },
+        {
+          "name": "border-width/medium",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 2
+          }
+        },
+        {
+          "name": "border-width/thick",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 3
+          }
+        },
+        {
+          "name": "shadow/dark-sm",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0 1px 2px rgba(0, 0, 0, 0.4)"
+          }
+        },
+        {
+          "name": "shadow/dark-md",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0 4px 12px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        {
+          "name": "shadow/dark-lg",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0 16px 40px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        {
+          "name": "shadow/light-sm",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0 1px 2px rgba(7, 9, 15, 0.08)"
+          }
+        },
+        {
+          "name": "shadow/light-md",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0 4px 12px rgba(7, 9, 15, 0.1), 0 1px 2px rgba(7, 9, 15, 0.06)"
+          }
+        },
+        {
+          "name": "shadow/light-lg",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "0 16px 40px rgba(7, 9, 15, 0.14), 0 2px 6px rgba(7, 9, 15, 0.08)"
+          }
+        },
+        {
+          "name": "shadow/none",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "none"
+          }
+        },
+        {
+          "name": "duration/instant",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 0
+          }
+        },
+        {
+          "name": "duration/fast",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 120
+          }
+        },
+        {
+          "name": "duration/moderate",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 200
+          }
+        },
+        {
+          "name": "duration/slow",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 320
+          }
+        },
+        {
+          "name": "duration/slower",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 480
+          }
+        },
+        {
+          "name": "easing/linear",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "linear"
+          }
+        },
+        {
+          "name": "easing/standard",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "cubic-bezier(0.2, 0, 0.13, 1)"
+          }
+        },
+        {
+          "name": "easing/emphasized",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "cubic-bezier(0.3, 0, 0, 1)"
+          }
+        },
+        {
+          "name": "easing/entrance",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "cubic-bezier(0, 0, 0.2, 1)"
+          }
+        },
+        {
+          "name": "easing/exit",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "cubic-bezier(0.4, 0, 1, 1)"
+          }
+        },
+        {
+          "name": "easing/spring",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+          }
+        },
+        {
+          "name": "z-index/base",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 0
+          }
+        },
+        {
+          "name": "z-index/raised",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 10
+          }
+        },
+        {
+          "name": "z-index/sticky",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 100
+          }
+        },
+        {
+          "name": "z-index/overlay",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1000
+          }
+        },
+        {
+          "name": "z-index/modal",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1100
+          }
+        },
+        {
+          "name": "z-index/popover",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1200
+          }
+        },
+        {
+          "name": "z-index/toast",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1300
+          }
+        },
+        {
+          "name": "z-index/tooltip",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Value": 1400
+          }
+        }
+      ]
+    },
+    {
+      "name": "Semantic",
+      "description": "Tier 2. One mode per theme. Every variable aliases a Primitives variable, matching the code contract in packages/tokens/src/semantic.json.",
+      "modes": [
+        "Forefront Dark",
+        "Forefront Light",
+        "Signal Dark",
+        "Signal Light"
+      ],
+      "variables": [
+        {
+          "name": "color/surface/canvas",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "App background. The furthest-back surface.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/25"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/50"
+            }
+          }
+        },
+        {
+          "name": "color/surface/sunken",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Recessed area on the canvas, e.g. a code block or well.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/1000"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/50"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/1000"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/raised",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Card and panel background sitting above the canvas.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/850"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/900"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            }
+          }
+        },
+        {
+          "name": "color/surface/overlay",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Floating surface: modal, popover, tooltip, toast, select menu.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/800"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/800"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            }
+          }
+        },
+        {
+          "name": "color/surface/scrim",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Full-viewport wash behind a modal. Must be translucent.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/scrim-dark"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/scrim-cool"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/scrim-light"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/scrim-light"
+            }
+          }
+        },
+        {
+          "name": "color/surface/control",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Default background for inputs and unfilled controls.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/850"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/900"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            }
+          }
+        },
+        {
+          "name": "color/surface/control-hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Input or control background on hover.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/800"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/25"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/800"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/50"
+            }
+          }
+        },
+        {
+          "name": "color/surface/disabled",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Background for any disabled control. Never communicate disabled with opacity alone.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/800"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/50"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/800"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/selected",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Background for a selected row, option, or tab.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/accent-subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Low-emphasis accent wash. Safe behind accent text.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/accent-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "High-emphasis accent fill for primary actions.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/700"
+            }
+          }
+        },
+        {
+          "name": "color/surface/accent-bold-hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Primary action hover.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/800"
+            }
+          }
+        },
+        {
+          "name": "color/surface/accent-bold-active",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Primary action pressed.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/300"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/800"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/300"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/900"
+            }
+          }
+        },
+        {
+          "name": "color/surface/neutral-subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Low-emphasis neutral fill, e.g. secondary button rest.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/800"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/50"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/800"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/neutral-subtle-hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Secondary button hover.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/750"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/700"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/200"
+            }
+          }
+        },
+        {
+          "name": "color/surface/neutral-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "High-emphasis neutral fill.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/100"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/900"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/100"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/900"
+            }
+          }
+        },
+        {
+          "name": "color/surface/success-subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Success wash for badges and inline status.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/success-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Success fill.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/600"
+            }
+          }
+        },
+        {
+          "name": "color/surface/warning-subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Warning wash.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/900"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/warning-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Warning fill.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/600"
+            }
+          }
+        },
+        {
+          "name": "color/surface/danger-subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Danger wash.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/danger-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Destructive action fill.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/600"
+            }
+          }
+        },
+        {
+          "name": "color/surface/danger-bold-hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Destructive action hover.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/300"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/300"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/700"
+            }
+          }
+        },
+        {
+          "name": "color/surface/info-subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Informational wash.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/100"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/100"
+            }
+          }
+        },
+        {
+          "name": "color/surface/info-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Informational fill.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/600"
+            }
+          }
+        },
+        {
+          "name": "color/text/primary",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Default body and heading text. Must clear 4.5:1 on surface.canvas and surface.raised.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/25"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/950"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/1000"
+            }
+          }
+        },
+        {
+          "name": "color/text/secondary",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Supporting text. Must clear 4.5:1 on canvas.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/300"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/300"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/600"
+            }
+          }
+        },
+        {
+          "name": "color/text/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "De-emphasized metadata and helper text. Must clear 4.5:1 on canvas.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/500"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/500"
+            }
+          }
+        },
+        {
+          "name": "color/text/placeholder",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Input placeholder. Must clear 4.5:1 on surface.control, since placeholders carry meaning.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/500"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/500"
+            }
+          }
+        },
+        {
+          "name": "color/text/disabled",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Disabled control label. Exempt from AA by WCAG 1.4.3, but kept at 3:1 as a house rule.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/450"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/450"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/450"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/450"
+            }
+          }
+        },
+        {
+          "name": "color/text/accent",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Accent-colored text on a neutral surface.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/800"
+            }
+          }
+        },
+        {
+          "name": "color/text/on-accent",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Text placed on surface.accent-bold.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/1000"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            }
+          }
+        },
+        {
+          "name": "color/text/on-neutral-bold",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Text placed on surface.neutral-bold.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            }
+          }
+        },
+        {
+          "name": "color/text/on-danger",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Text placed on surface.danger-bold.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/950"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            }
+          }
+        },
+        {
+          "name": "color/text/success",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Success text on a neutral or success-subtle surface.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/700"
+            }
+          }
+        },
+        {
+          "name": "color/text/warning",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Warning text.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/300"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/800"
+            }
+          }
+        },
+        {
+          "name": "color/text/danger",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Error and validation text.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/700"
+            }
+          }
+        },
+        {
+          "name": "color/text/info",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Informational text.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/700"
+            }
+          }
+        },
+        {
+          "name": "color/text/link",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Inline link rest state.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/300"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/800"
+            }
+          }
+        },
+        {
+          "name": "color/text/link-hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Inline link hover state.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/300"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/800"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/200"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/900"
+            }
+          }
+        },
+        {
+          "name": "color/border/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Hairline that defines structure without drawing attention. The system's default divider.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/light-08"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/dark-08"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/light-08"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/alpha/dark-08"
+            }
+          }
+        },
+        {
+          "name": "color/border/default",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Structural border on a non-interactive container. Decorative by contract: never use it as the boundary of a control, that is what border.control exists for.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/700"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/200"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/700"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/200"
+            }
+          }
+        },
+        {
+          "name": "color/border/strong",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Emphasized decorative border, e.g. a hovered card edge.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/650"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/300"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/600"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/300"
+            }
+          }
+        },
+        {
+          "name": "color/border/control",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Resting boundary of an interactive control: input, select, checkbox, radio, switch track, secondary button. Must clear 3:1 against surface.control, surface.canvas and surface.raised in every theme. Enforced by the build, see contrast.json.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/450"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/400"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/450"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/400"
+            }
+          }
+        },
+        {
+          "name": "color/border/control-hover",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Boundary of a hovered interactive control. Must clear 3:1 against surface.control-hover and must never be quieter than border.control.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/450"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/450"
+            }
+          }
+        },
+        {
+          "name": "color/border/accent",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Accent border for selected or active elements.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/700"
+            }
+          }
+        },
+        {
+          "name": "color/border/focus",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Focus ring color. Must clear 3:1 against every adjacent surface. Never overridden per-component.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/700"
+            }
+          }
+        },
+        {
+          "name": "color/border/success",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Success border.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/green/600"
+            }
+          }
+        },
+        {
+          "name": "color/border/warning",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Warning border.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/600"
+            }
+          }
+        },
+        {
+          "name": "color/border/danger",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Invalid control border.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/500"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/500"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/red/600"
+            }
+          }
+        },
+        {
+          "name": "color/border/disabled",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Disabled control border.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/650"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/200"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/600"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/200"
+            }
+          }
+        },
+        {
+          "name": "color/icon/primary",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Default icon color.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/300"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/600"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/300"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/600"
+            }
+          }
+        },
+        {
+          "name": "color/icon/subtle",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "De-emphasized icon.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/500"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/500"
+            }
+          }
+        },
+        {
+          "name": "color/icon/accent",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Accent icon.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/400"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/blue/700"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/400"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/amber/800"
+            }
+          }
+        },
+        {
+          "name": "color/icon/on-accent",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Icon on an accent-bold fill.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/ink/950"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/slate/0"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/1000"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "color/sand/25"
+            }
+          }
+        },
+        {
+          "name": "elevation/raised",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Card resting above the canvas. Most cards should use a border instead.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/dark-sm"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/light-sm"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/dark-sm"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/light-sm"
+            }
+          }
+        },
+        {
+          "name": "elevation/overlay",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Popover, tooltip, select menu, toast.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/dark-md"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/light-md"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/dark-md"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/light-md"
+            }
+          }
+        },
+        {
+          "name": "elevation/modal",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Dialog. The highest elevation in the system.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/dark-lg"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/light-lg"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/dark-lg"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/light-lg"
+            }
+          }
+        },
+        {
+          "name": "elevation/none",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Explicit no-shadow, so components can opt out without hardcoding `none`.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/none"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/none"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/none"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "shadow/none"
+            }
+          }
+        },
+        {
+          "name": "radius/control",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Buttons, inputs, checkboxes, badges. Theme-owned, so Signal can be rounder.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/sm"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/sm"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/lg"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/lg"
+            }
+          }
+        },
+        {
+          "name": "radius/surface",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Cards and panels.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/lg"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/lg"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/xl"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/xl"
+            }
+          }
+        },
+        {
+          "name": "radius/overlay",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Modals, popovers, toasts.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/xl"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/xl"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/2xl"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/2xl"
+            }
+          }
+        },
+        {
+          "name": "radius/pill",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Fully rounded, for pill badges and switches.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/full"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/full"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/full"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/full"
+            }
+          }
+        },
+        {
+          "name": "font/display",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Editorial headings. Theme-owned.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/fraunces"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/fraunces"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/instrument"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/instrument"
+            }
+          }
+        },
+        {
+          "name": "font/body",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "All UI and body text.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/public-sans"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/public-sans"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/public-sans"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/public-sans"
+            }
+          }
+        },
+        {
+          "name": "font/mono",
+          "type": "STRING",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "Token values, code, and numeric tables.",
+          "valuesByMode": {
+            "Forefront Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/jetbrains"
+            },
+            "Forefront Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/jetbrains"
+            },
+            "Signal Dark": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/jetbrains"
+            },
+            "Signal Light": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/family/jetbrains"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "description": "Tier 3. One mode per density. Aliases Semantic or Primitives. Component variables exist so a designer resizing a control changes one variable instead of every instance.",
+      "modes": [
+        "Comfortable",
+        "Compact"
+      ],
+      "variables": [
+        {
+          "name": "control/height/sm",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 28,
+            "Compact": 24
+          }
+        },
+        {
+          "name": "control/height/md",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 36,
+            "Compact": 30
+          }
+        },
+        {
+          "name": "control/height/lg",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 44,
+            "Compact": 38
+          }
+        },
+        {
+          "name": "control/padding-x/sm",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            }
+          }
+        },
+        {
+          "name": "control/padding-x/md",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/5"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "control/padding-x/lg",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/6"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/5"
+            }
+          }
+        },
+        {
+          "name": "control/gap/sm",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            }
+          }
+        },
+        {
+          "name": "control/gap/md",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            }
+          }
+        },
+        {
+          "name": "control/gap/lg",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "control/font-size/sm",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            }
+          }
+        },
+        {
+          "name": "control/font-size/md",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/40"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/40"
+            }
+          }
+        },
+        {
+          "name": "control/font-size/lg",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/50"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/50"
+            }
+          }
+        },
+        {
+          "name": "control/border-width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/thin"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/thin"
+            }
+          }
+        },
+        {
+          "name": "control/radius",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/control"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/control"
+            }
+          }
+        },
+        {
+          "name": "focus/ring-width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/medium"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/medium"
+            }
+          }
+        },
+        {
+          "name": "focus/ring-offset",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/medium"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/medium"
+            }
+          }
+        },
+        {
+          "name": "focus/ring-color",
+          "type": "COLOR",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "color/border/focus"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "color/border/focus"
+            }
+          }
+        },
+        {
+          "name": "button/font-weight",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/weight/medium"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/weight/medium"
+            }
+          }
+        },
+        {
+          "name": "button/icon-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": "1em",
+            "Compact": "1em"
+          }
+        },
+        {
+          "name": "input/min-width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 160,
+            "Compact": 160
+          }
+        },
+        {
+          "name": "input/invalid-border-width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/thin"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/thin"
+            }
+          }
+        },
+        {
+          "name": "checkbox/size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 18,
+            "Compact": 18
+          }
+        },
+        {
+          "name": "checkbox/radius",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/xs"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/xs"
+            }
+          }
+        },
+        {
+          "name": "radio/size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 18,
+            "Compact": 18
+          }
+        },
+        {
+          "name": "radio/dot-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 7,
+            "Compact": 7
+          }
+        },
+        {
+          "name": "switch/width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 36,
+            "Compact": 36
+          }
+        },
+        {
+          "name": "switch/height",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 20,
+            "Compact": 20
+          }
+        },
+        {
+          "name": "switch/thumb-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 14,
+            "Compact": 14
+          }
+        },
+        {
+          "name": "switch/thumb-inset",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 3,
+            "Compact": 3
+          }
+        },
+        {
+          "name": "badge/height",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 22,
+            "Compact": 20
+          }
+        },
+        {
+          "name": "badge/padding-x",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            }
+          }
+        },
+        {
+          "name": "badge/font-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/20"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/20"
+            }
+          }
+        },
+        {
+          "name": "badge/font-weight",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/weight/semibold"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/weight/semibold"
+            }
+          }
+        },
+        {
+          "name": "badge/dot-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 6,
+            "Compact": 6
+          }
+        },
+        {
+          "name": "card/padding",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/8"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/6"
+            }
+          }
+        },
+        {
+          "name": "card/gap",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/5"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "card/radius",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/surface"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/surface"
+            }
+          }
+        },
+        {
+          "name": "modal/padding",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/8"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/7"
+            }
+          }
+        },
+        {
+          "name": "modal/gap",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/6"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/5"
+            }
+          }
+        },
+        {
+          "name": "modal/radius",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/overlay"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/overlay"
+            }
+          }
+        },
+        {
+          "name": "modal/width-sm",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 384,
+            "Compact": 384
+          }
+        },
+        {
+          "name": "modal/width-md",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 544,
+            "Compact": 544
+          }
+        },
+        {
+          "name": "modal/width-lg",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 768,
+            "Compact": 768
+          }
+        },
+        {
+          "name": "modal/offset",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/9"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/9"
+            }
+          }
+        },
+        {
+          "name": "tooltip/padding-x",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "tooltip/padding-y",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            }
+          }
+        },
+        {
+          "name": "tooltip/max-width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 256,
+            "Compact": 256
+          }
+        },
+        {
+          "name": "tooltip/font-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            }
+          }
+        },
+        {
+          "name": "tooltip/offset",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "tooltip/radius",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/md"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "radius/md"
+            }
+          }
+        },
+        {
+          "name": "tabs/indicator-thickness",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/medium"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "border-width/medium"
+            }
+          }
+        },
+        {
+          "name": "tabs/trigger-padding-x",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/5"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "tabs/trigger-height",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 40,
+            "Compact": 34
+          }
+        },
+        {
+          "name": "tabs/gap",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            }
+          }
+        },
+        {
+          "name": "toast/width",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 352,
+            "Compact": 352
+          }
+        },
+        {
+          "name": "toast/padding",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/5"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "toast/gap",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/4"
+            }
+          }
+        },
+        {
+          "name": "toast/viewport-offset",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/7"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/7"
+            }
+          }
+        },
+        {
+          "name": "toast/radius",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/overlay"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Semantic",
+              "name": "radius/overlay"
+            }
+          }
+        },
+        {
+          "name": "select/menu-max-height",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 288,
+            "Compact": 288
+          }
+        },
+        {
+          "name": "select/option-height",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": 34,
+            "Compact": 30
+          }
+        },
+        {
+          "name": "select/menu-padding",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            }
+          }
+        },
+        {
+          "name": "select/menu-offset",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            }
+          }
+        },
+        {
+          "name": "field/gap",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/3"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "space/2"
+            }
+          }
+        },
+        {
+          "name": "field/label-font-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            }
+          }
+        },
+        {
+          "name": "field/label-font-weight",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/weight/medium"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/weight/medium"
+            }
+          }
+        },
+        {
+          "name": "field/message-font-size",
+          "type": "FLOAT",
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "description": "",
+          "valuesByMode": {
+            "Comfortable": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            },
+            "Compact": {
+              "type": "VARIABLE_ALIAS",
+              "collection": "Primitives",
+              "name": "font/size/30"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
