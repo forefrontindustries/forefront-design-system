@@ -56,12 +56,12 @@ src/density/compact.json     tier 3 overrides only
 
 Rules that will fail your build, by name:
 
-- `semantic-literal` — a semantic token carrying a value instead of an alias
-- `theme-missing-contract-token` / `theme-extra-token` — a theme that is not exactly the contract
-- `contract-token-undocumented` — a semantic token with no `$description` explaining its intent
-- `alias-unresolved` / `alias-circular` / `alias-too-deep` — broken or indirect reference chains
-- `density-outside-tier-3` / `density-changes-colour` — density touching anything but geometry
-- `single-default-theme` — zero or multiple themes claiming `$default`
+- `semantic-literal` - a semantic token carrying a value instead of an alias
+- `theme-missing-contract-token` / `theme-extra-token` - a theme that is not exactly the contract
+- `contract-token-undocumented` - a semantic token with no `$description` explaining its intent
+- `alias-unresolved` / `alias-circular` / `alias-too-deep` - broken or indirect reference chains
+- `density-outside-tier-3` / `density-changes-colour` - density touching anything but geometry
+- `single-default-theme` - zero or multiple themes claiming `$default`
 
 **Never edit anything in `packages/tokens/build`.** It is generated, and your change disappears on
 the next build.
