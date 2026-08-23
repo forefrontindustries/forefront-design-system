@@ -1,8 +1,8 @@
 {
     "id": "website",
-    "name": "Forefront Design System",
-    "description": "Documentation site for the Forefront Design System: three token tiers, two themes from one enforced contract, and twelve hand-built accessible React components.",
-    "url": "https://forefrontindustries.io",
-    "hostname": "design.forefrontindustries.io",
+    "name": "Runable",
+    "description": "A template for building a React application with Vite, Hono, and Cloudflare Workers",
+    "url": "https://example.com",
+    "hostname": "xyz.runable.site",
     "port": 8080
 }

@@ -10,8 +10,8 @@
       "edgeToEdgeEnabled": true
     },
     "extra": {
-      "apiUrl": "https://forefro-8y0l7do-preview-4200.runable.site/",
-      "applicationId": "forefro-8y0l7do",
+      "apiUrl": "https://forefro-m3rzxkr-preview-4200.runable.site/",
+      "applicationId": "forefro-m3rzxkr",
       "runableAuthIssuer": "https://api.runable.com/api/auth"
     },
     "ios": {
@@ -26,7 +26,7 @@
     "name": "mobile",
     "slug": "mobile",
     "version": "1.0.0",
-    "scheme": "runable-forefro-8y0l7do",
+    "scheme": "runable-forefro-m3rzxkr",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

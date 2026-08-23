@@ -1,4 +1,4 @@
-import { } from "drizzle-orm/sqlite-core"
+import {} from "drizzle-orm/sqlite-core";
 
 /**
  * Define your database schema here, then apply it with `bun run db:push`

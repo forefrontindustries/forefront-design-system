@@ -1,90 +1,305 @@
 {
-  "$description": "Tier 2: the semantic contract. This file declares WHICH semantic tokens exist, what type they are, and what they mean. It deliberately holds no values. Every theme in src/themes must supply a value for every entry here, or `bun run tokens:build` fails. That failure is the whole point: it makes theme drift impossible instead of merely discouraged.",
-  "$contract": true,
+  "$description": "Tier 2 - the semantic contract. Names and intent only: every theme must supply a value for each of these and may not add any others.",
   "color": {
-    "$type": "color",
     "surface": {
-      "canvas": { "$description": "App background. The furthest-back surface." },
-      "sunken": { "$description": "Recessed area on the canvas, e.g. a code block or well." },
-      "raised": { "$description": "Card and panel background sitting above the canvas." },
-      "overlay": { "$description": "Floating surface: modal, popover, tooltip, toast, select menu." },
-      "scrim": { "$description": "Full-viewport wash behind a modal. Must be translucent." },
-      "control": { "$description": "Default background for inputs and unfilled controls." },
-      "control-hover": { "$description": "Input or control background on hover." },
-      "disabled": { "$description": "Background for any disabled control. Never communicate disabled with opacity alone." },
-      "selected": { "$description": "Background for a selected row, option, or tab." },
-      "accent-subtle": { "$description": "Low-emphasis accent wash. Safe behind accent text." },
-      "accent-bold": { "$description": "High-emphasis accent fill for primary actions." },
-      "accent-bold-hover": { "$description": "Primary action hover." },
-      "accent-bold-active": { "$description": "Primary action pressed." },
-      "neutral-subtle": { "$description": "Low-emphasis neutral fill, e.g. secondary button rest." },
-      "neutral-subtle-hover": { "$description": "Secondary button hover." },
-      "neutral-bold": { "$description": "High-emphasis neutral fill." },
-      "success-subtle": { "$description": "Success wash for badges and inline status." },
-      "success-bold": { "$description": "Success fill." },
-      "warning-subtle": { "$description": "Warning wash." },
-      "warning-bold": { "$description": "Warning fill." },
-      "danger-subtle": { "$description": "Danger wash." },
-      "danger-bold": { "$description": "Destructive action fill." },
-      "danger-bold-hover": { "$description": "Destructive action hover." },
-      "info-subtle": { "$description": "Informational wash." },
-      "info-bold": { "$description": "Informational fill." }
+      "canvas": {
+        "$type": "color",
+        "$description": "The page itself. Nothing sits behind it."
+      },
+      "sunken": {
+        "$type": "color",
+        "$description": "Recessed area inside a page: code wells, empty states, table headers."
+      },
+      "raised": {
+        "$type": "color",
+        "$description": "Cards and panels that sit above the canvas."
+      },
+      "overlay": {
+        "$type": "color",
+        "$description": "Floating surfaces: modals, menus, popovers, toasts."
+      },
+      "scrim": {
+        "$type": "color",
+        "$description": "The wash behind a modal. Always semi-transparent."
+      },
+      "control": {
+        "$type": "color",
+        "$description": "Resting fill of an interactive control: input, select, checkbox."
+      },
+      "disabled": {
+        "$type": "color",
+        "$description": "Fill of any control that cannot be used."
+      },
+      "selected": {
+        "$type": "color",
+        "$description": "Fill of a chosen item in a list, tab, or menu."
+      }
     },
     "text": {
-      "primary": { "$description": "Default body and heading text. Must clear 4.5:1 on surface.canvas and surface.raised." },
-      "secondary": { "$description": "Supporting text. Must clear 4.5:1 on canvas." },
-      "subtle": { "$description": "De-emphasized metadata and helper text. Must clear 4.5:1 on canvas." },
-      "placeholder": { "$description": "Input placeholder. Must clear 4.5:1 on surface.control, since placeholders carry meaning." },
-      "disabled": { "$description": "Disabled control label. Exempt from AA by WCAG 1.4.3, but kept at 3:1 as a house rule." },
-      "accent": { "$description": "Accent-colored text on a neutral surface." },
-      "on-accent": { "$description": "Text placed on surface.accent-bold." },
-      "on-neutral-bold": { "$description": "Text placed on surface.neutral-bold." },
-      "on-danger": { "$description": "Text placed on surface.danger-bold." },
-      "success": { "$description": "Success text on a neutral or success-subtle surface." },
-      "warning": { "$description": "Warning text." },
-      "danger": { "$description": "Error and validation text." },
-      "info": { "$description": "Informational text." },
-      "link": { "$description": "Inline link rest state." },
-      "link-hover": { "$description": "Inline link hover state." }
+      "primary": {
+        "$type": "color",
+        "$description": "Body and heading text. The default."
+      },
+      "secondary": {
+        "$type": "color",
+        "$description": "Supporting copy: descriptions, helper text."
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Least emphasis that still has to pass contrast: metadata, captions."
+      },
+      "placeholder": {
+        "$type": "color",
+        "$description": "Unfilled input hint. Never carries meaning on its own."
+      },
+      "disabled": {
+        "$type": "color",
+        "$description": "Text inside a control that cannot be used."
+      },
+      "accent": {
+        "$type": "color",
+        "$description": "Accent-coloured text on a neutral surface."
+      },
+      "success": {
+        "$type": "color",
+        "$description": "Success message text."
+      },
+      "warning": {
+        "$type": "color",
+        "$description": "Warning message text."
+      },
+      "danger": {
+        "$type": "color",
+        "$description": "Error message and validation text."
+      },
+      "info": {
+        "$type": "color",
+        "$description": "Informational message text."
+      },
+      "link": {
+        "$type": "color",
+        "$description": "Inline link in running text."
+      }
     },
     "border": {
-      "subtle": { "$description": "Hairline that defines structure without drawing attention. The system's default divider." },
-      "default": { "$description": "Structural border on a non-interactive container. Decorative by contract: never use it as the boundary of a control, that is what border.control exists for." },
-      "strong": { "$description": "Emphasized decorative border, e.g. a hovered card edge." },
-      "control": { "$description": "Resting boundary of an interactive control: input, select, checkbox, radio, switch track, secondary button. Must clear 3:1 against surface.control, surface.canvas and surface.raised in every theme. Enforced by the build, see contrast.json." },
-      "control-hover": { "$description": "Boundary of a hovered interactive control. Must clear 3:1 against surface.control-hover and must never be quieter than border.control." },
-      "accent": { "$description": "Accent border for selected or active elements." },
-      "focus": { "$description": "Focus ring color. Must clear 3:1 against every adjacent surface. Never overridden per-component." },
-      "success": { "$description": "Success border." },
-      "warning": { "$description": "Warning border." },
-      "danger": { "$description": "Invalid control border." },
-      "disabled": { "$description": "Disabled control border." }
+      "subtle": {
+        "$type": "color",
+        "$description": "Hairline that separates without dividing: dividers, card edges."
+      },
+      "default": {
+        "$type": "color",
+        "$description": "The standard container border."
+      },
+      "strong": {
+        "$type": "color",
+        "$description": "Border that needs to read as a real edge."
+      },
+      "control": {
+        "$type": "color",
+        "$description": "Resting border of an interactive control. Must hit 3:1 against its surface."
+      },
+      "accent": {
+        "$type": "color",
+        "$description": "Border of a selected or accent-emphasised control."
+      },
+      "focus": {
+        "$type": "color",
+        "$description": "The focus ring. One colour for the whole system, in every theme."
+      },
+      "success": {
+        "$type": "color",
+        "$description": "Border of a control in a valid state."
+      },
+      "warning": {
+        "$type": "color",
+        "$description": "Border of a control in a warning state."
+      },
+      "danger": {
+        "$type": "color",
+        "$description": "Border of a control in an invalid state."
+      },
+      "disabled": {
+        "$type": "color",
+        "$description": "Border of a control that cannot be used."
+      }
     },
     "icon": {
-      "primary": { "$description": "Default icon color." },
-      "subtle": { "$description": "De-emphasized icon." },
-      "accent": { "$description": "Accent icon." },
-      "on-accent": { "$description": "Icon on an accent-bold fill." }
+      "primary": {
+        "$type": "color",
+        "$description": "Default icon colour beside primary text."
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Low-emphasis icon: affordances, decorative glyphs."
+      },
+      "accent": {
+        "$type": "color",
+        "$description": "Accent icon on a neutral surface."
+      }
+    }
+  },
+  "color_surface_control": {
+    "hover": {
+      "$type": "color",
+      "$description": "Control fill on pointer hover."
+    }
+  },
+  "color_surface_accent": {
+    "subtle": {
+      "$type": "color",
+      "$description": "Low-emphasis accent wash for banners and selected rows."
+    },
+    "bold": {
+      "$type": "color",
+      "$description": "High-emphasis accent fill: primary button."
+    },
+    "bold_hover": {
+      "$type": "color",
+      "$description": "Primary fill on hover."
+    },
+    "bold_active": {
+      "$type": "color",
+      "$description": "Primary fill while pressed."
+    }
+  },
+  "color_surface_neutral": {
+    "subtle": {
+      "$type": "color",
+      "$description": "Quiet fill for secondary buttons and inert chips."
+    },
+    "subtle_hover": {
+      "$type": "color",
+      "$description": "Secondary fill on hover."
+    },
+    "bold": {
+      "$type": "color",
+      "$description": "Inverted fill: tooltips and high-contrast badges."
+    }
+  },
+  "color_surface_success": {
+    "subtle": {
+      "$type": "color",
+      "$description": "Success wash behind a message or badge."
+    },
+    "bold": {
+      "$type": "color",
+      "$description": "Solid success fill."
+    }
+  },
+  "color_surface_warning": {
+    "subtle": {
+      "$type": "color",
+      "$description": "Warning wash behind a message or badge."
+    },
+    "bold": {
+      "$type": "color",
+      "$description": "Solid warning fill."
+    }
+  },
+  "color_surface_danger": {
+    "subtle": {
+      "$type": "color",
+      "$description": "Danger wash behind a message or badge."
+    },
+    "bold": {
+      "$type": "color",
+      "$description": "Solid destructive fill: delete button."
+    },
+    "bold_hover": {
+      "$type": "color",
+      "$description": "Destructive fill on hover."
+    }
+  },
+  "color_surface_info": {
+    "subtle": {
+      "$type": "color",
+      "$description": "Informational wash behind a message or badge."
+    },
+    "bold": {
+      "$type": "color",
+      "$description": "Solid informational fill."
+    }
+  },
+  "color_text_on": {
+    "accent": {
+      "$type": "color",
+      "$description": "Text and icons on top of surface.accent.bold."
+    },
+    "neutral_bold": {
+      "$type": "color",
+      "$description": "Text on top of surface.neutral.bold."
+    },
+    "danger": {
+      "$type": "color",
+      "$description": "Text on top of surface.danger.bold."
+    }
+  },
+  "color_text_link": {
+    "hover": {
+      "$type": "color",
+      "$description": "Inline link on hover."
+    }
+  },
+  "color_border_control": {
+    "hover": {
+      "$type": "color",
+      "$description": "Control border on hover."
+    }
+  },
+  "color_icon_on": {
+    "accent": {
+      "$type": "color",
+      "$description": "Icon on top of surface.accent.bold."
     }
   },
   "elevation": {
-    "$type": "shadow",
-    "raised": { "$description": "Card resting above the canvas. Most cards should use a border instead." },
-    "overlay": { "$description": "Popover, tooltip, select menu, toast." },
-    "modal": { "$description": "Dialog. The highest elevation in the system." },
-    "none": { "$description": "Explicit no-shadow, so components can opt out without hardcoding `none`." }
+    "raised": {
+      "$type": "shadow",
+      "$description": "Shadow for a card. Reinforces the surface, never replaces it."
+    },
+    "overlay": {
+      "$type": "shadow",
+      "$description": "Shadow for menus, popovers, and toasts."
+    },
+    "modal": {
+      "$type": "shadow",
+      "$description": "Shadow for the modal layer."
+    },
+    "none": {
+      "$type": "shadow",
+      "$description": "Explicitly flat. Exists so a component can opt out by name."
+    }
   },
   "radius": {
-    "$type": "dimension",
-    "control": { "$description": "Buttons, inputs, checkboxes, badges. Theme-owned, so a future theme can change control geometry without touching a component." },
-    "surface": { "$description": "Cards and panels." },
-    "overlay": { "$description": "Modals, popovers, toasts." },
-    "pill": { "$description": "Fully rounded, for pill badges and switches." }
+    "control": {
+      "$type": "dimension",
+      "$description": "Radius of anything you click or type into."
+    },
+    "surface": {
+      "$type": "dimension",
+      "$description": "Radius of cards and panels."
+    },
+    "overlay": {
+      "$type": "dimension",
+      "$description": "Radius of modals, sheets, and toasts."
+    },
+    "pill": {
+      "$type": "dimension",
+      "$description": "Fully rounded: badges, avatars, pill buttons."
+    }
   },
   "font": {
-    "$type": "fontFamily",
-    "display": { "$description": "Editorial headings. Theme-owned." },
-    "body": { "$description": "All UI and body text." },
-    "mono": { "$description": "Token values, code, and numeric tables." }
+    "display": {
+      "$type": "dimension",
+      "$description": "Headings and display numbers."
+    },
+    "body": {
+      "$type": "dimension",
+      "$description": "Running text, labels, controls."
+    },
+    "mono": {
+      "$type": "dimension",
+      "$description": "Code, token names, and tabular values."
+    }
   }
 }

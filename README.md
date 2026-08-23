@@ -32,6 +32,8 @@ reviewed the pull request that day. This repo answers both with build rules rath
 | `packages/tokens` | `@forefront/tokens` | Token source, resolver, build, validation, contrast gate, platform artifacts |
 | `packages/ui` | `@forefront/ui` | React components, token-only stylesheet, Storybook |
 | `packages/web` | docs site | Documentation, token explorer, live component previews |
+| `packages/mobile` | Expo app | React Native consumption target |
+| `packages/desktop` | Electron shell | Desktop consumption target |
 
 ## Token model
 
@@ -93,11 +95,6 @@ Tailwind v4:
 | `bun run dev` | Docs site on port 4200 |
 
 CI runs exactly these commands, in this order. There is no check that only exists on the server.
-
-## Continuous integration
-
-The three workflow files live in `ci/workflows/` and belong in `.github/workflows/`. See
-[ci/README.md](./ci/README.md) for the one-line install.
 
 ## Contributing
 

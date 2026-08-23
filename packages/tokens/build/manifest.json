@@ -1,87 +1,475 @@
 {
-  "$comment": "GENERATED FILE. The docs site reads this so foundation pages cannot go stale relative to the token source. No timestamp is recorded, deliberately: generated artifacts are committed and a timestamp would create a diff on every build.",
+  "$generated": "GENERATED FILE - the docs site reads this so the foundation pages cannot go stale.",
+  "builtAt": "2026-08-23",
+  "version": "1.0.0",
   "counts": {
     "primitives": 134,
-    "semanticContract": 66,
-    "componentTokens": 67,
-    "themes": 2,
-    "densities": 2,
-    "totalCustomProperties": 333
-  },
-  "primitivesByType": {
-    "color": 49,
-    "fontFamily": 3,
-    "dimension": 47,
-    "fontWeight": 5,
-    "number": 12,
-    "shadow": 7,
-    "duration": 5,
-    "cubicBezier": 6
+    "contract": 66,
+    "component": 67,
+    "cssCustomProperties": 350
   },
   "themes": [
     {
       "name": "forefront-dark",
       "label": "Forefront Dark",
-      "appearance": "dark",
-      "isDefault": true,
-      "coverage": "66/66"
+      "isDefault": true
     },
     {
       "name": "forefront-light",
       "label": "Forefront Light",
-      "appearance": "light",
-      "isDefault": false,
-      "coverage": "66/66"
+      "isDefault": false
     }
   ],
-  "contractGroups": [
-    "color.surface",
-    "color.text",
-    "color.border",
-    "color.icon",
-    "elevation.raised",
-    "elevation.overlay",
-    "elevation.modal",
-    "elevation.none",
-    "radius.control",
-    "radius.surface",
-    "radius.overlay",
-    "radius.pill",
-    "font.display",
-    "font.body",
-    "font.mono"
+  "densities": [
+    {
+      "name": "compact",
+      "label": "Compact"
+    }
   ],
-  "contrast": {
-    "$comment": "Computed by the build, not by the page that displays it. A failure here exits non-zero, so these rows are the reason the build passed rather than a report about it.",
-    "requirements": 47,
-    "exemptions": 4,
-    "checksRun": 94,
-    "failures": 0,
-    "worstByTheme": [
+  "coverage": {
+    "forefront-dark": {
+      "supplied": 66,
+      "required": 66,
+      "complete": true
+    },
+    "forefront-light": {
+      "supplied": 66,
+      "required": 66,
+      "complete": true
+    }
+  },
+  "artifacts": [
+    "tokens.css",
+    "tokens.tailwind.css",
+    "tokens.ts",
+    "tokens.native.ts",
+    "tokens.md3.css",
+    "tokens.figma.json",
+    "manifest.json"
+  ],
+  "rules": {
+    "enforced": [
+      "theme-missing-contract-token",
+      "theme-extra-token",
+      "semantic-literal",
+      "contract-token-undocumented",
+      "alias-unresolved",
+      "alias-circular",
+      "alias-too-deep",
+      "density-outside-tier-3",
+      "density-changes-colour",
+      "single-default-theme"
+    ],
+    "warnings": [
+      "unreferenced-colour-primitive"
+    ]
+  },
+  "unreferencedColourPrimitives": [],
+  "accessibility": {
+    "standard": "WCAG 2.2 AA: 4.5:1 body text, 3:1 large text and non-text boundaries",
+    "checked": 40,
+    "failing": 0,
+    "pairs": [
       {
         "theme": "forefront-dark",
-        "checks": 47,
-        "failures": 0,
-        "tightestPair": "color.border.disabled on color.surface.disabled",
-        "tightestRatio": 1.34,
-        "tightestRequirement": 1.2,
-        "headroom": 0.14
+        "label": "text.primary on surface.canvas",
+        "ratio": 19.02,
+        "required": 4.5,
+        "passes": true,
+        "note": "body copy",
+        "fgValue": "#f8fafc",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.primary on surface.raised",
+        "ratio": 18.66,
+        "required": 4.5,
+        "passes": true,
+        "note": "card copy",
+        "fgValue": "#f8fafc",
+        "bgValue": "#0a0c14"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.secondary on surface.canvas",
+        "ratio": 8.52,
+        "required": 4.5,
+        "passes": true,
+        "note": "supporting copy",
+        "fgValue": "#a4aab4",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.subtle on surface.canvas",
+        "ratio": 6.43,
+        "required": 4.5,
+        "passes": true,
+        "note": "metadata still has to be readable",
+        "fgValue": "#8b93a1",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.placeholder on surface.control",
+        "ratio": 6.31,
+        "required": 4.5,
+        "passes": true,
+        "note": "placeholder text",
+        "fgValue": "#8b93a1",
+        "bgValue": "#0a0c14"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.on-accent on surface.accent.bold",
+        "ratio": 6.1,
+        "required": 4.5,
+        "passes": true,
+        "note": "primary button label",
+        "fgValue": "#07090f",
+        "bgValue": "#5793ca"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.on-neutral-bold on surface.neutral.bold",
+        "ratio": 16.02,
+        "required": 4.5,
+        "passes": true,
+        "note": "tooltip label",
+        "fgValue": "#07090f",
+        "bgValue": "#e2e7ee"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.on-danger on surface.danger.bold",
+        "ratio": 6.7,
+        "required": 4.5,
+        "passes": true,
+        "note": "destructive button label",
+        "fgValue": "#2e0a0c",
+        "bgValue": "#ef7b7f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.accent on surface.canvas",
+        "ratio": 7.93,
+        "required": 4.5,
+        "passes": true,
+        "note": "accent text",
+        "fgValue": "#7ba8d1",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.link on surface.canvas",
+        "ratio": 7.93,
+        "required": 4.5,
+        "passes": true,
+        "note": "inline link",
+        "fgValue": "#7ba8d1",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.danger on surface.canvas",
+        "ratio": 7.4,
+        "required": 4.5,
+        "passes": true,
+        "note": "validation message",
+        "fgValue": "#ef7b7f",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.success on surface.canvas",
+        "ratio": 10.68,
+        "required": 4.5,
+        "passes": true,
+        "note": "success message",
+        "fgValue": "#5fd39a",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.warning on surface.canvas",
+        "ratio": 9.48,
+        "required": 4.5,
+        "passes": true,
+        "note": "warning message",
+        "fgValue": "#ff9a55",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.info on surface.canvas",
+        "ratio": 7.93,
+        "required": 4.5,
+        "passes": true,
+        "note": "info message",
+        "fgValue": "#7ba8d1",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "text.primary on surface.selected",
+        "ratio": 17.17,
+        "required": 4.5,
+        "passes": true,
+        "note": "selected row copy",
+        "fgValue": "#f8fafc",
+        "bgValue": "#091825"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "border.control on surface.canvas",
+        "ratio": 5.42,
+        "required": 3,
+        "passes": true,
+        "note": "control boundary, WCAG 1.4.11",
+        "fgValue": "#7d8696",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "border.focus on surface.canvas",
+        "ratio": 7.93,
+        "required": 3,
+        "passes": true,
+        "note": "focus ring must be visible",
+        "fgValue": "#7ba8d1",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "border.focus on surface.raised",
+        "ratio": 7.78,
+        "required": 3,
+        "passes": true,
+        "note": "focus ring on a card",
+        "fgValue": "#7ba8d1",
+        "bgValue": "#0a0c14"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "border.danger on surface.canvas",
+        "ratio": 5.09,
+        "required": 3,
+        "passes": true,
+        "note": "invalid control boundary",
+        "fgValue": "#e4494f",
+        "bgValue": "#07090f"
+      },
+      {
+        "theme": "forefront-dark",
+        "label": "icon.primary on surface.canvas",
+        "ratio": 8.52,
+        "required": 3,
+        "passes": true,
+        "note": "icon, non-text contrast",
+        "fgValue": "#a4aab4",
+        "bgValue": "#07090f"
       },
       {
         "theme": "forefront-light",
-        "checks": 47,
-        "failures": 0,
-        "tightestPair": "color.border.disabled on color.surface.disabled",
-        "tightestRatio": 1.46,
-        "tightestRequirement": 1.2,
-        "headroom": 0.26
+        "label": "text.primary on surface.canvas",
+        "ratio": 19.02,
+        "required": 4.5,
+        "passes": true,
+        "note": "body copy",
+        "fgValue": "#07090f",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.primary on surface.raised",
+        "ratio": 19.91,
+        "required": 4.5,
+        "passes": true,
+        "note": "card copy",
+        "fgValue": "#07090f",
+        "bgValue": "#fff"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.secondary on surface.canvas",
+        "ratio": 9.33,
+        "required": 4.5,
+        "passes": true,
+        "note": "supporting copy",
+        "fgValue": "#3d4453",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.subtle on surface.canvas",
+        "ratio": 5.55,
+        "required": 4.5,
+        "passes": true,
+        "note": "metadata still has to be readable",
+        "fgValue": "#5b6678",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.placeholder on surface.control",
+        "ratio": 5.81,
+        "required": 4.5,
+        "passes": true,
+        "note": "placeholder text",
+        "fgValue": "#5b6678",
+        "bgValue": "#fff"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.on-accent on surface.accent.bold",
+        "ratio": 5.46,
+        "required": 4.5,
+        "passes": true,
+        "note": "primary button label",
+        "fgValue": "#fff",
+        "bgValue": "#2f6da4"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.on-neutral-bold on surface.neutral.bold",
+        "ratio": 19.72,
+        "required": 4.5,
+        "passes": true,
+        "note": "tooltip label",
+        "fgValue": "#fff",
+        "bgValue": "#0a0a12"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.on-danger on surface.danger.bold",
+        "ratio": 5.44,
+        "required": 4.5,
+        "passes": true,
+        "note": "destructive button label",
+        "fgValue": "#fff",
+        "bgValue": "#c92a32"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.accent on surface.canvas",
+        "ratio": 8.47,
+        "required": 4.5,
+        "passes": true,
+        "note": "accent text",
+        "fgValue": "#1e4c7a",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.link on surface.canvas",
+        "ratio": 8.47,
+        "required": 4.5,
+        "passes": true,
+        "note": "inline link",
+        "fgValue": "#1e4c7a",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.danger on surface.canvas",
+        "ratio": 7.22,
+        "required": 4.5,
+        "passes": true,
+        "note": "validation message",
+        "fgValue": "#a41d24",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.success on surface.canvas",
+        "ratio": 6.16,
+        "required": 4.5,
+        "passes": true,
+        "note": "success message",
+        "fgValue": "#146c43",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.warning on surface.canvas",
+        "ratio": 6.45,
+        "required": 4.5,
+        "passes": true,
+        "note": "warning message",
+        "fgValue": "#914712",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.info on surface.canvas",
+        "ratio": 8.47,
+        "required": 4.5,
+        "passes": true,
+        "note": "info message",
+        "fgValue": "#1e4c7a",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "text.primary on surface.selected",
+        "ratio": 17.12,
+        "required": 4.5,
+        "passes": true,
+        "note": "selected row copy",
+        "fgValue": "#07090f",
+        "bgValue": "#e6eff8"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "border.control on surface.canvas",
+        "ratio": 3.51,
+        "required": 3,
+        "passes": true,
+        "note": "control boundary, WCAG 1.4.11",
+        "fgValue": "#7d8696",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "border.focus on surface.canvas",
+        "ratio": 5.22,
+        "required": 3,
+        "passes": true,
+        "note": "focus ring must be visible",
+        "fgValue": "#2f6da4",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "border.focus on surface.raised",
+        "ratio": 5.46,
+        "required": 3,
+        "passes": true,
+        "note": "focus ring on a card",
+        "fgValue": "#2f6da4",
+        "bgValue": "#fff"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "border.danger on surface.canvas",
+        "ratio": 5.2,
+        "required": 3,
+        "passes": true,
+        "note": "invalid control boundary",
+        "fgValue": "#c92a32",
+        "bgValue": "#f8fafc"
+      },
+      {
+        "theme": "forefront-light",
+        "label": "icon.primary on surface.canvas",
+        "ratio": 9.33,
+        "required": 3,
+        "passes": true,
+        "note": "icon, non-text contrast",
+        "fgValue": "#3d4453",
+        "bgValue": "#f8fafc"
       }
     ]
-  },
-  "unreferencedPrimitives": 0,
-  "unreferencedPrimitiveDetail": [],
-  "attributes": {
-    "theme": "data-fds-theme",
-    "density": "data-fds-density"
   }
 }

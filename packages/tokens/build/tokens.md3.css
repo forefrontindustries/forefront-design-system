@@ -1,0 +1,139 @@
+/* GENERATED - Material 3 bridge.
+ * Maps the Forefront semantic contract onto md.sys.* roles so a Material 3 surface
+ * (@material/web on web, MaterialTheme on Compose via the same JSON) renders in
+ * Forefront themes without forking the palette. Roles that MD3 keeps static
+ * (error) still resolve through the Forefront contract so dark mode stays coherent.
+ */
+:root {
+  --md-sys-color-primary: var(--fds-color-surface-accent-bold);
+  --md-sys-color-on-primary: var(--fds-color-text-on-accent);
+  --md-sys-color-primary-container: var(--fds-color-surface-accent-subtle);
+  --md-sys-color-on-primary-container: var(--fds-color-text-accent);
+  --md-sys-color-secondary: var(--fds-color-surface-neutral-bold);
+  --md-sys-color-on-secondary: var(--fds-color-text-on-neutral-bold);
+  --md-sys-color-secondary-container: var(--fds-color-surface-neutral-subtle);
+  --md-sys-color-on-secondary-container: var(--fds-color-text-primary);
+  --md-sys-color-tertiary: var(--fds-color-surface-info-bold);
+  --md-sys-color-on-tertiary: var(--fds-color-text-on-accent);
+  --md-sys-color-tertiary-container: var(--fds-color-surface-info-subtle);
+  --md-sys-color-on-tertiary-container: var(--fds-color-text-info);
+  --md-sys-color-error: var(--fds-color-surface-danger-bold);
+  --md-sys-color-on-error: var(--fds-color-text-on-danger);
+  --md-sys-color-error-container: var(--fds-color-surface-danger-subtle);
+  --md-sys-color-on-error-container: var(--fds-color-text-danger);
+  --md-sys-color-surface: var(--fds-color-surface-canvas);
+  --md-sys-color-on-surface: var(--fds-color-text-primary);
+  --md-sys-color-on-surface-variant: var(--fds-color-text-secondary);
+  --md-sys-color-surface-container-lowest: var(--fds-color-surface-sunken);
+  --md-sys-color-surface-container-low: var(--fds-color-surface-canvas);
+  --md-sys-color-surface-container: var(--fds-color-surface-raised);
+  --md-sys-color-surface-container-high: var(--fds-color-surface-overlay);
+  --md-sys-color-surface-container-highest: var(--fds-color-surface-control-hover);
+  --md-sys-color-surface-dim: var(--fds-color-surface-sunken);
+  --md-sys-color-surface-bright: var(--fds-color-surface-raised);
+  --md-sys-color-inverse-surface: var(--fds-color-surface-neutral-bold);
+  --md-sys-color-inverse-on-surface: var(--fds-color-text-on-neutral-bold);
+  --md-sys-color-inverse-primary: var(--fds-color-text-accent);
+  --md-sys-color-outline: var(--fds-color-border-control);
+  --md-sys-color-outline-variant: var(--fds-color-border-subtle);
+  --md-sys-color-scrim: var(--fds-color-surface-scrim);
+
+  --md-sys-shape-corner-none: var(--fds-radius-none);
+  --md-sys-shape-corner-extra-small: var(--fds-radius-xs);
+  --md-sys-shape-corner-small: var(--fds-radius-sm);
+  --md-sys-shape-corner-medium: var(--fds-radius-md);
+  --md-sys-shape-corner-large: var(--fds-radius-lg);
+  --md-sys-shape-corner-extra-large: var(--fds-radius-xl);
+  --md-sys-shape-corner-extra-large-increased: var(--fds-radius-2xl);
+  --md-sys-shape-corner-full: var(--fds-radius-full);
+
+  --md-sys-typescale-display-large-font: var(--fds-font-display);
+  --md-sys-typescale-display-large-size: var(--fds-font-size-130);
+  --md-sys-typescale-display-large-line-height: var(--fds-font-line-height-tight);
+  --md-sys-typescale-display-large-weight: var(--fds-font-weight-bold);
+  --md-sys-typescale-display-large-tracking: var(--fds-font-tracking-display);
+
+  --md-sys-typescale-display-medium-font: var(--fds-font-display);
+  --md-sys-typescale-display-medium-size: var(--fds-font-size-120);
+  --md-sys-typescale-display-medium-line-height: var(--fds-font-line-height-tight);
+  --md-sys-typescale-display-medium-weight: var(--fds-font-weight-bold);
+  --md-sys-typescale-display-medium-tracking: var(--fds-font-tracking-display);
+
+  --md-sys-typescale-display-small-font: var(--fds-font-display);
+  --md-sys-typescale-display-small-size: var(--fds-font-size-110);
+  --md-sys-typescale-display-small-line-height: var(--fds-font-line-height-tight);
+  --md-sys-typescale-display-small-weight: var(--fds-font-weight-semibold);
+  --md-sys-typescale-display-small-tracking: var(--fds-font-tracking-tighter);
+
+  --md-sys-typescale-headline-large-font: var(--fds-font-display);
+  --md-sys-typescale-headline-large-size: var(--fds-font-size-100);
+  --md-sys-typescale-headline-large-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-headline-large-weight: var(--fds-font-weight-semibold);
+  --md-sys-typescale-headline-large-tracking: var(--fds-font-tracking-tighter);
+
+  --md-sys-typescale-headline-medium-font: var(--fds-font-display);
+  --md-sys-typescale-headline-medium-size: var(--fds-font-size-90);
+  --md-sys-typescale-headline-medium-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-headline-medium-weight: var(--fds-font-weight-semibold);
+  --md-sys-typescale-headline-medium-tracking: var(--fds-font-tracking-tight);
+
+  --md-sys-typescale-headline-small-font: var(--fds-font-display);
+  --md-sys-typescale-headline-small-size: var(--fds-font-size-80);
+  --md-sys-typescale-headline-small-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-headline-small-weight: var(--fds-font-weight-semibold);
+  --md-sys-typescale-headline-small-tracking: var(--fds-font-tracking-tight);
+
+  --md-sys-typescale-title-large-font: var(--fds-font-body);
+  --md-sys-typescale-title-large-size: var(--fds-font-size-70);
+  --md-sys-typescale-title-large-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-title-large-weight: var(--fds-font-weight-medium);
+  --md-sys-typescale-title-large-tracking: var(--fds-font-tracking-tight);
+
+  --md-sys-typescale-title-medium-font: var(--fds-font-body);
+  --md-sys-typescale-title-medium-size: var(--fds-font-size-60);
+  --md-sys-typescale-title-medium-line-height: var(--fds-font-line-height-normal);
+  --md-sys-typescale-title-medium-weight: var(--fds-font-weight-medium);
+  --md-sys-typescale-title-medium-tracking: var(--fds-font-tracking-normal);
+
+  --md-sys-typescale-title-small-font: var(--fds-font-body);
+  --md-sys-typescale-title-small-size: var(--fds-font-size-50);
+  --md-sys-typescale-title-small-line-height: var(--fds-font-line-height-normal);
+  --md-sys-typescale-title-small-weight: var(--fds-font-weight-medium);
+  --md-sys-typescale-title-small-tracking: var(--fds-font-tracking-normal);
+
+  --md-sys-typescale-body-large-font: var(--fds-font-body);
+  --md-sys-typescale-body-large-size: var(--fds-font-size-50);
+  --md-sys-typescale-body-large-line-height: var(--fds-font-line-height-relaxed);
+  --md-sys-typescale-body-large-weight: var(--fds-font-weight-regular);
+  --md-sys-typescale-body-large-tracking: var(--fds-font-tracking-normal);
+
+  --md-sys-typescale-body-medium-font: var(--fds-font-body);
+  --md-sys-typescale-body-medium-size: var(--fds-font-size-40);
+  --md-sys-typescale-body-medium-line-height: var(--fds-font-line-height-relaxed);
+  --md-sys-typescale-body-medium-weight: var(--fds-font-weight-regular);
+  --md-sys-typescale-body-medium-tracking: var(--fds-font-tracking-normal);
+
+  --md-sys-typescale-body-small-font: var(--fds-font-body);
+  --md-sys-typescale-body-small-size: var(--fds-font-size-30);
+  --md-sys-typescale-body-small-line-height: var(--fds-font-line-height-normal);
+  --md-sys-typescale-body-small-weight: var(--fds-font-weight-regular);
+  --md-sys-typescale-body-small-tracking: var(--fds-font-tracking-normal);
+
+  --md-sys-typescale-label-large-font: var(--fds-font-body);
+  --md-sys-typescale-label-large-size: var(--fds-font-size-40);
+  --md-sys-typescale-label-large-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-label-large-weight: var(--fds-font-weight-medium);
+  --md-sys-typescale-label-large-tracking: var(--fds-font-tracking-normal);
+
+  --md-sys-typescale-label-medium-font: var(--fds-font-body);
+  --md-sys-typescale-label-medium-size: var(--fds-font-size-30);
+  --md-sys-typescale-label-medium-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-label-medium-weight: var(--fds-font-weight-medium);
+  --md-sys-typescale-label-medium-tracking: var(--fds-font-tracking-wide);
+
+  --md-sys-typescale-label-small-font: var(--fds-font-body);
+  --md-sys-typescale-label-small-size: var(--fds-font-size-20);
+  --md-sys-typescale-label-small-line-height: var(--fds-font-line-height-snug);
+  --md-sys-typescale-label-small-weight: var(--fds-font-weight-medium);
+  --md-sys-typescale-label-small-tracking: var(--fds-font-tracking-wide);
+}

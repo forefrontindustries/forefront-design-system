@@ -1,470 +1,392 @@
 /**
- * Design token custom properties
- *
- * GENERATED FILE. Do not edit by hand.
- * Source: packages/tokens/src/**. Regenerate with `bun run tokens:build`.
+ * Forefront Design System tokens. GENERATED FILE - do not edit.
+ * Source: packages/tokens/src, build: packages/tokens/scripts/build.ts
+ * 134 primitives, 66 contract tokens, 67 component tokens.
  */
-
-/* Layer order is declared once, here, so consumers can reason about override
-   precedence without reading every stylesheet. Component styles live in
-   `fds.components`, which always wins over token layers but always loses to
-   `fds.overrides`, the layer an application owns. */
-@layer fds.reset, fds.primitives, fds.semantic, fds.component, fds.components, fds.overrides;
+@layer fds.primitives, fds.semantic, fds.component, fds.density;
 
 @layer fds.primitives {
-	:root {
-		/* color.ink */
-		--fds-color-ink-650: #2a2a35;
-		--fds-color-ink-700: #202a38;
-		--fds-color-ink-750: #0f0f1a;
-		--fds-color-ink-800: #0d1019;
-		--fds-color-ink-850: #0a0c14;
-		--fds-color-ink-900: #0a0a12;
-		--fds-color-ink-950: #07090f;
-		--fds-color-ink-1000: #000000;
-		/* color.slate */
-		--fds-color-slate-0: #ffffff;
-		--fds-color-slate-25: #f8fafc;
-		--fds-color-slate-50: #f1f4f8;
-		--fds-color-slate-100: #e2e7ee;
-		--fds-color-slate-200: #c8ccd4;
-		--fds-color-slate-300: #a4aab4;
-		--fds-color-slate-400: #8b93a1;
-		--fds-color-slate-450: #7d8696;
-		--fds-color-slate-500: #5b6678;
-		--fds-color-slate-600: #3d4453;
-		/* color.blue */
-		--fds-color-blue-100: #e6eff8;
-		--fds-color-blue-300: #a3c5e4;
-		--fds-color-blue-400: #7ba8d1;
-		--fds-color-blue-500: #5793ca;
-		--fds-color-blue-600: #2f6da4;
-		--fds-color-blue-700: #1e4c7a;
-		--fds-color-blue-800: #16385a;
-		--fds-color-blue-950: #091825;
-		/* color.orange */
-		--fds-color-orange-100: #ffeadb;
-		--fds-color-orange-400: #ff9a55;
-		--fds-color-orange-500: #ff8a3d;
-		--fds-color-orange-600: #c25f18;
-		--fds-color-orange-700: #914712;
-		--fds-color-orange-950: #2a1305;
-		/* color.green */
-		--fds-color-green-100: #e3f7ec;
-		--fds-color-green-400: #5fd39a;
-		--fds-color-green-500: #2eb872;
-		--fds-color-green-600: #1a8754;
-		--fds-color-green-700: #146c43;
-		--fds-color-green-950: #052618;
-		/* color.red */
-		--fds-color-red-100: #fdeaeb;
-		--fds-color-red-300: #f6a5a8;
-		--fds-color-red-400: #ef7b7f;
-		--fds-color-red-500: #e4494f;
-		--fds-color-red-600: #c92a32;
-		--fds-color-red-700: #a41d24;
-		--fds-color-red-950: #2e0a0c;
-		/* color.alpha */
-		--fds-color-alpha-light-08: rgba(255, 255, 255, 0.08);
-		--fds-color-alpha-dark-08: rgba(7, 9, 15, 0.08);
-		--fds-color-alpha-scrim-dark: rgba(4, 5, 10, 0.72);
-		--fds-color-alpha-scrim-cool: rgba(7, 9, 15, 0.48);
-		/* font.family */
-		--fds-font-family-display: 'Outfit', Arial, Helvetica, sans-serif;
-		--fds-font-family-sans: 'Satoshi', Arial, Helvetica, sans-serif;
-		--fds-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-		/* font.size */
-		--fds-font-size-10: 0.6875rem;
-		--fds-font-size-20: 0.75rem;
-		--fds-font-size-30: 0.8125rem;
-		--fds-font-size-40: 0.875rem;
-		--fds-font-size-50: 1rem;
-		--fds-font-size-60: 1.125rem;
-		--fds-font-size-70: 1.3125rem;
-		--fds-font-size-80: 1.5rem;
-		--fds-font-size-90: 1.75rem;
-		--fds-font-size-100: 2.125rem;
-		--fds-font-size-110: 2.625rem;
-		--fds-font-size-120: 3.25rem;
-		--fds-font-size-130: 4rem;
-		/* font.weight */
-		--fds-font-weight-regular: 400;
-		--fds-font-weight-medium: 500;
-		--fds-font-weight-semibold: 600;
-		--fds-font-weight-bold: 700;
-		--fds-font-weight-black: 900;
-		/* font.line-height */
-		--fds-font-line-height-tight: 1.1;
-		--fds-font-line-height-snug: 1.25;
-		--fds-font-line-height-normal: 1.5;
-		--fds-font-line-height-relaxed: 1.65;
-		/* font.tracking */
-		--fds-font-tracking-display: -0.04em;
-		--fds-font-tracking-tighter: -0.03em;
-		--fds-font-tracking-tight: -0.015em;
-		--fds-font-tracking-normal: 0em;
-		--fds-font-tracking-wide: 0.04em;
-		--fds-font-tracking-wider: 0.12em;
-		/* space.0 */
-		--fds-space-0: 0rem;
-		/* space.1 */
-		--fds-space-1: 0.125rem;
-		/* space.2 */
-		--fds-space-2: 0.25rem;
-		/* space.3 */
-		--fds-space-3: 0.375rem;
-		/* space.4 */
-		--fds-space-4: 0.5rem;
-		/* space.5 */
-		--fds-space-5: 0.75rem;
-		/* space.6 */
-		--fds-space-6: 1rem;
-		/* space.7 */
-		--fds-space-7: 1.25rem;
-		/* space.8 */
-		--fds-space-8: 1.5rem;
-		/* space.9 */
-		--fds-space-9: 2rem;
-		/* space.10 */
-		--fds-space-10: 2.5rem;
-		/* space.11 */
-		--fds-space-11: 3rem;
-		/* space.12 */
-		--fds-space-12: 4rem;
-		/* space.13 */
-		--fds-space-13: 5rem;
-		/* space.14 */
-		--fds-space-14: 6rem;
-		/* space.15 */
-		--fds-space-15: 8rem;
-		/* radius.none */
-		--fds-radius-none: 0rem;
-		/* radius.xs */
-		--fds-radius-xs: 0.125rem;
-		/* radius.sm */
-		--fds-radius-sm: 0.25rem;
-		/* radius.md */
-		--fds-radius-md: 0.375rem;
-		/* radius.lg */
-		--fds-radius-lg: 0.625rem;
-		/* radius.xl */
-		--fds-radius-xl: 0.875rem;
-		/* radius.2xl */
-		--fds-radius-2xl: 1.25rem;
-		/* radius.full */
-		--fds-radius-full: 62.4375rem;
-		/* border-width.none */
-		--fds-border-width-none: 0px;
-		/* border-width.thin */
-		--fds-border-width-thin: 1px;
-		/* border-width.medium */
-		--fds-border-width-medium: 2px;
-		/* border-width.thick */
-		--fds-border-width-thick: 3px;
-		/* shadow.dark-sm */
-		--fds-shadow-dark-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-		/* shadow.dark-md */
-		--fds-shadow-dark-md: 0 4px 12px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.5);
-		/* shadow.dark-lg */
-		--fds-shadow-dark-lg: 0 16px 40px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.5);
-		/* shadow.light-sm */
-		--fds-shadow-light-sm: 0 1px 2px rgba(7, 9, 15, 0.08);
-		/* shadow.light-md */
-		--fds-shadow-light-md: 0 4px 12px rgba(7, 9, 15, 0.1), 0 1px 2px rgba(7, 9, 15, 0.06);
-		/* shadow.light-lg */
-		--fds-shadow-light-lg: 0 16px 40px rgba(7, 9, 15, 0.14), 0 2px 6px rgba(7, 9, 15, 0.08);
-		/* shadow.none */
-		--fds-shadow-none: none;
-		/* duration.instant */
-		--fds-duration-instant: 0ms;
-		/* duration.fast */
-		--fds-duration-fast: 120ms;
-		/* duration.moderate */
-		--fds-duration-moderate: 200ms;
-		/* duration.slow */
-		--fds-duration-slow: 320ms;
-		/* duration.slower */
-		--fds-duration-slower: 480ms;
-		/* easing.linear */
-		--fds-easing-linear: linear;
-		/* easing.standard */
-		--fds-easing-standard: cubic-bezier(0.2, 0, 0.13, 1);
-		/* easing.emphasized */
-		--fds-easing-emphasized: cubic-bezier(0.3, 0, 0, 1);
-		/* easing.entrance */
-		--fds-easing-entrance: cubic-bezier(0, 0, 0.2, 1);
-		/* easing.exit */
-		--fds-easing-exit: cubic-bezier(0.4, 0, 1, 1);
-		/* easing.spring */
-		--fds-easing-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-		/* z-index.base */
-		--fds-z-index-base: 0;
-		/* z-index.raised */
-		--fds-z-index-raised: 10;
-		/* z-index.sticky */
-		--fds-z-index-sticky: 100;
-		/* z-index.overlay */
-		--fds-z-index-overlay: 1000;
-		/* z-index.modal */
-		--fds-z-index-modal: 1100;
-		/* z-index.popover */
-		--fds-z-index-popover: 1200;
-		/* z-index.toast */
-		--fds-z-index-toast: 1300;
-		/* z-index.tooltip */
-		--fds-z-index-tooltip: 1400;
-	}
+  :root {
+  --fds-color-ink-650: #2a2a35;
+  --fds-color-ink-700: #202a38;
+  --fds-color-ink-750: #0f0f1a;
+  --fds-color-ink-800: #0d1019;
+  --fds-color-ink-850: #0a0c14;
+  --fds-color-ink-900: #0a0a12;
+  --fds-color-ink-950: #07090f;
+  --fds-color-ink-1000: #000;
+  --fds-color-slate-0: #fff;
+  --fds-color-slate-25: #f8fafc;
+  --fds-color-slate-50: #f1f4f8;
+  --fds-color-slate-100: #e2e7ee;
+  --fds-color-slate-200: #c8ccd4;
+  --fds-color-slate-300: #a4aab4;
+  --fds-color-slate-400: #8b93a1;
+  --fds-color-slate-450: #7d8696;
+  --fds-color-slate-500: #5b6678;
+  --fds-color-slate-600: #3d4453;
+  --fds-color-blue-100: #e6eff8;
+  --fds-color-blue-300: #a3c5e4;
+  --fds-color-blue-400: #7ba8d1;
+  --fds-color-blue-500: #5793ca;
+  --fds-color-blue-600: #2f6da4;
+  --fds-color-blue-700: #1e4c7a;
+  --fds-color-blue-800: #16385a;
+  --fds-color-blue-950: #091825;
+  --fds-color-orange-100: #ffeadb;
+  --fds-color-orange-400: #ff9a55;
+  --fds-color-orange-500: #ff8a3d;
+  --fds-color-orange-600: #c25f18;
+  --fds-color-orange-700: #914712;
+  --fds-color-orange-950: #2a1305;
+  --fds-color-green-100: #e3f7ec;
+  --fds-color-green-400: #5fd39a;
+  --fds-color-green-500: #2eb872;
+  --fds-color-green-600: #1a8754;
+  --fds-color-green-700: #146c43;
+  --fds-color-green-950: #052618;
+  --fds-color-red-100: #fdeaeb;
+  --fds-color-red-300: #f6a5a8;
+  --fds-color-red-400: #ef7b7f;
+  --fds-color-red-500: #e4494f;
+  --fds-color-red-600: #c92a32;
+  --fds-color-red-700: #a41d24;
+  --fds-color-red-950: #2e0a0c;
+  --fds-color-alpha-light-08: #ffffff14;
+  --fds-color-alpha-dark-08: #07090f14;
+  --fds-color-alpha-scrim-dark: #04050ab8;
+  --fds-color-alpha-scrim-cool: #07090f7a;
+  --fds-font-family-display: "Outfit", Arial, Helvetica, sans-serif;
+  --fds-font-family-sans: "Satoshi", Arial, Helvetica, sans-serif;
+  --fds-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --fds-font-size-10: .6875rem;
+  --fds-font-size-20: .75rem;
+  --fds-font-size-30: .8125rem;
+  --fds-font-size-40: .875rem;
+  --fds-font-size-50: 1rem;
+  --fds-font-size-60: 1.125rem;
+  --fds-font-size-70: 1.3125rem;
+  --fds-font-size-80: 1.5rem;
+  --fds-font-size-90: 1.75rem;
+  --fds-font-size-100: 2.125rem;
+  --fds-font-size-110: 2.625rem;
+  --fds-font-size-120: 3.25rem;
+  --fds-font-size-130: 4rem;
+  --fds-font-weight-regular: 400;
+  --fds-font-weight-medium: 500;
+  --fds-font-weight-semibold: 600;
+  --fds-font-weight-bold: 700;
+  --fds-font-weight-black: 900;
+  --fds-font-line-height-tight: 1.1;
+  --fds-font-line-height-snug: 1.25;
+  --fds-font-line-height-normal: 1.5;
+  --fds-font-line-height-relaxed: 1.65;
+  --fds-font-tracking-display: -.04em;
+  --fds-font-tracking-tighter: -.03em;
+  --fds-font-tracking-tight: -.015em;
+  --fds-font-tracking-normal: 0em;
+  --fds-font-tracking-wide: .04em;
+  --fds-font-tracking-wider: .12em;
+  --fds-space-0: 0rem;
+  --fds-space-1: .125rem;
+  --fds-space-2: .25rem;
+  --fds-space-3: .375rem;
+  --fds-space-4: .5rem;
+  --fds-space-5: .75rem;
+  --fds-space-6: 1rem;
+  --fds-space-7: 1.25rem;
+  --fds-space-8: 1.5rem;
+  --fds-space-9: 2rem;
+  --fds-space-10: 2.5rem;
+  --fds-space-11: 3rem;
+  --fds-space-12: 4rem;
+  --fds-space-13: 5rem;
+  --fds-space-14: 6rem;
+  --fds-space-15: 8rem;
+  --fds-radius-none: 0rem;
+  --fds-radius-xs: .125rem;
+  --fds-radius-sm: .25rem;
+  --fds-radius-md: .375rem;
+  --fds-radius-lg: .625rem;
+  --fds-radius-xl: .875rem;
+  --fds-radius-2xl: 1.25rem;
+  --fds-radius-full: 999px;
+  --fds-border-width-none: 0px;
+  --fds-border-width-thin: 1px;
+  --fds-border-width-medium: 2px;
+  --fds-border-width-thick: 3px;
+  --fds-shadow-dark-sm: 0 1px 2px #0006;
+  --fds-shadow-dark-md: 0 4px 12px #00000073, 0 1px 2px #00000080;
+  --fds-shadow-dark-lg: 0 16px 40px #0000008c, 0 2px 6px #00000080;
+  --fds-shadow-light-sm: 0 1px 2px #07090f14;
+  --fds-shadow-light-md: 0 4px 12px #07090f1a, 0 1px 2px #07090f0f;
+  --fds-shadow-light-lg: 0 16px 40px #07090f24, 0 2px 6px #07090f14;
+  --fds-shadow-none: none;
+  --fds-duration-instant: 0ms;
+  --fds-duration-fast: 120ms;
+  --fds-duration-moderate: 200ms;
+  --fds-duration-slow: 320ms;
+  --fds-duration-slower: 480ms;
+  --fds-easing-linear: linear;
+  --fds-easing-standard: cubic-bezier(.2, 0, .13, 1);
+  --fds-easing-emphasized: cubic-bezier(.3, 0, 0, 1);
+  --fds-easing-entrance: cubic-bezier(0, 0, .2, 1);
+  --fds-easing-exit: cubic-bezier(.4, 0, 1, 1);
+  --fds-easing-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --fds-z-index-base: 0;
+  --fds-z-index-raised: 10;
+  --fds-z-index-sticky: 100;
+  --fds-z-index-overlay: 1000;
+  --fds-z-index-modal: 1100;
+  --fds-z-index-popover: 1200;
+  --fds-z-index-toast: 1300;
+  --fds-z-index-tooltip: 1400;
+  }
 }
 
 @layer fds.semantic {
-	/* Forefront Dark */
-	:root,
-	[data-fds-theme="forefront-dark"] {
-		color-scheme: dark;
-		--fds-color-surface-canvas: var(--fds-color-ink-950);
-		--fds-color-surface-sunken: var(--fds-color-ink-1000);
-		--fds-color-surface-raised: var(--fds-color-ink-850);
-		--fds-color-surface-overlay: var(--fds-color-ink-800);
-		--fds-color-surface-scrim: var(--fds-color-alpha-scrim-dark);
-		--fds-color-surface-control: var(--fds-color-ink-850);
-		--fds-color-surface-control-hover: var(--fds-color-ink-800);
-		--fds-color-surface-disabled: var(--fds-color-ink-800);
-		--fds-color-surface-selected: var(--fds-color-blue-950);
-		--fds-color-surface-accent-subtle: var(--fds-color-blue-950);
-		--fds-color-surface-accent-bold: var(--fds-color-blue-500);
-		--fds-color-surface-accent-bold-hover: var(--fds-color-blue-400);
-		--fds-color-surface-accent-bold-active: var(--fds-color-blue-300);
-		--fds-color-surface-neutral-subtle: var(--fds-color-ink-800);
-		--fds-color-surface-neutral-subtle-hover: var(--fds-color-ink-750);
-		--fds-color-surface-neutral-bold: var(--fds-color-slate-100);
-		--fds-color-surface-success-subtle: var(--fds-color-green-950);
-		--fds-color-surface-success-bold: var(--fds-color-green-500);
-		--fds-color-surface-warning-subtle: var(--fds-color-orange-950);
-		--fds-color-surface-warning-bold: var(--fds-color-orange-500);
-		--fds-color-surface-danger-subtle: var(--fds-color-red-950);
-		--fds-color-surface-danger-bold: var(--fds-color-red-400);
-		--fds-color-surface-danger-bold-hover: var(--fds-color-red-300);
-		--fds-color-surface-info-subtle: var(--fds-color-blue-950);
-		--fds-color-surface-info-bold: var(--fds-color-blue-500);
-		--fds-color-text-primary: var(--fds-color-slate-25);
-		--fds-color-text-secondary: var(--fds-color-slate-300);
-		--fds-color-text-subtle: var(--fds-color-slate-400);
-		--fds-color-text-placeholder: var(--fds-color-slate-400);
-		--fds-color-text-disabled: var(--fds-color-slate-450);
-		--fds-color-text-accent: var(--fds-color-blue-400);
-		--fds-color-text-on-accent: var(--fds-color-ink-950);
-		--fds-color-text-on-neutral-bold: var(--fds-color-ink-950);
-		--fds-color-text-on-danger: var(--fds-color-red-950);
-		--fds-color-text-success: var(--fds-color-green-400);
-		--fds-color-text-warning: var(--fds-color-orange-400);
-		--fds-color-text-danger: var(--fds-color-red-400);
-		--fds-color-text-info: var(--fds-color-blue-400);
-		--fds-color-text-link: var(--fds-color-blue-400);
-		--fds-color-text-link-hover: var(--fds-color-blue-300);
-		--fds-color-border-subtle: var(--fds-color-alpha-light-08);
-		--fds-color-border-default: var(--fds-color-ink-700);
-		--fds-color-border-strong: var(--fds-color-ink-650);
-		--fds-color-border-control: var(--fds-color-slate-450);
-		--fds-color-border-control-hover: var(--fds-color-slate-400);
-		--fds-color-border-accent: var(--fds-color-blue-500);
-		--fds-color-border-focus: var(--fds-color-blue-400);
-		--fds-color-border-success: var(--fds-color-green-500);
-		--fds-color-border-warning: var(--fds-color-orange-500);
-		--fds-color-border-danger: var(--fds-color-red-500);
-		--fds-color-border-disabled: var(--fds-color-ink-650);
-		--fds-color-icon-primary: var(--fds-color-slate-300);
-		--fds-color-icon-subtle: var(--fds-color-slate-400);
-		--fds-color-icon-accent: var(--fds-color-blue-400);
-		--fds-color-icon-on-accent: var(--fds-color-ink-950);
-		--fds-elevation-raised: var(--fds-shadow-dark-sm);
-		--fds-elevation-overlay: var(--fds-shadow-dark-md);
-		--fds-elevation-modal: var(--fds-shadow-dark-lg);
-		--fds-elevation-none: var(--fds-shadow-none);
-		--fds-radius-control: var(--fds-radius-sm);
-		--fds-radius-surface: var(--fds-radius-lg);
-		--fds-radius-overlay: var(--fds-radius-xl);
-		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-display);
-		--fds-font-body: var(--fds-font-family-sans);
-		--fds-font-mono: var(--fds-font-family-mono);
-	}
+  /* The default theme is emitted on :root as well, so a consumer who forgets the
+     data attribute still gets a working system instead of unset custom properties. */
+  :root,
+  [data-fds-theme="forefront-dark"] {
+  --fds-color-surface-canvas: var(--fds-color-ink-950);
+  --fds-color-surface-sunken: var(--fds-color-ink-1000);
+  --fds-color-surface-raised: var(--fds-color-ink-850);
+  --fds-color-surface-overlay: var(--fds-color-ink-800);
+  --fds-color-surface-scrim: var(--fds-color-alpha-scrim-dark);
+  --fds-color-surface-control: var(--fds-color-ink-850);
+  --fds-color-surface-disabled: var(--fds-color-ink-800);
+  --fds-color-surface-selected: var(--fds-color-blue-950);
+  --fds-color-text-primary: var(--fds-color-slate-25);
+  --fds-color-text-secondary: var(--fds-color-slate-300);
+  --fds-color-text-subtle: var(--fds-color-slate-400);
+  --fds-color-text-placeholder: var(--fds-color-slate-400);
+  --fds-color-text-disabled: var(--fds-color-slate-450);
+  --fds-color-text-accent: var(--fds-color-blue-400);
+  --fds-color-text-success: var(--fds-color-green-400);
+  --fds-color-text-warning: var(--fds-color-orange-400);
+  --fds-color-text-danger: var(--fds-color-red-400);
+  --fds-color-text-info: var(--fds-color-blue-400);
+  --fds-color-text-link: var(--fds-color-blue-400);
+  --fds-color-border-subtle: var(--fds-color-alpha-light-08);
+  --fds-color-border-default: var(--fds-color-ink-700);
+  --fds-color-border-strong: var(--fds-color-ink-650);
+  --fds-color-border-control: var(--fds-color-slate-450);
+  --fds-color-border-accent: var(--fds-color-blue-500);
+  --fds-color-border-focus: var(--fds-color-blue-400);
+  --fds-color-border-success: var(--fds-color-green-500);
+  --fds-color-border-warning: var(--fds-color-orange-500);
+  --fds-color-border-danger: var(--fds-color-red-500);
+  --fds-color-border-disabled: var(--fds-color-ink-650);
+  --fds-color-icon-primary: var(--fds-color-slate-300);
+  --fds-color-icon-subtle: var(--fds-color-slate-400);
+  --fds-color-icon-accent: var(--fds-color-blue-400);
+  --fds-color-surface-control-hover: var(--fds-color-ink-800);
+  --fds-color-surface-accent-subtle: var(--fds-color-blue-950);
+  --fds-color-surface-accent-bold: var(--fds-color-blue-500);
+  --fds-color-surface-accent-bold-hover: var(--fds-color-blue-400);
+  --fds-color-surface-accent-bold-active: var(--fds-color-blue-300);
+  --fds-color-surface-neutral-subtle: var(--fds-color-ink-800);
+  --fds-color-surface-neutral-subtle-hover: var(--fds-color-ink-750);
+  --fds-color-surface-neutral-bold: var(--fds-color-slate-100);
+  --fds-color-surface-success-subtle: var(--fds-color-green-950);
+  --fds-color-surface-success-bold: var(--fds-color-green-500);
+  --fds-color-surface-warning-subtle: var(--fds-color-orange-950);
+  --fds-color-surface-warning-bold: var(--fds-color-orange-500);
+  --fds-color-surface-danger-subtle: var(--fds-color-red-950);
+  --fds-color-surface-danger-bold: var(--fds-color-red-400);
+  --fds-color-surface-danger-bold-hover: var(--fds-color-red-300);
+  --fds-color-surface-info-subtle: var(--fds-color-blue-950);
+  --fds-color-surface-info-bold: var(--fds-color-blue-500);
+  --fds-color-text-on-accent: var(--fds-color-ink-950);
+  --fds-color-text-on-neutral-bold: var(--fds-color-ink-950);
+  --fds-color-text-on-danger: var(--fds-color-red-950);
+  --fds-color-text-link-hover: var(--fds-color-blue-300);
+  --fds-color-border-control-hover: var(--fds-color-slate-400);
+  --fds-color-icon-on-accent: var(--fds-color-ink-950);
+  --fds-elevation-raised: var(--fds-shadow-dark-sm);
+  --fds-elevation-overlay: var(--fds-shadow-dark-md);
+  --fds-elevation-modal: var(--fds-shadow-dark-lg);
+  --fds-elevation-none: var(--fds-shadow-none);
+  --fds-radius-control: var(--fds-radius-sm);
+  --fds-radius-surface: var(--fds-radius-lg);
+  --fds-radius-overlay: var(--fds-radius-xl);
+  --fds-radius-pill: var(--fds-radius-full);
+  --fds-font-display: var(--fds-font-family-display);
+  --fds-font-body: var(--fds-font-family-sans);
+  --fds-font-mono: var(--fds-font-family-mono);
+  }
 
-	/* Forefront Light */
-	[data-fds-theme="forefront-light"] {
-		color-scheme: light;
-		--fds-color-surface-canvas: var(--fds-color-slate-25);
-		--fds-color-surface-sunken: var(--fds-color-slate-50);
-		--fds-color-surface-raised: var(--fds-color-slate-0);
-		--fds-color-surface-overlay: var(--fds-color-slate-0);
-		--fds-color-surface-scrim: var(--fds-color-alpha-scrim-cool);
-		--fds-color-surface-control: var(--fds-color-slate-0);
-		--fds-color-surface-control-hover: var(--fds-color-slate-25);
-		--fds-color-surface-disabled: var(--fds-color-slate-50);
-		--fds-color-surface-selected: var(--fds-color-blue-100);
-		--fds-color-surface-accent-subtle: var(--fds-color-blue-100);
-		--fds-color-surface-accent-bold: var(--fds-color-blue-600);
-		--fds-color-surface-accent-bold-hover: var(--fds-color-blue-700);
-		--fds-color-surface-accent-bold-active: var(--fds-color-blue-800);
-		--fds-color-surface-neutral-subtle: var(--fds-color-slate-50);
-		--fds-color-surface-neutral-subtle-hover: var(--fds-color-slate-100);
-		--fds-color-surface-neutral-bold: var(--fds-color-ink-900);
-		--fds-color-surface-success-subtle: var(--fds-color-green-100);
-		--fds-color-surface-success-bold: var(--fds-color-green-600);
-		--fds-color-surface-warning-subtle: var(--fds-color-orange-100);
-		--fds-color-surface-warning-bold: var(--fds-color-orange-600);
-		--fds-color-surface-danger-subtle: var(--fds-color-red-100);
-		--fds-color-surface-danger-bold: var(--fds-color-red-600);
-		--fds-color-surface-danger-bold-hover: var(--fds-color-red-700);
-		--fds-color-surface-info-subtle: var(--fds-color-blue-100);
-		--fds-color-surface-info-bold: var(--fds-color-blue-600);
-		--fds-color-text-primary: var(--fds-color-ink-950);
-		--fds-color-text-secondary: var(--fds-color-slate-600);
-		--fds-color-text-subtle: var(--fds-color-slate-500);
-		--fds-color-text-placeholder: var(--fds-color-slate-500);
-		--fds-color-text-disabled: var(--fds-color-slate-450);
-		--fds-color-text-accent: var(--fds-color-blue-700);
-		--fds-color-text-on-accent: var(--fds-color-slate-0);
-		--fds-color-text-on-neutral-bold: var(--fds-color-slate-0);
-		--fds-color-text-on-danger: var(--fds-color-slate-0);
-		--fds-color-text-success: var(--fds-color-green-700);
-		--fds-color-text-warning: var(--fds-color-orange-700);
-		--fds-color-text-danger: var(--fds-color-red-700);
-		--fds-color-text-info: var(--fds-color-blue-700);
-		--fds-color-text-link: var(--fds-color-blue-700);
-		--fds-color-text-link-hover: var(--fds-color-blue-800);
-		--fds-color-border-subtle: var(--fds-color-alpha-dark-08);
-		--fds-color-border-default: var(--fds-color-slate-200);
-		--fds-color-border-strong: var(--fds-color-slate-300);
-		--fds-color-border-control: var(--fds-color-slate-450);
-		--fds-color-border-control-hover: var(--fds-color-slate-500);
-		--fds-color-border-accent: var(--fds-color-blue-600);
-		--fds-color-border-focus: var(--fds-color-blue-600);
-		--fds-color-border-success: var(--fds-color-green-600);
-		--fds-color-border-warning: var(--fds-color-orange-600);
-		--fds-color-border-danger: var(--fds-color-red-600);
-		--fds-color-border-disabled: var(--fds-color-slate-200);
-		--fds-color-icon-primary: var(--fds-color-slate-600);
-		--fds-color-icon-subtle: var(--fds-color-slate-500);
-		--fds-color-icon-accent: var(--fds-color-blue-700);
-		--fds-color-icon-on-accent: var(--fds-color-slate-0);
-		--fds-elevation-raised: var(--fds-shadow-light-sm);
-		--fds-elevation-overlay: var(--fds-shadow-light-md);
-		--fds-elevation-modal: var(--fds-shadow-light-lg);
-		--fds-elevation-none: var(--fds-shadow-none);
-		--fds-radius-control: var(--fds-radius-sm);
-		--fds-radius-surface: var(--fds-radius-lg);
-		--fds-radius-overlay: var(--fds-radius-xl);
-		--fds-radius-pill: var(--fds-radius-full);
-		--fds-font-display: var(--fds-font-family-display);
-		--fds-font-body: var(--fds-font-family-sans);
-		--fds-font-mono: var(--fds-font-family-mono);
-	}
-
+  [data-fds-theme="forefront-light"] {
+  --fds-color-surface-canvas: var(--fds-color-slate-25);
+  --fds-color-surface-sunken: var(--fds-color-slate-50);
+  --fds-color-surface-raised: var(--fds-color-slate-0);
+  --fds-color-surface-overlay: var(--fds-color-slate-0);
+  --fds-color-surface-scrim: var(--fds-color-alpha-scrim-cool);
+  --fds-color-surface-control: var(--fds-color-slate-0);
+  --fds-color-surface-disabled: var(--fds-color-slate-50);
+  --fds-color-surface-selected: var(--fds-color-blue-100);
+  --fds-color-text-primary: var(--fds-color-ink-950);
+  --fds-color-text-secondary: var(--fds-color-slate-600);
+  --fds-color-text-subtle: var(--fds-color-slate-500);
+  --fds-color-text-placeholder: var(--fds-color-slate-500);
+  --fds-color-text-disabled: var(--fds-color-slate-450);
+  --fds-color-text-accent: var(--fds-color-blue-700);
+  --fds-color-text-success: var(--fds-color-green-700);
+  --fds-color-text-warning: var(--fds-color-orange-700);
+  --fds-color-text-danger: var(--fds-color-red-700);
+  --fds-color-text-info: var(--fds-color-blue-700);
+  --fds-color-text-link: var(--fds-color-blue-700);
+  --fds-color-border-subtle: var(--fds-color-alpha-dark-08);
+  --fds-color-border-default: var(--fds-color-slate-200);
+  --fds-color-border-strong: var(--fds-color-slate-300);
+  --fds-color-border-control: var(--fds-color-slate-450);
+  --fds-color-border-accent: var(--fds-color-blue-600);
+  --fds-color-border-focus: var(--fds-color-blue-600);
+  --fds-color-border-success: var(--fds-color-green-600);
+  --fds-color-border-warning: var(--fds-color-orange-600);
+  --fds-color-border-danger: var(--fds-color-red-600);
+  --fds-color-border-disabled: var(--fds-color-slate-200);
+  --fds-color-icon-primary: var(--fds-color-slate-600);
+  --fds-color-icon-subtle: var(--fds-color-slate-500);
+  --fds-color-icon-accent: var(--fds-color-blue-700);
+  --fds-color-surface-control-hover: var(--fds-color-slate-25);
+  --fds-color-surface-accent-subtle: var(--fds-color-blue-100);
+  --fds-color-surface-accent-bold: var(--fds-color-blue-600);
+  --fds-color-surface-accent-bold-hover: var(--fds-color-blue-700);
+  --fds-color-surface-accent-bold-active: var(--fds-color-blue-800);
+  --fds-color-surface-neutral-subtle: var(--fds-color-slate-50);
+  --fds-color-surface-neutral-subtle-hover: var(--fds-color-slate-100);
+  --fds-color-surface-neutral-bold: var(--fds-color-ink-900);
+  --fds-color-surface-success-subtle: var(--fds-color-green-100);
+  --fds-color-surface-success-bold: var(--fds-color-green-600);
+  --fds-color-surface-warning-subtle: var(--fds-color-orange-100);
+  --fds-color-surface-warning-bold: var(--fds-color-orange-600);
+  --fds-color-surface-danger-subtle: var(--fds-color-red-100);
+  --fds-color-surface-danger-bold: var(--fds-color-red-600);
+  --fds-color-surface-danger-bold-hover: var(--fds-color-red-700);
+  --fds-color-surface-info-subtle: var(--fds-color-blue-100);
+  --fds-color-surface-info-bold: var(--fds-color-blue-600);
+  --fds-color-text-on-accent: var(--fds-color-slate-0);
+  --fds-color-text-on-neutral-bold: var(--fds-color-slate-0);
+  --fds-color-text-on-danger: var(--fds-color-slate-0);
+  --fds-color-text-link-hover: var(--fds-color-blue-800);
+  --fds-color-border-control-hover: var(--fds-color-slate-500);
+  --fds-color-icon-on-accent: var(--fds-color-slate-0);
+  --fds-elevation-raised: var(--fds-shadow-light-sm);
+  --fds-elevation-overlay: var(--fds-shadow-light-md);
+  --fds-elevation-modal: var(--fds-shadow-light-lg);
+  --fds-elevation-none: var(--fds-shadow-none);
+  --fds-radius-control: var(--fds-radius-sm);
+  --fds-radius-surface: var(--fds-radius-lg);
+  --fds-radius-overlay: var(--fds-radius-xl);
+  --fds-radius-pill: var(--fds-radius-full);
+  --fds-font-display: var(--fds-font-family-display);
+  --fds-font-body: var(--fds-font-family-sans);
+  --fds-font-mono: var(--fds-font-family-mono);
+  }
 }
 
 @layer fds.component {
-	:root {
-		--fds-control-height-sm: 1.75rem;
-		--fds-control-height-md: 2.25rem;
-		--fds-control-height-lg: 2.75rem;
-		--fds-control-padding-x-sm: var(--fds-space-4);
-		--fds-control-padding-x-md: var(--fds-space-5);
-		--fds-control-padding-x-lg: var(--fds-space-6);
-		--fds-control-gap-sm: var(--fds-space-2);
-		--fds-control-gap-md: var(--fds-space-3);
-		--fds-control-gap-lg: var(--fds-space-4);
-		--fds-control-font-size-sm: var(--fds-font-size-30);
-		--fds-control-font-size-md: var(--fds-font-size-40);
-		--fds-control-font-size-lg: var(--fds-font-size-50);
-		--fds-control-border-width: var(--fds-border-width-thin);
-		--fds-control-radius: var(--fds-radius-control);
-		--fds-focus-ring-width: var(--fds-border-width-medium);
-		--fds-focus-ring-offset: var(--fds-border-width-medium);
-		--fds-focus-ring-color: var(--fds-color-border-focus);
-		--fds-button-font-weight: var(--fds-font-weight-medium);
-		--fds-button-icon-size: 1em;
-		--fds-input-min-width: 10rem;
-		--fds-input-invalid-border-width: var(--fds-border-width-thin);
-		--fds-checkbox-size: 1.125rem;
-		--fds-checkbox-radius: var(--fds-radius-xs);
-		--fds-radio-size: 1.125rem;
-		--fds-radio-dot-size: 0.4375rem;
-		--fds-switch-width: 2.25rem;
-		--fds-switch-height: 1.25rem;
-		--fds-switch-thumb-size: 0.875rem;
-		--fds-switch-thumb-inset: 0.1875rem;
-		--fds-badge-height: 1.375rem;
-		--fds-badge-padding-x: var(--fds-space-3);
-		--fds-badge-font-size: var(--fds-font-size-20);
-		--fds-badge-font-weight: var(--fds-font-weight-semibold);
-		--fds-badge-dot-size: 0.375rem;
-		--fds-card-padding: var(--fds-space-8);
-		--fds-card-gap: var(--fds-space-5);
-		--fds-card-radius: var(--fds-radius-surface);
-		--fds-modal-padding: var(--fds-space-8);
-		--fds-modal-gap: var(--fds-space-6);
-		--fds-modal-radius: var(--fds-radius-overlay);
-		--fds-modal-width-sm: 24rem;
-		--fds-modal-width-md: 34rem;
-		--fds-modal-width-lg: 48rem;
-		--fds-modal-offset: var(--fds-space-9);
-		--fds-tooltip-padding-x: var(--fds-space-4);
-		--fds-tooltip-padding-y: var(--fds-space-3);
-		--fds-tooltip-max-width: 16rem;
-		--fds-tooltip-font-size: var(--fds-font-size-30);
-		--fds-tooltip-offset: var(--fds-space-4);
-		--fds-tooltip-radius: var(--fds-radius-md);
-		--fds-tabs-indicator-thickness: var(--fds-border-width-medium);
-		--fds-tabs-trigger-padding-x: var(--fds-space-5);
-		--fds-tabs-trigger-height: 2.5rem;
-		--fds-tabs-gap: var(--fds-space-2);
-		--fds-toast-width: 22rem;
-		--fds-toast-padding: var(--fds-space-5);
-		--fds-toast-gap: var(--fds-space-4);
-		--fds-toast-viewport-offset: var(--fds-space-7);
-		--fds-toast-radius: var(--fds-radius-overlay);
-		--fds-select-menu-max-height: 18rem;
-		--fds-select-option-height: 2.125rem;
-		--fds-select-menu-padding: var(--fds-space-2);
-		--fds-select-menu-offset: var(--fds-space-2);
-		--fds-field-gap: var(--fds-space-3);
-		--fds-field-label-font-size: var(--fds-font-size-30);
-		--fds-field-label-font-weight: var(--fds-font-weight-medium);
-		--fds-field-message-font-size: var(--fds-font-size-30);
-	}
+  :root {
+  --fds-control-padding-x-sm: var(--fds-space-4);
+  --fds-control-padding-x-md: var(--fds-space-5);
+  --fds-control-padding-x-lg: var(--fds-space-6);
+  --fds-control-gap-sm: var(--fds-space-2);
+  --fds-control-gap-md: var(--fds-space-3);
+  --fds-control-gap-lg: var(--fds-space-4);
+  --fds-control-font-size-sm: var(--fds-font-size-30);
+  --fds-control-font-size-md: var(--fds-font-size-40);
+  --fds-control-font-size-lg: var(--fds-font-size-50);
+  --fds-control-border-width: var(--fds-border-width-thin);
+  --fds-control-radius: var(--fds-radius-control);
+  --fds-focus-ring-width: var(--fds-border-width-medium);
+  --fds-focus-ring-offset: var(--fds-border-width-medium);
+  --fds-focus-ring-color: var(--fds-color-border-focus);
+  --fds-button-font-weight: var(--fds-font-weight-medium);
+  --fds-button-icon-size: 1em;
+  --fds-input-invalid-border-width: var(--fds-border-width-thin);
+  --fds-input-min-width: 10rem;
+  --fds-checkbox-radius: var(--fds-radius-xs);
+  --fds-checkbox-size: 1.125rem;
+  --fds-badge-padding-x: var(--fds-space-3);
+  --fds-badge-font-size: var(--fds-font-size-20);
+  --fds-badge-font-weight: var(--fds-font-weight-semibold);
+  --fds-badge-height: 1.375rem;
+  --fds-badge-dot-size: .375rem;
+  --fds-card-padding: var(--fds-space-8);
+  --fds-card-gap: var(--fds-space-5);
+  --fds-card-radius: var(--fds-radius-surface);
+  --fds-modal-padding: var(--fds-space-8);
+  --fds-modal-gap: var(--fds-space-6);
+  --fds-modal-radius: var(--fds-radius-overlay);
+  --fds-modal-offset: var(--fds-space-9);
+  --fds-tooltip-padding-x: var(--fds-space-4);
+  --fds-tooltip-padding-y: var(--fds-space-3);
+  --fds-tooltip-font-size: var(--fds-font-size-30);
+  --fds-tooltip-offset: var(--fds-space-4);
+  --fds-tooltip-radius: var(--fds-radius-md);
+  --fds-tooltip-max-width: 16rem;
+  --fds-tabs-indicator-thickness: var(--fds-border-width-medium);
+  --fds-tabs-trigger-padding-x: var(--fds-space-5);
+  --fds-tabs-trigger-height: 2.5rem;
+  --fds-tabs-gap: var(--fds-space-2);
+  --fds-toast-padding: var(--fds-space-5);
+  --fds-toast-gap: var(--fds-space-4);
+  --fds-toast-viewport-offset: var(--fds-space-7);
+  --fds-toast-radius: var(--fds-radius-overlay);
+  --fds-toast-width: 22rem;
+  --fds-select-menu-padding: var(--fds-space-2);
+  --fds-select-menu-offset: var(--fds-space-2);
+  --fds-select-menu-max-height: 18rem;
+  --fds-select-option-height: 2.125rem;
+  --fds-field-gap: var(--fds-space-3);
+  --fds-field-label-font-size: var(--fds-font-size-30);
+  --fds-field-label-font-weight: var(--fds-font-weight-medium);
+  --fds-field-message-font-size: var(--fds-font-size-30);
+  --fds-control-height-sm: 1.75rem;
+  --fds-control-height-md: 2.25rem;
+  --fds-control-height-lg: 2.75rem;
+  --fds-radio-size: 1.125rem;
+  --fds-radio-dot-size: .4375rem;
+  --fds-switch-width: 2.25rem;
+  --fds-switch-height: 1.25rem;
+  --fds-switch-thumb-size: .875rem;
+  --fds-switch-thumb-inset: .1875rem;
+  --fds-modal-width-sm: 24rem;
+  --fds-modal-width-md: 34rem;
+  --fds-modal-width-lg: 48rem;
+  }
+}
 
-	/* Compact density */
-	[data-fds-density="compact"] {
-		--fds-control-height-sm: 1.5rem;
-		--fds-control-height-md: 1.875rem;
-		--fds-control-height-lg: 2.375rem;
-		--fds-control-padding-x-sm: var(--fds-space-3);
-		--fds-control-padding-x-md: var(--fds-space-4);
-		--fds-control-padding-x-lg: var(--fds-space-5);
-		--fds-badge-height: 1.25rem;
-		--fds-badge-padding-x: var(--fds-space-2);
-		--fds-card-padding: var(--fds-space-6);
-		--fds-card-gap: var(--fds-space-4);
-		--fds-modal-padding: var(--fds-space-7);
-		--fds-modal-gap: var(--fds-space-5);
-		--fds-tabs-trigger-height: 2.125rem;
-		--fds-tabs-trigger-padding-x: var(--fds-space-4);
-		--fds-toast-padding: var(--fds-space-4);
-		--fds-select-option-height: 1.875rem;
-		--fds-field-gap: var(--fds-space-2);
-	}
+@layer fds.density {
+  [data-fds-density="compact"] {
+  --fds-control-height-sm: 1.5rem;
+  --fds-control-height-md: 1.875rem;
+  --fds-control-height-lg: 2.375rem;
+  --fds-control-padding-x-sm: var(--fds-space-3);
+  --fds-control-padding-x-md: var(--fds-space-4);
+  --fds-control-padding-x-lg: var(--fds-space-5);
+  --fds-badge-height: 1.25rem;
+  --fds-badge-padding-x: var(--fds-space-2);
+  --fds-card-padding: var(--fds-space-6);
+  --fds-card-gap: var(--fds-space-4);
+  --fds-modal-padding: var(--fds-space-7);
+  --fds-modal-gap: var(--fds-space-5);
+  --fds-tabs-trigger-height: 2.125rem;
+  --fds-tabs-trigger-padding-x: var(--fds-space-4);
+  --fds-toast-padding: var(--fds-space-4);
+  --fds-select-option-height: 1.875rem;
+  --fds-field-gap: var(--fds-space-2);
+  }
+}
 
-	/* Reduced motion is handled at the token layer. Because every animated
-	   property in the library reads a duration token, collapsing the ramp here
-	   disables motion system-wide and no component can opt back in. End states
-	   are preserved, so nothing becomes invisible or unusable. */
-	@media (prefers-reduced-motion: reduce) {
-		:root {
-			--fds-duration-instant: 0ms;
-			--fds-duration-fast: 0ms;
-			--fds-duration-moderate: 0ms;
-			--fds-duration-slow: 0ms;
-			--fds-duration-slower: 0ms;
-		}
-	}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+  --fds-duration-instant: 0ms;
+  --fds-duration-fast: 0ms;
+  --fds-duration-moderate: 0ms;
+  --fds-duration-slow: 0ms;
+  --fds-duration-slower: 0ms;
+  }
 }

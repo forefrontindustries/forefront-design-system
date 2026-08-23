@@ -20,9 +20,7 @@ export default function Index() {
         ) : ping.isError ? (
           <Text style={{ color: colors.destructive }}>API Error</Text>
         ) : (
-          <Text style={{ color: colors.mutedForeground }}>
-            API Status: {ping.data?.message}
-          </Text>
+          <Text style={{ color: colors.mutedForeground }}>API Status: {ping.data?.message}</Text>
         )}
       </View>
     </SafeAreaView>

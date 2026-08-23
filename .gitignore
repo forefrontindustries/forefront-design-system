@@ -72,7 +72,7 @@ scripts/
 !packages/mobile/scripts/
 packages/mobile/scripts/*
 !packages/mobile/scripts/generate-ios-certs.py
-
-# platform internals, not part of the work sample
-.runable/
 task.md
+
+# Installed locally from ci/workflows/ (PAT lacks the workflow scope to push these)
+.github/workflows/
