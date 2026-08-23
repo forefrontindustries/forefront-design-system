@@ -8,13 +8,7 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [
-        "dist/**",
-        "dist-electron/**",
-        ".expo/**",
-        "build/**",
-        "../web/src/web/generated/**"
-      ]
+      "outputs": ["dist/**", "dist-electron/**", ".expo/**", "build/**", "storybook-static/**"]
     },
     "lint": {
       "outputs": []
