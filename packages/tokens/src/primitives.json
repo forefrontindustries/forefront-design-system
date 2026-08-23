@@ -1,203 +1,596 @@
 {
-  "$description": "Tier 1: primitives. Raw, context-free values. These are the only place a literal hex, px, or cubic-bezier is allowed to exist in the entire system. Nothing in a component may reference this tier directly.",
+  "$description": "Tier 1 - primitives. The only place a literal value may exist.",
   "color": {
-    "$type": "color",
     "ink": {
-      "$description": "Blue-tinted near-black ramp for dark surfaces. Every step below is a value in production use on forefrontindustries.io: 1000 is the site canvas, 950 and 900 are the section backgrounds, 850 is the card surface, 750 is the raised panel.",
-      "1000": { "$value": "#000000" },
-      "950": { "$value": "#07090f" },
-      "900": { "$value": "#0a0a12" },
-      "850": { "$value": "#0a0c14" },
-      "800": { "$value": "#0d1019" },
-      "750": { "$value": "#0f0f1a" },
-      "700": { "$value": "#202a38" },
-      "650": { "$value": "#2a2a35" }
+      "650": {
+        "$type": "color",
+        "$value": "#2a2a35"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#202a38"
+      },
+      "750": {
+        "$type": "color",
+        "$value": "#0f0f1a"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#0d1019"
+      },
+      "850": {
+        "$type": "color",
+        "$value": "#0a0c14"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#0a0a12"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#07090f"
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "#000"
+      }
     },
     "slate": {
-      "$description": "Cool neutral ramp for light theme surfaces and dark theme text. 300 and 200 are the production muted-text values.",
-      "600": { "$value": "#3d4453" },
-      "500": { "$value": "#5b6678" },
-      "450": { "$value": "#7d8696" },
-      "400": { "$value": "#8b93a1" },
-      "300": { "$value": "#a4aab4" },
-      "200": { "$value": "#c8ccd4" },
-      "100": { "$value": "#e2e7ee" },
-      "50": { "$value": "#f1f4f8" },
-      "25": { "$value": "#f8fafc" },
-      "0": { "$value": "#ffffff" }
+      "0": {
+        "$type": "color",
+        "$value": "#fff"
+      },
+      "25": {
+        "$type": "color",
+        "$value": "#f8fafc"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "#f1f4f8"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#e2e7ee"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#c8ccd4"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#a4aab4"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#8b93a1"
+      },
+      "450": {
+        "$type": "color",
+        "$value": "#7d8696"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#5b6678"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#3d4453"
+      }
     },
     "blue": {
-      "$description": "Forefront brand accent. 500 is the brand value #5793CA, taken from --primary in the production site stylesheet. 400 is the production hover value #7BA8D1.",
-      "950": { "$value": "#091825" },
-      "800": { "$value": "#16385a" },
-      "700": { "$value": "#1e4c7a" },
-      "600": { "$value": "#2f6da4" },
-      "500": { "$value": "#5793ca" },
-      "400": { "$value": "#7ba8d1" },
-      "300": { "$value": "#a3c5e4" },
-      "100": { "$value": "#e6eff8" }
+      "100": {
+        "$type": "color",
+        "$value": "#e6eff8"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#a3c5e4"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#7ba8d1"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#5793ca"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#2f6da4"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#1e4c7a"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#16385a"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#091825"
+      }
     },
     "orange": {
-      "$description": "Forefront secondary accent, production value #FF8A3D. Used on the site for glow treatments and emphasis against the blue. Carries the warning role here.",
-      "950": { "$value": "#2a1305" },
-      "700": { "$value": "#914712" },
-      "600": { "$value": "#c25f18" },
-      "500": { "$value": "#ff8a3d" },
-      "400": { "$value": "#ff9a55" },
-      "100": { "$value": "#ffeadb" }
+      "100": {
+        "$type": "color",
+        "$value": "#ffeadb"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#ff9a55"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#ff8a3d"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#c25f18"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#914712"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#2a1305"
+      }
     },
     "green": {
-      "$description": "Success hue.",
-      "950": { "$value": "#052618" },
-      "700": { "$value": "#146c43" },
-      "600": { "$value": "#1a8754" },
-      "500": { "$value": "#2eb872" },
-      "400": { "$value": "#5fd39a" },
-      "100": { "$value": "#e3f7ec" }
+      "100": {
+        "$type": "color",
+        "$value": "#e3f7ec"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#5fd39a"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#2eb872"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#1a8754"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#146c43"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#052618"
+      }
     },
     "red": {
-      "$description": "Danger and destructive hue.",
-      "950": { "$value": "#2e0a0c" },
-      "700": { "$value": "#a41d24" },
-      "600": { "$value": "#c92a32" },
-      "500": { "$value": "#e4494f" },
-      "400": { "$value": "#ef7b7f" },
-      "300": { "$value": "#f6a5a8" },
-      "100": { "$value": "#fdeaeb" }
-    },
-    "alpha": {
-      "$description": "Translucent overlays. Needed for scrims and hairlines that must sit over unknown content.",
-      "light-08": { "$value": "rgba(255, 255, 255, 0.08)" },
-      "dark-08": { "$value": "rgba(7, 9, 15, 0.08)" },
-      "scrim-dark": { "$value": "rgba(4, 5, 10, 0.72)" },
-      "scrim-cool": { "$value": "rgba(7, 9, 15, 0.48)" }
+      "100": {
+        "$type": "color",
+        "$value": "#fdeaeb"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#f6a5a8"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#ef7b7f"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#e4494f"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#c92a32"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#a41d24"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#2e0a0c"
+      }
     }
   },
-  "font": {
-    "family": {
+  "color_alpha_light": {
+    "08": {
+      "$type": "color",
+      "$value": "#ffffff14"
+    }
+  },
+  "color_alpha_dark": {
+    "08": {
+      "$type": "color",
+      "$value": "#07090f14"
+    }
+  },
+  "color_alpha_scrim": {
+    "dark": {
+      "$type": "color",
+      "$value": "#04050ab8"
+    },
+    "cool": {
+      "$type": "color",
+      "$value": "#07090f7a"
+    }
+  },
+  "font_family": {
+    "display": {
       "$type": "fontFamily",
-      "display": { "$value": "'Outfit', Arial, Helvetica, sans-serif", "$description": "Display face, self-hosted variable woff2. Same face as jeremymaendel.com so the system matches the site it is published from." },
-      "sans": { "$value": "'Satoshi', Arial, Helvetica, sans-serif", "$description": "UI and body face, self-hosted woff2. Fallbacks are named faces (Arial, Helvetica) BEFORE the generic sans-serif keyword on purpose: on Linux and misconfigured fontconfig systems the generic sans-serif keyword can resolve to a SERIF face, which is exactly how this system once shipped serif headings. Never terminate a stack on the bare keyword alone." },
-      "mono": { "$value": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" }
+      "$value": "\"Outfit\", Arial, Helvetica, sans-serif"
     },
-    "size": {
+    "sans": {
+      "$type": "fontFamily",
+      "$value": "\"Satoshi\", Arial, Helvetica, sans-serif"
+    },
+    "mono": {
+      "$type": "fontFamily",
+      "$value": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    }
+  },
+  "font_size": {
+    "10": {
       "$type": "dimension",
-      "$description": "Modular type ramp. Components only consume 40, 50 and 60. Everything above is display scale.",
-      "10": { "$value": "0.6875rem" },
-      "20": { "$value": "0.75rem" },
-      "30": { "$value": "0.8125rem" },
-      "40": { "$value": "0.875rem" },
-      "50": { "$value": "1rem" },
-      "60": { "$value": "1.125rem" },
-      "70": { "$value": "1.3125rem" },
-      "80": { "$value": "1.5rem" },
-      "90": { "$value": "1.75rem" },
-      "100": { "$value": "2.125rem" },
-      "110": { "$value": "2.625rem" },
-      "120": { "$value": "3.25rem" },
-      "130": { "$value": "4rem" }
+      "$value": ".6875rem"
     },
-    "weight": {
+    "20": {
+      "$type": "dimension",
+      "$value": ".75rem"
+    },
+    "30": {
+      "$type": "dimension",
+      "$value": ".8125rem"
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": ".875rem"
+    },
+    "50": {
+      "$type": "dimension",
+      "$value": "1rem"
+    },
+    "60": {
+      "$type": "dimension",
+      "$value": "1.125rem"
+    },
+    "70": {
+      "$type": "dimension",
+      "$value": "1.3125rem"
+    },
+    "80": {
+      "$type": "dimension",
+      "$value": "1.5rem"
+    },
+    "90": {
+      "$type": "dimension",
+      "$value": "1.75rem"
+    },
+    "100": {
+      "$type": "dimension",
+      "$value": "2.125rem"
+    },
+    "110": {
+      "$type": "dimension",
+      "$value": "2.625rem"
+    },
+    "120": {
+      "$type": "dimension",
+      "$value": "3.25rem"
+    },
+    "130": {
+      "$type": "dimension",
+      "$value": "4rem"
+    }
+  },
+  "font_weight": {
+    "regular": {
       "$type": "fontWeight",
-      "regular": { "$value": "400" },
-      "medium": { "$value": "500" },
-      "semibold": { "$value": "600" },
-      "bold": { "$value": "700" },
-      "black": { "$value": "900", "$description": "Display only. The brand hero voice is weight 900 at negative tracking, which is what carries the display character now that a separate display family is gone." }
+      "$value": "400"
     },
-    "line-height": {
+    "medium": {
+      "$type": "fontWeight",
+      "$value": "500"
+    },
+    "semibold": {
+      "$type": "fontWeight",
+      "$value": "600"
+    },
+    "bold": {
+      "$type": "fontWeight",
+      "$value": "700"
+    },
+    "black": {
+      "$type": "fontWeight",
+      "$value": "900"
+    }
+  },
+  "font_line_height": {
+    "tight": {
       "$type": "number",
-      "tight": { "$value": "1.1" },
-      "snug": { "$value": "1.25" },
-      "normal": { "$value": "1.5" },
-      "relaxed": { "$value": "1.65" }
+      "$value": "1.1"
     },
-    "tracking": {
+    "snug": {
+      "$type": "number",
+      "$value": "1.25"
+    },
+    "normal": {
+      "$type": "number",
+      "$value": "1.5"
+    },
+    "relaxed": {
+      "$type": "number",
+      "$value": "1.65"
+    }
+  },
+  "font_tracking": {
+    "display": {
       "$type": "dimension",
-      "display": { "$value": "-0.04em", "$description": "Hero and display scale. Matches the production site's h1 tracking exactly." },
-      "tighter": { "$value": "-0.03em" },
-      "tight": { "$value": "-0.015em" },
-      "normal": { "$value": "0em" },
-      "wide": { "$value": "0.04em" },
-      "wider": { "$value": "0.12em" }
+      "$value": "-.04em"
+    },
+    "tighter": {
+      "$type": "dimension",
+      "$value": "-.03em"
+    },
+    "tight": {
+      "$type": "dimension",
+      "$value": "-.015em"
+    },
+    "normal": {
+      "$type": "dimension",
+      "$value": "0em"
+    },
+    "wide": {
+      "$type": "dimension",
+      "$value": ".04em"
+    },
+    "wider": {
+      "$type": "dimension",
+      "$value": ".12em"
     }
   },
   "space": {
-    "$type": "dimension",
-    "$description": "4px base grid. Odd steps exist for optical control inset only.",
-    "0": { "$value": "0rem" },
-    "1": { "$value": "0.125rem" },
-    "2": { "$value": "0.25rem" },
-    "3": { "$value": "0.375rem" },
-    "4": { "$value": "0.5rem" },
-    "5": { "$value": "0.75rem" },
-    "6": { "$value": "1rem" },
-    "7": { "$value": "1.25rem" },
-    "8": { "$value": "1.5rem" },
-    "9": { "$value": "2rem" },
-    "10": { "$value": "2.5rem" },
-    "11": { "$value": "3rem" },
-    "12": { "$value": "4rem" },
-    "13": { "$value": "5rem" },
-    "14": { "$value": "6rem" },
-    "15": { "$value": "8rem" }
+    "0": {
+      "$type": "dimension",
+      "$value": "0rem"
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": ".125rem"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": ".25rem"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": ".375rem"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": ".5rem"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": ".75rem"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "1rem"
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": "1.25rem"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "1.5rem"
+    },
+    "9": {
+      "$type": "dimension",
+      "$value": "2rem"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "2.5rem"
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": "3rem"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "4rem"
+    },
+    "13": {
+      "$type": "dimension",
+      "$value": "5rem"
+    },
+    "14": {
+      "$type": "dimension",
+      "$value": "6rem"
+    },
+    "15": {
+      "$type": "dimension",
+      "$value": "8rem"
+    }
   },
   "radius": {
-    "$type": "dimension",
-    "none": { "$value": "0rem" },
-    "xs": { "$value": "0.125rem" },
-    "sm": { "$value": "0.25rem" },
-    "md": { "$value": "0.375rem" },
-    "lg": { "$value": "0.625rem" },
-    "xl": { "$value": "0.875rem" },
-    "2xl": { "$value": "1.25rem" },
-    "full": { "$value": "62.4375rem" }
+    "none": {
+      "$type": "dimension",
+      "$value": "0rem"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": ".125rem"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": ".25rem"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": ".375rem"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": ".625rem"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": ".875rem"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "1.25rem"
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "999px"
+    }
   },
-  "border-width": {
-    "$type": "dimension",
-    "none": { "$value": "0px" },
-    "thin": { "$value": "1px" },
-    "medium": { "$value": "2px" },
-    "thick": { "$value": "3px" }
+  "border_width": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "thin": {
+      "$type": "dimension",
+      "$value": "1px"
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "thick": {
+      "$type": "dimension",
+      "$value": "3px"
+    }
+  },
+  "shadow_dark": {
+    "sm": {
+      "$type": "shadow",
+      "$value": "0 1px 2px #0006"
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": "0 4px 12px #00000073, 0 1px 2px #00000080"
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": "0 16px 40px #0000008c, 0 2px 6px #00000080"
+    }
+  },
+  "shadow_light": {
+    "sm": {
+      "$type": "shadow",
+      "$value": "0 1px 2px #07090f14"
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": "0 4px 12px #07090f1a, 0 1px 2px #07090f0f"
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": "0 16px 40px #07090f24, 0 2px 6px #07090f14"
+    }
   },
   "shadow": {
-    "$type": "shadow",
-    "$description": "Two families. The dark set uses deeper, tighter shadows because low-luminance surfaces need contrast, not blur.",
-    "dark-sm": { "$value": "0 1px 2px rgba(0, 0, 0, 0.4)" },
-    "dark-md": { "$value": "0 4px 12px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.5)" },
-    "dark-lg": { "$value": "0 16px 40px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.5)" },
-    "light-sm": { "$value": "0 1px 2px rgba(7, 9, 15, 0.08)" },
-    "light-md": { "$value": "0 4px 12px rgba(7, 9, 15, 0.1), 0 1px 2px rgba(7, 9, 15, 0.06)" },
-    "light-lg": { "$value": "0 16px 40px rgba(7, 9, 15, 0.14), 0 2px 6px rgba(7, 9, 15, 0.08)" },
-    "none": { "$value": "none" }
+    "none": {
+      "$type": "shadow",
+      "$value": "none"
+    }
   },
   "duration": {
-    "$type": "duration",
-    "instant": { "$value": "0ms" },
-    "fast": { "$value": "120ms" },
-    "moderate": { "$value": "200ms" },
-    "slow": { "$value": "320ms" },
-    "slower": { "$value": "480ms" }
+    "instant": {
+      "$type": "duration",
+      "$value": "0ms"
+    },
+    "fast": {
+      "$type": "duration",
+      "$value": "120ms"
+    },
+    "moderate": {
+      "$type": "duration",
+      "$value": "200ms"
+    },
+    "slow": {
+      "$type": "duration",
+      "$value": "320ms"
+    },
+    "slower": {
+      "$type": "duration",
+      "$value": "480ms"
+    }
   },
   "easing": {
-    "$type": "cubicBezier",
-    "$description": "standard for state changes, entrance/exit as an asymmetric pair, emphasized for large moves, spring only for playful affordances.",
-    "linear": { "$value": "linear" },
-    "standard": { "$value": "cubic-bezier(0.2, 0, 0.13, 1)" },
-    "emphasized": { "$value": "cubic-bezier(0.3, 0, 0, 1)" },
-    "entrance": { "$value": "cubic-bezier(0, 0, 0.2, 1)" },
-    "exit": { "$value": "cubic-bezier(0.4, 0, 1, 1)" },
-    "spring": { "$value": "cubic-bezier(0.34, 1.56, 0.64, 1)" }
+    "linear": {
+      "$type": "cubicBezier",
+      "$value": "linear"
+    },
+    "standard": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(.2, 0, .13, 1)"
+    },
+    "emphasized": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(.3, 0, 0, 1)"
+    },
+    "entrance": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0, 0, .2, 1)"
+    },
+    "exit": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(.4, 0, 1, 1)"
+    },
+    "spring": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(.34, 1.56, .64, 1)"
+    }
   },
-  "z-index": {
-    "$type": "number",
-    "base": { "$value": "0" },
-    "raised": { "$value": "10" },
-    "sticky": { "$value": "100" },
-    "overlay": { "$value": "1000" },
-    "modal": { "$value": "1100" },
-    "popover": { "$value": "1200" },
-    "toast": { "$value": "1300" },
-    "tooltip": { "$value": "1400" }
+  "z_index": {
+    "base": {
+      "$type": "number",
+      "$value": "0"
+    },
+    "raised": {
+      "$type": "number",
+      "$value": "10"
+    },
+    "sticky": {
+      "$type": "number",
+      "$value": "100"
+    },
+    "overlay": {
+      "$type": "number",
+      "$value": "1000"
+    },
+    "modal": {
+      "$type": "number",
+      "$value": "1100"
+    },
+    "popover": {
+      "$type": "number",
+      "$value": "1200"
+    },
+    "toast": {
+      "$type": "number",
+      "$value": "1300"
+    },
+    "tooltip": {
+      "$type": "number",
+      "$value": "1400"
+    }
+  },
+  "button": {},
+  "input": {},
+  "radio": {},
+  "badge": {},
+  "tooltip": {},
+  "tabs": {},
+  "select": {
+    "menu": {}
   }
 }
