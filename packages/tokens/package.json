@@ -1,17 +1,26 @@
 {
   "name": "@forefront/tokens",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "description": "Forefront Design System tokens: one source of truth, compiled to CSS, TypeScript, Tailwind, React Native, Figma Variables and Material 3 roles.",
   "type": "module",
-  "description": "Tier 1/2/3 design tokens for the Forefront Design System. DTCG JSON source, compiled to CSS custom properties, typed TS, and a Figma Variables payload.",
+  "files": ["build", "src", "README.md"],
   "exports": {
-    ".": "./build/index.ts",
+    ".": "./build/tokens.ts",
     "./css": "./build/tokens.css",
+    "./tailwind": "./build/tokens.tailwind.css",
+    "./native": "./build/tokens.native.ts",
+    "./figma": "./build/tokens.figma.json",
     "./manifest": "./build/manifest.json",
-    "./figma": "./build/tokens.figma.json"
+    "./md3": "./build/tokens.md3.css"
   },
   "scripts": {
-    "build": "bun tooling/build-tokens.ts",
+    "build": "bun scripts/build.ts",
+    "validate": "bun scripts/validate.ts",
+    "contrast": "bun scripts/contrast.ts",
     "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
