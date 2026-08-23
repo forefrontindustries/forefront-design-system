@@ -1,0 +1,26 @@
+# Ownership, per GOVERNANCE.md. Review requests route automatically so nobody has to know
+# who to ask.
+
+# Default owner for anything not matched below
+*                           @jeremymaendel
+
+# Token source is the contract. Naming and theme values need the design lead.
+/packages/tokens/           @jeremymaendel
+/packages/tokens/src/semantic.json      @jeremymaendel
+/packages/tokens/src/themes/            @jeremymaendel
+
+# Component API and keyboard models
+/packages/ui/               @jeremymaendel
+
+# Documentation and adoption content
+/packages/web/              @jeremymaendel
+
+# CI gates, release process, and templates
+/.github/                   @jeremymaendel
+/.changeset/                @jeremymaendel
+
+# Process documents. Changing these changes how the system is run.
+/CONTRIBUTING.md            @jeremymaendel
+/GOVERNANCE.md              @jeremymaendel
+/VERSIONING.md              @jeremymaendel
+/ROADMAP.md                 @jeremymaendel
