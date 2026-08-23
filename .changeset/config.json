@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "forefrontindustries/forefront-design-system" }],
+  "commit": false,
+  "fixed": [],
+  "linked": [["@forefront/tokens", "@forefront/ui"]],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "minor",
+  "ignore": ["web", "mobile", "desktop"]
+}
