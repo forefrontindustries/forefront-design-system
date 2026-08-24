@@ -25,7 +25,7 @@ export default function Overview() {
               Open the token explorer
             </Button>
           </Link>
-          <a href="/storybook/" className="fds-button" data-variant="ghost" data-size="lg">
+          <a href="/storybook/index.html" className="fds-button" data-variant="ghost" data-size="lg">
             Storybook
           </a>
         </div>

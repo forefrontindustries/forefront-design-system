@@ -62,7 +62,7 @@ function Specimen({
     <section className="d-specimen" id={name.toLowerCase()}>
       <div className="d-row">
         <h2 className="d-h2">{name}</h2>
-        <a className="d-mono d-muted" href={`/storybook/?path=/docs/${name.toLowerCase()}`}>
+        <a className="d-mono d-muted" href={`/storybook/index.html?path=/docs/${name.toLowerCase()}`}>
           open in Storybook
         </a>
       </div>

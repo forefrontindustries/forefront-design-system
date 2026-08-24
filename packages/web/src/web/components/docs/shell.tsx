@@ -97,7 +97,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <a className="d-mono" href="https://github.com/forefrontindustries/forefront-design-system">
             GitHub repo
           </a>
-          <a className="d-mono" href="/storybook/">
+          <a className="d-mono" href="/storybook/index.html">
             Storybook
           </a>
         </div>

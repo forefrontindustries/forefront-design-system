@@ -23,6 +23,7 @@
     "lint:tokens": "bun packages/tokens/scripts/lint-tokens.ts",
     "storybook": "cd packages/ui && bun run storybook",
     "build:storybook": "cd packages/ui && bun run build-storybook",
+    "storybook:embed": "bun run build:storybook && rm -rf packages/web/public/storybook && cp -r packages/ui/storybook-static packages/web/public/storybook",
     "db:generate": "turbo db:generate",
     "db:migrate": "turbo db:migrate",
     "db:push": "turbo db:push",
