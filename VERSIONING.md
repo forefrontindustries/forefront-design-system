@@ -39,8 +39,10 @@ a courtesy; the contract change is the fact.
    `lint:tokens`, `typecheck`, web build, Storybook build with the a11y addon in error mode.
 3. **Version pull request.** The release workflow opens a pull request that bumps versions and
    rewrites `CHANGELOG.md`. Nobody hand-edits a version number.
-4. **Merge to publish.** Merging the version pull request tags the release, publishes the packages,
-   and deploys the docs site and Storybook.
+4. **Merge to release.** Merging the version pull request lands the version bumps and the changelog,
+   and deploys the docs site and Storybook. It does not push to a registry: the packages are
+   consumed straight from this repo today, so no release line has been chosen yet. When one is,
+   the publish step goes back into `.github/workflows/release.yml` and this line changes with it.
 
 ## Writing a changelog entry
 
@@ -66,7 +68,9 @@ engineer can tell at a glance whether a release affects them at all.
 
 ## Pre-release channels
 
-- `next` for contract changes that need a consumer to try them before they are locked in
-- `canary` published from `main` on every merge, for teams that want to track the edge
+Planned, not live, and gated behind the registry decision above:
 
-Neither channel skips a gate. A pre-release that fails contrast is still a failed build.
+- `next` for contract changes that need a consumer to try them before they are locked in
+- `canary` cut from `main` on every merge, for teams that want to track the edge
+
+Neither channel would skip a gate. A pre-release that fails contrast is still a failed build.
