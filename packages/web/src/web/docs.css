@@ -166,6 +166,13 @@ pre code {
   text-decoration: none;
 }
 
+.d-brand-logo {
+  display: block;
+  width: 100%;
+  max-width: 168px;
+  height: auto;
+}
+
 .d-brand-mark {
   font-family: var(--fds-font-display);
   font-size: var(--fds-font-size-60);

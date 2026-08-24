@@ -5,6 +5,10 @@ const config: StorybookConfig = {
   addons: ["@storybook/addon-docs", "@storybook/addon-a11y"],
   framework: { name: "@storybook/react-vite", options: {} },
   typescript: { check: false },
+  // theme.ts uses the logo as brandImage. The docs site owns the file, so serve
+  // that same copy rather than duplicating it: /images/* resolves here on 6006
+  // and on the docs site, which mounts this build under /storybook/.
+  staticDirs: [{ from: "../../web/public/images", to: "/images" }],
   // The manager shell is a separate document from the preview iframe, so it
   // does not inherit the docs site font. theme.ts asks for Outfit, so load it.
   managerHead: (head) => `

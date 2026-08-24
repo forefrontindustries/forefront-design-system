@@ -18,12 +18,11 @@ import { create } from "storybook/theming";
 export default create({
   base: "dark",
 
-  brandTitle: `
-    <span style="display:flex;flex-direction:column;line-height:1.15">
-      <span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7ba8d1">Forefront</span>
-      <span style="font-size:15px;font-weight:600;color:#f8fafc">Design System</span>
-    </span>
-  `,
+  // brandImage wins over brandTitle when both are set, and brandTitle becomes
+  // the image's alt text. The file is the docs site's own copy, served here by
+  // the staticDirs entry in main.ts, so there is one logo in the repo.
+  brandImage: "/images/forefront-logo.webp",
+  brandTitle: "Forefront Design System",
   brandUrl: "https://github.com/forefrontindustries/forefront-design-system",
   brandTarget: "_blank",
 
