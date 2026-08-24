@@ -1,0 +1,62 @@
+name: Pages
+
+# Publishes the documentation site with Storybook mounted at /storybook/,
+# which is the path the docs site links to.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build docs and Storybook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install --frozen-lockfile
+      - run: bun run tokens:build
+
+      - name: Build docs site
+        run: bun run build:web
+
+      - name: Build Storybook
+        working-directory: packages/ui
+        run: bun run build-storybook
+
+      - name: Assemble site
+        run: |
+          mkdir -p site
+          cp -r packages/web/dist/client/. site/ 2>/dev/null || cp -r packages/web/dist/. site/
+          mkdir -p site/storybook
+          cp -r packages/ui/storybook-static/. site/storybook/
+          # Client-side routing: every unknown path serves the app shell.
+          cp site/index.html site/404.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
