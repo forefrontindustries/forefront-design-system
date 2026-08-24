@@ -41,16 +41,15 @@ jobs:
       - run: bun run typecheck
 
       # Opens or updates the version pull request when changesets are pending.
-      # Merging that pull request runs this workflow again with nothing pending,
-      # which is when publish happens.
+      # Merging it applies the version bumps and writes CHANGELOG.md. Registry
+      # publishing is deliberately not wired up: the packages are consumed from
+      # the repo, so adding a publish step would need an NPM_TOKEN secret and a
+      # release line decision that has not been made yet.
       - name: Changesets
         uses: changesets/action@v1
         with:
-          version: bunx changeset version
-          publish: bunx changeset publish
+          version: bun run changeset version
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_CONFIG_PROVENANCE: "true"
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
