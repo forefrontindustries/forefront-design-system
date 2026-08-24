@@ -192,7 +192,7 @@ export function resolveTheme(model: Model, themeName: string, densityName?: stri
     ...model.primitives,
     ...theme.tokens,
     ...model.component,
-    ...(density?.tokens ?? {}),
+    ...density?.tokens,
   };
 
   const resolved: Record<string, string> = {};

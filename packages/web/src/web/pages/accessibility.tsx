@@ -1,4 +1,4 @@
-import { contrastPairs, manifest } from "../lib/ds";
+import { contrastPairs } from "../lib/ds";
 
 const themeLabels: Record<string, string> = {
   "forefront-dark": "Forefront Dark",
@@ -84,7 +84,7 @@ export default function Accessibility() {
           </table>
         </div>
         <p className="d-body d-muted">
-          Generated from <code>manifest.json</code> at build {new Date(manifest.builtAt as string).toISOString().slice(0, 10)}.
+          Generated from <code>manifest.json</code>, written by the token build itself.
           This table cannot drift, because nobody types it.
         </p>
       </section>

@@ -147,7 +147,6 @@ export default function Overview() {
           <Badge tone="success" dot>
             v{manifest.version} stable
           </Badge>
-          <Badge tone="info">Built {manifest.builtAt}</Badge>
           <Badge tone="accent" dot>
             {manifest.themes.length} themes, all complete
           </Badge>

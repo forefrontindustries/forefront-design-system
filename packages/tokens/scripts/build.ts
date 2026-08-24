@@ -324,7 +324,9 @@ const unreferenced = warnings.filter((w) => w.rule === "unreferenced-colour-prim
 
 const manifest = {
   $generated: "GENERATED FILE - the docs site reads this so the foundation pages cannot go stale.",
-  builtAt: new Date().toISOString().slice(0, 10),
+  // Deliberately no build timestamp. CI fails the build when the committed
+  // artifacts differ from a fresh build, so anything that changes on every
+  // run would break the repo on the next calendar day.
   version: (await Bun.file(join(import.meta.dir, "..", "package.json")).json()).version,
   counts: tsModel.meta.counts,
   themes: tsModel.meta.themes,
