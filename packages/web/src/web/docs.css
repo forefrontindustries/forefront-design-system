@@ -23,7 +23,7 @@ body {
   background: var(--fds-color-surface-canvas);
   color: var(--fds-color-text-secondary);
   font-family: var(--fds-font-body);
-  font-size: var(--fds-font-size-40);
+  font-size: var(--fds-font-size-50);
   line-height: var(--fds-font-line-height-relaxed);
   -webkit-font-smoothing: antialiased;
 }
@@ -137,17 +137,17 @@ pre code {
 
 @media (min-width: 60rem) {
   .d-shell {
-    grid-template-columns: 17rem minmax(0, 1fr);
+    grid-template-columns: 20.5rem minmax(0, 1fr);
   }
 }
 
 .d-sidebar {
   border-inline-end: var(--fds-border-width-thin) solid var(--fds-color-border-subtle);
   background: var(--fds-color-surface-sunken);
-  padding: var(--fds-space-8) var(--fds-space-6);
+  padding: var(--fds-space-9) var(--fds-space-7);
   display: flex;
   flex-direction: column;
-  gap: var(--fds-space-8);
+  gap: var(--fds-space-10);
 }
 
 @media (min-width: 60rem) {
@@ -162,20 +162,22 @@ pre code {
 .d-brand {
   display: flex;
   flex-direction: column;
-  gap: var(--fds-space-2);
+  gap: var(--fds-space-3);
   text-decoration: none;
+  padding-block-end: var(--fds-space-8);
+  border-block-end: var(--fds-border-width-thin) solid var(--fds-color-border-subtle);
 }
 
 .d-brand-logo {
   display: block;
   width: 100%;
-  max-width: 168px;
+  max-width: 200px;
   height: auto;
 }
 
 .d-brand-mark {
   font-family: var(--fds-font-display);
-  font-size: var(--fds-font-size-60);
+  font-size: var(--fds-font-size-70);
   font-weight: var(--fds-font-weight-bold);
   letter-spacing: var(--fds-font-tracking-tight);
   color: var(--fds-color-text-primary);
@@ -184,16 +186,17 @@ pre code {
 .d-nav-group {
   display: flex;
   flex-direction: column;
-  gap: var(--fds-space-1);
+  gap: var(--fds-space-2);
 }
 
 .d-nav-title {
   font-family: var(--fds-font-mono);
-  font-size: var(--fds-font-size-10);
+  font-size: var(--fds-font-size-20);
   letter-spacing: var(--fds-font-tracking-widest);
   text-transform: uppercase;
   color: var(--fds-color-text-tertiary);
-  padding: var(--fds-space-2) var(--fds-space-3);
+  padding: var(--fds-space-2) var(--fds-space-5);
+  margin-block-end: var(--fds-space-2);
 }
 
 .d-nav-link {
@@ -201,13 +204,17 @@ pre code {
   align-items: center;
   justify-content: space-between;
   gap: var(--fds-space-3);
-  padding: var(--fds-space-3) var(--fds-space-3);
-  border-radius: var(--fds-radius-md);
+  padding: var(--fds-space-5) var(--fds-space-5);
+  border-radius: var(--fds-radius-lg);
   color: var(--fds-color-text-secondary);
   text-decoration: none;
-  font-size: var(--fds-font-size-40);
+  font-size: var(--fds-font-size-50);
+  font-weight: var(--fds-font-weight-medium);
+  line-height: var(--fds-font-line-height-snug);
   border-inline-start: var(--fds-border-width-thick) solid transparent;
-  transition: background var(--fds-duration-fast) var(--fds-easing-standard);
+  transition:
+    background var(--fds-duration-fast) var(--fds-easing-standard),
+    color var(--fds-duration-fast) var(--fds-easing-standard);
 }
 
 .d-nav-link:hover {
@@ -219,7 +226,7 @@ pre code {
   background: var(--fds-color-surface-accent-soft);
   border-inline-start-color: var(--fds-color-border-accent);
   color: var(--fds-color-text-accent);
-  font-weight: var(--fds-font-weight-medium);
+  font-weight: var(--fds-font-weight-semibold);
 }
 
 .d-main {
@@ -316,12 +323,42 @@ pre code {
   gap: var(--fds-space-8);
 }
 
+/*
+ * .d-stat is used two ways: as a bare numeral (a single span), and as a labelled
+ * block wrapping an eyebrow, a value, and a note. In the second case the display
+ * typography below would cascade onto the label and the note, and with no layout
+ * on the container all three ran together on one line. :has() separates the two
+ * uses without changing a single call site.
+ */
 .d-stat {
   font-family: var(--fds-font-display);
   font-size: var(--fds-font-size-100);
   font-weight: var(--fds-font-weight-bold);
   line-height: var(--fds-font-line-height-tight);
   color: var(--fds-color-text-primary);
+}
+
+.d-stat:has(.d-eyebrow) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--fds-space-3);
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.d-stat > .d-display {
+  font-size: clamp(var(--fds-font-size-100), 4vw, var(--fds-font-size-120));
+  line-height: var(--fds-font-line-height-tight);
+}
+
+/* The note is body copy, not part of the numeral. */
+.d-stat > .d-muted {
+  font-family: var(--fds-font-body);
+  font-size: var(--fds-font-size-50);
+  font-weight: var(--fds-font-weight-regular);
+  line-height: var(--fds-font-line-height-relaxed);
+  text-wrap: pretty;
 }
 
 .d-rule {

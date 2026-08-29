@@ -69,7 +69,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         <Link href="/" className="d-brand" aria-label="Forefront Design System, home">
           <img className="d-brand-logo" src="/images/forefront-logo.webp" alt="Forefront" width={400} height={58} />
           <span className="d-brand-mark">Design System</span>
-          <span className="d-mono d-muted">v{manifest.version}</span>
+          <span className="d-brand-version">v{manifest.version}</span>
         </Link>
 
         <nav aria-label="Documentation">
