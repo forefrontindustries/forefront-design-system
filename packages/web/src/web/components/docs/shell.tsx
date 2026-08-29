@@ -43,6 +43,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [theme, setTheme] = useState<string>(() => localStorage.getItem(THEME_KEY) ?? defaultTheme);
   const [compact, setCompact] = useState<boolean>(() => localStorage.getItem(DENSITY_KEY) === "compact");
+  const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-fds-theme", theme);
@@ -55,9 +56,29 @@ export function Shell({ children }: { children: React.ReactNode }) {
     localStorage.setItem(DENSITY_KEY, compact ? "compact" : "comfortable");
   }, [compact]);
 
+  // Navigating closes the drawer, otherwise the panel covers the page you just asked for.
   useEffect(() => {
     window.scrollTo({ top: 0 });
+    setNavOpen(false);
   }, [location]);
+
+  // Escape closes it, which is the keyboard contract for anything modal over content.
+  useEffect(() => {
+    if (!navOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setNavOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [navOpen]);
+
+  // The drawer scrolls, so the page behind it must not.
+  useEffect(() => {
+    document.body.style.overflow = navOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [navOpen]);
 
   return (
     <div className="d-shell">
@@ -65,7 +86,10 @@ export function Shell({ children }: { children: React.ReactNode }) {
         Skip to content
       </a>
 
-      <aside className="d-sidebar">
+      {/* The scrim only exists while the drawer is open, and only paints below 60rem. */}
+      {navOpen ? <button type="button" className="d-nav-scrim" aria-label="Close navigation" onClick={() => setNavOpen(false)} /> : null}
+
+      <aside className="d-sidebar" id="docs-nav" data-open={navOpen ? "true" : "false"}>
         <Link href="/" className="d-brand" aria-label="Forefront Design System, home">
           <img className="d-brand-logo" src="/images/forefront-logo.webp" alt="Forefront" width={400} height={58} />
           <span className="d-brand-mark">Design System</span>
@@ -105,6 +129,23 @@ export function Shell({ children }: { children: React.ReactNode }) {
 
       <div className="d-main">
         <header className="d-topbar">
+          <button
+            type="button"
+            className="d-nav-toggle"
+            aria-expanded={navOpen}
+            aria-controls="docs-nav"
+            onClick={() => setNavOpen((open) => !open)}
+          >
+            <span className="d-nav-toggle-bars" aria-hidden="true" data-open={navOpen ? "true" : "false"}>
+              <span />
+              <span />
+              <span />
+            </span>
+            {navOpen ? "Close" : "Menu"}
+          </button>
+
+          <span className="d-topbar-spacer" />
+
           <label className="fds-field-label" htmlFor="theme-select">
             Theme
           </label>
