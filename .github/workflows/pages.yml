@@ -3,10 +3,9 @@ name: Pages
 # Publishes the documentation site with Storybook mounted at /storybook/,
 # which is the path the docs site links to.
 
-# The repo is private, and GitHub Pages does not serve private repos on this plan,
-# so this workflow no longer runs on push. Cloudflare Workers is the live host.
-# Kept here, runnable by hand, in case the repo ever goes public again.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
