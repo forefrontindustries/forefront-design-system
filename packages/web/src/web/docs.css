@@ -4,7 +4,17 @@
  * The docs site is a consumer of the design system, not an exception to it. Every value
  * below reads a token, and CI runs the same lint-tokens gate over this file that it runs
  * over the component library. If the docs can be built from tokens alone, so can a product.
+ *
+ * Cascade layer order is declared here, before any import, because this file is the first
+ * stylesheet the app loads. Tailwind's preflight lives in its `base` layer and resets
+ * padding, border, border-radius, background-color and font on every button and input.
+ * Without an explicit order, `base` was declared after `fds.components` and outranked the
+ * component library, so the real components rendered as unstyled text. The library sits
+ * between Tailwind's reset and Tailwind's utilities: preflight first, then the design
+ * system, then utilities, so a utility class can still override a component.
  */
+@layer theme, base, fds.primitives, fds.semantic, fds.component, fds.density, fds.base,
+  fds.components, components, utilities;
 @import "@forefront/ui/styles.css";
 
 *,
