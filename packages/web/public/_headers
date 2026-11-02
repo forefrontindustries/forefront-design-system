@@ -1,0 +1,8 @@
+# Cloudflare Workers static assets reads this file at deploy time.
+#
+# This subdomain is shared directly, not through search. The header is what a
+# crawler that never runs the JS sees, and it also covers non-HTML files that
+# cannot carry a meta tag.
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+  Referrer-Policy: strict-origin-when-cross-origin

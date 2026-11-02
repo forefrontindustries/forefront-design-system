@@ -6,6 +6,13 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta property="og:image" content="/og-image.png" />
 		<title>Forefront Design System</title>
+		<!--
+			Not in search results, on purpose. This subdomain is shared directly, and
+			public/_headers sends a matching X-Robots-Tag for crawlers that never run
+			the JS and for non-HTML files.
+		-->
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+		<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
 		<meta name="description" content="A three tier semantic token system, multi platform build pipeline, and governed contribution model. Source of truth for Forefront components, tokens, and standards." />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
